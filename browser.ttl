@@ -1,5 +1,8 @@
+# baseURI: file:/C:/Documents%20and%20Settings/U39306/TBCFreeWorkspace/Metashare/browser.ttl
+
 @prefix bibo:    <http://purl.org/ontology/bibo/#> .
 @prefix bio:     <http://gilmere.upf.edu/bio.ttl#> .
+@prefix browser:  <http://browser.upf/browser#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcr:     <http://www.isocat.org/ns/dcr.rdf#> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
@@ -15,33 +18,87 @@
 @prefix test:    <http://gilmere.upf.edu/MetadataRecords.ttl#> .
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix browser: <http://browser.upf/browser#> .
 
-browser:topNode a rdf:Property .
+browser:topNode
+      rdf:type rdf:Property .
 
-foaf:Person  browser:topNode foaf:Agent .
-foaf:Organization  browser:topNode foaf:Agent .
-bibo:Article  browser:topNode ms:Document .
-bibo:Book  browser:topNode ms:Document .
-bibo:Chapter  browser:topNode ms:Document .
-bibo:Report  browser:topNode ms:Document .
-bibo:AudioVisualDocument  browser:topNode ms:Document .
-bibo:Webpage  browser:topNode ms:Document .
-bio:SoaplabService browser:topNode bio:Service .
-bio:RESTService browser:topNode bio:Service .
-bio:SOAPService browser:topNode bio:Service .
-ms:CorpusAudio browser:topNode ms:Corpus .
-ms:CorpusVideo browser:topNode ms:Corpus .
-ms:CorpusText browser:topNode ms:Corpus .
-ms:CorpusCollection browser:topNode ms:Corpus .
-ms:CorpusTextNgram browser:topNode ms:Corpus .
-ms:CorpusImage browser:topNode ms:Corpus .
-ms:ComputationalLexicon browser:topNode ms:LexicalConceptualResource .
-ms:Lexicon browser:topNode ms:LexicalConceptualResource .
-ms:Framenet browser:topNode ms:LexicalConceptualResource .
-ms:MachineReadableDictionary browser:topNode ms:LexicalConceptualResource .
-ms:Ontology browser:topNode ms:LexicalConceptualResource .
-ms:TerminologicalResource browser:topNode ms:LexicalConceptualResource .
-ms:Thesaurus browser:topNode ms:LexicalConceptualResource .
-ms:WordList browser:topNode ms:LexicalConceptualResource .
-ms:Wordnet browser:topNode ms:LexicalConceptualResource .
+bio:RESTService
+      browser:topNode bio:Service .
+
+bio:SOAPService
+      browser:topNode bio:Service .
+
+bio:SoaplabService
+      browser:topNode bio:Service .
+
+bio:Task
+      browser:topNode bio:Task .
+
+ms:ComputationalLexicon
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:CorpusAudio
+      browser:topNode ms:Corpus .
+
+ms:CorpusCollection
+      browser:topNode ms:Corpus .
+
+ms:CorpusImage
+      browser:topNode ms:Corpus .
+
+ms:CorpusText
+      browser:topNode ms:Corpus .
+
+ms:CorpusTextNgram
+      browser:topNode ms:Corpus .
+
+ms:CorpusVideo
+      browser:topNode ms:Corpus .
+
+ms:Framenet
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:Lexicon
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:MachineReadableDictionary
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:Ontology
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:TerminologicalResource
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:Thesaurus
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:WordList
+      browser:topNode ms:LexicalConceptualResource .
+
+ms:Wordnet
+      browser:topNode ms:LexicalConceptualResource .
+
+bibo:Article
+      browser:topNode ms:Document .
+
+bibo:AudioVisualDocument
+      browser:topNode ms:Document .
+
+bibo:Book
+      browser:topNode ms:Document .
+
+bibo:Chapter
+      browser:topNode ms:Document .
+
+bibo:Report
+      browser:topNode ms:Document .
+
+bibo:Webpage
+      browser:topNode ms:Document .
+
+foaf:Organization
+      browser:topNode foaf:Agent .
+
+foaf:Person
+      browser:topNode foaf:Agent .
