@@ -1,0 +1,224 @@
+# baseURI: http://gilmere.upf.edu/bio.ttl#
+
+@prefix bio:     <http://gilmere.upf.edu/bio.ttl#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
+@prefix ms:      <http://gilmere.upf.edu/ms.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+bio:  rdf:type owl:Ontology .
+
+bio:Alignment
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Alignment" ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Parallel_text> ;
+      dc:description "Text alignment is the task of finding the correct correspondence between locations of fragments in a given text, and its translation"@en .
+
+bio:Chunking-Segmentation
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Chunking-Segmentation" ;
+      dc:description "Chunking is the analysis of a sentence which identifies the constituents parts (noun groups, verbs, verb groups, etc.)"@en ;
+      owl:sameAs <http://dbpedia.org/resource/Shallow_parsing> .
+
+bio:CorpusProcessing
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "CorpusProcessing" ;
+      dc:description "Any task that deals with analysis and exploitation of textual corpus."^^xsd:string .
+
+bio:CorpusWorkbench
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "CorpusWorkbench" ;
+      dc:description "A suite of tools to manage corpus analysis."^^xsd:string .
+
+bio:FormatConversion
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "FormatConversion" ;
+      dc:description "Any task performing a change of format."^^xsd:string .
+
+bio:Lexicon-TerminologyExtraction
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Lexicon-TerminologyExtraction" ;
+      rdfs:seeAlso <http://dbpedia.org/page/Terminology_extraction> ;
+      dc:description "Extracting terminology is the process of extracting terminology from a text."^^xsd:string .
+
+bio:Management
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Management" .
+
+bio:MorphologicalTagging
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "MorphologicalTagging" ;
+      dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphological information."^^xsd:string .
+
+bio:MorphosyntacticTagging
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "MorphosyntacticTagging" ;
+      dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphosyntactic information."^^xsd:string .
+
+bio:NamedEntityRecognition
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "NamedEntityRecognition" ;
+      dc:description "Named Entity Recognition (NER) classifies elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc."@en ;
+      owl:sameAs <http://dbpedia.org/resource/Named-entity_recognition> .
+
+bio:Querying
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Querying" ;
+      dc:description "Refers to the task of searching (possibly via rgulars expressions) a word or patterns in a corpus."^^xsd:string .
+
+bio:REST
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
+      rdfs:label "REST"^^xsd:string ;
+      dc:description "Representational State Transfer (REST) is an architectural style based on the existing design of HTTP 1.0."^^xsd:string ;
+      owl:sameAs <http://dbpedia.org/page/Representational_state_transfer> .
+
+bio:RESTService
+      rdf:type owl:Class ;
+      rdfs:label "RESTService"^^xsd:string ;
+      rdfs:subClassOf bio:Service .
+
+bio:SOAP
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
+      rdfs:label "SOAP"^^xsd:string ;
+      dc:description " Simple Object Access Protocol (SOAP) is a protocol specification for exchanging structured information in the implementation of Web Services"^^xsd:string ;
+      owl:sameAs <http://dbpedia.org/page/SOAP> .
+
+bio:SOAPService
+      rdf:type owl:Class ;
+      rdfs:label "SOAPService"^^xsd:string ;
+      rdfs:subClassOf bio:Service .
+
+bio:Service
+      rdf:type owl:Class ;
+      rdfs:label "Service"^^xsd:string ;
+      dc:description "Web services"@en .
+
+bio:ServiceTechnology
+      rdf:type owl:Class ;
+      rdfs:label "ServiceTechnology"^^xsd:string ;
+      dc:description "service technology (REST, SOAP, Soaplab, etc)"@en .
+
+bio:Soaplab
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
+      rdfs:label "Soaplab"^^xsd:string ;
+      dc:description "Soaplab is a Web services software framework specialised for bioinformatics programs with command-line interface."^^xsd:string ;
+      owl:sameAs <http://dbpedia.org/resource/Soaplab> .
+
+bio:SoaplabService
+      rdf:type owl:Class ;
+      rdfs:label "SoaplabService"^^xsd:string ;
+      rdfs:subClassOf bio:SOAPService .
+
+bio:StatisticsAnalysis
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "StatisticsAnalysis" ;
+      dc:description "Statistical analysis refers to a collection of methods used to process large amounts of data  for the interpretation of quantitative data."^^xsd:string .
+
+bio:Stemming-Lemmatization
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Stemming-Lemmatization" ;
+      rdfs:seeAlso <http://en.wikipedia.org/wiki/Stemming> ;
+      dc:description "Is the process for reducing inflected (or sometimes derived) words to their stem or lemma."^^xsd:string ;
+      owl:sameAs <http://dbpedia.org/resource/Stemming> .
+
+bio:SyntacticTagging
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "SyntacticTagging" ;
+      ms:dcr  "http://www.isocat.org/datcat/DC-2330" ;
+      dc:description "Is the process of annotating syntacitc information in texts."^^xsd:string .
+
+bio:Task
+      rdf:type owl:Class ;
+      rdfs:label "Task"^^xsd:string ;
+      dc:description "The task performed by the service"@en .
+
+bio:TextMining
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "TextMining" ;
+      dc:description "refers to the process of deriving high-quality information from text"^^xsd:string ;
+      owl:sameAs <http://dbpedia.org/resource/Text_mining> .
+
+bio:Tokenization
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Tokenization" ;
+      dc:description "Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens."^^xsd:string ;
+      owl:sameAs <http://dbpedia.org/resource/Tokenization> .
+
+bio:demoInvocation
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "demoInvocation"^^xsd:string .
+
+bio:endpoint
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "endpoint"^^xsd:string ;
+      dc:description "link to the entry point to a service"^^xsd:string .
+
+bio:identifier
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain ms:Resource ;
+      rdfs:label "identifier"^^xsd:string .
+
+bio:input
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "input"^^xsd:string ;
+      dc:description "Used to point to sample input"^^xsd:string .
+
+bio:output
+      rdf:type owl:DatatypeProperty ;
+      rdfs:label "output"^^xsd:string ;
+      dc:description "Used to point to sample output"^^xsd:string .
+
+bio:sampleInput
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "sampleInput"^^xsd:string .
+
+bio:sampleOutput
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "sampleOutput"^^xsd:string .
+
+bio:serviceProvider
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "serviceProvider"^^xsd:string ;
+      dc:description "Used to identify the provider of the service."^^xsd:string .
+
+bio:serviceTechnology
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "serviceTechnology"^^xsd:string ;
+      rdfs:range bio:ServiceTechnology ;
+      dc:description "Specifies the technollogy type of the service"@en .
+
+bio:task
+      rdf:type owl:ObjectProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "task"^^xsd:string ;
+      rdfs:range bio:Task ;
+      dc:description "Task identifies the main task performed by the service."^^xsd:string .
+
+bio:wsdl
+      rdf:type owl:DatatypeProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "wsdl"^^xsd:string ;
+      dc:description "For SOAP services, wsdl points to the wsdl file of the service."^^xsd:string .
+
+dc:description
+      rdf:type rdf:Property ;
+      rdfs:comment "An account of the resource."@en-US ;
+      rdfs:isDefinedBy dc: ;
+      rdfs:label "Description"@en-US ;
+      dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en-US ;
+      dcterms:hasVersion <http://dublincore.org/usage/terms/history/#description-006> ;
+      dcterms:issued "1999-07-02" ;
+      dcterms:modified "2008-01-14" ;
+      skos:note "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en-US .
