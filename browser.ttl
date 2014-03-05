@@ -19,6 +19,10 @@
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+browser:menuClass
+      rdf:type owl:ObjectProperty ;
+      rdfs:label " menu class"^^xsd:string .
+
 browser:topNode
       rdf:type rdf:Property .
 
