@@ -4794,11 +4794,11 @@ test:doc_68
 
 test:doc_69
       rdf:type owl:NamedIndividual , bibo:AudioVisualDocument ;
-      rdfs:label " Servicios SoapLab de Clarin en Taverna" ;
+      rdfs:label "Servicios SoapLab de Clarin en Taverna"^^xsd:string ;
       dc:creator test:organization_UPF-IULA ;
       dc:description "In this video tutorial you will learn how to import CLARIN SoapLab services in Taverna to chain web services in a same workflow. The example is based on PDF to TXT format converter web service." ;
       dc:identifier "http://vimeo.com/25349140" ;
-      dc:title " Servicios SoapLab de Clarin en Taverna" ;
+      dc:title "Servicios SoapLab de Clarin en Taverna"^^xsd:string ;
       dcterms:bibliographicCitation
               "Servicios SoapLab de Clarin en Taverna [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/25349140" ;
       dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#116> .
@@ -4884,7 +4884,29 @@ test:doc_uc_1
       dc:subject bio:NamedEntityRecognition ;
       dc:title "Mapping the English Lake District: a literary GIS" ;
       dcterms:bibliographicCitation
-              "Cooper D, Gregory IN. Mapping the English Lake District: a literary GIS. Transactions of the Institute of British Geographers. 2011;36(1)" .
+              "Cooper D, Gregory IN. Mapping the English Lake District: a literary GIS. Transactions of the Institute of British Geographers [Internet]. 2011 [cited 2014 Mar 12];36(1). Available from: http://dx.doi.org/10.1111/j.1475-5661.2010.00405"^^xsd:string .
+
+test:doc_uc_10
+      rdf:type bibo:Report , owl:NamedIndividual ;
+      rdfs:label "Resolución de Correferencia de Nombres de Persona para Extracción de Información Biográfica"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Pablo_Gamallo> , <http://dblp.l3s.de/d2r/resource/authors/Marcos_Garc%C3%ADa> ;
+      dc:identifier " http://hdl.handle.net/10045/18512"^^xsd:string ;
+      dc:subject bio:NamedEntityRecognition ;
+      dc:title "Resolución de Correferencia de Nombres de Persona para Extracción de Información Biográfica"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "García M, Gamallo P. Resolución de Correferencia de Nombres de Persona para Extracción de Información Biográfica. Procesamiento del Lenguaje Natural [Internet]. 2011 [cited 2014 Mar 12];47:47–55. Available from: http://hdl.handle.net/10045/18512"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/pdln/GarciaG11> .
+
+test:doc_uc_11
+      rdf:type owl:NamedIndividual , bibo:Report ;
+      rdfs:label "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/M._K._Singh> , <http://dblp.l3s.de/d2r/resource/authors/Pranav_Waila> , <http://dblp.l3s.de/d2r/resource/authors/V._K._Singh> ;
+      dc:identifier "http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
+      dc:subject bio:NamedEntityRecognition ;
+      dc:title "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Waila P, Singh VK, Singh MK. Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine. Advances in Computing, Communications and Informatics (ICACCI), 2013 International Conference on [Internet]. 2013 [cited 2014 Mar 12]. p. 1166–71. Available from: http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/icacci/WailaSS13> .
 
 test:doc_uc_2
       rdf:type bibo:Article , owl:NamedIndividual ;
@@ -4894,7 +4916,7 @@ test:doc_uc_2
       dc:subject bio:NamedEntityRecognition ;
       dc:title "Visual GISting: bringing together corpus linguistics and Geographical Information Systems" ;
       dcterms:bibliographicCitation
-              "Gregory IN, Hardie A. Visual GISting: bringing together corpus linguistics and Geographical Information Systems. Literary and Linguistic Computing. 2011;26(3):297–314" ;
+              "Gregory IN, Hardie A. Visual GISting: bringing together corpus linguistics and Geographical Information Systems. Literary and Linguistic Computing. 2011;26(3):297–314[cited 2014 Mar 12]. Available from: http://dx.doi.org/10.1093/llc/fqr022"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/lalc/GregoryH11> .
 
 test:doc_uc_3
@@ -4905,7 +4927,7 @@ test:doc_uc_3
       dc:subject bio:NamedEntityRecognition ;
       dc:title "Advanced visual analytics methods for literature analysis" ;
       dcterms:bibliographicCitation
-              "Oelke D, Kokkinakis D, Malm M. Advanced visual analytics methods for literature analysis. Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2012. p. 35–44. Available from: http://dl.acm.org/citation.cfm?id=2390357.2390364" .
+              "Oelke D, Kokkinakis D, Malm M. Advanced visual analytics methods for literature analysis. Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics [Internet]; 2012 [cited 2014 Mar 12]. p. 35–44. Available from: http://dl.acm.org/citation.cfm?id=2390357.2390364"^^xsd:string .
 
 test:doc_uc_4
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -4915,7 +4937,7 @@ test:doc_uc_4
       dc:subject bio:NamedEntityRecognition ;
       dc:title "Names in novels: An experiment in computational stylistics" ;
       dcterms:bibliographicCitation
-              "Van Dalen-Oskam K. Names in novels: An experiment in computational stylistics. Literary and Linguistic Computing. 2013;28(2):359–70" ;
+              "Van Dalen-Oskam K. Names in novels: An experiment in computational stylistics. Literary and Linguistic Computing [Internet]. 2013 [cited 2014 Mar 12];28(2):359–70. Available from:http://dx.doi.org/10.1093/llc/fqs007"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/lalc/Dalen-Oskam13> .
 
 test:doc_uc_5
@@ -4926,7 +4948,7 @@ test:doc_uc_5
       dc:subject bio:NamedEntityRecognition ;
       dc:title "Data mining with criminal intent. Final white paper" ;
       dcterms:bibliographicCitation
-              "Cohen D, Gibbs F, Hitchcock T, Rockwell G, Sander J, Shoemaker R, et al. Data mining with criminal intent. Final white paper [Internet]. 2011. Available from: http://criminalintent.org/wp-content/uploads/2011/09/Data-Mining-with-Criminal-Intent-Final1.pdf" .
+              "Cohen D, Gibbs F, Hitchcock T, Rockwell G, Sander J, Shoemaker R, et al. Data mining with criminal intent. Final white paper [Internet]. 2011 [cited 2014 Mar 12]. Available from: http://criminalintent.org/wp-content/uploads/2011/09/Data-Mining-with-Criminal-Intent-Final1.pdf"^^xsd:string .
 
 test:doc_uc_6
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -4936,7 +4958,7 @@ test:doc_uc_6
       dc:subject bio:NamedEntityRecognition , test:project_MT ;
       dc:title "Topic modeling on historical newspapers" ;
       dcterms:bibliographicCitation
-              "Yang T-I, Torget AJ, Mihalcea R. Topic modeling on historical newspapers. Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2011. Available from: http://dl.acm.org/citation.cfm?id=2107636.2107649" .
+              "Yang T-I, Torget AJ, Mihalcea R. Topic modeling on historical newspapers. Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2011 [cited 2014 Mar 12]. Available from: http://dl.acm.org/citation.cfm?id=2107636.2107649"^^xsd:string .
 
 test:doc_uc_7
       rdf:type owl:NamedIndividual , bibo:Report ;
@@ -4947,6 +4969,27 @@ test:doc_uc_7
       dc:title "Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities" ;
       dcterms:bibliographicCitation
               "Torget AJ, Mihalcea R, Christensen J, McGhee G. Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities [Internet]. 2011. Available from: http://mappingtexts.stanford.edu/whitepaper/MappingTexts_WhitePaper.pdf" .
+
+test:doc_uc_8
+      rdf:type bibo:Report , owl:NamedIndividual ;
+      rdfs:label "The Geographic Imagination of Civil War-Era American Fiction"^^xsd:string ;
+      dc:creator <http://viaf.org/viaf/21934190> ;
+      dc:identifier "http://dx.doi.org/10.1093/alh/ajt045" ;
+      dc:subject bio:NamedEntityRecognition ;
+      dc:title "The Geographic Imagination of Civil War-Era American Fiction"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Wilkens M. The Geographic Imagination of Civil War-Era American Fiction. American Literary History [Internet]. 2013 [cited 2014 Mar 12];25(4):803–40. Available from: http://dx.doi.org/10.1093/alh/ajt045"^^xsd:string .
+
+test:doc_uc_9
+      rdf:type owl:NamedIndividual , bibo:Report ;
+      rdfs:label "A comparison of named entity recognition tools applied to biographical texts"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Vincent_Labatut> , <http://dblp.l3s.de/d2r/resource/authors/Samet_Atdag> ;
+      dc:identifier "http://dx.doi.org/10.1109/IcConSCS.2013.6632052"^^xsd:string ;
+      dc:subject bio:NamedEntityRecognition ;
+      dc:title "A comparison of named entity recognition tools applied to biographical texts"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Atdag S, Labatut V. A comparison of named entity recognition tools applied to biographical texts. Systems and Computer Science (ICSCS), 2013 2nd International Conference on [Internet]. 2013 [cited 2014 Mar 12]. p. 228–33. Available from: http://dx.doi.org/10.1109/IcConSCS.2013.6632052"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/corr/AtdagL13> .
 
 test:metadata-AnCora-Cat
       rdf:type ms:CorpusText , owl:NamedIndividual ;
