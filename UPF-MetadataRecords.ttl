@@ -1420,7 +1420,7 @@ test:Apertium-ca-it_resource-8v2
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
-      ms:resourceCreator test:person_Antonio_Toral , test:organization_UPF-IULA , test:person_Mireia_Ginestí_Rosell , test:person_Francis_M_Tyers ;
+      ms:resourceCreator test:person_Antonio_Toral , test:organization_UPF-IULA , test:person_Mireia_Ginestí_Rosell ;
       ms:resourceName "Italian-Catalan LMF Apertium Bilingual dictionary" ;
       ms:resourceShortName
               "LMF Apertium It-Ca" ;
@@ -6272,28 +6272,6 @@ test:person_Aitziber_Atutxa
       foaf:workplaceHomepage
               "http://ixa.si.ehu.es/Ixa/index_html/" .
 
-test:person_Andrew_Hardie
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Andrew Hardie" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Andrew_Hardie> ;
-      foaf:familyName "Hardie" ;
-      foaf:givenName "Andrew" ;
-      foaf:mbox "a.hardie@lancaster.ac.uk" ;
-      foaf:name "Andrew Hardie" ;
-      foaf:workplaceHomepage
-              "http://www.ling.lancs.ac.uk/index.php" .
-
-<http://gilmere.upf.edu/MetadataRecords.ttl#person_Andrew_J._Torget>
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Andrew J. Torget" ;
-      owl:sameAs <http://viaf.org/viaf/164341474> ;
-      foaf:familyName "Torget" ;
-      foaf:givenName "Andrew J." ;
-      foaf:mbox "andrew.torget@unt.edu" ;
-      foaf:name "Andrew J. Torget" ;
-      foaf:workplaceHomepage
-              "http://history.unt.edu/" .
-
 test:person_Anna_Fernández_Montraveta
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Anna Fernández Montraveta" ;
@@ -6352,28 +6330,6 @@ test:person_Carmen_Armentano_Oller
       foaf:workplaceHomepage
               "http://transducens.dlsi.ua.es/" .
 
-test:person_Cyril_Briquet
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Cyril Briquet" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Cyril_Briquet> ;
-      foaf:familyName "Briquet" ;
-      foaf:givenName "Cyril" ;
-      foaf:mbox "cyril.briquet@acm.org" ;
-      foaf:name "Cyril Briquet" ;
-      foaf:workplaceHomepage
-              "http://csmm.mcmaster.ca/" .
-
-test:person_Dan_Cohen
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Dan Cohen" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Daniel_J._Cohen> ;
-      foaf:familyName "Cohen" ;
-      foaf:givenName "Dan" ;
-      foaf:mbox "dcohen@gmu.edu" ;
-      foaf:name "Dan Cohen" ;
-      foaf:workplaceHomepage
-              "http://chnm.gmu.edu/" .
-
 test:person_Daniel_Vicente_Quílez
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Daniel Vicente Quílez" ;
@@ -6384,71 +6340,6 @@ test:person_Daniel_Vicente_Quílez
       foaf:name "Daniel Vicente Quílez" ;
       foaf:workplaceHomepage
               "http://di098.edv.uniovi.es/apertium/comun/nos.php" .
-
-test:person_Daniela_Oelke
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Daniela Oelke" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Daniela_Oelke> ;
-      foaf:familyName "Oelke" ;
-      foaf:givenName "Daniela" ;
-      foaf:mbox "oelke@inf.uni-konstanz.de" ;
-      foaf:name "Daniela Oelke" ;
-      foaf:workplaceHomepage
-              "http://www.vis.uni-konstanz.de/en/" .
-
-test:person_David_Cooper
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "David Cooper" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/David_Cooper> ;
-      foaf:familyName "Cooper" ;
-      foaf:givenName "David" ;
-      foaf:mbox "d.cooper1@lancaster.ac.uk" ;
-      foaf:name "David Cooper" ;
-      foaf:workplaceHomepage
-              "http://www.lancaster.ac.uk/fass/english/" .
-
-test:person_Dimitrios_Kokkinakis
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Dimitrios Kokkinakis" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Dimitrios_Kokkinakis> ;
-      foaf:familyName "Kokkinakis" ;
-      foaf:givenName "Dimitrios" ;
-      foaf:mbox "dimitrios.kokkinakis@gu.se" ;
-      foaf:name "Dimitrios Kokkinakis" ;
-      foaf:workplaceHomepage
-              "http://www.svenska.gu.se/english" .
-
-test:person_Elisa_Tze-I_Yang
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Elisa Tze-I Yang" ;
-      foaf:familyName "Tze-I Yang" ;
-      foaf:givenName "Elisa" ;
-      foaf:mbox "tze-iyang@my.unt.edu" ;
-      foaf:name "Elisa Tze-I Yang" ;
-      foaf:workplaceHomepage
-              "http://www.cse.unt.edu/site/index.php" .
-
-test:person_Francis_M_Tyers
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Francis M. Tyers" ;
-      ms:affiliation test:organization_Prompsit ;
-      foaf:familyName "Tyers" ;
-      foaf:givenName "Francis M." ;
-      foaf:mbox "ftyers@prompsit.com" ;
-      foaf:name "Francis M. Tyers" ;
-      foaf:workplaceHomepage
-              "http://www.prompsit.com/" .
-
-test:person_Frederick_Gibbs
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Frederick Gibbs" ;
-      owl:sameAs <http://viaf.org/viaf/160238427> ;
-      foaf:familyName "Gibbs" ;
-      foaf:givenName "Frederick " ;
-      foaf:mbox "fwgibbs@gmail.com" ;
-      foaf:name "Frederick Gibbs" ;
-      foaf:workplaceHomepage
-              "http://chnm.gmu.edu/" .
 
 test:person_Gemma_Boleda
       rdf:type owl:NamedIndividual , foaf:Person ;
@@ -6461,27 +6352,6 @@ test:person_Gemma_Boleda
       foaf:name "Gemma Boleda" ;
       foaf:workplaceHomepage
               "http://www.talp.upc.edu/" .
-
-test:person_Geoff_McGhee
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Geoff McGhee" ;
-      foaf:familyName "McGhee" ;
-      foaf:givenName "Geoff" ;
-      foaf:mbox "geoff.mcghee@stanford.edu" ;
-      foaf:name "Geoff McGhee" ;
-      foaf:workplaceHomepage
-              "http://west.stanford.edu/" .
-
-test:person_Geoffrey_Rockwell
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Geoffrey Rockwell" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Geoffrey_Rockwell> ;
-      foaf:familyName "Rockwell" ;
-      foaf:givenName "Geoffrey" ;
-      foaf:mbox "geoffrey.rockwell@ualberta.ca" ;
-      foaf:name "Geoffrey Rockwell" ;
-      foaf:workplaceHomepage
-              "http://www.philosophy.ualberta.ca/" .
 
 test:person_German_Rigau
       rdf:type owl:NamedIndividual , foaf:Person ;
@@ -6517,17 +6387,6 @@ test:person_Gregor_Thurmair
       foaf:name "Gregor Thurmair" ;
       foaf:workplaceHomepage
               "http://www.linguatec.de/" .
-
-test:person_Ian_N_Gregory
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Ian_N Gregory" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Ian_N._Gregory> ;
-      foaf:familyName "Gregory" ;
-      foaf:givenName "Ian N" ;
-      foaf:mbox "i.gregory@lancaster.ac.uk" ;
-      foaf:name "Ian N Gregory" ;
-      foaf:workplaceHomepage
-              "http://www.lancaster.ac.uk/fass/history/" .
 
 test:person_Irene_Castellón
       rdf:type foaf:Person , owl:NamedIndividual ;
@@ -6592,17 +6451,6 @@ test:person_John_Simpson
       foaf:workplaceHomepage
               "http://www.efs.ualberta.ca/" .
 
-test:person_Jon_Christensen
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Jon Christensen" ;
-      owl:sameAs <http://viaf.org/viaf/6734392> ;
-      foaf:familyName "Christensen" ;
-      foaf:givenName "Jon" ;
-      foaf:mbox "jonchristensen@ioes.ucla.edu" ;
-      foaf:name "Jon Christensen" ;
-      foaf:workplaceHomepage
-              "http://west.stanford.edu/" .
-
 test:person_Jorge_Vivaldi
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Jorge Vivaldi"^^xsd:string ;
@@ -6626,28 +6474,6 @@ test:person_Jose_Mari_Arriola
       foaf:workplaceHomepage
               "http://ixa.si.ehu.es/Ixa/index_html/" .
 
-test:person_Jörg-Sander
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Jorge Vivaldi" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/J%C3%B6rg_Sander> ;
-      foaf:familyName "Sander" ;
-      foaf:givenName "Jörg" ;
-      foaf:mbox "jsander@ualberta.ca" ;
-      foaf:name "Jörg Sander" ;
-      foaf:workplaceHomepage
-              "https://www.cs.ualberta.ca/" .
-
-test:person_Karina_van_Dalen-Oskam
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Karina van Dalen-Oskam" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Karina_van_Dalen-Oskam> ;
-      foaf:familyName "van Dalen-Oskam" ;
-      foaf:givenName "Karina" ;
-      foaf:mbox "karina.van.dalen@huygens.knaw.nl" ;
-      foaf:name "Karina van Dalen-Oskam" ;
-      foaf:workplaceHomepage
-              "http://www.huygens.knaw.nl/en/" .
-
 test:person_Kike_Fernández
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Kike Fernández" ;
@@ -6658,17 +6484,6 @@ test:person_Kike_Fernández
       foaf:name "Kike Fernández" ;
       foaf:workplaceHomepage
               "http://ixa.si.ehu.es/Ixa/index_html/" .
-
-<http://gilmere.upf.edu/MetadataRecords.ttl#person_Kirsten_C._Uszkalo>
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Kirsten C. Uszkalo" ;
-      owl:sameAs <http://viaf.org/viaf/296736977> ;
-      foaf:familyName "Uszkalo" ;
-      foaf:givenName "Kirsten C." ;
-      foaf:mbox "uszkalo@ualberta.ca" ;
-      foaf:name "Kirsten C. Uszkalo" ;
-      foaf:workplaceHomepage
-              "http://www.efs.ualberta.ca/" .
 
 test:person_Larraitz_Uria
       rdf:type foaf:Person , owl:NamedIndividual ;
@@ -6774,17 +6589,6 @@ test:person_María_Jesús_Aranzabe
       foaf:workplaceHomepage
               "http://ixa.si.ehu.es/Ixa/index_html/" .
 
-test:person_Mats_Malm
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Mats Malm" ;
-      owl:sameAs <http://viaf.org/viaf/14917130> ;
-      foaf:familyName "Malm" ;
-      foaf:givenName "Mats" ;
-      foaf:mbox "mats.malm@lit.gu.se" ;
-      foaf:name "Mats Malm" ;
-      foaf:workplaceHomepage
-              "http://www.lir.gu.se/english" .
-
 test:person_Mikel_Forcada
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Mikel Forcada" ;
@@ -6807,17 +6611,6 @@ test:person_Mikel_Iruskieta
       foaf:name "Mikel Iruskieta" ;
       foaf:workplaceHomepage
               "http://ixa.si.ehu.es/Ixa/index_html/" .
-
-test:person_Milena_Radzikowska
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Milena Radzikowska" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Milena_Radzikowska> ;
-      foaf:familyName "Radzikowska" ;
-      foaf:givenName "Milena" ;
-      foaf:mbox "mradzikowska@mtroyal.ca" ;
-      foaf:name "Milena Radzikowska" ;
-      foaf:workplaceHomepage
-              "http://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/Communications/" .
 
 test:person_Mireia_Ginestí_Rosell
       rdf:type foaf:Person , owl:NamedIndividual ;
@@ -6897,39 +6690,6 @@ test:person_Prokopis_Prokopidis
       foaf:workplaceHomepage
               "http://www.ilsp.gr/" .
 
-test:person_Rada_Mihalcea
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Rada Mihalcea" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Rada_Mihalcea> ;
-      foaf:familyName "Mihalcea" ;
-      foaf:givenName "Rada" ;
-      foaf:mbox "rada@cs.unt.edu" ;
-      foaf:name "Rada Mihalcea" ;
-      foaf:workplaceHomepage
-              "http://www.cse.unt.edu/site/index.php" .
-
-test:person_Robert_Shoemaker
-      rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Robert Shoemaker" ;
-      owl:sameAs <http://viaf.org/viaf/101140832> ;
-      foaf:familyName "Shoemaker" ;
-      foaf:givenName "Robert" ;
-      foaf:mbox "r.shoemaker@sheffield.ac.uk" ;
-      foaf:name "Robert Shoemaker" ;
-      foaf:workplaceHomepage
-              "https://www.shef.ac.uk/history" .
-
-test:person_Sean_Takats
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Sean Takats" ;
-      owl:sameAs <http://viaf.org/viaf/170295436> ;
-      foaf:familyName "Takats" ;
-      foaf:givenName "Sean" ;
-      foaf:mbox "stakats@gmu.edu" ;
-      foaf:name "Sean Takats" ;
-      foaf:workplaceHomepage
-              "http://historyarthistory.gmu.edu/" .
-
 test:person_Sergi_Torner
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Sergi Torner" ;
@@ -6941,28 +6701,6 @@ test:person_Sergi_Torner
       foaf:name "Sergi Torner" ;
       foaf:workplaceHomepage
               "http://www.iula.upf.edu/" .
-
-test:person_Stéfan_Sinclair
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Stéfan Sinclair" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/St%C3%A9fan_Sinclair> ;
-      foaf:familyName "Sinclair" ;
-      foaf:givenName "Stéfan" ;
-      foaf:mbox "stefan.sinclair@mcgill.ca" ;
-      foaf:name "Stéfan Sinclair" ;
-      foaf:workplaceHomepage
-              "http://www.mcgill.ca/langlitcultures/about-us" .
-
-test:person_Tim_Hitchcock
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Tim Hitchcock" ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Tim_Hitchcock> ;
-      foaf:familyName "Hitchcock" ;
-      foaf:givenName "Tim" ;
-      foaf:mbox "t.hitchcock@herts.ac.uk" ;
-      foaf:name "Tim Hitchcock" ;
-      foaf:workplaceHomepage
-              "http://www.herts.ac.uk/" .
 
 test:person_Valeria_Quochi
       rdf:type foaf:Person , owl:NamedIndividual ;
@@ -6987,17 +6725,6 @@ test:person_Vera_Aleksic
       foaf:name "Vera Aleksic" ;
       foaf:workplaceHomepage
               "http://www.linguatec.de/" .
-
-<http://gilmere.upf.edu/MetadataRecords.ttl#person_William_J._Turkel>
-      rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "William J. Turkel" ;
-      owl:sameAs <http://viaf.org/viaf/48754739> ;
-      foaf:familyName "Turkel" ;
-      foaf:givenName "William J. " ;
-      foaf:mbox "wturkel@uwo.ca" ;
-      foaf:name "William J. Turkel" ;
-      foaf:workplaceHomepage
-              "http://history.uwo.ca/index.html" .
 
 test:person_Xavier_Gómez_Guinovart
       rdf:type owl:NamedIndividual , foaf:Person ;
