@@ -605,7 +605,7 @@ Output XML CQP example: http://ws02.iula.upf.edu/panacea/examples/ws/freeling_pa
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.classify?wsdl" ;
       ms:fundingProject test:project_PANACEA ;
-      ms:resourceName " Lexical classifier Web Service" ;
+      ms:resourceName "Lexical classifier Web Service"^^xsd:string ;
       dc:description "Given a set of signatures in a weka file (test_file.arff), classify them using the parameters estimated for each cue (theta_file.csv)." .
 
 <http://gilmere.upf.edu/MetadataRecords.ttl#202>
@@ -838,7 +838,7 @@ You can choose to have this prediction as:
 classifier. The output format is the one needed as input for the naive_bayes_classifier webservice.""" .
 
 <http://gilmere.upf.edu/MetadataRecords.ttl#229>
-      rdf:type bio:Service , ms:ToolService , owl:NamedIndividual ;
+      rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Naive Bayes classifier Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#lexicon_terminology_extraction.naive_bayes_classifier_row" ;
@@ -1166,7 +1166,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       dc:description "This WS will scramble the lines in a parallel text corpus keeping the alignment.  The goal is to make it difficult to reproduce the original text. The input size limit is 100 MB. Language independent WS." .
 
 <http://gilmere.upf.edu/MetadataRecords.ttl#259>
-      rdf:type owl:NamedIndividual , bio:Service , ms:ToolService ;
+      rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "TMX shuffling Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#others.tmx_shuffling_row" ;
@@ -1515,8 +1515,6 @@ test:Apertium-ca-it_resource-8v2
               "LMF Apertium It-Ca" ;
       ms:sizeInfo test:size_N10A5B ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "manual Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf " , "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Italian and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-ca_resource-18v2
@@ -1551,8 +1549,6 @@ test:Apertium-ca_resource-18v2
               "LMF Apertium Ca" ;
       ms:sizeInfo test:size_N126C7 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Catalan Apertium ditionary. Monolingual dictionaries for Spanish, Catalan, Gallego and Euskera have been generated from the Apertium expanded lexicons of the es-ca (for both Spanish and Catalan) es-gl (for Galician) and eu-es (for Basque). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-en-ca_resource-3v2
@@ -1587,8 +1583,6 @@ test:Apertium-en-ca_resource-3v2
               "LMF Apertium En-Ca" ;
       ms:sizeInfo test:size_N18487 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-en-es_resource-5v2
@@ -1623,8 +1617,6 @@ test:Apertium-en-es_resource-5v2
               "LMF Apertium En-Es" ;
       ms:sizeInfo test:size_N1651E ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Spanish languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-en-gl_resource-4v2
@@ -1659,8 +1651,6 @@ test:Apertium-en-gl_resource-4v2
               "LMF Apertium En-Gl" ;
       ms:sizeInfo test:size_N19357 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Galician languages. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-es-ast_resource-13v2
@@ -1695,8 +1685,6 @@ test:Apertium-es-ast_resource-13v2
               "LMF Apertium Es-Ast" ;
       ms:sizeInfo test:size_N13947 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish and Asturian languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-es-ca_resource-14v2
@@ -1731,8 +1719,6 @@ test:Apertium-es-ca_resource-14v2
               "LMF Apertium Es-Ca" ;
       ms:sizeInfo test:size_N14DA5 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-es-gl_resource-15v2
@@ -1768,8 +1754,6 @@ test:Apertium-es-gl_resource-15v2
               "LMF Apertium Es-Gl" ;
       ms:sizeInfo test:size_N18614 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish Galician languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-es-pt_resource-16v2
@@ -1804,8 +1788,6 @@ test:Apertium-es-pt_resource-16v2
               "LMF Apertium Es-Pt" ;
       ms:sizeInfo test:size_N1185D ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish and Portuguese languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-es-ro_resource-17v2
@@ -1840,8 +1822,6 @@ test:Apertium-es-ro_resource-17v2
               "LMF Apertium Es-Ro" ;
       ms:sizeInfo test:size_N16832 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish Romanian languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-es_resource-20v2
@@ -1875,8 +1855,6 @@ test:Apertium-es_resource-20v2
       ms:resourceShortName
               "LMF Apertium Es" ;
       ms:sizeInfo test:size_N1126E ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium Spanish dictionary. Monolingual dictionaries for Spanish, Catalan, Gallego and Euskera have been generated from the Apertium expanded lexicons of the es-ca (for both Spanish and Catalan) es-gl (for Galician) and eu-es (for Basque). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-eu-es_resource-2v2
@@ -1912,8 +1890,6 @@ test:Apertium-eu-es_resource-2v2
               "LMF Apertium Eu-Es" ;
       ms:sizeInfo test:size_N16D64 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Basque and Spanish languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-eu_resource-1v2
@@ -1949,8 +1925,6 @@ test:Apertium-eu_resource-1v2
               "LMF Apertium Eu" ;
       ms:sizeInfo test:size_N140D0 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Apertium 2.0 Official documentation: http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf (Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010).)" ;
       dc:description "This is the LMF version of the Basque Apertium dictionary. Monolingual dictionaries for Spanish, Catalan, Gallego and Euskera have been generated from the Apertium expanded lexicons of the es-ca (for both Spanish andCatalan) es-gl (for Galician) and eu-es (for Basque). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-fr-ca_resource-6v2
@@ -1985,8 +1959,6 @@ test:Apertium-fr-ca_resource-6v2
               "LMF Apertium Fr-Ca" ;
       ms:sizeInfo test:size_N1080B ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for French and Catalan languags. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-fr-es_resource-7v2
@@ -2021,8 +1993,6 @@ test:Apertium-fr-es_resource-7v2
               "LMF Apertium Fr-Es" ;
       ms:sizeInfo test:size_N1031E ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for French and Spanish languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-gl_resource-19v2
@@ -2058,8 +2028,6 @@ test:Apertium-gl_resource-19v2
               "LMF Apertium Gl" ;
       ms:sizeInfo test:size_N190E8 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Galician Apertium dictionary. Monolingual dictionaries for Spanish, Catalan, Galician and Euskera have been generated from the Apertium expanded lexicons of the es-ca (for both Spanish and Catalan) es-gl (for Galician) and eu-es (for Basque). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-it-es_resource-NEWv2
@@ -2095,8 +2063,6 @@ test:Apertium-it-es_resource-NEWv2
               "LMF Apertium It-Es" ;
       ms:sizeInfo test:size_N12EBA ;
       ms:url  "http://hdl.handle.net/10230/17112" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Italian and Spanish languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Spanish). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-oc-ca_resource-9v2
@@ -2131,8 +2097,6 @@ test:Apertium-oc-ca_resource-9v2
               "LMF Apertium Oc-Ca" ;
       ms:sizeInfo test:size_N133B6 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Occitan and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-oc-es_resource-10v2
@@ -2168,8 +2132,6 @@ test:Apertium-oc-es_resource-10v2
               "LMF Apertium Oc-Es" ;
       ms:sizeInfo test:size_N1160A ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" , "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Occitan and Spanish languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-pt-ca_resource-11v2
@@ -2204,8 +2166,6 @@ test:Apertium-pt-ca_resource-11v2
               "LMF Apertium Pt-Ca" ;
       ms:sizeInfo test:size_N1831E ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual dictionary for Portugues and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Apertium-pt-gl_resource-12v2
@@ -2241,8 +2201,6 @@ test:Apertium-pt-gl_resource-12v2
               "LMF Apertium Pt-Gl" ;
       ms:sizeInfo test:size_N14231 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium bilingual ditionary for Portugues and Galician languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:Freeling-Ast_resource-25v2
@@ -2277,8 +2235,6 @@ test:Freeling-Ast_resource-25v2
               "Asturian LMF Freeling Lexicon" ;
       ms:sizeInfo test:size_N121F4 ;
       ms:url  "http://hdl.handle.net/10230/17099" ;
-      <http://plim.comdocumentedBy>
-              "Freeling User Manual at http://nlp.lsi.upc.edu/freeling/doc/userman/userman.pdf" ;
       dc:description "This is the LMF version of the Asturian Freeling lexicon. FreeLing is a developer-oriented library providing language analysis services. FreeLing is designed to be used as an external library from any application requiring this kind of services. Nevertheless, a simple main program is also provided as a basic interface to the library, which enables the user to analyze text files from the command line." .
 
 test:Freeling-Catalan_resource-26v2
@@ -2314,8 +2270,6 @@ test:Freeling-Catalan_resource-26v2
               "Catalan LMF Freeling Lexicon" ;
       ms:sizeInfo test:size_N13CAD ;
       ms:url  "http://nlp.lsi.upc.edu/freeling/index.php" ;
-      <http://plim.comdocumentedBy>
-              "Freeling User Manual at http://nlp.lsi.upc.edu/freeling/doc/userman/userman.pdf" ;
       dc:description "This is the LMF version of the Catalan Freeling lexicon. FreeLing is a developer-oriented library providing language analysis services. FreeLing is designed to be used as an external library from any application requiring this kind of services. Nevertheless, a simple main program is also provided as a basic interface to the library, which enables the user to analyze text files from the command line." .
 
 test:Freeling-Spanish-Sense_resource-30v2
@@ -2351,8 +2305,6 @@ test:Freeling-Spanish-Sense_resource-30v2
               "Spanish LMF Freeling Sense" ;
       ms:sizeInfo test:size_N15D61 , test:size_N15D66 ;
       ms:url  "http://hdl.handle.net/10230/17103" ;
-      <http://plim.comdocumentedBy>
-              "Freeling User Manual at http://nlp.lsi.upc.edu/freeling/doc/userman/userman.pdf" ;
       dc:description "This is the LMF version of the Spanish Freeling Sense. FreeLing is a developer-oriented library providing language analysis services. FreeLing is designed to be used as an external library from any application requiring this kind of services. Nevertheless, a simple main program is also provided as a basic interface to the library, which enables the user to analyze text files from the command line. The original Catalan and Spanish sense dictionaries are extracted from EuroWordNet, and the reduced subsets included in this FreeLing package are distibuted under GNU GPL license." .
 
 test:Freeling_Catalan-Sense_resource-29v2
@@ -2387,8 +2339,6 @@ test:Freeling_Catalan-Sense_resource-29v2
               "Catalan LMF Freeling Sense" ;
       ms:sizeInfo test:size_N147CE , test:size_N147D3 ;
       ms:url  "http://hdl.handle.net/10230/17106" ;
-      <http://plim.comdocumentedBy>
-              "Freeling User Manual at http://nlp.lsi.upc.edu/freeling/doc/userman/userman.pdf" ;
       dc:description "This is the LMF version of the Catalan Freeling Sense. FreeLing is a developer-oriented library providing language analysis services. FreeLing is designed to be used as an external library from any application requiring this kind of services. Nevertheless, a simple main program is also provided as a basic interface to the library, which enables the user to analyze text files from the command line. The original Catalan and Spanish sense dictionaries are extracted from EuroWordNet, and the reduced subsets included in this FreeLing package are distibuted under GNU GPL license." .
 
 test:Freeling_Galician_resource-28v2
@@ -2423,8 +2373,6 @@ test:Freeling_Galician_resource-28v2
               "Galician LMF Freeling Lexicon" ;
       ms:sizeInfo test:size_N14C50 ;
       ms:url  "http://hdl.handle.net/10230/17118" ;
-      <http://plim.comdocumentedBy>
-              "Freeling User Manual at http://nlp.lsi.upc.edu/freeling/doc/userman/userman.pdf" ;
       dc:description "This is the LMF version of the Galician Freeling dictionary. FreeLing is a developer-oriented library providing language analysis services. FreeLing is designed to be used as an external library from any application requiring this kind of services. Nevertheless, a simple main program is also provided as a basic interface to the library, which enables the user to analyze text files from the command line." .
 
 test:Freeling_Spanish_resource-27v2
@@ -2459,8 +2407,6 @@ test:Freeling_Spanish_resource-27v2
               "Spanish LMF Freeling Lexicon" ;
       ms:sizeInfo test:size_N12577 ;
       ms:url  "http://hdl.handle.net/10230/17125" ;
-      <http://plim.comdocumentedBy>
-              "Freeling User Manual at http://nlp.lsi.upc.edu/freeling/doc/userman/userman.pdf" ;
       dc:description "This is the LMF version of the Spanish Freeling lexicon. FreeLing is a developer-oriented library providing language analysis services. FreeLing is designed to be used as an external library from any application requiring this kind of services. Nevertheless, a simple main program is also provided as a basic interface to the library, which enables the user to analyze text files from the command line." .
 
 test:IULA-UPF-term_resource-36v2
@@ -2493,8 +2439,6 @@ test:IULA-UPF-term_resource-36v2
               "LMF UPF Term" ;
       ms:sizeInfo test:size_N17FEF ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "http://www.iula.upf.edu/publi076.htm" ;
       dc:description "This is the LMF version of the LMF UPF Term located at http://www.iula.upf.edu/rec/upfterm/cat/index.htm. The UPF_TERM terminological data bank was created with the purpose of establishing an electronic resort for the consultation and diffusion of terminological projects elaborated by students of the Facultat de Traducció i Interpretació, by the IULA and other work and research centres in the Universitat Pompeu Fabra. The UPF_TERM bank, placed in a database server devoted to this end, is free access for students, lecturers and researchers, from the Universitat Pompeu Fabra as well as outside users. UPF_TERM is the name that receives the set of global resorts of this terminology bank, which is divided in several databases. Each database gathers terminological papers with common features; therefore, the questions and answers can be more productive. Each register of each database has the author, the title and the origin of each project." .
 
 test:IULA-corpus92_resource-23v2
@@ -2529,8 +2473,6 @@ test:IULA-corpus92_resource-23v2
       ms:sizeInfo test:size_N13DD3 ;
       ms:tagset "MULTEX/PAROLE" ;
       ms:url  "http://hdl.handle.net/10230/20054" ;
-      <http://plim.comdocumentedBy>
-              "Morel, J.; Torner, S.; Vivaldi, J., de Yzaguirre, L.; Cabré, M.T. (1998). “El corpus de l’IULA: etiquetaris”. Papers de l’IULA, Sèrie Informes n. 18. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra." , "Cabré, M. T.; Bach, C.; Vivaldi, J. (2006). 10 anys del Corpus de l'IULA. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra" , "Vivaldi Palatresi, Jorge (2009). Corpus and exploitation tool: IULACT and bwanaNet in Cantos Gómez, Pascual; Sánchez Pérez, Aquilino (ed.) A survey on corpus-based research = Panorama de investigaciones basadas en corpus [Proceedings ofthe I Congreso Internacional de Lingüística de Corpus (CICL-09), 7-9 May 2009]. Murcia: Asociación Española de Lingüística del Corpus. Pp. 224-239." , "Cabré, M. Teresa; Bach, Carme (2004). El corpus tècnic del IULA: corpus textual especializado plurilingüe in Panace@ - Boletín de Medicina y Traducción 5(16). [s.l]: MedTrad. Pp. 173-176." ;
       dc:description "The corpus consists of a number of texts corresponding to Access to University examinations held on June 1992 in several Spanish universities. It contains about 350,000 words in 3 documents." .
 
 test:IULA-genomeVocabulary_resource-31v2
@@ -2564,8 +2506,6 @@ test:IULA-genomeVocabulary_resource-31v2
               "Basic Vocabulary of Human Genome" ;
       ms:sizeInfo test:size_N1793F ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "http://www.iula.upf.edu/publi076.htm" ;
       dc:description "This is the LMF version of the Basic Vocabulary of Human Genome from the UPF-IULA located at http://www.iula.upf.edu/rec/vbgenoma/esp/index.html The project Vocabulary of the Human Genome (Biotechnology 2), approved in the 2003 plenary meeting of REALITER, incorporates the basic terminology most used in texts about genomics. The vocabulary presents selected entries in English and their equivalents in peninsular and Latin American Spanish, French, Italian, Galician, Portuguese and Catalan. A long with the information on equivalents, the users can find grammatical information and synonyms documented as variants in each of the languages." .
 
 test:IULA-genomicsCorpus-cat_resource-32v2
@@ -2600,8 +2540,6 @@ test:IULA-genomicsCorpus-cat_resource-32v2
       ms:sizeInfo test:size_N13F1A ;
       ms:tagset "MULTEX/PAROLE" ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "Cabré, M. T.; Bach, C.; Vivaldi, J. (2006). 10 anys del Corpus de l'IULA. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra" , "Vivaldi Palatresi, Jorge (2009). Corpus and exploitation tool: IULACT and bwanaNet in Cantos Gómez, Pascual; Sánchez Pérez, Aquilino (ed.) A survey on corpus-based research = Panorama de investigaciones basadas en corpus [Proceedings of the I Congreso Internacional de Lingüística de Corpus (CICL-09), 7-9 May 2009]. Murcia: Asociación Española de Lingüística del Corpus. Pp. 224-239." , "Morel, J.; Torner, S.; Vivaldi, J., de Yzaguirre, L.; Cabré, M.T. (1998). “El corpus de l’IULA: etiquetaris”. Papers de l’IULA, Sèrie Informes n. 18. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra." , "Cabré, M. Teresa; Bach, Carme (2004). El corpus tècnic del IULA: corpus textual especializado plurilingüe in Panace@ - Boletín de Medicina y Traducción 5(16). [s.l]: MedTrad. Pp. 173-176." ;
       dc:description "The corpus consists of a number of specialized texts of Genome domain. This is LSP corpus has been created with articles from specialized publications, PhD theses, etc. It contains about 950 K words in 134 documents." .
 
 test:IULA-genomicsCorpus-es_resource-33v2
@@ -2636,8 +2574,6 @@ test:IULA-genomicsCorpus-es_resource-33v2
       ms:sizeInfo test:size_N15A15 ;
       ms:tagset "MULTEX/PAROLE" ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "Vivaldi Palatresi, Jorge (2009). Corpus and exploitation tool: IULACT and bwanaNet in Cantos Gómez, Pascual; Sánchez Pérez, Aquilino (ed.) A survey on corpus-based research = Panorama de investigaciones basadas en corpus [Proceedings of the I Congreso Internacional de Lingüística de Corpus (CICL-09), 7-9 May 2009]. Murcia: Asociación Española de Lingüística del Corpus. Pp. 224-239." , "Morel, J.; Torner, S.; Vivaldi, J., de Yzaguirre, L.; Cabré, M.T. (1998). “El corpus de l’IULA: etiquetaris”. Papers de l’IULA, Sèrie Informes n. 18. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra." , "Cabré, M. Teresa; Bach, Carme (2004). El corpus tècnic del IULA: corpus textual especializado plurilingüe in Panace@ - Boletín de Medicina y Traducción 5(16). [s.l]: MedTrad. Pp. 173-176." , "Cabré, M. T.; Bach, C.; Vivaldi, J. (2006). 10 anys del Corpus de l'IULA. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra" ;
       dc:description "The corpus consists of a number of specialized texts of Genome domain. This is LSP corpus has been created with articles from specialized publications, PhD theses, etc. It contains about 1,650 K words in 276 documents." .
 
 test:IULA-neologisms-ca_resource-21v2
@@ -2670,8 +2606,6 @@ test:IULA-neologisms-ca_resource-21v2
               "Bank of Catalan Neologisms" ;
       ms:sizeInfo test:size_N17395 ;
       ms:url  "http://www.iula.upf.edu/" ;
-      <http://plim.comdocumentedBy>
-              "http://www.iula.upf.edu/obneo/obpresca.htm" ;
       dc:description "This is the LMF version of the Spanish Bank of Neologisms at the Observatori de Neologia (UPF). The Observatori de Neologia (OBNEO), under the direction by Dr. M. Teresa Cabré, is a public-funded consolidated group within the Institut Universitari de Lingüística Aplicada at Universitat Pompeu Fabra. This project analyzes the phenomenon of the appearance of new words or neologisms in the usage, both for Catalan and Spanish. Since 1996 has been recognized as a consolidated research group of Universitat Pompeu Fabra." .
 
 test:IULA-neologisms-es_resource-22v2
@@ -2704,8 +2638,6 @@ test:IULA-neologisms-es_resource-22v2
               "Bank of Spanish Neologisms" ;
       ms:sizeInfo test:size_N1577D ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "http://www.iula.upf.edu/obneo/obpresca.htm" ;
       dc:description "This is the LMF version of the Spanish Bank of Neologisms at the Observatori de Neologia (UPF). The Observatori de Neologia (OBNEO), under the direction by Dr. M. Teresa Cabré, is a public-funded consolidated group within the Institut Universitari de Lingüística Aplicada at Universitat Pompeu Fabra. This project analyzes the phenomenon of the appearance of new words or neologisms in the usage, both for Catalan and Spanish. Since 1996 has been recognized as a consolidated research group of Universitat Pompeu Fabra." .
 
 test:IULA-vocabEcon_resource-24v2
@@ -2739,8 +2671,6 @@ test:IULA-vocabEcon_resource-24v2
               "Multilingual Vocabulary of Economics" ;
       ms:sizeInfo test:size_N17C7B ;
       ms:url  "http://www.iula.upf.edu/" ;
-      <http://plim.comdocumentedBy>
-              "http://www.iula.upf.edu/rec/ricoterm/3/index_eng.htm" ;
       dc:description "This is the LMF version of the Multilingual Vocabulary of Economics Resource developed within the frame of the research project RICOTERM2. Financed by the Ministry of Science and Technology, within the Programa Nacional de Promoción General del Conocimiento (2004-2007)." .
 
 test:PAN_metadata_ENV_Glossary_FR-EN
@@ -2769,8 +2699,6 @@ test:PAN_metadata_ENV_Glossary_FR-EN
               "ENV Glossary FR-EN" ;
       ms:sizeInfo test:size_N195B2 ;
       ms:url  "http://hdl.handle.net/10230/19969" ;
-      <http://plim.comdocumentedBy>
-              "Thurmair; Gr., Aleksić, V., 2012: Creating Term and Lexicon Entries From Phrase Tables. Proc. EAMT Trento" ;
       dc:description "This glossary contains terminology in French-to-English, with a focus on environmental terms, resulting from PANACEA research. It contains about 3846 entries, both single words and multiwords, with part-of-speech information, manually validated." .
 
 test:PAN_metadata_ENV_MWE_SCF_merged_IT
@@ -2866,8 +2794,6 @@ test:PAN_metadata_ENV_parole_merged_IT
               "PANACEA Environment and Parole merged IT Lexicon" ;
       ms:sizeInfo test:size_N14E84 , test:size_N14E8E , test:size_N14E89 ;
       ms:url  "http://hdl.handle.net/10230/20183" ;
-      <http://plim.comdocumentedBy>
-              "Del Gratta Riccardo, Francesca Frontini, Monica Monachini, Valeria Quochi, Francesco Rubino, Matteo Abrate and Angelica Lo Duca (2012) L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies. Proceedings of the LR Merging Worksop. LREC2012. Istanbul." ;
       dc:description "The Italian PAROLE_env_merged.lmf.xml is SCF lexicon obtained by merging two automatically extracted lexicons: a domain lexicon (environment) PANACEA_SCF_IT_environment.lmf.xml and a the SCFs Italian lexicon PAROLE_lmf_subcat_ita.lmf.xml, generated from PAROLE SIMPLE Lexicon. The lexicon was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_ENV_rep_merged_IT
@@ -2921,8 +2847,6 @@ test:PAN_metadata_Glossary_DE-EN_con
               "Glossary DE-EN_con" ;
       ms:sizeInfo test:size_N11DE7 ;
       ms:url  "http://hdl.handle.net/10230/19966" ;
-      <http://plim.comdocumentedBy>
-              "PANACEA Report D5.6: Transfer Selection Support." ;
       dc:description "This glossary contains German entries with multiple English transfers, 22.000 transfers in total. It is lemma-based, annotated with part-of-speech information and with source language conceptual contexts which indicate which translation to select in a given context, to support transfer selection for multiple translation possibilities. It is the result of PANACEA research." .
 
 test:PAN_metadata_Glossary_DE-EN_prob
@@ -2951,8 +2875,6 @@ test:PAN_metadata_Glossary_DE-EN_prob
               "Glossary DE-EN_prob" ;
       ms:sizeInfo test:size_N180EA ;
       ms:url  "http://hdl.handle.net/10230/19960" ;
-      <http://plim.comdocumentedBy>
-              "PANACEA Report D5.6: Transfer Selection Support." ;
       dc:description "This glossary contains German entries with multiple English transfers, 22.000 transfers in total. It is lemma-based, annotated with part-of-speech information and with several probabilities, to support transfer selection for multiple translation possibilities. It is the result of PANACEA research." .
 
 test:PAN_metadata_LAB_Glossary_FR-EN
@@ -2981,8 +2903,6 @@ test:PAN_metadata_LAB_Glossary_FR-EN
               "LAB Glossary FR-EN" ;
       ms:sizeInfo test:size_N149AF ;
       ms:url  "http://hdl.handle.net/10230/19988" ;
-      <http://plim.comdocumentedBy>
-              "Thurmair; Gr., Aleksić, V., 2012: Creating Term and Lexicon Entries From Phrase Tables. Proc. EAMT Trento" ;
       dc:description "This glossary contains terminology in French-to-English, with a focus on labour legislation terms, resulting from PANACEA research. It contains about 2441 entries, both single words and multiwords, with part-of-speech information, manually validated." .
 
 test:PAN_metadata_LAB_MWE_SCF_merged_IT
@@ -3078,8 +2998,6 @@ test:PAN_metadata_LAB_parole_merged_IT
               "PANACEA Labour and Parole merged IT Lexicon" ;
       ms:sizeInfo test:size_N191CC , test:size_N191D1 , test:size_N191C7 ;
       ms:url  "http://hdl.handle.net/10230/20172" ;
-      <http://plim.comdocumentedBy>
-              "Del Gratta Riccardo, Francesca Frontini, Monica Monachini, Valeria Quochi, Francesco Rubino, Matteo Abrate and Angelica Lo Duca (2012) L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies. Proceedings of the LR Merging Worksop. LREC2012. Istanbul." ;
       dc:description "The Italian PAROLE_lab_merged.lmf.xml is SCF lexicon obtained by merging two automatically extracted lexicons: a domain lexicon (labour) PANACEA_SCF_IT_labour.lmf.xml and a the SCFs Italian lexicon PAROLE_lmf_subcat_ita.lmf.xml, generated from PAROLE SIMPLE Lexicon. The lexicon was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_LAB_rep_merged_IT
@@ -3131,8 +3049,6 @@ test:PAN_metadata_MW_ENV_IT
               "PANACEA Environment MW Italian Lexicon" ;
       ms:sizeInfo test:size_N16283 , test:size_N1627E ;
       ms:url  "http://hdl.handle.net/10230/20182" ;
-      <http://plim.comdocumentedBy>
-              "Quochi, Valeria, Frontini, Francesca and Rubino Francesco (2012). A MWE Acquisition and Lexicon Builder Web Service. Proceedings of the COLING 2012. Mumbay, India." , "Frontini F., Quochi V., Rubino F. (2012) “Automatic Creation of quality Multi-word Lexica from noisy text data” Proceedings of the Sixth Workshop on Analytics for Noisy Unstructured Text Data. COLING 2012. Mumbay, India." ;
       dc:description "The Environment MW Italian Lexicon is a lexicon of noun-noun multiword expressions automatically extracted from a 36Mio word web crawled corpus in the environmental domain. The lexicon was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_MW_LAB_IT
@@ -3158,10 +3074,7 @@ test:PAN_metadata_MW_LAB_IT
       ms:resourceShortName
               "PANACEA Labour MW Italian Lexicon" ;
       ms:sizeInfo test:size_N16E46 , test:size_N16E4B ;
-      ms:url  "http://hdl.handle.net/10230/20177" ;
-      <http://plim.comdocumentedBy>
-              "Quochi, Valeria, Frontini, Francesca and Rubino Francesco (2012). A MWE Acquisition and Lexicon Builder Web Service. Proceedings of the COLING 2012. Mumbay, India." , "Frontini F., Quochi V., Rubino F. (2012) “Automatic Creation of quality Multi-word Lexica from noisy text data” Proceedings of the Sixth Workshop on Analytics for Noisy Unstructured Text Data. COLING 2012. Mumbay, India." ;
-      dc:description "The Labour MW Italian Lexicon is a lexicon of noun-noun multiword expressions automatically extracted from a 70Mio word web crawled corpus in the labour law domain. The lexicon was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
+      ms:url  "http://hdl.handle.net/10230/20177" .
 
 test:PAN_metadata_TRL-ACQ_lexical_semantic_classes_ENV_EN
       rdf:type ms:LexicalConceptualResource , owl:NamedIndividual ;
@@ -3462,8 +3375,6 @@ test:PAN_metadata_TRL-lexical_semantic_classes_GS_EN
               "GS English lexical semantic classification" ;
       ms:sizeInfo test:size_N13698 , test:size_N136A7 , test:size_N1368E , test:size_N1369D , test:size_N136AC , test:size_N13693 , test:size_N136B1 , test:size_N136A2 ;
       ms:url  "http://hdl.handle.net/10230/19971" ;
-      <http://plim.comdocumentedBy>
-              "R. Navigli, K. Litkowski, O. Hargraves. SemEval-2007 Task 07: Coarse-Grained English All-Words Task. Proc. of Semeval-2007 Workshop (SEMEVAL), in the 45th Annual Meeting of the Association for Computational Linguistics (ACL 2007), Prague, Czech Republic, June 23-24th, 2007, pp. 30-35" , "R. Navigli. Meaningful Clustering of Senses Helps Boost Word Sense Disambiguation Performance. Proc. of the 44th Annual Meeting of the Association for Computational Linguistics joint with the 21st International Conference on Computational Linguistics (COLING-ACL 2006), Sydney, Australia, July 17-21st, 2006, pp. 105-112" ;
       dc:description "We present a set of English gold-standards for different noun classes created in PANACEA to train and test automatic classifiers. To create these gold-standards we used we the data from the SemEval 2007 workshop Task 07: Coarse Grained English All-Words (Navigli et al., 2007). The words used in this task were first automatically tagged with an automatic clustering method (Navigli, 2006) using senses based on the WordNet sense inventory and later manually validated by expert lexicographers. For our experiments, we extracted all of the words from this inventory that contained as their first sense a sense that corresponded to the lexical semantic classes, i.e. “people” in the case of the class HUMAN. These gold-standards were created in the context of PANACEA http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064." .
 
 test:PAN_metadata_TRL-lexical_semantic_classes_GS_ES
@@ -3490,8 +3401,6 @@ test:PAN_metadata_TRL-lexical_semantic_classes_GS_ES
               "GS Spanish lexical semantic class" ;
       ms:sizeInfo test:size_N166B4 , test:size_N166CD , test:size_N166A5 , test:size_N166B9 , test:size_N166AF , test:size_N166A0 , test:size_N166C3 , test:size_N166BE , test:size_N166C8 , test:size_N166AA ;
       ms:url  "http://hdl.handle.net/10230/19985" ;
-      <http://plim.comdocumentedBy>
-              "J. A. Alonso and A. Bocsák. 2005. Machine Translation for Catalan-Spanish. The Real Case for Productive MT; In Proceedings of the tenth Conference on European Association of Machine Translation. (EAMT 2005), Budapest, Hungary." , "N. Bel, M Coll, and G Resnik. 2010. Automatic Detection of Non-deverbal Event Nouns for Quick Lexicon Production. In Chu-Ren Huang and Dan Jurafsky (ed.), Proceedings of the 23rd International Conference on Computational Linguistics (COLING-2010). Beijing, China. Pàg. 46—52. ISBN 978-7-900-268-00" ;
       dc:description "We present a set of Spanish gold-standards for different noun classes created in PANACEA to train and test automatic classifiers. To create these gold-standards we used the Spanish working lexicon of the Incyta Machine Translation system (Alonso and Bocsák, 2005) to create the abstract, human, location, process, artifact, matter, semiotic and social gold-standard lists. The gold standard for event nouns (non-deverbal eventive nouns) was developed for the experiments of Bel et al. (2010). These gold-standards were created in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064." .
 
 test:PAN_metadata_VSubcat_ACQ_ENV_EN
@@ -3543,8 +3452,6 @@ test:PAN_metadata_VSubcat_ACQ_ENV_IT
               "PANACEA SCF IT ENV" ;
       ms:sizeInfo test:size_N10D54 , test:size_N10D4F , test:size_N10D59 ;
       ms:url  "http://hdl.handle.net/10230/19992" ;
-      <http://plim.comdocumentedBy>
-              "Caselli T., Rubino F., Frontini F., Russo I., and Quochi V. 2012. “Customizable SCF Acquisition in Italian” In Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12), Istanbul, Turkey, May 2012. European Language Resources Association (ELRA)." ;
       dc:description "The PANACEA_SCF_IT_ENV is an automatically created lexicon of verbal subcategorisation frames for 26 verb lemmas. The language is Italian and the domain is Environment. The lexicon was acquired from a monolingual corpus automatically crawled, normalised, cleaned, and NLP processed (Corpus name: PANACEA Annotated Italian Environment Corpus Version 2, PANACEA_MCv2_IT_ENV)." .
 
 test:PAN_metadata_VSubcat_ACQ_LAB_EN
@@ -3596,8 +3503,6 @@ test:PAN_metadata_VSubcat_ACQ_LAB_IT
               "PANACEA SCF IT LAB" ;
       ms:sizeInfo test:size_N10F2E , test:size_N10F33 , test:size_N10F38 ;
       ms:url  "http://hdl.handle.net/10230/19967" ;
-      <http://plim.comdocumentedBy>
-              "Caselli T., Rubino F., Frontini F., Russo I., and Quochi V. 2012. “Customizable SCF Acquisition in Italian” In Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12), Istanbul, Turkey, May 2012. European Language Resources Association (ELRA)." ;
       dc:description "The PANACEA_SCF_IT_LAB is an automatically created lexicon of verbal subcategorisation frames for 27 verb lemmas. The language is Italian and the domain is Labour Legislation. The lexicon was acquired from a monolingual corpus automatically crawled, normalised, cleaned, and NLP processed (Corpus name: PANACEA Annotated Italian Labour Legislation Corpus Version 2, PANACEA_MCv2_IT_LAB)." .
 
 test:PAN_metadata_VSubcat_ACQ_lexical_semantic_class_ENV_EN
@@ -3674,8 +3579,6 @@ test:PAN_metadata_VSubcat_ACQ_repubblica_lang_dep_IT
               "PANACEA SCF Repubblica Lexicon ITA (lde)" ;
       ms:sizeInfo test:size_N16197 , test:size_N1619C ;
       ms:url  "http://hdl.handle.net/10230/20179" ;
-      <http://plim.comdocumentedBy>
-              "Caselli T., Rubino F., Frontini F., Russo I., and Quochi V. 2012. “Customizable SCF Acquisition in Italian” In Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12), Istanbul, Turkey, May 2012. European Language Resources Association (ELRA)." ;
       dc:description "The OpenDomain SCF Italian Lexicon is a lexicon of verb subcategorisation frames automatically extracted from a 300Mio words newspaper corpus using a language dependent SCF acquisition software. The lexicon was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_VSubcat_ACQ_repubblica_lang_indep_IT
@@ -3702,8 +3605,6 @@ test:PAN_metadata_VSubcat_ACQ_repubblica_lang_indep_IT
               "PANACEA SCF Repubblica Lexicon ITA (linde)" ;
       ms:sizeInfo test:size_N12D5B , test:size_N12D51 , test:size_N12D56 ;
       ms:url  "http://hdl.handle.net/10230/20180" ;
-      <http://plim.comdocumentedBy>
-              "Caselli T., Rubino F., Frontini F., Russo I., and Quochi V. 2012. “Customizable SCF Acquisition in Italian” In Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12), Istanbul, Turkey, May 2012. European Language Resources Association (ELRA)." ;
       dc:description "TThis is a lexicon of verb subcategorisation frames automatically extracted from a 300Mio words newspaper corpus using a language independent SCF acquisition software. The lexicon was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_VSubcat_GS_ENV_EN
@@ -3755,8 +3656,6 @@ test:PAN_metadata_VSubcat_GS_ENV_IT
               "Italian V-SUBCAT GS lexicon ENV domain" ;
       ms:sizeInfo test:size_N13A2E , test:size_N13A29 , test:size_N13A33 ;
       ms:url  "http://hdl.handle.net/10230/20169" ;
-      <http://plim.comdocumentedBy>
-              "Caselli T., Rubino F., Frontini F., Russo I., and Quochi V. 2012. “Customizable SCF Acquisition in Italian” In Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12), Istanbul, Turkey, May 2012. European Language Resources Association (ELRA)." ;
       dc:description "The PANACEA_SCF_Gold_ENV_IT is a manually created gold-standard lexicon of verbal subcategorisation frames for 26 verb lemmas. The language is Italian and the domain is Environment. The lexicon was created through manual annotation of 200 random contexts drawn from the MC_v1_ENV_IT corpus. The gold-standard was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_VSubcat_GS_IT
@@ -3783,8 +3682,6 @@ test:PAN_metadata_VSubcat_GS_IT
               "PANACEA SCF Lexicon ITA Gold Standard" ;
       ms:sizeInfo test:size_N187FD , test:size_N18807 , test:size_N1880C , test:size_N18802 ;
       ms:url  "http://hdl.handle.net/10230/19980" ;
-      <http://plim.comdocumentedBy>
-              "Caselli T., Rubino F., Frontini F., Russo I., and Quochi V. 2012. “Customizable SCF Acquisition in Italian” In Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12), Istanbul, Turkey, May 2012. European Language Resources Association (ELRA)." ;
       dc:description "The PANACEA_SCF_Lexicon_ITA_Gold is an manually created gold-standard lexicon of verbal subcategorisation frames for 30 verb lemmas. The language is Italian and the domain is general. The lexicon was manually created using three already existing lexicons, two manually curated (PAROLE-IT and VERBAT), one automacally created (LexIT). The gold-standard was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_VSubcat_GS_LAB_EN
@@ -3836,8 +3733,6 @@ test:PAN_metadata_VSubcat_GS_LAB_IT
               "Italian V-SUBCAT GS lexicon LAB domain" ;
       ms:sizeInfo test:size_N10E40 , test:size_N10E3B , test:size_N10E4A , test:size_N10E45 ;
       ms:url  "http://hdl.handle.net/10230/20165" ;
-      <http://plim.comdocumentedBy>
-              "Caselli T., Rubino F., Frontini F., Russo I., and Quochi V. 2012. “Customizable SCF Acquisition in Italian” In Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12), Istanbul, Turkey, May 2012. European Language Resources Association (ELRA)." ;
       dc:description "TThe PANACEA_SCF_Gold_LAB_IT is a manually created gold-standard lexicon of verbal subcategorisation frames for 27 verb lemmas. The language is Italian and the domain is Labour Legislation. The lexicon was created through manual annotation of 200 random contexts drawn from the MCv1_LAB_IT corpus. The gold-standard was produced at CNR-ILC, Pisa, Italy as an outcome of the PANACEA EU-FP7 Funded Project under Grant Agreement 248064 (http://www.panacea-lr.eu)." .
 
 test:PAN_metadata_VSubcat_Parole_GS_IT
@@ -3864,8 +3759,6 @@ test:PAN_metadata_VSubcat_Parole_GS_IT
               "PANACEA Parole SCF Lexicon ITA Gold Standard" ;
       ms:sizeInfo test:size_N10407 , test:size_N10402 , test:size_N103FD ;
       ms:url  "http://hdl.handle.net/10230/20168" ;
-      <http://plim.comdocumentedBy>
-              "Ruimy N., Corazzari O., Gola E., Spanu A., Calzolari N., Zampolli A. 2003. The PAROLE model and the Italian Syntactic lexicon. In A. Zampolli, N. Calzolari, L. Cignoni, (eds.), Computational Linguistics in Pisa - Linguistica Computazionale a Pisa. Linguistica Computazionale, Special Issue, XVIII-XIX, (2003). Pisa-Roma, IEPI. Tomo II, 793-820." ;
       dc:description "The PAROLE-SCF-31-IT is a lexicon of verb subcategorisation frames for 31 verb lemmas extracted from the PAROLE Italian Lexicon (Ruimy et a. 2003)." .
 
 test:PAN_metadata_annotated_dep_env_EL
@@ -3936,8 +3829,6 @@ test:PAN_metadata_annotated_dep_env_IT
               "PANACEA Annotated Dependency ENV IT" ;
       ms:sizeInfo test:size_N1521A , test:size_N15215 ;
       ms:url  "http://hdl.handle.net/10230/19984" ;
-      <http://plim.comdocumentedBy>
-              "Monica Monachini. 1996. Elm-it: Eagles specifications for italian morphosyntax lexicon specification and classification guidelines. Technical report, Paris, France, France." , "Attardi, G., Chanev, M. and Dell'Orletta, F. 2007. “Tree Revision Learning for Dependency Parsing” In Proc. of the Human Language Technology Conference, Poznan, Poland." , "Lluís Padró and Miquel Collado and Samuel Reese and Marina Lloberes and Irene Castellón. FreeLing 2.1: Five Years of Open-Source Language Processing Tools Proceedings of 7th Language Resources and Evaluation Conference (LREC 2010), ELRA La Valletta, Malta. May, 2010. [http://nlp.lsi.upc.edu/freeling]" ;
       dc:description "PANACEA Annotated Italian Environment Corpus Version 2 consists of Italian texts in the Environment (ENV) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the ENV domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities." .
 
 test:PAN_metadata_annotated_dep_lab_EL
@@ -4008,8 +3899,6 @@ test:PAN_metadata_annotated_dep_lab_IT
               "PANACEA Annotated Dependency LAB IT" ;
       ms:sizeInfo test:size_N148AE , test:size_N148B3 ;
       ms:url  "http://hdl.handle.net/10230/19978" ;
-      <http://plim.comdocumentedBy>
-              "Attardi, G., Chanev, M. and Dell'Orletta, F. 2007. “Tree Revision Learning for Dependency Parsing” In Proc. of the Human Language Technology Conference, Poznan, Poland." , "Lluís Padró and Miquel Collado and Samuel Reese and Marina Lloberes and Irene Castellón. FreeLing 2.1: Five Years of Open-Source Language Processing Tools Proceedings of 7th Language Resources and Evaluation Conference (LREC 2010), ELRA La Valletta, Malta. May, 2010. [http://nlp.lsi.upc.edu/freeling]" , "Monica Monachini. 1996. Elm-it: Eagles specifications for italian morphosyntax lexicon specification and classification guidelines. Technical report, Paris, France, France." ;
       dc:description "PANACEA Annotated Italian Labour Legislation Corpus Version 2 consists of Italian texts in the Labour Legislation (LAB) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the LAB domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities." .
 
 test:PAN_metadata_n_gram_env_EN
@@ -4157,8 +4046,6 @@ test:ParoleLexicon-es_resource-34v2
       ms:sizeInfo test:size_N135BD ;
       ms:theoreticModel "Parole" , "Genelex" ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "http://www.ub.edu/gilcub/lascosas/pubYreps/index_par.html" , "Villegas, M., Brosa, I. and Bel, N. (1998). 'El léxico PAROLE del español'. Actas del XIV Congreso de la SEPLN, Septiembre 1998" ;
       dc:description "This is the LMF version of the Spanish Parole lexicon. The original PAROLE lexica (20,000 entries per language) were built conform to a model based on EAGLES guidelines and GENELEX results, underlying a common lexical tool adapted from the EUREKA-GENELEX project. This software tool was extended to support the PAROLE model and conversion and management processes of the resulting resources. The languages involved in PAROLE lexica are: Catalan, Danish, Dutch, English, Finnish, French, German, Greek, Italian, Portugese, Spanish and Swedish. The current lexicon contains 64594 lexical entries." .
 
 test:ParoleSimple-es_resource-35v2
@@ -4197,8 +4084,6 @@ test:ParoleSimple-es_resource-35v2
       ms:sizeInfo test:size_N16BD1 , test:size_N16BD6 ;
       ms:theoreticModel "Genelex" , "Parole" ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "http://www.ub.edu/gilcub/SIMPLE/reports/simple/SIMPLE_FGuidelines.rtf.zip" , "http://www.ub.edu/gilcub/lascosas/pubYreps/index_par.html" , "Villegas, M., Brosa, I. and Bel, N. (1998). 'El léxico PAROLE del español'. Actas del XIV Congreso de la SEPLN, Septiembre 1998." ;
       dc:description "This is the LMF version of the Spanish Parole-Simple lexicon. The original PAROLE lexica (20,000 entries per language) were built conform to a model based on EAGLES guidelines and GENELEX results, underlying a common lexical tool adapted from the EUREKA-GENELEX project. This software tool was extended to support the PAROLE model and conversion and management processes of the resulting resources. The languages involved in PAROLE lexica are: Catalan, Danish, Dutch, English, Finnish, French, German, Greek, Italian, Portugese, Spanish and Swedish. The goal of SIMPLE project was to add semantic information, selected for its relevance for LE applications, to the set of harmonised multifunctional lexica built for 12 European languages by the PAROLE consortium. PAROLE +SIMPLE lexicons contain morphological, syntactic and semantic information, organised according to a common model and to common linguistic specifications." .
 
 test:doc_0
@@ -5010,8 +4895,6 @@ test:metadata-AnCora-Cat
       ms:sizeInfo test:size_N16372 , test:size_N16377 ;
       ms:tagset "other" ;
       ms:url  "http://clic.ub.edu/corpus/" ;
-      <http://plim.comdocumentedBy>
-              "Recasens, Marta, M. Antònia Martí (2010) ‘AnCora-CO: Coreferentially annotated corpora for Spanish and Catalan’. Language Resources and Evaluation, Springer Science." , "Taulé, M., M.A. Martí, M. Recasens (2008) 'Ancora: Multilevel Annotated Corpora for Catalan and Spanish', Proceedings of 6th International Conference on Language Resources and Evaluation. Marrakesh (Morocco)." , "Web site of the AnCora project: http://clic.ub.edu/corpus/" ;
       dc:description "The AnCora-CA is a Catalan corpus annotated at different levels: Lemma and Part of Speech; Syntactic constituents and functions; Argument structure and thematic roles; Semantic classes of the verb; Denotative type of deverbal nouns; Nouns related to WordNet synsets; Named Entities and Coreference relations; AnCora corpus is mainly based on journalist texts. Detailed information can be found at the corpus web site: http://clic.ub.edu/corpus/en." .
 
 test:metadata-AnCora-DEP-Cat-2
@@ -5042,8 +4925,6 @@ test:metadata-AnCora-DEP-Cat-2
       ms:sizeInfo test:size_N177E4 ;
       ms:tagset "other" ;
       ms:url  "http://clic.ub.edu/corpus/" ;
-      <http://plim.comdocumentedBy>
-              "Taulé, M., M.A. Martí, M. Recasens (2008) 'Ancora: Multilevel Annotated Corpora for Catalan and Spanish', Proceedings of 6th International Conference on Language Resources and Evaluation. Marrakesh (Morocco)." , "Recasens, Marta, M. Antònia Martí (2010) ‘AnCora-CO: Coreferentially annotated corpora for Spanish and Catalan’. Language Resources and Evaluation, Springer Science." , "Web site of the AnCora project: http://clic.ub.edu/corpus/" , "Civit, M., M.A. Martí and N. Bufí (2006) ‘Cat3LB and Cast3LB: from Constituents to dependencies’, Springer Verlag, Advances in Natural Language Processing (LNAI, 4139), pp. 141-153. Berlin, ISSN: 0302-9743." ;
       dc:description "AnCora-DEP-CA is the AnCora-Es multilevel annotated corpus of Catalan in dependency-based representation, consisting of 500,000 words approximately. AnCora-DEP-Es can be used as source of information for inducing grammars, developing, improving and/or evaluating syntactic parsers and algorithms for semantic role labelling, dependency-based. This corpus is used in the CoNLL Shared Task 2009: Syntactic and Semantic Dependencies in Multiple Languages, where the core of the task is to predict syntactic and semantic dependencies and their labelling." .
 
 test:metadata-AnCora-DEP-Es
@@ -5074,8 +4955,6 @@ test:metadata-AnCora-DEP-Es
       ms:sizeInfo test:size_N1323E ;
       ms:tagset "other" ;
       ms:url  "http://clic.ub.edu/corpus/" ;
-      <http://plim.comdocumentedBy>
-              "Web site of the AnCora project: http://clic.ub.edu/corpus/" , "Taulé, M., M.A. Martí, M. Recasens (2008) 'Ancora: Multilevel Annotated Corpora for Catalan and Spanish', Proceedings of 6th International Conference on Language Resources and Evaluation. Marrakesh (Morocco)." , "Recasens, Marta, M. Antònia Martí (2010) ‘AnCora-CO: Coreferentially annotated corpora for Spanish and Catalan’. Language Resources and Evaluation, Springer Science." , "Civit, M., M.A. Martí and N. Bufí (2006) ‘Cat3LB and Cast3LB: from Constituents to dependencies’, Springer Verlag, Advances in Natural Language Processing (LNAI, 4139), pp. 141-153. Berlin, ISSN: 0302-9743." ;
       dc:description "AnCora-DEP-Es is the AnCora-Es multilevel annotated corpus of Spanish in dependency-based representation, consisting of 500,000 words approximately. AnCora-DEP-Es can be used as source of information for inducing grammars, developing, improving and/or evaluating syntactic parsers and algorithms for semantic role labelling, dependency-based. This corpus is used in the CoNLL Shared Task 2009: Syntactic and Semantic Dependencies in Multiple Languages, where the core of the task is to predict syntactic and semantic dependencies and their labelling." .
 
 test:metadata-AnCora-Es
@@ -5106,25 +4985,7 @@ test:metadata-AnCora-Es
       ms:sizeInfo test:size_N11BD5 , test:size_N11BDA ;
       ms:tagset "other" ;
       ms:url  "http://clic.ub.edu/corpus/" ;
-      <http://plim.comdocumentedBy>
-              "Taulé, M., M.A. Martí, M. Recasens (2008) 'Ancora: Multilevel Annotated Corpora for Catalan and Spanish', Proceedings of 6th International Conference on Language Resources and Evaluation. Marrakesh (Morocco)." , "Web site of the AnCora project: http://clic.ub.edu/corpus/" , "Recasens, Marta, M. Antònia Martí (2010) ‘AnCora-CO: Coreferentially annotated corpora for Spanish and Catalan’. Language Resources and Evaluation, Springer Science." ;
       dc:description "The AnCora-ES is a Spanish corpus annotated at different levels: Lemma and Part of Speech; Syntactic constituents and functions; Argument structure and thematic roles; Semantic classes of the verb; Denotative type of deverbal nouns; Nouns related to WordNet synsets; Named Entities and Coreference relations; AnCora corpus is mainly based on journalist texts. Detailed information can be found at the corpus web site: http://clic.ub.edu/corpus/en" .
-
-test:metadata-IULA-UTFconverter
-      rdf:type owl:NamedIndividual , ms:ToolService ;
-      rdfs:label "IULA Encodig Converter Web Service" ;
-      ms:contactPerson test:person_Jorge_Vivaldi ;
-      ms:fundingProject test:project_METANET4U ;
-      ms:identifier "http://ws04.iula.upf.edu/soaplab2-axis/#format_conversion.iconv_row" ;
-      ms:metaShareId "NOT_DEFINED_FOR_V2" ;
-      ms:resourceCreator test:organization_UPF-IULA ;
-      ms:resourceName "IULA Encodig Converter Web Service" ;
-      ms:resourceShortName
-              "IULA iconv" ;
-      ms:url  "http://ws04.iula.upf.edu/soaplab2-axis/#format_conversion.iconv_row" ;
-      <http://plim.comdocumentedBy>
-              "WSDL file: http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.iconv?wsdl" ;
-      dc:description "This is an encoding converter SOAP web service deployed by the IULA at the Universitat Pompeu Fabra. This webservice converts encoding of given files from one encoding to another. Most IULA SOAP web services are deployed using Soaplab2. Soaplab is a tool that can automatically generate and deploy Web Services on top of existing command-line analysis programs. Soaplab services allow for asynchronous services. However, for testing purposes, the 'runAndWaitFor' operation can be used. This operation starts a job, waits until it is completed and returns the job results. As a general rule, IULA SOAP web services accept input data either as 'direct string' data or as URL. Output results are given both as 'direct string' data and as URL. For large outputs, the 'direct string' option is dissabled." .
 
 test:metadata-WordNetLMF-CA
       rdf:type owl:NamedIndividual , ms:LexicalConceptualResource ;
@@ -5152,8 +5013,6 @@ test:metadata-WordNetLMF-CA
       ms:resourceShortName
               "Catalan WordNet-LMF" ;
       ms:sizeInfo test:size_N165CA ;
-      <http://plim.comdocumentedBy>
-              "Toral A., Monachini M., Soria C., Cuadros M., Rigau G., Bosma W. and Vossen P. Linking a domain thesaurus to WordNet and conversion to WordNet-LMF. Proceedings of Second International Conference on Global Interoperability for Language Resources (ICGL2010). Hong Kong. 2010. http://adimen.si.ehu.es/~rigau/publications/icgl10-tmscrbv.pdf" , "Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central Repository version 3.0: upgrading a very large lexical knowledge base. In Proceedings of the Sixth International Global WordNet Conference (GWC’12). Matsue, Japan. January, 2012. http://adimen.si.ehu.es/~rigau/publications/gwc12-glr.pdf" ;
       dc:description "This is the Catalan Word-Net-LMF lexicon. The Catalan lexicon is part of the Multilingual Central Repository (MCR http://adimen.si.ehu.es/web/MCR) and contains 23399 lexical Entries. The MCR currently integrates in the same EuroWordNet framework wordnets from five different languages: English, Spanish, Catalan, Basque and Catalan. Its format was defined during the KYOTO Project (http://www.kyoto-project.eu/). The lexicon validates against the kyoto_wn.dtd which is also included in this distribution. The kyoto_wn.dtd is LMF compliant." .
 
 test:metadata-WordNetLMG-GL
@@ -5182,8 +5041,6 @@ test:metadata-WordNetLMG-GL
       ms:resourceShortName
               "Galician WordNet-LMF" ;
       ms:sizeInfo test:size_N16AAC ;
-      <http://plim.comdocumentedBy>
-              "Toral A., Monachini M., Soria C., Cuadros M., Rigau G., Bosma W. and Vossen P. Linking a domain thesaurus to WordNet and conversion to WordNet-LMF. Proceedings of Second International Conference on Global Interoperability for Language Resources (ICGL2010). Hong Kong. 2010. http://adimen.si.ehu.es/~rigau/publications/icgl10-tmscrbv.pdf" , "Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central Repository version 3.0: upgrading a very large lexical knowledge base. In Proceedings of the Sixth International Global WordNet Conference (GWC’12). Matsue, Japan. January, 2012. http://adimen.si.ehu.es/~rigau/publications/gwc12-glr.pdf" ;
       dc:description "This is the Galician Word-Net-LMF lexicon. The Galician lexicon is part of the Multilingual Central Repository (MCR http://adimen.si.ehu.es/web/MCR) and contains 23399 lexical Entries. The MCR currently integrates in the same EuroWordNet framework wordnets from five different languages: English, Spanish, Catalan, Basque and Galician. Its format was defined during the KYOTO Project (http://www.kyoto-project.eu/). The lexicon validates against the kyoto_wn.dtd which is also included in this distribution. The kyoto_wn.dtd is LMF compliant." .
 
 test:metadata-WordnetLMF-ES
@@ -5212,8 +5069,6 @@ test:metadata-WordnetLMF-ES
       ms:resourceShortName
               "Spanish WordNet-LMF" ;
       ms:sizeInfo test:size_N13ADF ;
-      <http://plim.comdocumentedBy>
-              "Toral A., Monachini M., Soria C., Cuadros M., Rigau G., Bosma W. and Vossen P. Linking a domain thesaurus to WordNet and conversion to WordNet-LMF. Proceedings of Second International Conference on Global Interoperability for Language Resources (ICGL2010). Hong Kong. 2010. http://adimen.si.ehu.es/~rigau/publications/icgl10-tmscrbv.pdf" , "Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central Repository version 3.0: upgrading a very large lexical knowledge base. In Proceedings of the Sixth International Global WordNet Conference (GWC’12). Matsue, Japan. January, 2012. http://adimen.si.ehu.es/~rigau/publications/gwc12-glr.pdf" ;
       dc:description "This is the Spanish Word-Net-LMF lexicon. The Spanish lexicon is part of the Multilingual Central Repository (MCR http://adimen.si.ehu.es/web/MCR) and contains 37,876 lexical Entries. The MCR currently integrates in the same EuroWordNet framework wordnets from five different languages: English, Spanish, Spanish, Basque and Spanish. Its format was defined during the KYOTO Project (http://www.kyoto-project.eu/). The lexicon validates against the kyoto_wn.dtd which is also included in this distribution. The kyoto_wn.dtd is LMF compliant." .
 
 test:metadata-WordnetLMF-EU
@@ -5242,8 +5097,6 @@ test:metadata-WordnetLMF-EU
       ms:resourceShortName
               "Basque WordNet-LMF" ;
       ms:sizeInfo test:size_N11E93 ;
-      <http://plim.comdocumentedBy>
-              "Gonzalez-Agirre A., Laparra E. and Rigau G. Multilingual Central Repository version 3.0: upgrading a very large lexical knowledge base. In Proceedings of the Sixth International Global WordNet Conference (GWC’12). Matsue, Japan. January, 2012. http://adimen.si.ehu.es/~rigau/publications/gwc12-glr.pdf" , "Toral A., Monachini M., Soria C., Cuadros M., Rigau G., Bosma W. and Vossen P. Linking a domain thesaurus to WordNet and conversion to WordNet-LMF. Proceedings of Second International Conference on Global Interoperability for Language Resources (ICGL2010). Hong Kong. 2010. http://adimen.si.ehu.es/~rigau/publications/icgl10-tmscrbv.pdf" ;
       dc:description "This is the Basque Word-Net-LMF lexicon. The Basque lexicon is part of the Multilingual Central Repository (MCR http://adimen.si.ehu.es/web/MCR) and contains 23399 lexical Entries. The MCR currently integrates in the same EuroWordNet framework wordnets from five different languages: English, Basque, Basque, Basque and Basque. Its format was defined during the KYOTO Project (http://www.kyoto-project.eu/). The lexicon validates against the kyoto_wn.dtd which is also included in this distribution. The kyoto_wn.dtd is LMF compliant." .
 
 test:metadata_ApertiumENv2
@@ -5279,8 +5132,6 @@ test:metadata_ApertiumENv2
               "LMF Apertium En" ;
       ms:sizeInfo test:size_N175DF ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium English dictionary. Monolingual dictionary for English was generated from the Apertium expanded lexicon of the en-es pair system (English/Spanish). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:metadata_ApertiumFRv2
@@ -5315,8 +5166,6 @@ test:metadata_ApertiumFRv2
               "LMF Apertium Fr" ;
       ms:sizeInfo test:size_N113D3 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010. http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium French dictionary. Monolingual dictionary for French was generated from the Apertium expanded lexicon of the fr-es pair system (French/Spanish). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:metadata_ApertiumITv2
@@ -5352,8 +5201,6 @@ test:metadata_ApertiumITv2
               "LMF Apertium It" ;
       ms:sizeInfo test:size_N12B9A ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" , "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010." ;
       dc:description "This is the LMF version of the Apertium Italian dictionary. Monolingual dictionary for Italian was generated from the Apertium expanded lexicon of the es-it. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:metadata_ApertiumMonolingual2LMF
@@ -5368,8 +5215,6 @@ test:metadata_ApertiumMonolingual2LMF
       ms:resourceShortName
               "Apertium Monolingual Lexicon to LMF converter" ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "" ;
       dc:description "This tool generates the LMF version of Apertium monolingual lexicons. The script takes as input an expanded monolingual Apertium lexicon (generated using: lt-expand apertium.dix > apertium.expanded) and generates the corresponding LMF version. In the Apertium expended lexicons, the first tag corresponds to the part of speech. The rest of tags (all enclosed in angle brackets) encode additional information depending on the lemma and PoS tag. Run perl ApertiumMonolingual2LMF.pl --help to get more information." .
 
 test:metadata_ApertiumPTv2
@@ -5404,8 +5249,6 @@ test:metadata_ApertiumPTv2
               "LMF Apertium Pt" ;
       ms:sizeInfo test:size_N10578 ;
       ms:url  "http://www.apertium.org" ;
-      <http://plim.comdocumentedBy>
-              "Forcada,M.L., Ivanov, B., Ortiz, S., Pérez, J.A., Ramírez, G., Sánchez, F., Armentano, C., Montava, M.A., Tyers, F.M., (2010). 'Documentation of the Open Source Shallow-Transfer Machine Translation Platform Apertium'. Departament de Llenguatges i Sistemes Informàtics Universitat d'Alacant, March 2010." , "http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
       dc:description "This is the LMF version of the Apertium Portuguese dictionary. Monolingual dictionary for Portuguese was generated from the Apertium expanded lexicon of the pt-ca pair system. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." .
 
 test:metadata_CorpusCLUVIv2
@@ -5431,8 +5274,6 @@ test:metadata_CorpusCLUVIv2
               ms:phrase ;
       ms:sizeInfo test:size_N15FE6 ;
       ms:url  "http://hdl.handle.net/10230/20051" ;
-      <http://plim.comdocumentedBy>
-              "Web site of the CLUVI Corpus: http://sli.uvigo.es/CLUVI/" , "Gómez Guinovart, Xavier and Elena Sacau Fontenla (2004): Parallel corpora for the Galician language: building and processing of the CLUVI (Linguistic Corpus of the University of Vigo). In Teresa Lino et al. (ed.), Proceedings of the 4th International Conference on Language Resources and Evaluation, LREC 2004, pp. 1179-1182." , "Gómez Guinovart, Xavier (2012): A Hybrid Corpus-Based Approach to Bilingual Terminology Extraction. In I. Moskowich-Spiegel Fandiño, B. Crespo (eds.). Encoding the Past, Decoding The Future: Corpora in the 21st Century. Cambridge Scholar Publishing: Newcastle upon Tyne, pp. 147-175 (ISBN 1-4438-3581-1). Available at http://webs.uvigo.es/sli/arquivos/bi_term_extraction.pdf" ;
       dc:description "The CLUVI Corpus of the University of Vigo is an open collection of parallel text corpora developed under the direction of Xavier Gómez Guinovart (2003-2012) that covers specific areas of the contemporary Galician language. With 23 million words, the CLUVI Corpus comprises six main parallel corpora belonging to five specialised registers or domains (fiction, computing, popular science, law and administration) and involving five different language combinations (Galician-Spanish bilingual translation, English-Galician bilingual translation, French-Galician bilingual translation, English-Galician-French-Spanish tetralingual translation and Spanish-Galician-Catalan-Basque tetralingual translation). For the sake of copyright protection, this public distribution of the CLUVI Corpus is limited to the 6 million Corpus." .
 
 test:metadata_Freeling2LMF
@@ -5447,12 +5288,10 @@ test:metadata_Freeling2LMF
       ms:resourceShortName
               "FreeLing2LMF converter" ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "" ;
       dc:description "This tool generates a LMF version of FreeLing lexicons. FreeLing lexicons are tabular files which list word forms together with part of speech information. The tool is a perl script that takes as input a FreeLing lexicon and generates the corresponding LMF version lexicon. The output validates against the LMF DTD v16. Run perl freelingLMF.pl --help to get usage information." .
 
 test:metadata_IULA-CTparallelCorpus
-      rdf:type owl:NamedIndividual , ms:CorpusText ;
+      rdf:type ms:CorpusText , owl:NamedIndividual ;
       rdfs:label "IULA Spanish-English Technical Corpus" ;
       ms:annotationMode ms:manual ;
       ms:annotationStandoff
@@ -5464,12 +5303,12 @@ test:metadata_IULA-CTparallelCorpus
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:creationMode ms:manual ;
       ms:documentation test:doc_8 , test:doc_59 , test:doc_7 ;
-      ms:domain "economy" , "law" , "medicine" , "computer science" , "environment" ;
+      ms:domain "medicine" , "computer science" , "law" , "environment" , "economy" ;
       ms:fundingProject test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/20052" ;
-      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
-      ms:languageId "es" , "en" ;
-      ms:languageName "English" , "Spanish" ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
+      ms:languageId "en" , "es" ;
+      ms:languageName "Spanish" , "English" ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:multilingualityType
@@ -5484,8 +5323,6 @@ test:metadata_IULA-CTparallelCorpus
       ms:sizeInfo test:size_N18939 ;
       ms:tagset "MULTEX/PAROLE" ;
       ms:url  "http://hdl.handle.net/10230/20052" ;
-      <http://plim.comdocumentedBy>
-              "Cabré, M. T.; Bach, C.; Vivaldi, J. (2006). 10 anys del Corpus de l'IULA. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra" , "Vivaldi Palatresi, Jorge (2009). Corpus and exploitation tool: IULACT and bwanaNet in Cantos Gómez, Pascual; Sánchez Pérez, Aquilino (ed.) A survey on corpus-based research = Panorama de investigaciones basadas en corpus [Actas del I Congreso Internacional de Lingüística de Corpus (CICL-09), May 7-9 2009, Universidad de Murcia]. Murcia: Asociación Española de Lingüística del Corpus. Pages 224-239. ISBN 978-84-692-2198-3" , "Cabré, M. Teresa; Bach, Carme (2004). El corpus tècnic del IULA: corpus textual especializado plurilingüe in Panace@ - Boletín de Medicina y Traducción 5(16). [s.l]: MedTrad. Pages 173-176." ;
       dc:description "The corpus consists of a number of specialized texts (Law, Economics, Medicine, Environment and Computer Science domains) available in both Spanish and English languages. This LSP corpus has been compiled with articles from specialized publications, PhD theses, etc. It contains about a total of about 2,1 M words in 127 documents in each language." .
 
 test:metadata_IULA-PennTreeBank
@@ -5521,12 +5358,10 @@ test:metadata_IULA-PennTreeBank
       ms:sizeInfo test:size_N19484 ;
       ms:tagset "MULTEX/PAROLE" ;
       ms:url  "http://hdl.handle.net/10230/20049" ;
-      <http://plim.comdocumentedBy>
-              "Kordoni V, Zhang Y (2009). Annotating Wall Street Journal Texts Using a Hand-Crafted Deep Linguistic Grammar. In: Proceedings of LAW III, Singapore" , "Ann Taylor, Mitchell Marcus, Beatrice Santorini (2003). The Penn Treebank: An Overview. In Abeillé, A. (Ed.) Treebanks. Building and Using Parsed Corpora. Kluwer Academic Publishers." , "Flickinger D. (2002). On building a more eficient grammar by exploiting types. In: Flickinger D, Oepen S, Tsujii J, Uszkoreit H (eds) Natural Language Engineering (6)1 |Special Issue: Efficiency Processing with HPSG: Methods, Systems, Evaluation, Cambridge University Press, pages 1-17." ;
       dc:description "This treebank consists of a number of Spanish and English sentences that has been manually annotated with syntactical information. The sentences have been choosed from the Penn TreeBank corpus, a resource containing texts from Wall Street Journal and originally compiled by the University of Pennsylvania. It contains 805 sentences that have been human translated to Spanish. The original English and the translated Spanish sentences share the same identification number. Sentences in both languages have been processed using the DELPH-IN environment (http://www.delph-in.net/)." .
 
 test:metadata_IULA-Spanish_treebank
-      rdf:type owl:NamedIndividual , ms:CorpusText ;
+      rdf:type ms:CorpusText , owl:NamedIndividual ;
       rdfs:label "IULA Spanish LSP Treebank" ;
       ms:annotationMode ms:manual ;
       ms:annotationStandoff
@@ -5537,8 +5372,8 @@ test:metadata_IULA-Spanish_treebank
               ms:UTF-8 ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:creationMode ms:manual ;
-      ms:documentation test:doc_7 , test:doc_24 , test:doc_25 , test:doc_59 ;
-      ms:domain "medicine" , "law" , "economy" , "computer science" , "environment" ;
+      ms:documentation test:doc_59 , test:doc_25 , test:doc_7 , test:doc_24 ;
+      ms:domain "economy" , "medicine" , "environment" , "law" , "computer science" ;
       ms:fundingProject test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/20048" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
@@ -5557,8 +5392,6 @@ test:metadata_IULA-Spanish_treebank
       ms:sizeInfo test:size_N15B6E ;
       ms:tagset "see Marimon, M. (in press)" ;
       ms:url  "http://hdl.handle.net/10230/20048" ;
-      <http://plim.comdocumentedBy>
-              "Cabré, M. T.; Bach, C.; Vivaldi, J. (2006). 10 anys del Corpus de l'IULA. Barcelona: Institut Universitari de Lingüística Aplicada. Universitat Pompeu Fabra" , "Vivaldi, J. (2009). Corpus and exploitation tool: IULACT and bwanaNet in Cantos Gómez, Pascual; Sánchez Pérez, Aquilino (ed.) A survey on corpus-based research = Panorama de investigaciones basadas en corpus [Actas del I Congreso Internacional de Lingüística de Corpus (CICL-09), May 7-9 2009, Universidad de Murcia]. Murcia: Asociación Española de Lingüística del Corpus. Pages 224-239. ISBN 978-84-692-2198-3" , "Copestake A (2002). Implementing Typed Feature Structure Grammars. CSLI Publications, Stanford." , "Marimon, M. (in press). The Spanish DELPH-IN Grammar, Language Resources and Evaluation. DOI: 10.1007/s10579-012-9199-7." , "Marimon, Montserrat; Fisas, Beatriz; Bel, Núria; Arias, Blanca; Vázquez, Silvia; Vivaldi, Jorge; Torner, Sergi; Villegas, Marta; Lorente, Mercè (2012). The IULA Treebank in Calzolari, Nicoletta (et al.) (ed.) Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC'12). Istanbul, Turkey: European Language Resources Association (ELRA). Pages 1920-1926. ISBN 978-2-9517408-7-7." , "Oepen S, Flickinger D, Toutanova K, Manning CD (2002) LinGo Redwoods. A Rich and Dynamic Treebank for HPSG. In: Proceedings of TLT 2002, Sozopol, Bulgaria." ;
       dc:description "This treebank consists of a number of sentences syntactically analyzed. The sentences have been choosed from the IULA LSP corpus, automatically annotated with POS information and manually annotated with syntactical information using the DELPH-IN environment. The resulting syntactic analysis is automatically converted to dependencies and delivered using the CONLL format." .
 
 test:metadata_ParoleSimpleLexinfoLexicon
@@ -5585,15 +5418,13 @@ test:metadata_ParoleSimpleLexinfoLexicon
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "rdf+xml" , "text/turtle" ;
-      ms:originalSource """The Spanish PAROLE/SIMPLE lexicon defined during the PAROLE LE2-4017 
-                        and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html""" ;
+      ms:originalSource "The Spanish PAROLE/SIMPLE lexicon defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html"^^xsd:string ;
       ms:resourceCreator test:organization_UPF-IULA ;
       ms:resourceName "Spanish PAROLE-SIMPLE LexInfo Lexicon" ;
       ms:resourceShortName
               "PAROLE-SIMPLE LexInfo Ontology" ;
       ms:sizeInfo test:size_N12926 ;
-      <http://plim.comdocumentedBy>
-              "More information can be found at http://gilmere.upf.edu/corpus_data/ParoleSimpleOntology/ParoleOntology.html" , "The Spanish PAROLE/SIMPLE LexInfo Lexicon dataset is published in the Data Hub (http://thedatahub.org/en/dataset/parole-simple-ont)" ;
+      ms:url  "http://datahub.io/es/dataset/parole-simple-ont/resource/887f615f-1d79-4b63-8979-cb1588eb03ee"^^xsd:string ;
       dc:description "The Spanish Parole/Simple 'lexinfo' Lexicon is the OWL version of the Spanish Parole & Simple lexicons (defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects) once mapped to Lexinfo Model (http://lexinfo.net/). This data set has been published as Linked Open Data in the Data Hub (http://thedatahub.org/en/dataset/parole-simple-ont). The goal of SIMPLE project was to add semantic information, selected for its relevance for LE applications, to the set of harmonised multifunctional lexica built for 12 European languages by the PAROLE consortium. PAROLE +SIMPLE lexicons contain morphological, syntactic and semantic information, organised according to a common model and to common linguistic specifications. The Spanish Parole/Simple lexicon contains 7,572 entries fully annotated with syntactic and semantic information." .
 
 test:metadata_ParoleSimpleLexinfoLexicon-CA
@@ -5620,15 +5451,13 @@ test:metadata_ParoleSimpleLexinfoLexicon-CA
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/turtle" , "rdf+xml" ;
-      ms:originalSource """The Catalan PAROLE/SIMPLE lexicon defined during the PAROLE LE2-4017 
-                        and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html""" ;
+      ms:originalSource "The Catalan PAROLE/SIMPLE lexicon defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html"^^xsd:string ;
       ms:resourceCreator test:organization_UPF-IULA ;
       ms:resourceName "Catalan PAROLE-SIMPLE LexInfo Lexicon" ;
       ms:resourceShortName
               "PAROLE-SIMPLE LexInfo Ontology" ;
       ms:sizeInfo test:size_N14431 ;
-      <http://plim.comdocumentedBy>
-              "More information can be found at http://gilmere.upf.edu/corpus_data/ParoleSimpleOntology/ParoleOntology.html" , "The Spanish PAROLE/SIMPLE LexInfo Lexicon dataset is published in the Data Hub (http://thedatahub.org/en/dataset/parole-simple-ont)" ;
+      ms:url  "http://datahub.io/es/dataset/parole-simple-ont/resource/b27fe3b5-c20b-4dc0-b30a-10ccc027bf15"^^xsd:string ;
       dc:description "The Catalan Parole/Simple 'lexinfo' Lexicon is the OWL version of the Spanish Parole & Simple lexicons (defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects) once mapped to Lexinfo Model (http://lexinfo.net/). This data set has been published as Linked Open Data in the Data Hub (http://thedatahub.org/en/dataset/parole-simple-ont). The goal of SIMPLE project was to add semantic information, selected for its relevance for LE applications, to the set of harmonised multifunctional lexica built for 12 European languages by the PAROLE consortium. PAROLE +SIMPLE lexicons contain morphological, syntactic and semantic information, organised according to a common model and to common linguistic specifications. The Catalan The Catalan lexicon includes 20,545 entries annotated with syntactic information half of which are also annotated with semantic information." .
 
 test:metadata_ParoleSimpleLexinfoOntology
@@ -5655,15 +5484,13 @@ test:metadata_ParoleSimpleLexinfoOntology
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/turtle" , "rdf+xml" ;
-      ms:originalSource """PAROLE/SIMPLE lexicon model defined during the PAROLE LE2-4017 
-                        and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html""" ;
+      ms:originalSource "PAROLE/SIMPLE lexicon model defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html"^^xsd:string ;
       ms:resourceCreator test:organization_UPF-IULA ;
       ms:resourceName "PAROLE-SIMPLE LexInfo Ontology" ;
       ms:resourceShortName
               "PAROLE-SIMPLE LexInfo Ontology" ;
       ms:sizeInfo test:size_N145FC ;
-      <http://plim.comdocumentedBy>
-              "The PAROLE/SIMPLE LexInfo Ontology dataset is published in the Data Hub (http://thedatahub.org/en/dataset/parole-simple-ont)" , "More information can be found at http://gilmere.upf.edu/corpus_data/ParoleSimpleOntology/ParoleOntology.html" ;
+      ms:url  "http://datahub.io/es/dataset/parole-simple-ont/resource/ae70a498-53ba-457c-8cbf-e3f4c8eea85c"^^xsd:string ;
       dc:description "The Parole/Simple 'lexinfo' Ontology is the OWL version of the Parole & Simple model (defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects) once mapped to Lexinfo Model (http://lexinfo.net/). This data set has been published as Linked Open Data in the Data Hub (http://thedatahub.org/en/dataset/parole-simple-ont). The goal of SIMPLE project was to add semantic information, selected for its relevance for LE applications, to the set of harmonised multifunctional lexica built for 12 European languages by the PAROLE consortium. PAROLE +SIMPLE lexicons contain morphological, syntactic and semantic information, organised according to a common model and to common linguistic specifications. The original Parole/Simple model expressed in the parole DTD has been mapped into the Lexinfo model (http://lexinfo.net/). Thus the resulting Parole/Simple Ontology imports the Lexinfo Ontology and adds 'parole elements' (classes and/or properties) whenever these cannot be mapped to any 'lexinfo element'." .
 
 test:metadata_SenSemDataBase-catv2
@@ -5698,8 +5525,6 @@ test:metadata_SenSemDataBase-catv2
               "LMF version of the SenSem Catalan Data Base" ;
       ms:sizeInfo test:size_N1709D , test:size_N17098 ;
       ms:url  "http://grial.uab.es/" ;
-      <http://plim.comdocumentedBy>
-              "Castellón, I., A. Fernández, G. Vázquez, L. Alonso, J.A. Capilla (2006). The Sensem Corpus: a Corpus Annotated at the Syntactic and Semantic Level, Fifth International Conference on Language Resources and Evaluation (LREC), p. 355-359" , "Alonso, L., J.A. Capilla, I. Castellón, A. Fernández, G. Vázquez (2007). The Sensem Project: Syntactico-Semantic Annotation of Sentences in Spanish. N.Nikolov, K. Bontcheva, G.Angelova and R. Mitkov. (ed.), Recent Advances in Natural Language Processing IV. Selected papers from RANLP 2005. Current Issues in Linguistic Theory 292John Benjamins Publishing Co, p. 89-98. ISBN: 978 90 272 4807 7" , "Web site of the SenSem project: http://grial.uab.es/fproj.php?id=1" ;
       dc:description "This is the LMF version of the SenSem database created by the Spanish Inter-University Research Group GRIAL. As part of SenSem project, a corpus of sentences annotated at the semantic and syntactic levels was created. The source corpus is made up of around 13 million words extracted from the online versions of a Spanish newspaper. From this corpus, 25.000 sentences have been randomly selected, 100 for each of the 250 more frequent verbs in current Spanish. Each sentence has been labeled according to the verb sense it exemplifies, the type of complements it takes (arguments or adjunts), their syntactic category and function, and finally each argument has been labelled with a semantic role. The sentence has also been annotated as to its semantics both in relation with aspectual information and the type of construction being expressed. From this annotated corpus a lexical data base of verbs was created in which all the previous information will be recollected. The unit of description of the verbs is the sense. In the description of the verbs, argument structure is included, incorporating subcategorization patterns, with the information of frequency of them, semantic roles and information regarding sentence semantics. The lexicon and the corpus are associated at sense level and together shape up what we call the data bank of the sentential semantic of the Spanish verbs. Both resources are available via web and will form a very important source of linguistic information which we hope will be of utility in different areas of the natural language processing and linguistic research in general. The LMF conversion has been done by the Universitat Pompeu Fabra." .
 
 test:metadata_SenSemDataBase-spav2
@@ -5734,8 +5559,6 @@ test:metadata_SenSemDataBase-spav2
               "LMF version of the SenSem Spanish Data Base" ;
       ms:sizeInfo test:size_N12827 , test:size_N12822 ;
       ms:url  "http://grial.uab.es/" ;
-      <http://plim.comdocumentedBy>
-              "Alonso, L., J.A. Capilla, I. Castellón, A. Fernández, G. Vázquez (2007). The Sensem Project: Syntactico-Semantic Annotation of Sentences in Spanish. N.Nikolov, K. Bontcheva, G.Angelova and R. Mitkov. (ed.), Recent Advances in Natural Language Processing IV. Selected papers from RANLP 2005. Current Issues in Linguistic Theory 292John Benjamins Publishing Co, p. 89-98. ISBN: 978 90 272 4807 7" , "Web site of the SenSem project: http://grial.uab.es/fproj.php?id=1" , "Castellón, I., A. Fernández, G. Vázquez, L. Alonso, J.A. Capilla (2006). The Sensem Corpus: a Corpus Annotated at the Syntactic and Semantic Level, Fifth International Conference on Language Resources and Evaluation (LREC), p. 355-359" ;
       dc:description "This is the LMF version of the SenSem database created by the Spanish Inter-University Research Group GRIAL. As part of SenSem project, a corpus of sentences annotated at the semantic and syntactic levels was created. The source corpus is made up of around 13 million words extracted from the online versions of a Spanish newspaper. From this corpus, 25.000 sentences have been randomly selected, 100 for each of the 250 more frequent verbs in current Spanish. Each sentence has been labeled according to the verb sense it exemplifies, the type of complements it takes (arguments or adjunts), their syntactic category and function, and finally each argument has been labelled with a semantic role. The sentence has also been annotated as to its semantics both in relation with aspectual information and the type of construction being expressed. From this annotated corpus a lexical data base of verbs was created in which all the previous information will be recollected. The unit of description of the verbs is the sense. In the description of the verbs, argument structure is included, incorporating subcategorization patterns, with the information of frequency of them, semantic roles and information regarding sentence semantics. The lexicon and the corpus are associated at sense level and together shape up what we call the data bank of the sentential semantic of the Spanish verbs. Both resources are available via web and will form a very important source of linguistic information which we hope will be of utility in different areas of the natural language processing and linguistic research in general. The LMF conversion has been done by the Universitat Pompeu Fabra." .
 
 test:metadata_SenSemv2
@@ -5766,8 +5589,6 @@ test:metadata_SenSemv2
       ms:sizeInfo test:size_N18ABB ;
       ms:tagset "other" ;
       ms:url  "http://grial.uab.es/" ;
-      <http://plim.comdocumentedBy>
-              "Alonso, L., J.A. Capilla, I. Castellón, A. Fernández, G. Vázquez (2007). The Sensem Project: Syntactico-Semantic Annotation of Sentences in Spanish. N.Nikolov, K. Bontcheva, G.Angelova and R. Mitkov. (ed.), Recent Advances in Natural Language Processing IV. Selected papers from RANLP 2005. Current Issues in Linguistic Theory 292John Benjamins Publishing Co, p. 89-98. ISBN: 978 90 272 4807 7" , "Web site of the SenSem project: http://grial.uab.es/fproj.php?id=1" , "Castellón, I., A. Fernández, G. Vázquez, L. Alonso, J.A. Capilla (2006). The Sensem Corpus: a Corpus Annotated at the Syntactic and Semantic Level, Fifth International Conference on Language Resources and Evaluation (LREC), p. 355-359" ;
       dc:description "This is the stand-off GrAF version of the SenSem Spanish Corpus." , "The original SenSem Spanish Corpus includes syntactic and semantic annotations for a number of Spanish texts from the press domain developed by the GRIAL group (Grup de recerca consolidat de la Generalitat de Catalunya). The corpus contains one million words 300,000 of which were manually annotated at the syntactic and semantic level with syntagmatic categories, syntactic functions and semantic roles." .
 
 test:metadata_SimpleParole-Catalanv2
@@ -5806,8 +5627,6 @@ test:metadata_SimpleParole-Catalanv2
       ms:sizeInfo test:size_N18F53 , test:size_N18F4E ;
       ms:theoreticModel "Parole" , "Genelex" ;
       ms:url  "http://www.iec.es" ;
-      <http://plim.comdocumentedBy>
-              "http://www.ub.edu/gilcub/SIMPLE/reports/simple/D31_BARfin.rtf" , "http://institucional.iec.cat/gc/ViewPage.action?siteNodeId=929&languageId=5&contentId=6554" , "http://www.ilc.cnr.it/AZ_bibliography/Z179.PDF" ;
       dc:description "This is the LMF version of the Catalan Parole-Simple lexicon. The original PAROLE lexica (20,000 entries per language) were built conform to a model based on EAGLES guidelines and GENELEX results, underlying a common lexical tool adapted from the EUREKA-GENELEX project. This software tool was extended to support the PAROLE model and conversion and management processes of the resulting resources. The languages involved in PAROLE lexica are: Catalan, Danish, Dutch, English, Finnish, French, German, Greek, Italian, Portugese, Spanish and Swedish. The goal of SIMPLE project was to add semantic information, selected for its relevance for LE applications, to the set of harmonised multifunctional lexica built for 12 European languages by the PAROLE consortium. PAROLE +SIMPLE lexicons contain morphological, syntactic and semantic information, organised according to a common model and to common linguistic specifications." .
 
 test:metadata_TRL-VSubcatv2
@@ -5839,8 +5658,6 @@ test:metadata_TRL-VSubcatv2
               "TRL Spanish V-SUBCAT lexicon" ;
       ms:sizeInfo test:size_N123C2 ;
       ms:url  "http://hdl.handle.net/10230/17092" ;
-      <http://plim.comdocumentedBy>
-              "Necsulescu, Silvia; Bel, Núria; Padró, Muntsa; Marimon, Montserrat; Revilla, Eva. 2011. Towards the Automatic Merging of Language Resources, Woler 2011. Ljubljana, Slovenia. Available at http://alpage.inria.fr/~sagot/woler2011/WoLeR2011/Program_files/WoLeR%202011%20-%20Necsulescu%20Bel%20Padro%20Marimon%20Revilla.pdf" ;
       dc:description "Gold-standard for Spanish verbal subcategorization frames. The gold-standard was built merging two manually developed dictionaries: the Spanish working lexicon of the Incyta Machine Translation system (Alonso and Bocsák, 2005) and the Spanish Resource Grammar (Marimon 2010). See Necsulescu et al (2011) for details about the process of merging both dictionaries and about the information encoded in the feature structures." .
 
 test:metadata_TRL_Tibidabo_LSP_treebank_ES
@@ -5874,8 +5691,6 @@ test:metadata_TRL_Tibidabo_LSP_treebank_ES
       ms:sizeInfo test:size_N18DBA , test:size_N18DC4 , test:size_N18DBF , test:size_N18DB5 , test:size_N18DB0 , test:size_N18DC9 ;
       ms:tagset "see Marimon, M. (in press)" ;
       ms:url  "http://www.iula.upf.edu" ;
-      <http://plim.comdocumentedBy>
-              "article The Tibidabo Treebank http://hdl.handle.net/10045/14710 " , "Marimón, Montserrat. The Tibidabo Treebank. Procesamiento del Lenguaje Natural [Internet]. 2010 [cited 2012 Mar 15]; (45):113-119. Available from: http://hdl.handle.net/10045/14710" ;
       dc:description "This package contains a partition of the Iula Spanish LSP Treebank into train and test sets to perform Machine Learning experiments. In that way the same partitions can be used by different researchers and their results can be directly compared. In this package we also deliver the Tibidabo Treebank (Marimon 2010) which contains a set of sentences extracted from Ancora corpus annotated in the same way than the Iula Treebank. Tibidabo Treebank is a very good test set for models trained with Iula Spanish LSP Treebank since the sentences that form it from a very different domain than those of the Iula Spanish LSP Treebank." .
 
 test:metadata_TRL_maltparser_module_ES
@@ -5891,8 +5706,6 @@ test:metadata_TRL_maltparser_module_ES
       ms:resourceShortName
               "TRL Malt Parser module ES" ;
       ms:url  "http://www.iula.upf.edu/recurs01_mpars_uk.htm" ;
-      <http://plim.comdocumentedBy>
-              "Padró, Muntsa. MaltParser for Spanish [Internet]. Barcelona: IULA; 2012 [updated 2013 May 2; cited 2013 Mar 15]. Available from: http://www.iula.upf.edu/recurs01_mpars_uk.htm" , "manual MaltParser for Spanish [Internet] http://www.iula.upf.edu/recurs01_mpars_uk.htm " ;
       dc:description "The file espmalt-1.0.mco contains a single malt configuration for parsing Spanish text with MaltParser. The parser presupposes that the input is in CoNLL-X format and tagged with the part-of-speech tags of FreeLing tagger." .
 
 test:metadata_en_glCLUVIdictionaryLMF_v2
@@ -5927,8 +5740,6 @@ test:metadata_en_glCLUVIdictionaryLMF_v2
               "English-Galician CLUVI Dictionary" ;
       ms:sizeInfo test:size_N10C6B ;
       ms:url  "http://hdl.handle.net/10230/20053" ;
-      <http://plim.comdocumentedBy>
-              "Gómez Guinovart, Xavier, Eva Díaz Rodríguez e Alberto Álvarez Lugrís (2008): Aplicacións da lexicografía bilingüe baseada en córpora na elaboración do Dicionario CLUVI inglés-galego. Viceversa: Revista Galega de Tradución, 14, pp. 71-87. Available at http://webs.uvigo.es/sli/arquivos/viceversa_clig2ed_2008.pdf" , "Gómez Guinovart, Xavier (coord.) (2012): Dicionario Moderno Inglés-Galego. 2.0 Editora: Ames (ISBN 978-84-938683-8-3)." ;
       dc:description "This is the LMF version of the English-Galician CLUVI Dictionary developed under the direction of Xavier Gómez Guinovart (2005-2012) from parallel texts in the CLUVI Corpus of the University of Vigo." .
 
 test:metadata_termotecav2
@@ -5963,8 +5774,6 @@ test:metadata_termotecav2
               "Termoteca" ;
       ms:sizeInfo test:size_N17E94 ;
       ms:url  "http://hdl.handle.net/10230/17104" ;
-      <http://plim.comdocumentedBy>
-              "Gómez Guinovart, Xavier (2012): A Hybrid Corpus-Based Approach to Bilingual Terminology Extraction. In I. Moskowich-Spiegel Fandiño, B. Crespo (eds.). Encoding the Past, Decoding The Future: Corpora in the 21st Century. Cambridge Scholar Publishing: Newcastle upon Tyne, pp. 147-175 (ISBN 1-4438-3581-1). Available at http://webs.uvigo.es/sli/arquivos/bi_term_extraction.pdf" ;
       dc:description "This lexical resource is the LMF version of the Termoteca, a multilingual terminological database based on the monolingual and parallel speciality texts collected in the corpora of the University of Vigo, namely in the CLUVI Corpus and in the Galician Technical Corpus." .
 
 test:organization_CAM-DTAL
@@ -6934,17 +6743,17 @@ test:project_XLike
       foaf:name "XLike: Cross-lingual Knowledge Extraction" .
 
 test:resource-CESS_EUv2
-      rdf:type owl:NamedIndividual , ms:CorpusText ;
+      rdf:type ms:CorpusText , owl:NamedIndividual ;
       rdfs:label "GrAF version of the Basque Dependency Treebank" ;
       ms:annotationStandoff
               "true" ;
       ms:annotationType ms:syntacticAnnotation-treebanks ;
       ms:characterEncoding
               ms:UTF-8 ;
-      ms:contactPerson test:person_Jorge_Vivaldi , test:person_María_Jesús_Aranzabe ;
+      ms:contactPerson test:person_María_Jesús_Aranzabe , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:documentation test:doc_49 , test:doc_41 ;
-      ms:fundingProject test:project_METANET4U , test:project_CESS-ECE ;
+      ms:documentation test:doc_41 , test:doc_49 ;
+      ms:fundingProject test:project_CESS-ECE , test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/17098" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eus> ;
       ms:languageId "eu" ;
@@ -6953,7 +6762,7 @@ test:resource-CESS_EUv2
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Basque Dependency Treebank (BDT) located at http://ixa.si.ehu.es/Ixa/Produktuak/1306407157" ;
-      ms:resourceCreator test:person_Larraitz_Uria , test:person_Mikel_Iruskieta , test:person_María_Jesús_Aranzabe , test:person_Izaskun_Aldezabal , test:person_Jose_Mari_Arriola , test:person_Ainara_Estarrona , test:person_Aitziber_Atutxa , test:organization_EHU-IXA , test:organization_UPF-IULA , test:person_Kike_Fernández , test:person_Arantza_Díaz_de_Ilarraza ;
+      ms:resourceCreator test:person_Izaskun_Aldezabal , test:person_María_Jesús_Aranzabe , test:person_Ainara_Estarrona , test:person_Mikel_Iruskieta , test:organization_EHU-IXA , test:person_Arantza_Díaz_de_Ilarraza , test:person_Larraitz_Uria , test:person_Kike_Fernández , test:organization_UPF-IULA , test:person_Aitziber_Atutxa , test:person_Jose_Mari_Arriola ;
       ms:resourceName "GrAF version of the Basque Dependency Treebank" ;
       ms:resourceShortName
               "GrAF version of the Basque Dependency Treebank" ;
@@ -6962,8 +6771,6 @@ test:resource-CESS_EUv2
       ms:sizeInfo test:size_N15EE4 ;
       ms:tagset "other" ;
       ms:url  "http://hdl.handle.net/10230/17098" ;
-      <http://plim.comdocumentedBy>
-              "Arantza Diaz de Ilarraza Sánchez, Enrique Fernández Terrones, Izaskun Aldezabal Roteta, Maria Jesús Aranzabe Urruzola (2008). From Dependencies to Constituents in the Reference Corpus for the Processing of Basque (EPEC). In Procesamiento del lenguaje Natural, nº 41 (2008), pp. 147-154." , "Web site of the CESS-ECE project: http://clic.ub.edu/cessece/" ;
       dc:description "This is the stand-off GrAF version of the Basque Dependency Treebank (BDT). It is the Reference Corpus for the Processing of Basque (EPEC) annotated at syntactic level. EPEC is a 300,000 word corpus of standard written journal texts which aims to be a training corpus for the development and inprovement of several Natural Language Procesing tools. It has been manually tagged at different levels: morphology, partial syntax and semantic This is the stand-off GrAF version of the Constituent Basque Treebank." .
 
 test:resource-WikiCorpusCAv2
@@ -6994,8 +6801,6 @@ test:resource-WikiCorpusCAv2
       ms:sizeInfo test:size_N15377 ;
       ms:tagset "based on PAROLE" ;
       ms:url  "http://hdl.handle.net/10230/20050" ;
-      <http://plim.comdocumentedBy>
-              "Web site of the Wikicorpus project: http://www.lsi.upc.edu/~nlp/wikicorpus/" , "Samuel Reese. 2009. WikiNet: Construction d'une ressource lexico-sémantique multilingue à partir de Wikipedia. Master's thesis. ISAE (Institut Supérieur de l'Aéronautique et de l'Espace), Toulouse, France." , "Samuel Reese, Gemma Boleda, Montse Cuadros, Lluís Padró, German Rigau (2010). Wikicorpus: A Word-Sense Disambiguated Multilingual Wikipedia Corpus. In Proceedings of 7th Language Resources and Evaluation Conference (LREC'10), La Valleta, Malta. May, 2010." ;
       dc:description "This is the stand-off GrAF version of Catalan portions of the Wikipedia (based on a 2006 dump). This Wikipedia Catalan Corpus contains 122052 articles that contain about 47,3 million words in raw text format. It has been cleaned by erasing disambiguation pages, removing some XML tags and homogenizing lists ending tag. Then, the corpus has been processed for adding structural tagging (head, paragraph, sentence, list, etc.) and morphosyntactic information." .
 
 test:resource-WikiCorpusESv2
@@ -7026,8 +6831,6 @@ test:resource-WikiCorpusESv2
       ms:sizeInfo test:size_N158DA ;
       ms:tagset "based on PAROLE" ;
       ms:url  "http://hdl.handle.net/10230/20047" ;
-      <http://plim.comdocumentedBy>
-              "Samuel Reese. 2009. WikiNet: Construction d'une ressource lexico-sémantique multilingue à partir de Wikipedia. Master's thesis. ISAE (Institut Supérieur de l'Aéronautique et de l'Espace), Toulouse, France." , "Web site of the Wikicorpus project: http://www.lsi.upc.edu/~nlp/wikicorpus/" , "Samuel Reese, Gemma Boleda, Montse Cuadros, Lluís Padró, German Rigau (2010). Wikicorpus: A Word-Sense Disambiguated Multilingual Wikipedia Corpus. In Proceedings of 7th Language Resources and Evaluation Conference (LREC'10), La Valleta, Malta. May, 2010." ;
       dc:description "This is the stand-off GrAF version of Spanish portions of the Wikipedia (based on a 2006 dump). This Wikipedia Spanish Corpus contains 257019 articles that contain about 150,1 million words in raw text format. It has been cleaned by erasing disambiguation pages, removing some XML tags and homogenizing lists ending tag. Then, the corpus has been processed for adding structural tagging (head, paragraph, sentence, list, etc.) and morphosyntactic information." .
 
 test:size_N100D6
