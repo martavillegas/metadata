@@ -1,4 +1,5 @@
 # baseURI: http://gilmere.upf.edu/MetadataRecords.ttl#
+# imports: file:/C:/Documents%20and%20Settings/U39306/TBCFreeWorkspace/Metashare/browser.ttl
 # imports: http://gilmere.upf.edu/ms.ttl#
 
 @prefix bibo:    <http://purl.org/ontology/bibo/#> .
@@ -28,8 +29,8 @@
 
 test:
       rdf:type owl:Ontology ;
-      rdfs:comment "Includes all metadata records describing Resources and Services from IULA-UP."^^xsd:string ;
-      owl:imports ms: .
+      rdfs:comment "On going draft version of the MetaShare model in LOD. Includes the MS ontology and all metadata records describing Resources and Services from IULA-UPF. Comments and suggestions are wellcome. CC-BY license: Villegas, Melero and Bel \"Metadata as Linked Open Data: mappimg disparate XML metadata registries into one RDF/OWL registry\" to be published in LREC-2014."^^xsd:string ;
+      owl:imports <file:/C:/Documents%20and%20Settings/U39306/TBCFreeWorkspace/Metashare/browser.ttl> , ms: .
 
 <http://gilmere.upf.edu/MetadataRecords.ttl#101>
       rdf:type bio:Service , owl:NamedIndividual ;
