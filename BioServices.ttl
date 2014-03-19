@@ -15,65 +15,65 @@
 bio:  rdf:type owl:Ontology .
 
 bio:Alignment
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Alignment" ;
       rdfs:seeAlso <http://dbpedia.org/resource/Parallel_text> ;
       dc:description "Text alignment is the task of finding the correct correspondence between locations of fragments in a given text, and its translation"@en .
 
 bio:Chunking-Segmentation
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Chunking-Segmentation" ;
       dc:description "Chunking is the analysis of a sentence which identifies the constituents parts (noun groups, verbs, verb groups, etc.)"@en ;
       owl:sameAs <http://dbpedia.org/resource/Shallow_parsing> .
 
 bio:CorpusProcessing
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "CorpusProcessing" ;
       dc:description "Any task that deals with analysis and exploitation of textual corpus."^^xsd:string .
 
 bio:CorpusWorkbench
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "CorpusWorkbench" ;
       dc:description "A suite of tools to manage corpus analysis."^^xsd:string .
 
 bio:FormatConversion
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "FormatConversion" ;
       dc:description "Any task performing a change of format."^^xsd:string .
 
 bio:Lexicon-TerminologyExtraction
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Lexicon-TerminologyExtraction" ;
       rdfs:seeAlso <http://dbpedia.org/page/Terminology_extraction> ;
       dc:description "Extracting terminology is the process of extracting terminology from a text."^^xsd:string .
 
 bio:Management
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Management" .
 
 bio:MorphologicalTagging
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "MorphologicalTagging" ;
       dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphological information."^^xsd:string .
 
 bio:MorphosyntacticTagging
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "MorphosyntacticTagging" ;
       dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphosyntactic information."^^xsd:string .
 
 bio:NamedEntityRecognition
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "NamedEntityRecognition" ;
       dc:description "Named Entity Recognition (NER) classifies elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc."@en ;
       owl:sameAs <http://dbpedia.org/resource/Named-entity_recognition> .
 
 bio:Querying
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Querying" ;
       dc:description "Refers to the task of searching (possibly via rgulars expressions) a word or patterns in a corpus."^^xsd:string .
 
 bio:REST
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "REST"^^xsd:string ;
       dc:description "Representational State Transfer (REST) is an architectural style based on the existing design of HTTP 1.0."^^xsd:string ;
       owl:sameAs <http://dbpedia.org/page/Representational_state_transfer> .
@@ -81,10 +81,11 @@ bio:REST
 bio:RESTService
       rdf:type owl:Class ;
       rdfs:label "RESTService"^^xsd:string ;
-      rdfs:subClassOf bio:Service .
+      rdfs:subClassOf bio:Service ;
+      dc:description "REST services are designed with an architectural style that specifies constraints, such as the uniform interface, that if applied to a web service induce desirable properties, such as performance, scalability, and modifiability. In the Representational State Transfer (REST) architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web [http://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html]"@en .
 
 bio:SOAP
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "SOAP"^^xsd:string ;
       dc:description " Simple Object Access Protocol (SOAP) is a protocol specification for exchanging structured information in the implementation of Web Services"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/page/SOAP> .
@@ -92,12 +93,13 @@ bio:SOAP
 bio:SOAPService
       rdf:type owl:Class ;
       rdfs:label "SOAPService"^^xsd:string ;
-      rdfs:subClassOf bio:Service .
+      rdfs:subClassOf bio:Service ;
+      dc:description "SOAP services are designed with a common XML-based protocol. These services are used to conduct transactions, pass documents, and to make remote function calls on systems that are heterogeneous [Suda, 2003]"@en .
 
 bio:Service
       rdf:type owl:Class ;
       rdfs:label "Service"^^xsd:string ;
-      dc:description "Web services"@en .
+      dc:description "A web service is a software function provided at a network address over the web or the cloud, it is a service that is 'always on' as in the concept of utility computing [Wikipedia]"@en .
 
 bio:ServiceTechnology
       rdf:type owl:Class ;
@@ -105,7 +107,7 @@ bio:ServiceTechnology
       dc:description "service technology (REST, SOAP, Soaplab, etc)"@en .
 
 bio:Soaplab
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "Soaplab"^^xsd:string ;
       dc:description "Soaplab is a Web services software framework specialised for bioinformatics programs with command-line interface."^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Soaplab> .
@@ -116,19 +118,19 @@ bio:SoaplabService
       rdfs:subClassOf bio:SOAPService .
 
 bio:StatisticsAnalysis
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "StatisticsAnalysis" ;
       dc:description "Statistical analysis refers to a collection of methods used to process large amounts of data  for the interpretation of quantitative data."^^xsd:string .
 
 bio:Stemming-Lemmatization
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Stemming-Lemmatization" ;
       rdfs:seeAlso <http://en.wikipedia.org/wiki/Stemming> ;
       dc:description "Is the process for reducing inflected (or sometimes derived) words to their stem or lemma."^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Stemming> .
 
 bio:SyntacticTagging
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "SyntacticTagging" ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2330" ;
       dc:description "Is the process of annotating syntacitc information in texts."^^xsd:string .
@@ -139,13 +141,13 @@ bio:Task
       dc:description "The task performed by the service"@en .
 
 bio:TextMining
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "TextMining" ;
       dc:description "refers to the process of deriving high-quality information from text"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Text_mining> .
 
 bio:Tokenization
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Tokenization" ;
       dc:description "Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens."^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Tokenization> .
