@@ -731,7 +731,7 @@ Output XML CQP example: http://ws02.iula.upf.edu/panacea/examples/ws/freeling_pa
               bio:SOAP , bio:Soaplab ;
       bio:task bio:StatisticsAnalysis ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/statistics_analysis.compute_p_cue_class_from_weka?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_compute_p_cue_class_from_weka.pdf" ;
+      ms:documentation test:doc_74 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "P clue/ lexical class from Weka computer Web Service" ;
@@ -774,7 +774,7 @@ cue_n;1301732;0.0243222107162;1516522;0.0177992801951;""" .
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.create_weka_noun_signatures?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_create_weka_nouns_signatures.pdf" ;
+      ms:documentation test:doc_75 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Weka noun signatures creator Web Service" ;
@@ -808,7 +808,7 @@ Optional parameters:
               bio:Soaplab , bio:SOAP ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_eventive?wsdl" ;
-      ms:documentation "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" , "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" , test:doc_6 ;
+      ms:documentation test:doc_76 , test:doc_6 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageName "English" , "Spanish, Castilian" ;
@@ -830,7 +830,7 @@ You can choose to have this prediction as:
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.estimate_bayesian_parameters?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_estimate_bayesian_parameters.pdf" , test:doc_36 ;
+      ms:documentation test:doc_77 , test:doc_36 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Bayesian parameter estimation Web Service" ;
@@ -848,7 +848,7 @@ classifier. The output format is the one needed as input for the naive_bayes_cla
               bio:Soaplab , bio:SOAP ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.naive_bayes_classifier?wsdl" ;
-      ms:documentation test:doc_36 , "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_naive_bayes_classifier.pdf" ;
+      ms:documentation test:doc_79 , test:doc_36 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Naive Bayes classifier Web Service" ;
@@ -947,12 +947,12 @@ classifier. The output format is the one needed as input for the naive_bayes_cla
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:CorpusProcessing , bio:Chunking-Segmentation ;
+      bio:task bio:Chunking-Segmentation , bio:CorpusProcessing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/segmentation.freeling3_sentence_splitter?wsdl" ;
-      ms:documentation test:doc_34 , test:doc_9 ;
+      ms:documentation test:doc_9 , test:doc_34 ;
       ms:fundingProject test:project_PANACEA ;
-      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#rus> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#wel> , <http://www.fao.org/aims/aos/languagecode.owl#ita> ;
-      ms:languageName "Italian" , "Galician" , "Spanish, Castilian" , "Asturian, Bable" , "Catalan, Valencian" , "Portuguese" , "Welsh" , "Russian" , "English" ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#rus> , <http://www.fao.org/aims/aos/languagecode.owl#wel> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#ita> ;
+      ms:languageName "Russian" , "Italian" , "Welsh" , "Asturian, Bable" , "Portuguese" , "Spanish, Castilian" , "English" , "Galician" , "Catalan, Valencian" ;
       ms:resourceName "FreeLing  Sentence Splitter Web Service" ;
       dc:description "This WS performs a FreeLing-based sentence splitter (v 3.0). The WS splits a file in plain text format and UTF-8 encoded into units (tokens).  Output sentences are separated by empty lines. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese." .
 
@@ -1007,7 +1007,7 @@ classifier. The output format is the one needed as input for the naive_bayes_cla
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_human?wsdl" ;
-      ms:documentation test:doc_6 , "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" ;
+      ms:documentation test:doc_76 , test:doc_6 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "English" , "Spanish, Castilian" ;
@@ -1029,7 +1029,7 @@ classifier. The output format is the one needed as input for the naive_bayes_cla
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_location?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" , test:doc_6 , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" ;
+      ms:documentation test:doc_6 , test:doc_76 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageName "Spanish, Castilian" , "English" ;
@@ -1051,7 +1051,7 @@ You can choose to have this prediction as:
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.merge_lmf_files?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_merge_lmf_files.pdf" ;
+      ms:documentation test:doc_78 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "LMF file merger Web Service" ;
@@ -1070,7 +1070,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.noun_classification_filter?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_noun_classification_filter.pdf" ;
+      ms:documentation test:doc_80 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Select Nouns from LMF lexicon Web Service" ;
@@ -1089,7 +1089,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
               bio:Soaplab , bio:SOAP ;
       bio:task bio:SyntacticTagging , bio:CorpusProcessing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.malt_parser?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws04/WS_malt_parser.pdf" ;
+      ms:documentation test:doc_81 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "Spanish, Castilian" ;
@@ -1244,7 +1244,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
               bio:Soaplab , bio:SOAP ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_abstract?wsdl" ;
-      ms:documentation test:doc_6 , "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" ;
+      ms:documentation test:doc_6 , test:doc_76 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "Spanish, Castilian" , "English" ;
@@ -1266,7 +1266,7 @@ You can choose to have this prediction as:
               bio:Soaplab , bio:SOAP ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_artifact?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" ;
+      ms:documentation test:doc_82 , test:doc_76 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "Spanish, Castilian" , "English" ;
@@ -1288,7 +1288,7 @@ You can choose to have this prediction as:
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_matter?wsdl" ;
-      ms:documentation test:doc_6 , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" , "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" ;
+      ms:documentation test:doc_6 , test:doc_82 , test:doc_76 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageName "Spanish, Castilian" , "English" ;
@@ -1310,7 +1310,7 @@ You can choose to have this prediction as:
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_process?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" ;
+      ms:documentation test:doc_76 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "Spanish, Castilian" ;
@@ -1332,7 +1332,7 @@ You can choose to have this prediction as:
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_semiotic?wsdl" ;
-      ms:documentation test:doc_6 , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" , "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" ;
+      ms:documentation test:doc_6 , test:doc_82 , test:doc_76 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "Spanish, Castilian" ;
@@ -1354,7 +1354,7 @@ You can choose to have this prediction as:
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.dt_noun_classifier_social?wsdl" ;
-      ms:documentation "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf" , "About output format: http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf" ;
+      ms:documentation test:doc_76 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "English" , "Spanish, Castilian" ;
@@ -4656,6 +4656,72 @@ December 8-15; Mumbai, India [Internet]. Mumbai: The COLING 2012 Organizing Comm
       dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#236> , <http://gilmere.upf.edu/MetadataRecords.ttl#203> , <http://gilmere.upf.edu/MetadataRecords.ttl#237> , <http://gilmere.upf.edu/MetadataRecords.ttl#204> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/coling/VazquezPBG12> .
 
+test:doc_74
+      rdf:type bibo:Manuscript , owl:NamedIndividual ;
+      rdfs:label "P clue/ lexical class from Weka computer Web Service"^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_compute_p_cue_class_from_weka.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_compute_p_cue_class_from_weka.pdf"^^xsd:string ;
+      dc:title "P clue/ lexical class from Weka computer Web Service"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. P clue/ lexical class from Weka computer Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 1. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_compute_p_cue_class_from_weka.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#225> .
+
+test:doc_75
+      rdf:type bibo:Manuscript , owl:NamedIndividual ;
+      rdfs:label "Weka noun signatures creator Web Service"^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_create_weka_nouns_signatures.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_create_weka_nouns_signatures.pdf"^^xsd:string ;
+      dc:title "Weka noun signatures creator Web Service"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. Weka noun signatures creator Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 2. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_create_weka_nouns_signatures.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#226> .
+
+test:doc_76
+      rdf:type owl:NamedIndividual , bibo:Manuscript ;
+      rdfs:label "Nouns Classifier Web Service"^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf"^^xsd:string ;
+      dc:title "Nouns Classifier Web Service"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. Nouns Classifier Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 4. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#265> , <http://gilmere.upf.edu/MetadataRecords.ttl#269> , <http://gilmere.upf.edu/MetadataRecords.ttl#244> , <http://gilmere.upf.edu/MetadataRecords.ttl#243> , <http://gilmere.upf.edu/MetadataRecords.ttl#267> , <http://gilmere.upf.edu/MetadataRecords.ttl#264> , <http://gilmere.upf.edu/MetadataRecords.ttl#268> , <http://gilmere.upf.edu/MetadataRecords.ttl#266> , <http://gilmere.upf.edu/MetadataRecords.ttl#227> .
+
+test:doc_77
+      rdf:type owl:NamedIndividual , bibo:Manuscript ;
+      rdfs:label "Bayesian parameter estimation Web Service "^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_estimate_bayesian_parameters.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_estimate_bayesian_parameters.pdf"^^xsd:string ;
+      dc:title "Bayesian parameter estimation Web Service "^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. Bayesian parameter estimation Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 5. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_estimate_bayesian_parameters.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#228> .
+
+test:doc_78
+      rdf:type owl:NamedIndividual , bibo:Manuscript ;
+      rdfs:label "LMF file merger Web Servic"^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_merge_lmf_files.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_merge_lmf_files.pdf"^^xsd:string ;
+      dc:title "LMF file merger Web Servic"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. LMF file merger Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 3. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_merge_lmf_files.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#245> .
+
+test:doc_79
+      rdf:type owl:NamedIndividual , bibo:Manuscript ;
+      rdfs:label "Naive Bayes classifier Web Service"^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_naive_bayes_classifier.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_naive_bayes_classifier.pdf"^^xsd:string ;
+      dc:title "Naive Bayes classifier Web Service"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. Naive Bayes classifier Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 3. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_naive_bayes_classifier.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#229> .
+
 test:doc_8
       rdf:type owl:NamedIndividual , bibo:Article ;
       rdfs:label "El corpus tècnic del IULA: corpus textual especializado plurilingüe" ;
@@ -4664,6 +4730,39 @@ test:doc_8
       dc:title "El corpus tècnic del IULA: corpus textual especializado plurilingüe" ;
       dcterms:bibliographicCitation
               "Cabré MT, Bach C. El corpus tècnic del IULA: corpus textual especializado plurilingüe. Panace@ - Boletín de Medicina y Traducción [Internet]. 2004;5(16):173–6. Available from: http://www.medtrad.org/panacea/IndiceGeneral/n16_resenas_Cabre-Bach.pdf" .
+
+test:doc_80
+      rdf:type owl:NamedIndividual , bibo:Manuscript ;
+      rdfs:label "Select Nouns from LMF lexicon Web Service "^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_noun_classification_filter.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_noun_classification_filter.pdf"^^xsd:string ;
+      dc:title "Select Nouns from LMF lexicon Web Service "^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. Select Nouns from LMF lexicon Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 3. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_noun_classification_filter.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#246> .
+
+test:doc_81
+      rdf:type owl:NamedIndividual , bibo:Manuscript ;
+      rdfs:label "MaltParser Web Service "^^xsd:string ;
+      ms:url  "http://ws02.iula.upf.edu/panacea/documentation/ws04/WS_malt_parser.pdf"^^xsd:string ;
+      dc:creator test:person_Muntsa_Padró , "Idan Sadan"^^xsd:string ;
+      dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws04/WS_malt_parser.pdf"^^xsd:string ;
+      dc:title "MaltParser Web Service "^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Padró M. MaltParser Web Service [unpublished manuscript of PANACEA Project] [Internet]. Barcelona; 2012 p. 4. Available from: http://ws02.iula.upf.edu/panacea/documentation/ws04/WS_malt_parser.pdf"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#249> .
+
+test:doc_82
+      rdf:type bibo:Report , owl:NamedIndividual ;
+      rdfs:label "Travelling Object definition for multilevel lexicon in PANACEA platform"^^xsd:string ;
+      ms:url  "http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf"^^xsd:string ;
+      dc:creator test:person_Monica_Monachini , <http://dblp.l3s.de/d2r/resource/authors/Francesca_Frontini> , test:person_Valeria_Quochi , test:person_Muntsa_Padró , test:person_Núria_Bel , <http://dblp.l3s.de/d2r/resource/authors/Laura_Rimell> ;
+      dc:identifier "http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf"^^xsd:string ;
+      dc:title "Travelling Object definition for multilevel lexicon in PANACEA platform"^^xsd:string ;
+      dcterms:bibliographicCitation
+              "Rimell L, Bel N, Padró M, Quochi V, Frontini F, Monachini M. Travelling Object definition for multilevel lexicon in PANACEA platform [Internet]. [s.l.]: PANACEA Project; 2012 p. 26. Available from: http://myexperiment.elda.org/files/11/download"^^xsd:string ;
+      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#227> , <http://gilmere.upf.edu/MetadataRecords.ttl#268> , <http://gilmere.upf.edu/MetadataRecords.ttl#269> , <http://gilmere.upf.edu/MetadataRecords.ttl#264> , <http://gilmere.upf.edu/MetadataRecords.ttl#266> , <http://gilmere.upf.edu/MetadataRecords.ttl#265> , <http://gilmere.upf.edu/MetadataRecords.ttl#244> , <http://gilmere.upf.edu/MetadataRecords.ttl#267> , <http://gilmere.upf.edu/MetadataRecords.ttl#243> .
 
 test:doc_9
       rdf:type bibo:Article , owl:NamedIndividual ;
