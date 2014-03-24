@@ -4917,35 +4917,6 @@ test:doc_uc_9
               "Atdag S, Labatut V. A comparison of named entity recognition tools applied to biographical texts. Systems and Computer Science (ICSCS), 2013 2nd International Conference on [Internet]. 2013 [cited 2014 Mar 12]. p. 228–33. Available from: http://dx.doi.org/10.1109/IcConSCS.2013.6632052"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/corr/AtdagL13> .
 
-test:ex_01
-      rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Elecciones municipales 2011"^^xsd:string ;
-      ms:fundingProject test:project_CLARIN_ES ;
-      ms:languageName "Catalan"^^xsd:string ;
-      ms:url  "http://iula02v.upf.edu/tfidf_web/executions/"^^xsd:string ;
-      dc:creator test:organization_UPF-IULA ;
-      dc:description "This example analyzed 2011 municipal election campaign from published texts in political blogosphere. The process included: a) automatically and periodically access to 459 representative blogs of Catalan political blogosphere, b) obtaining and pre-processing of the different texts (over 8000 posts) and (iii) texts processing with different statistical tools to calculate the most significant words for each blog in contrast to the others."^^xsd:string ;
-      dc:identifier "http://iula02v.upf.edu/tfidf_web/executions/"^^xsd:string ;
-      dc:subject bio:Tokenization , bio:StatisticsAnalysis ;
-      dc:title "Elecciones municipales 2011"^^xsd:string ;
-      dcterms:isReferencedBy
-              test:doc_uc_12 ;
-      dcterms:references <http://gilmere.upf.edu/MetadataRecords.ttl#108> , <http://gilmere.upf.edu/MetadataRecords.ttl#119> , <http://gilmere.upf.edu/MetadataRecords.ttl#109> , <http://gilmere.upf.edu/MetadataRecords.ttl#238> .
-
-test:ex_02
-      rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Androcentrismo en la prensa española: ¿de quién hablan las noticias?"^^xsd:string ;
-      ms:fundingProject test:project_CLARIN_ES ;
-      ms:languageName "Spanish"^^xsd:string ;
-      ms:url  "http://gilmere.upf.edu/mvillegas/clarin-es-lab/documentacion/PoweredByClarin.htm#wkf1"^^xsd:string ;
-      dc:creator test:organization_UPF-IULA ;
-      dc:description "This example analyzed 150,000 newspaper headlines of “El País digital” from the years 2005, 2007 and 2010. The process included: a) automatically parse over 150,000 news headlines, b) identifying subjects of sentences using automatic annotation tools and (iii) semantic classification to calculate the presence of human subjects versus abstract subjects in Spanish newspaper headlines."^^xsd:string ;
-      dc:identifier "http://gilmere.upf.edu/mvillegas/clarin-es-lab/documentacion/PoweredByClarin.htm#wkf1"^^xsd:string ;
-      dc:subject bio:MorphosyntacticTagging , bio:SyntacticTagging ;
-      dc:title "Androcentrismo en la prensa española: ¿de quién hablan las noticias?"^^xsd:string ;
-      dcterms:isReferencedBy
-              test:doc_uc_13 , test:doc_uc_14 .
-
 test:metadata-AnCora-Cat
       rdf:type ms:CorpusText , owl:NamedIndividual ;
       rdfs:label "AnCora-CA" ;
@@ -5869,6 +5840,14 @@ test:organization_Eleka
       foaf:homepage "http://www.eleka.net/index.php?id=en" ;
       foaf:name "Eleka Ingenieritza Linguistikoa S.L" .
 
+test:organization_Feminario
+      rdf:type foaf:Organization ;
+      rdfs:label "Feminario"^^xsd:string ;
+      ms:url  "http://amparomorenosarda.es/"^^xsd:string ;
+      dc:description "Feminario Mujeres y Cultura de Masas de la UAB. Grupo creado en el Departamento de Periodismo de la UAB centrado en la representación de mujeres y hombres en los medios de comunicación."@es ;
+      dc:subject <http://dbpedia.org/page/Media_studies> , <http://dbpedia.org/page/Gender_studies> ;
+      foaf:member test:person_Amparo_Moreno .
+
 test:organization_GRIAL
       rdf:type foaf:Organization , owl:NamedIndividual ;
       rdfs:label "Grup de Recerca Interuniversitari en Aplicacions Lingüístiques (GRIAL)" ;
@@ -6015,6 +5994,16 @@ test:person_Aitziber_Atutxa
       foaf:name "Aitziber Atutxa" ;
       foaf:workplaceHomepage
               "http://ixa.si.ehu.es/Ixa/index_html/" .
+
+test:person_Amparo_Moreno
+      rdf:type foaf:Person , owl:NamedIndividual ;
+      rdfs:label "Amparo Moreno"^^xsd:string ;
+      ms:affiliation test:organization_Feminario ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
+      foaf:familyName "Moreno"^^xsd:string ;
+      foaf:givenName "Amparo"^^xsd:string ;
+      foaf:workplaceHomepage
+              <http://www.uab.edu> .
 
 test:person_Anna_Fernández_Montraveta
       rdf:type owl:NamedIndividual , foaf:Person ;
@@ -6467,6 +6456,19 @@ test:project_3LB
       foaf:homepage "http://www.dlsi.ua.es/projectes/3lb/index_en.html " ;
       foaf:name "3LB: Building a syntactic-semantic-trees-based database" .
 
+test:project_Androcentrismo
+      rdf:type foaf:Project ;
+      rdfs:label "Androcentrismo en la prensa española: ¿de quién hablan las noticias?"@es ;
+      ms:languageName "Spanish"^^xsd:string ;
+      ms:relatedResource <http://gilmere.upf.edu/MetadataRecords.ttl#240> ;
+      dc:contributor test:organization_UPF-IULA , test:project_CLARIN_ES ;
+      dc:creator test:organization_Feminario ;
+      dc:description "This project investigates androcentric practices in Spanish general press since late 80s. CLARIN contributed in the research by providing  services and tools to run an experiment that automatically analised a corpus of Spanish press since 2002. 150,000 newspaper headlines were analysed. The process included: a) automatically parse over 150,000 news headlines, b) identifying subjects of sentences using automatic annotation tools and (iii) semantic classification to calculate the presence of human subjects versus abstract subjects in Spanish newspaper headlines."@en ;
+      dc:subject <http://dbpedia.org/page/Gender_studies> , <http://dbpedia.org/page/Media_studies> , bio:SyntacticTagging ;
+      dc:title "Androcentrismo en la prensa española: ¿de quién hablan las noticias?"@es ;
+      dcterms:isReferencedBy
+              test:doc_uc_13 , test:doc_uc_12 , test:doc_uc_14 .
+
 test:project_Apertium
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "Apertium" ;
@@ -6593,6 +6595,20 @@ test:project_MT
       dc:subject bio:NamedEntityRecognition ;
       foaf:homepage "http://mappingtexts.org/" ;
       foaf:name "Mapping Texts" .
+
+test:project_Municipals
+      rdf:type foaf:Project ;
+      rdfs:label "Elecciones municipales 2011"@es ;
+      ms:languageName "Catalan"^^xsd:string ;
+      ms:relatedResource <http://gilmere.upf.edu/MetadataRecords.ttl#108> , <http://gilmere.upf.edu/MetadataRecords.ttl#119> , <http://gilmere.upf.edu/MetadataRecords.ttl#109> , <http://gilmere.upf.edu/MetadataRecords.ttl#238> ;
+      ms:url  "http://iula02v.upf.edu/tfidf_web/executions/"^^xsd:string ;
+      dc:contributor test:project_CLARIN_ES , test:organization_UPF-IULA ;
+      dc:creator " Carlos Gonzalo"^^xsd:string ;
+      dc:description "This example analyzed 2011 municipal election campaign from published texts in political blogosphere. The process included: a) automatically and periodically access to 459 representative blogs of Catalan political blogosphere, b) obtaining and pre-processing of the different texts (over 8000 posts) and (iii) texts processing with different statistical tools to calculate the most significant words for each blog in contrast to the others."^^xsd:string ;
+      dc:subject bio:TextMining , <http://dbpedia.org/page/Big_data> , bio:StatisticsAnalysis , <http://dbpedia.org/page/Media_studies> ;
+      dc:title "Elecciones municipales 2011"@es ;
+      dcterms:isReferencedBy
+              test:doc_uc_12 .
 
 test:project_OpenMT-2
       rdf:type foaf:Project , owl:NamedIndividual ;
