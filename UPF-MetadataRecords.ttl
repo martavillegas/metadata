@@ -6493,7 +6493,7 @@ test:project_CHALICE
       rdfs:label "Connecting Historical Authorities with Linked Data, Contexts and Entities" ;
       dc:contributor "Queen’s University Belfast. Centre for Data Digitisation and Analysis" , <http://viaf.org/viaf/137387653> , "University of Edinburgh. School of Informatics. Language Technology Group" , "King's College London. Centre for e-Research" ;
       dc:description "This project  aimed at providing a historic place-name gazetteer covering a thousand years of history and providing links to attestations in old texts and maps', NER techniques were used to extract new data from digitized English Place -Name Survey." ;
-      dc:subject bio:NamedEntityRecognition ;
+      dc:subject <http://dbpedia.org/page/History> , bio:NamedEntityRecognition ;
       foaf:homepage "http://chalice.blogs.edina.ac.uk/" ;
       foaf:name "Connecting Historical Authorities with Linked Data, Contexts and Entities" .
 
@@ -6517,7 +6517,7 @@ test:project_ChartEx
       rdfs:label "ChartEx" ;
       dc:contributor <http://viaf.org/viaf/156836332> , <http://viaf.org/viaf/154911632> , <http://viaf.org/viaf/130333233> , <http://viaf.org/viaf/145108120> , <http://viaf.org/viaf/159511000> , <http://viaf.org/viaf/124424463> ;
       dc:description "This project focuses on the extraction of information about places, people and events in their lives from medieval charters by using NLP technologies as NER, among others." ;
-      dc:subject bio:NamedEntityRecognition ;
+      dc:subject <http://dbpedia.org/page/History> , bio:NamedEntityRecognition ;
       foaf:homepage "http://www.chartex.org/" ;
       foaf:name "ChartEx" .
 
@@ -6526,7 +6526,7 @@ test:project_DIEMRL
       rdfs:label "Digging Into the Enlightenment: Mapping the Republic of Letters" ;
       dc:contributor <http://viaf.org/viaf/137316683> , <http://viaf.org/viaf/158761280> , <http://viaf.org/viaf/142129514> ;
       dc:description "This collaborative project analyzed the degree to which the effects of the Enlightenment can be observed in the writing of people of various occupations in a corpus of 53,000 18th-century letters called Electronic Enlightenment (EE). The hypothesis of the project presents a new perspective in the practice of interpretative research in the field of humanities. This view aimed to integrate innovative visualization and annotation techniques into interactive tools for exploring and analyzing information about people, places, times, and relationships in the 'Republic of Letters'." ;
-      dc:subject bio:NamedEntityRecognition ;
+      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/page/History> ;
       foaf:homepage "http://enlightenment.humanitiesnetwork.org/" ;
       foaf:name "Digging Into the Enlightenment: Mapping the Republic of Letters" .
 
@@ -6592,7 +6592,7 @@ test:project_MT
       rdfs:label "Mapping Texts" ;
       dc:contributor <http://viaf.org/viaf/122573955> ;
       dc:description "The project aimed to develop new ways of discovering and analyzing language patterns embedded in historical newspaper databases. Its approach was to combine text mining and geospatial visualization methods to explore massive collections of electronic texts." ;
-      dc:subject bio:NamedEntityRecognition ;
+      dc:subject <http://dbpedia.org/page/History> , bio:NamedEntityRecognition ;
       foaf:homepage "http://mappingtexts.org/" ;
       foaf:name "Mapping Texts" .
 
