@@ -3,6 +3,7 @@
 
 @prefix bibo:    <http://purl.org/ontology/bibo/#> .
 @prefix bio:     <http://gilmere.upf.edu/bio.ttl#> .
+@prefix cc:      <http://creativecommons.org/ns#> .
 @prefix dblp:    <http://sw.deri.org/~aharth/2004/07/dblp/dblp.owl#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcr:     <http://www.isocat.org/ns/dcr.rdf#> .
@@ -78,6 +79,9 @@ bio:Tokenization
       rdf:type ms:UseNLPSpecific .
 
 ms:   rdf:type owl:Ontology ;
+      rdfs:comment "This ontology is the first atempt to move META-SHARE model to RDF/OWL. More info at: Villegas, Melero and Bel \"Metadata as Linked Open Data: mappimg disparate XML metadata registries into one RDF/OWL registry\" to be published in LREC-2014."^^xsd:string ;
+      dc:creator "IULA - Universitat Pompeu Fabra"^^xsd:string ;
+      dcterms:license <http://creativecommons.org/licenses/by/3.0/> ;
       owl:imports bio: .
 
 ms:AGPL
@@ -215,7 +219,7 @@ ms:CharacterEncoding
       rdfs:label "CharacterEncoding"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2564"@en ;
       dc:description "Groups together information on character encoding of the resource"@en ;
-      owl:sameAs <http://dbpedia.org/page/Character_encoding> .
+      owl:sameAs <http://dbpedia.org/resource/Character_encoding> .
 
 ms:CommercialUser
       rdf:type ms:UserNature ;
@@ -235,14 +239,10 @@ ms:Corpus
 
 ms:CorpusAudio
       rdf:type owl:Class ;
+      rdfs:label "Corpus Audio"@en ;
       rdfs:subClassOf ms:Corpus ;
-      owl:equivalentClass
-              [ rdf:type owl:Class ;
-                owl:intersectionOf (ms:Corpus [ rdf:type owl:Restriction ;
-                            owl:hasValue ms:audio ;
-                            owl:onProperty ms:mediaType
-                          ])
-              ] .
+      dc:description "A speech corpus (or spoken corpus) is a database of speech audio files and text transcriptions. (wikipedia)"@en ;
+      owl:sameAs <http://dbpedia.org/resource/Speech_corpus> .
 
 ms:CorpusCollection
       rdf:type owl:Class ;
@@ -251,25 +251,15 @@ ms:CorpusCollection
 
 ms:CorpusImage
       rdf:type owl:Class ;
-      rdfs:subClassOf ms:Corpus ;
-      owl:equivalentClass
-              [ rdf:type owl:Class ;
-                owl:intersectionOf (ms:Corpus [ rdf:type owl:Restriction ;
-                            owl:hasValue ms:image ;
-                            owl:onProperty ms:mediaType
-                          ])
-              ] .
+      rdfs:label "Corpus Image"@en ;
+      rdfs:subClassOf ms:Corpus .
 
 ms:CorpusText
       rdf:type owl:Class ;
+      rdfs:label "Corpus Text"@en ;
       rdfs:subClassOf ms:Corpus ;
-      owl:equivalentClass
-              [ rdf:type owl:Class ;
-                owl:intersectionOf (ms:Corpus [ rdf:type owl:Restriction ;
-                            owl:hasValue ms:text ;
-                            owl:onProperty ms:mediaType
-                          ])
-              ] .
+      dc:description "Text corpus is a large and structured set of texts used to do statistical analysis and hypothesis testing, checking occurrences or validating linguistic rules within a specific language territory. (wikipedia)."@en ;
+      owl:sameAs <http://dbpedia.org/resource/Text_corpus> .
 
 ms:CorpusTextNgram
       rdf:type owl:Class ;
@@ -278,14 +268,8 @@ ms:CorpusTextNgram
 
 ms:CorpusVideo
       rdf:type owl:Class ;
-      rdfs:subClassOf ms:Corpus ;
-      owl:equivalentClass
-              [ rdf:type owl:Class ;
-                owl:intersectionOf (ms:Corpus [ rdf:type owl:Restriction ;
-                            owl:hasValue ms:video ;
-                            owl:onProperty ms:mediaType
-                          ])
-              ] .
+      rdfs:label "Corpus Video"@en ;
+      rdfs:subClassOf ms:Corpus .
 
 ms:Cp037
       rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
@@ -695,7 +679,7 @@ ms:EAGLES
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "EAGLES"@en ;
       dc:description "EAGLES (Expert Advisory Group on Language Engineering Standards). The Eagles Guidelines provide guidance for markup to be used with text corpora."@en ;
-      owl:sameAs <http://dbpedia.org/page/Eagles_Guidelines> .
+      owl:sameAs <http://dbpedia.org/resource/Eagles_Guidelines> .
 
 ms:ELRA_END_USER
       rdf:type owl:NamedIndividual , ms:License ;
@@ -764,7 +748,7 @@ ms:GMX
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "GMX"@en ;
       dc:description "GMX (Global information management Metrics eXchange) is a collection of standards for the translation industry."@en ;
-      owl:sameAs <http://dbpedia.org/page/Global_information_management_Metrics_eXchange> .
+      owl:sameAs <http://dbpedia.org/resource/Global_information_management_Metrics_eXchange> .
 
 ms:GPL
       rdf:type owl:NamedIndividual , ms:License ;
@@ -781,7 +765,7 @@ ms:HamNoSys
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "HamNoSys"@en ;
       dc:description "HamNoSys ( Hamburg Sign Language Notation System) is a phonetic transcription system for sign languages"@en ;
-      owl:sameAs <http://dbpedia.org/page/Hamburg_Notation_System> .
+      owl:sameAs <http://dbpedia.org/resource/Hamburg_Notation_System> .
 
 ms:ISCII91
       rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
@@ -859,7 +843,7 @@ ms:ISO12620
       rdfs:label "ISO12620"@en ;
       rdfs:seeAlso <http://dbpedia.org/page/ISO/TC_37> ;
       dc:description "ISO12620 (Data Categories) is a standard used in Natural Language Processing from ISO/TC 37 which defines a Data Category Registry of linguistic terms"@en ;
-      owl:sameAs <http://dbpedia.org/page/ISO_12620> .
+      owl:sameAs <http://dbpedia.org/resource/ISO_12620> .
 
 ms:ISO16642
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
@@ -904,7 +888,7 @@ ms:InkML
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "InkML"@en ;
       dc:description "InkML (ink Markup Language)"@en ;
-      owl:sameAs <http://dbpedia.org/page/InkML> .
+      owl:sameAs <http://dbpedia.org/resource/InkML> .
 
 ms:JISAutoDetect
       rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
@@ -926,7 +910,7 @@ ms:LMF
       rdfs:label "LMF"@en ;
       rdfs:seeAlso <http://dbpedia.org/page/ISO/TC_37> ;
       dc:description "LMF (Lexical Markup Framework) is a standard used in lexicography aiming to provide a common model for the creation and use of lexical resources."@en ;
-      owl:sameAs <http://dbpedia.org/page/Lexical_Markup_Framework> .
+      owl:sameAs <http://dbpedia.org/resource/Lexical_Markup_Framework> .
 
 ms:LanguageCode
       rdf:type owl:Class ;
@@ -1132,12 +1116,6 @@ ms:MachineReadableDictionary
       rdfs:seeAlso <http://dbpedia.org/page/Machine-readable_dictionary> ;
       rdfs:subClassOf ms:LexicalConceptualResource .
 
-ms:MediaType
-      rdf:type owl:Class ;
-      rdfs:label "MediaType"@en ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-2570"@en ;
-      dc:description "Specifies the media type of the resource and basically corresponds to the physical medium of the content representation. Each media type is described through a distinctive set of features. A resource may consist of parts attributed to different types of media"@en .
-
 ms:ModalityAnnotation
       rdf:type owl:Class ;
       rdfs:label "Modality Annotation"@en ;
@@ -1149,6 +1127,11 @@ ms:ModalityType
       ms:dcr  "http://www.isocat.org/datcat/DC-2490"@en ;
       dc:description "tModality is he channel by which signs are transmitted (oral, gesture, written)"@en .
 
+ms:MorphosyntacticAnnotation
+      rdf:type owl:Class ;
+      rdfs:label "Morphosyntactic annotation"@en ;
+      rdfs:subClassOf ms:AnnotationType .
+
 ms:MultlingualityType
       rdf:type owl:Class ;
       rdfs:label "MultlingualityType"@en ;
@@ -1158,13 +1141,13 @@ ms:OAXAL
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "OAXAL"@en ;
       dc:description "OAXAL (Open Architecture for XML Authoring and Localization) is a  (OASIS) standards-based initiative to encourage the development of an open Standards approach to XML Authoring and Localization."@en ;
-      owl:sameAs <http://dbpedia.org/page/OAXAL> .
+      owl:sameAs <http://dbpedia.org/resource/OAXAL> .
 
 ms:OWL
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "OWL"@en ;
       dc:description "OWL (Web Ontology Language) is a standard for encoding and exchanging ontologies designed to support the Semantic. Web"@en ;
-      owl:sameAs <http://dbpedia.org/page/Web_Ontology_Language> .
+      owl:sameAs <http://dbpedia.org/resource/Web_Ontology_Language> .
 
 ms:Ontology
       rdf:type owl:Class ;
@@ -1200,7 +1183,7 @@ ms:RDF
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "RDF"@en ;
       dc:description "RDF (Resource Description Framework) is a standard model for data interchange on the Web."@en ;
-      owl:sameAs <http://dbpedia.org/page/Resource_Description_Framework> .
+      owl:sameAs <http://dbpedia.org/resource/Resource_Description_Framework> .
 
 ms:Resource
       rdf:type owl:Class ;
@@ -1216,13 +1199,13 @@ ms:SKOS
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SKOS"@en ;
       dc:description "SKOS (Simple Knowledge Organization System)  is a W3C recommendation designed for representation structured controlled vocabularies such as thesauri, classification schemes, taxonomies, subject-heading systems ..."@en ;
-      owl:sameAs <http://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System> .
+      owl:sameAs <http://dbpedia.org/resource/Simple_Knowledge_Organization_System> .
 
 ms:SRX
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SRX"@en ;
       dc:description "SRX (Segmentation Rules eXchange) provides a common way to describe how to segment text for translation and other language-related processes"@en ;
-      owl:sameAs <http://dbpedia.org/page/Segmentation_Rules_eXchange> .
+      owl:sameAs <http://dbpedia.org/resource/Segmentation_Rules_eXchange> .
 
 ms:SegmentationLevel
       rdf:type owl:Class ;
@@ -1332,7 +1315,7 @@ ms:TMX
       rdfs:label "TMX"@en ;
       rdfs:seeAlso <http://dbpedia.org/page/Translation_memory> ;
       dc:description "TMX (Translation Memory eXchange) is an open XML standard for the exchange of translation memory data."@en ;
-      owl:sameAs <http://dbpedia.org/page/Translation_Memory_eXchange> .
+      owl:sameAs <http://dbpedia.org/resource/Translation_Memory_eXchange> .
 
 ms:TerminologicalResource
       rdf:type owl:Class ;
@@ -1341,15 +1324,16 @@ ms:TerminologicalResource
 
 ms:Thesaurus
       rdf:type owl:Class ;
-      rdfs:label "Ontology"@en ;
+      rdfs:label "Thesaurus"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Thesaurus> ;
-      rdfs:subClassOf ms:LexicalConceptualResource .
+      rdfs:subClassOf ms:LexicalConceptualResource ;
+      dc:description "Thesaurus list words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words (wikipedia)"@en .
 
 ms:TimeML
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "TimeML"@en ;
       dc:description "TimeML (Markup Language for Temporal and Event Expressions) is a standard markup language for temporal events in a document."@en ;
-      owl:sameAs <http://dbpedia.org/page/TimeML> .
+      owl:sameAs <http://dbpedia.org/resource/TimeML> .
 
 ms:ToolService
       rdf:type owl:Class ;
@@ -1410,7 +1394,7 @@ ms:WordNet
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "WordNet"@en ;
       dc:description "WordNet is a lexical database that groups words into sets of synonyms called synsets, provides short, general definitions, and records the various semantic relations between these synonym sets."@en ;
-      owl:sameAs <http://dbpedia.org/page/WordNet> .
+      owl:sameAs <http://dbpedia.org/resource/WordNet> .
 
 ms:Wordnet
       rdf:type owl:Class ;
@@ -1423,7 +1407,7 @@ ms:XCES
       rdfs:label "XCES"@en ;
       rdfs:seeAlso ms:CES ;
       dc:description "XCES is an XML based standard used in Natural Language Processing  to codify text corpus. XCES is highly based on previous Corpus Encoding Standard (CES)."@en ;
-      owl:sameAs <http://dbpedia.org/page/XCES> .
+      owl:sameAs <http://dbpedia.org/resource/XCES> .
 
 ms:XLIFF
       rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
@@ -1515,12 +1499,6 @@ ms:attributionText
       rdfs:label "attributionText"@en ;
       rdfs:subPropertyOf owl:topDataProperty ;
       dc:description "The text that must be quoted for attribution purposes when using a resource - for cases where a resource is provided with a restriction on attribution"@en .
-
-ms:audio
-      rdf:type owl:NamedIndividual , ms:MediaType ;
-      rdfs:label "audio"@en ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-2653"@en ;
-      dc:description "audio refers to a kind of 'Media Type' (the physical medium of the content representation)"@en .
 
 ms:automatic
       rdf:type owl:NamedIndividual ;
@@ -1642,13 +1620,6 @@ ms:coreferenceResolution
       rdfs:label "coreferenceResolution"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Coreference> , <http://dbpedia.org/page/Coreference> ;
       dc:description "Coreference Resolution is the task of finding all expressions that refer to the same entity in a text"@en .
-
-ms:corpusMediaType
-      rdf:type owl:ObjectProperty ;
-      rdfs:domain ms:CorpusCollection ;
-      rdfs:label "corpusMediaType"@en ;
-      rdfs:range ms:CorpusVideo , ms:CorpusText , ms:CorpusImage , ms:CorpusAudio ;
-      dc:description "Identifies the corpus Media Type of the resource. "@en .
 
 ms:creationEndDate
       rdf:type owl:DatatypeProperty ;
@@ -1843,7 +1814,7 @@ ms:facialExpression
       rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "facialExpression"@en ;
       dc:description "Facial Expression is a 'ModalityType' and refers to nonverbal communication with the face"@en ;
-      owl:sameAs <http://dbpedia.org/page/Facial_expression> .
+      owl:sameAs <http://dbpedia.org/resource/Facial_expression> .
 
 ms:fee
       rdf:type owl:DatatypeProperty ;
@@ -1890,13 +1861,9 @@ ms:identifier
       rdf:type owl:DatatypeProperty ;
       rdfs:domain ms:Resource ;
       rdfs:label "identifier"@en ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-3894" .
-
-ms:image
-      rdf:type owl:NamedIndividual , ms:MediaType ;
-      rdfs:label "image"@en ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-2655"@en ;
-      dc:description "image refers to a kind of 'Media Type' (the physical medium of the content representation)"@en .
+      ms:dcr  "http://www.isocat.org/datcat/DC-3894" ;
+      owl:equivalentProperty
+              bio:identifier , dc:identifier .
 
 ms:informLicensor
       rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
@@ -2125,7 +2092,6 @@ ms:mediaType
       rdf:type owl:ObjectProperty ;
       rdfs:domain ms:Corpus ;
       rdfs:label "mediaType"@en ;
-      rdfs:range ms:MediaType ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2570" ;
       dc:description "Identifies the media Type of the resource. "@en .
 
@@ -2268,7 +2234,7 @@ ms:morpho-Inflection
       rdfs:seeAlso ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       ms:dcr  "http://dbpedia.org/page/Inflection"@en ;
       dc:description "morpho-Inflection refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
-      owl:sameAs <http://dbpedia.org/page/Inflection> .
+      owl:sameAs <http://dbpedia.org/resource/Inflection> .
 
 ms:morpho-IrregularForms
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
@@ -2523,7 +2489,7 @@ ms:posTagging
       rdfs:label "posTagging"@en ;
       rdfs:seeAlso ms:partOfSpeech ;
       dc:description "Part of speech tagging is the process of marking up a word in a text as corresponding to a particular part of speech"@en ;
-      owl:sameAs <http://dbpedia.org/page/Part-of-speech_tagging> .
+      owl:sameAs <http://dbpedia.org/resource/Part-of-speech_tagging> .
 
 ms:pragmatics
       rdf:type owl:NamedIndividual , ms:EncodingLevel ;
@@ -2586,6 +2552,7 @@ ms:register
 
 ms:relatedResource
       rdf:type owl:ObjectProperty ;
+      rdfs:domain owl:Thing ;
       rdfs:label "relatedResource"@en ;
       rdfs:range ms:Resource ;
       dc:description "Identifies a related Resource. "@en .
@@ -2789,7 +2756,7 @@ ms:semantics-Relations-Antonyms
       rdfs:label "semantics-Relations-Antonyms"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-3824"@en ;
       dc:description "(semantics-)Relations-Antonyms refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
-      owl:sameAs <http://dbpedia.org/page/Opposite_(semantics)> .
+      owl:sameAs <http://dbpedia.org/resource/Opposite_(semantics)> .
 
 ms:semantics-Relations-Hyperonyms
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
@@ -2801,7 +2768,7 @@ ms:semantics-Relations-Hyponyms
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "semantics-Relations-Hyponyms"@en ;
       dc:description "(semantics-)Relations-Hyponyms refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
-      owl:sameAs <http://dbpedia.org/page/Hyponymy> , <http://dbpedia.org/resource/Hyponymy> .
+      owl:sameAs <http://dbpedia.org/resource/Hyponymy> .
 
 ms:semantics-Relations-Meronyms
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
@@ -2828,13 +2795,13 @@ ms:semantics-SemanticClass
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "semantics-SemanticClass"@en ;
       dc:description "SemanticClass refers to a kind of 'LinguisticInformation' contained in the resource. A semantic class contains words that share a semantic property."@en ;
-      owl:sameAs <http://dbpedia.org/page/Semantic_class> .
+      owl:sameAs <http://dbpedia.org/resource/Semantic_class> .
 
 ms:semantics-SemanticRoles
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "semantics-SemanticRoles"@en ;
       dc:description "SemanticRoles refers to a kind of 'LinguisticInformation' contained in the resource. Semantic roles are used to express the role that a noun phrase plays with respect to the action or state described by a sentence's verb."@en ;
-      owl:sameAs <http://dbpedia.org/page/Thematic_relation> .
+      owl:sameAs <http://dbpedia.org/resource/Thematic_relation> .
 
 ms:semantics-Traits
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
@@ -2869,7 +2836,7 @@ ms:signLanguage
       rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "signLanguage"@en ;
       dc:description "Sign Language is a 'ModalityType' and refers to a language which uses manual communication and body language to convey meaning."@en ;
-      owl:sameAs <http://dbpedia.org/page/Sign_language> .
+      owl:sameAs <http://dbpedia.org/resource/Sign_language> .
 
 ms:signLanguageGeneration
       rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
@@ -3029,7 +2996,7 @@ ms:spokenLanguage
       rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "spokenLanguage"@en ;
       dc:description "Spoken Language is a 'ModalityType' and refers to oral language as opposed to written language."@en ;
-      owl:sameAs <http://dbpedia.org/page/Spoken_language> .
+      owl:sameAs <http://dbpedia.org/resource/Spoken_language> .
 
 ms:statisticalProperties
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
@@ -3063,7 +3030,7 @@ ms:syllable
       rdfs:label "syllable"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-297"@en ;
       dc:description "syllable is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs"@en ;
-      owl:sameAs <http://dbpedia.org/page/Syllable> .
+      owl:sameAs <http://dbpedia.org/resource/Syllable> .
 
 ms:syntacticAnnotation-shallowParsing
       rdf:type owl:NamedIndividual , ms:SyntacticAnnotation ;
@@ -3135,12 +3102,6 @@ ms:texToSpeechSynthesis
       dc:description "Text to Speech Synthesis refers to the automatic production of speech, through a grapheme-to-phoneme transcription of the sentences to utter [Dutoit, 1997, TCTS Lab - Faculté Polytechnique de Mons]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Text-To-Speech> .
 
-ms:text
-      rdf:type owl:NamedIndividual , ms:MediaType ;
-      rdfs:label "text"@en ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-2658"@en ;
-      dc:description "text refers to a kind of 'Media Type' (the physical medium of the content representation)"@en .
-
 ms:textCategorisation
       rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "textCategorisation"@en ;
@@ -3166,11 +3127,6 @@ ms:textMining
       rdfs:label "textMining" ;
       dc:description "It refers to the process of deriving high-quality information from text"@en ;
       owl:sameAs <http://dbpedia.org/resource/Text_mining> .
-
-ms:textNumerical
-      rdf:type owl:NamedIndividual , ms:MediaType ;
-      rdfs:label "textNumerical"@en ;
-      dc:description "textNumerical refers to a kind of 'Media Type' (the physical medium of the content representation)"@en .
 
 ms:textType
       rdf:type owl:DatatypeProperty ;
@@ -3221,7 +3177,7 @@ ms:transliteration
       rdfs:label "transliteration"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1848"@en ;
       dc:description "Transliteration is the conversion of a texts from one writing system into another."@en ;
-      owl:sameAs <http://dbpedia.org/page/Transliteration> .
+      owl:sameAs <http://dbpedia.org/resource/Transliteration> .
 
 ms:underNegotiation
       rdf:type owl:NamedIndividual , ms:License , ms:Availability ;
@@ -3240,7 +3196,7 @@ ms:usage-Collocations
       rdfs:label "usage-Collocations"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-340"@en ;
       dc:description "(usage-)Collocations refers to a kind of 'LinguisticInformation' contained in the resource. A collocation is a sequence of words or terms that co-occur more often than would be expected by chance"@en ;
-      owl:sameAs <http://dbpedia.org/page/Collocation> .
+      owl:sameAs <http://dbpedia.org/resource/Collocation> .
 
 ms:usage-Examples
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
@@ -3299,12 +3255,6 @@ ms:version
       rdfs:label "version"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2547" ;
       dc:description "Any string, usually a number, that identifies the version of a resource"@en .
-
-ms:video
-      rdf:type owl:NamedIndividual , ms:MediaType ;
-      rdfs:label "video"@en ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-2654"@en ;
-      dc:description "video refers to a kind of 'Media Type' (the physical medium of the content representation)"@en .
 
 ms:visualSceneUnderstanding
       rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
@@ -3399,7 +3349,7 @@ ms:writtenLanguage
       rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "writtenLanguage"@en ;
       dc:description "Written Language is a 'ModalityType' and refers to the representation of a language by means of a writing system"@en ;
-      owl:sameAs <http://dbpedia.org/page/Written_language> .
+      owl:sameAs <http://dbpedia.org/resource/Written_language> .
 
 ms:x-EUC-CN
       rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
