@@ -2444,7 +2444,7 @@ test:Apertium-fr-ca_resource-6v2
       ms:languageName "Catalan" , "French" ;
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
-              ms:lemma , ms:partOfSpeech , ms:semantics-CrossReferences ;
+              ms:partOfSpeech , ms:lemma , ms:semantics-CrossReferences ;
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
@@ -2617,7 +2617,7 @@ test:Apertium-oc-es_resource-10v2
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
                   http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf""" ;
-      ms:resourceCreator test:organization_UPF-IULA , test:organization_UA-Grup_Transducens , test:organization_Prompsit ;
+      ms:resourceCreator test:organization_UA-Grup_Transducens , test:organization_Prompsit , test:organization_UPF-IULA ;
       ms:resourceName "Occitan-Spanish LMF Apertium Bilingual dictionary" ;
       ms:resourceShortName
               "LMF Apertium Oc-Es" ;
@@ -3425,7 +3425,7 @@ test:PAN_metadata_LAB_bilingual_Glossary_FR-EN
       ms:contactPerson test:person_Antonio_Toral ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19982" ;
-      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#fra> ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#fra> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageId "fr" , "en" ;
       ms:languageName "English" , "French" ;
       ms:linguality ms:bilingual ;
@@ -5359,7 +5359,7 @@ test:doc_uc_13
       rdf:type owl:NamedIndividual , bibo:Book ;
       rdfs:label "De quién hablan las noticias?: guía para humanizar la información"^^xsd:string ;
       dc:creator "Alfonso Buitrago Londoño"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> , "Florencia Rovetto Gonem"^^xsd:string ;
-      dc:subject <http://dbpedia.org/page/Gender_studies> ;
+      dc:subject <http://dbpedia.org/resource/Gender_studies> ;
       dc:title "De quién hablan las noticias?: guía para humanizar la información"^^xsd:string ;
       dcterms:bibliographicCitation
               "Moreno A, Buitrago A, Rovetto F. De quién hablan las noticias?: guía para humanizar la información. Barcelona: Icaria; 2007"^^xsd:string .
@@ -5368,7 +5368,7 @@ test:doc_uc_14
       rdf:type owl:NamedIndividual , bibo:Book ;
       rdfs:label "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"^^xsd:string ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
-      dc:subject <http://dbpedia.org/page/Gender_studies> ;
+      dc:subject <http://dbpedia.org/resource/Gender_studies> ;
       dc:title "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"^^xsd:string ;
       dcterms:bibliographicCitation
               "Moreno A. De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico. Barcelona: Icaria; 2007. 375 p."^^xsd:string .
@@ -5377,7 +5377,7 @@ test:doc_uc_15
       rdf:type owl:NamedIndividual , bibo:Article ;
       rdfs:label "El poder de les paraules: “Municipals’11 online"^^xsd:string ;
       dc:identifier "http://hdl.handle.net/10230/12459"^^xsd:string ;
-      dc:subject <http://dbpedia.org/page/Media_studies> , test:project_Municipals ;
+      dc:subject test:project_Municipals , <http://dbpedia.org/resource/Media_studies> ;
       dc:title "El poder de les paraules: “Municipals’11 online"^^xsd:string ;
       dcterms:bibliographicCitation
               "El poder de les paraules: “Municipals’11 online.”. UPF.EDU [Internet]. 2011;2:12–3. Available from: http://hdl.handle.net/10230/12459"^^xsd:string ;
@@ -5533,7 +5533,7 @@ test:metadata-AnCora-DEP-Es
       dc:description "AnCora-DEP-Es is the AnCora-Es multilevel annotated corpus of Spanish in dependency-based representation, consisting of 500,000 words approximately. AnCora-DEP-Es can be used as source of information for inducing grammars, developing, improving and/or evaluating syntactic parsers and algorithms for semantic role labelling, dependency-based. This corpus is used in the CoNLL Shared Task 2009: Syntactic and Semantic Dependencies in Multiple Languages, where the core of the task is to predict syntactic and semantic dependencies and their labelling." ;
       ms:annotationStandoff
               "false" ;
-      ms:annotationType ms:syntacticAnnotation-treebanks , ms:morphosyntacticAnnotation-posTagging ;
+      ms:annotationType ms:morphosyntacticAnnotation-posTagging , ms:syntacticAnnotation-treebanks ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_M_Antònia_Martí_Antonín ;
@@ -6057,7 +6057,7 @@ test:metadata_ParoleSimpleLexinfoOntology
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
-              ms:RDF , ms:OWL ;
+              ms:OWL , ms:RDF ;
       ms:contactPerson test:person_Marta_Villegas ;
       ms:creationMode ms:mixed ;
       ms:documentation test:doc_0 , test:doc_57 ;
@@ -6102,7 +6102,7 @@ test:metadata_SenSemDataBase-catv2
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
-              ms:definition-gloss , ms:semantics-CrossReferences , ms:usage-Examples , ms:usage-Frequency , ms:lemma , ms:semantics-SemanticRoles ;
+              ms:definition-gloss , ms:semantics-CrossReferences , ms:usage-Examples , ms:lemma , ms:usage-Frequency , ms:semantics-SemanticRoles ;
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
@@ -6394,7 +6394,7 @@ test:organization_Feminario
       rdf:type foaf:Organization ;
       rdfs:label "Feminario"^^xsd:string ;
       dc:description "Feminario Mujeres y Cultura de Masas de la UAB. Grupo creado en el Departamento de Periodismo de la UAB centrado en la representación de mujeres y hombres en los medios de comunicación."@es ;
-      dc:subject <http://dbpedia.org/page/Media_studies> , <http://dbpedia.org/page/Gender_studies> ;
+      dc:subject <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Gender_studies> ;
       ms:url  "http://amparomorenosarda.es/"^^xsd:string ;
       foaf:member test:person_Amparo_Moreno .
 
@@ -6549,6 +6549,7 @@ test:person_Amparo_Moreno
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Amparo Moreno"^^xsd:string ;
       ms:affiliation test:organization_Feminario ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAmparo_Moreno%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D%0D%0A"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
       foaf:familyName "Moreno"^^xsd:string ;
       foaf:givenName "Amparo"^^xsd:string ;
@@ -6559,6 +6560,7 @@ test:person_Anna_Fernández_Montraveta
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Anna Fernández Montraveta" ;
       ms:affiliation test:organization_GRIAL ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAna_Fern%25C3%25A1ndez_Montraveta%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Ana_Fern%C3%A1ndez_Montraveta> ;
       foaf:familyName "Fernández Montraveta" ;
       foaf:givenName "Anna" ;
@@ -6571,6 +6573,7 @@ test:person_Anna_Korhonen
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Anna Korhonen" ;
       ms:affiliation test:organization_CAM-DTAL ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAnna_Korhonen%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Anna_Korhonen> ;
       foaf:familyName "Korhonen" ;
       foaf:givenName "Anna" ;
@@ -6583,6 +6586,7 @@ test:person_Antonio_Toral
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Antonio Toral" ;
       ms:affiliation test:organization_DCU_School_of_Computing ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAntonio_Toral%3E%0D%0A+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Antonio_Toral> ;
       foaf:familyName "Toral" ;
       foaf:givenName "Antonio" ;
@@ -6628,6 +6632,7 @@ test:person_Gemma_Boleda
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Gemma Boleda" ;
       ms:affiliation test:organization_UPC-TALP ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGemma_Boleda%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Gemma_Boleda> ;
       foaf:familyName "Boleda" ;
       foaf:givenName "Gemma" ;
@@ -6640,6 +6645,7 @@ test:person_German_Rigau
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "German Rigau" ;
       ms:affiliation test:organization_EHU-IXA ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGerman_Rigau%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/German_Rigau> ;
       foaf:familyName "Rigau" ;
       foaf:givenName "German" ;
@@ -6663,6 +6669,7 @@ test:person_Gregor_Thurmair
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Gregor Thurmair" ;
       ms:affiliation test:organization_Linguatec_GmbH ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGregor_Thurmair%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Gregor_Thurmair> ;
       foaf:familyName "Thurmair" ;
       foaf:givenName "Gregor" ;
@@ -6705,6 +6712,7 @@ test:person_Joan_Soler
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Joan Soler" ;
       ms:affiliation test:organization_IEC ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FJoan_Soler%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Joan_Soler> ;
       foaf:familyName "Soler" ;
       foaf:givenName "Joan" ;
@@ -6717,6 +6725,7 @@ test:person_Jorge_Vivaldi
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Jorge Vivaldi"^^xsd:string ;
       ms:affiliation test:organization_UPF-IULA ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FJorge_Vivaldi%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0003-1491-8691> , <http://dblp.l3s.de/d2r/resource/authors/Jorge_Vivaldi> ;
       foaf:familyName "Vivaldi" ;
       foaf:givenName "Jorge" ;
@@ -6773,6 +6782,7 @@ test:person_Lluís_Padró
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Lluís Padró" ;
       ms:affiliation test:organization_UPC-TALP ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FLlu%25C3%25ADs_Padr%25C3%25B3%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Llu%C3%ADs_Padr%C3%B3> ;
       foaf:familyName "Padró" ;
       foaf:givenName "Lluís" ;
@@ -6785,6 +6795,7 @@ test:person_M_Antònia_Martí_Antonín
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "M Antònia Martí Antonín" ;
       ms:affiliation test:organization_UB-CLiC ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMaria_Ant%25C3%25B2nia_Mart%25C3%25AD%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Maria_Ant%C3%B2nia_Mart%C3%AD> ;
       foaf:familyName "Martí Antonín" ;
       foaf:givenName "M. Antònia" ;
@@ -6808,6 +6819,7 @@ test:person_Marc_Poch
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Marc Poch" ;
       ms:affiliation test:organization_UPF-IULA ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMarc_Poch%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Marc_Poch> , <http://orcid.org/0000-0002-2563-059X> ;
       foaf:familyName "Poch" ;
       foaf:givenName "Marc" ;
@@ -6831,6 +6843,7 @@ test:person_Marta_Villegas
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Marta Villegas" ;
       ms:affiliation test:organization_UPF-IULA ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMarta_Villegas%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0003-0711-0029> , <http://dblp.l3s.de/d2r/resource/authors/Marta_Villegas> ;
       foaf:familyName "Villegas" ;
       foaf:givenName "Marta" ;
@@ -6843,6 +6856,7 @@ test:person_María_Jesús_Aranzabe
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "María Jesús Aranzabe" ;
       ms:affiliation test:organization_EHU-IXA ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMar%25C3%25ADa_Jes%25C3%25BAs_Aranzabe%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Mar%C3%ADa_Jes%C3%BAs_Aranzabe> ;
       foaf:familyName "Aranzabe" ;
       foaf:givenName "María Jesús" ;
@@ -6855,6 +6869,7 @@ test:person_Mikel_Forcada
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Mikel Forcada" ;
       ms:affiliation test:organization_UA-Grup_Transducens ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMikel_L._Forcada%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Mikel_L._Forcada> ;
       foaf:familyName "Forcada" ;
       foaf:givenName "Mikel" ;
@@ -6889,6 +6904,7 @@ test:person_Monica_Monachini
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Monica Monachini" ;
       ms:affiliation test:organization_CNR-ILC ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMonica_Monachini%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Monica_Monachini> ;
       foaf:familyName "Monachini" ;
       foaf:givenName "Monica" ;
@@ -6901,6 +6917,8 @@ test:person_Montserrat_Marimón
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Montserrat Marimón" ;
       ms:affiliation test:organization_GRIAL ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMontserrat_Marimon%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Marimon> ;
       foaf:familyName "Marimón" ;
       foaf:givenName "Montserrat" ;
       foaf:mbox "montserrat.marimon@ub.edu" ;
@@ -6912,6 +6930,7 @@ test:person_Muntsa_Padró
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Muntsa Padró" ;
       ms:affiliation test:organization_UPF-IULA ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMuntsa_Padr%25C3%25B3%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Muntsa_Padr%C3%B3> ;
       foaf:familyName "Padró" ;
       foaf:givenName "Muntsa" ;
@@ -6945,6 +6964,7 @@ test:person_Prokopis_Prokopidis
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Prokopis Prokopidis" ;
       ms:affiliation test:organization_ILSP-Athena_RC ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FProkopis_Prokopidis%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Prokopis_Prokopidis> ;
       foaf:familyName "Prokopidis" ;
       foaf:givenName "Prokopis" ;
@@ -6957,6 +6977,7 @@ test:person_Sergi_Torner
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Sergi Torner" ;
       ms:affiliation test:organization_UPF-IULA ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FSergi_Torner%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Sergi_Torner> , <http://orcid.org/0000-0002-9825-8354> ;
       foaf:familyName "Torner" ;
       foaf:givenName "Sergi" ;
@@ -6969,6 +6990,7 @@ test:person_Valeria_Quochi
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Valeria Quochi" ;
       ms:affiliation test:organization_CNR-ILC ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FValeria_Quochi%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Valeria_Quochi> ;
       foaf:familyName "Quochi" ;
       foaf:givenName "Valeria" ;
@@ -6981,6 +7003,7 @@ test:person_Vera_Aleksic
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Vera Aleksic" ;
       ms:affiliation test:organization_Linguatec_GmbH ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FVera_Aleksic%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Vera_Aleksic> ;
       foaf:familyName "Aleksic" ;
       foaf:givenName "Vera" ;
@@ -6993,6 +7016,7 @@ test:person_Xavier_Gómez_Guinovart
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Xavier Gómez Guinovart" ;
       ms:affiliation test:organization_UVIGO-TALG ;
+      ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FXavier_G%25C3%25B3mez_Guinovart%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Xavier_G%C3%B3mez_Guinovart> ;
       foaf:familyName "Gómez Guinovart" ;
       foaf:givenName "Xavier" ;
@@ -7004,6 +7028,7 @@ test:person_Xavier_Gómez_Guinovart
 test:project_3LB
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "3LB: Building a syntactic-semantic-trees-based database" ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Treebank> ;
       foaf:homepage "http://www.dlsi.ua.es/projectes/3lb/index_en.html " ;
       foaf:name "3LB: Building a syntactic-semantic-trees-based database" .
 
@@ -7013,7 +7038,7 @@ test:project_Androcentrismo
       dc:contributor test:organization_UPF-IULA , test:project_CLARIN_ES ;
       dc:creator test:organization_Feminario ;
       dc:description "This project investigates androcentric practices in Spanish general press since late 80s. CLARIN contributed in the research by providing  services and tools to run an experiment that automatically analised a corpus of Spanish press since 2002. 150,000 newspaper headlines were analysed. The process included: a) automatically parse over 150,000 news headlines, b) identifying subjects of sentences using automatic annotation tools and (iii) semantic classification to calculate the presence of human subjects versus abstract subjects in Spanish newspaper headlines."@en ;
-      dc:subject <http://dbpedia.org/page/Gender_studies> , <http://dbpedia.org/page/Media_studies> , <http://gilmere.upf.edu/bio.ttl#SyntacticTagging> ;
+      dc:subject <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> , <http://gilmere.upf.edu/bio.ttl#SyntacticTagging> ;
       dcterms:isReferencedBy
               test:doc_uc_13 , test:doc_uc_12 , test:doc_uc_14 ;
       ms:languageName "Spanish"^^xsd:string ;
@@ -7023,20 +7048,22 @@ test:project_Androcentrismo
 test:project_Apertium
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "Apertium" ;
-      owl:sameAs <http://dbpedia.org/page/Apertium> ;
+      dc:subject <http://dbpedia.org/resource/Machine_translation> ;
+      owl:sameAs <http://dbpedia.org/resource/Apertium> ;
       foaf:homepage "http://www.apertium.org" ;
       foaf:name "Apertium" .
 
 test:project_Apertium_Trautorom
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "Apertium Trautorom" ;
+      dc:subject "<http://dbpedia.org/resource/Machine_translation>"^^xsd:string ;
       foaf:homepage " http://www.apertium.org" ;
       foaf:name "Apertium Trautorom" .
 
 test:project_CESS-ECE
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "CESS-ECE Syntactically and Semantically Annotated Corpora (Spanish, Catalan, Basque)" ;
-      foaf:homepage "http://clic.ub.edu/cessece" ;
+      foaf:homepage "http://clic.ub.edu/en/projects"^^xsd:string ;
       foaf:name "CESS-ECE Syntactically and Semantically Annotated Corpora (Spanish, Catalan, Basque)" .
 
 test:project_CHALICE
@@ -7044,7 +7071,7 @@ test:project_CHALICE
       rdfs:label "Connecting Historical Authorities with Linked Data, Contexts and Entities" ;
       dc:contributor "Queen’s University Belfast. Centre for Data Digitisation and Analysis" , <http://viaf.org/viaf/137387653> , "University of Edinburgh. School of Informatics. Language Technology Group" , "King's College London. Centre for e-Research" ;
       dc:description "This project  aimed at providing a historic place-name gazetteer covering a thousand years of history and providing links to attestations in old texts and maps', NER techniques were used to extract new data from digitized English Place -Name Survey." ;
-      dc:subject <http://dbpedia.org/page/History> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> ;
+      dc:subject <http://dbpedia.org/resource/History> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> ;
       foaf:homepage "http://chalice.blogs.edina.ac.uk/" ;
       foaf:name "Connecting Historical Authorities with Linked Data, Contexts and Entities" .
 
@@ -7068,7 +7095,7 @@ test:project_ChartEx
       rdfs:label "ChartEx" ;
       dc:contributor <http://viaf.org/viaf/156836332> , <http://viaf.org/viaf/154911632> , <http://viaf.org/viaf/130333233> , <http://viaf.org/viaf/145108120> , <http://viaf.org/viaf/159511000> , <http://viaf.org/viaf/124424463> ;
       dc:description "This project focuses on the extraction of information about places, people and events in their lives from medieval charters by using NLP technologies as NER, among others." ;
-      dc:subject <http://dbpedia.org/page/History> , <http://dbpedia.org/page/Category:Medieval_charters_and_cartularies> , <http://dbpedia.org/page/Medieval_studies> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> ;
+      dc:subject <http://dbpedia.org/resource/History> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , <http://dbpedia.org/resource/Category:Medieval_charters_and_cartularies> , <http://dbpedia.org/resource/Medieval_studies> ;
       foaf:homepage "http://www.chartex.org/" ;
       foaf:name "ChartEx" .
 
@@ -7077,7 +7104,7 @@ test:project_DIEMRL
       rdfs:label "Digging Into the Enlightenment: Mapping the Republic of Letters" ;
       dc:contributor <http://viaf.org/viaf/137316683> , <http://viaf.org/viaf/158761280> , <http://viaf.org/viaf/142129514> ;
       dc:description "This collaborative project analyzed the degree to which the effects of the Enlightenment can be observed in the writing of people of various occupations in a corpus of 53,000 18th-century letters called Electronic Enlightenment (EE). The hypothesis of the project presents a new perspective in the practice of interpretative research in the field of humanities. This view aimed to integrate innovative visualization and annotation techniques into interactive tools for exploring and analyzing information about people, places, times, and relationships in the 'Republic of Letters'." ;
-      dc:subject <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , <http://dbpedia.org/page/Age_of_Enlightenment> , <http://dbpedia.org/page/History> ;
+      dc:subject <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
       foaf:homepage "http://enlightenment.humanitiesnetwork.org/" ;
       foaf:name "Digging Into the Enlightenment: Mapping the Republic of Letters" .
 
@@ -7086,7 +7113,7 @@ test:project_DVE
       rdfs:label "Dynamic Variorum Editions" ;
       dc:contributor <http://viaf.org/viaf/158205697> , <http://viaf.org/viaf/151609847> , <http://viaf.org/viaf/139374045> ;
       dc:description "The project's goal was to identify and track topics about the Greco-Roman world as they appear in multilingual public document collections (Internet Archive, JSTOR, HathiTrust, etc.). This project aimed to create an environment and to generate 'dynamic variorum' editions of texts based on a services infrastructure. Project's work included mining primary and secondary digital sources to locate where people and places from the Greco-Roman world are discussed, what Greek and Latin works are cited, and what has been said about the people, places, and texts of the Greco-Roman world over time." ;
-      dc:subject <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , <http://dbpedia.org/page/Classical_antiquity> ;
+      dc:subject <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , <http://dbpedia.org/resource/Classical_antiquity> ;
       foaf:homepage "http://sites.tufts.edu/dynamicvariorum/" ;
       foaf:name "Dynamic Variorum Editions" .
 
@@ -7143,7 +7170,7 @@ test:project_MT
       rdfs:label "Mapping Texts" ;
       dc:contributor <http://viaf.org/viaf/122573955> ;
       dc:description "The project aimed to develop new ways of discovering and analyzing language patterns embedded in historical newspaper databases. Its approach was to combine text mining and geospatial visualization methods to explore massive collections of electronic texts." ;
-      dc:subject <http://dbpedia.org/page/History> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> ;
+      dc:subject <http://dbpedia.org/resource/History> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> ;
       foaf:homepage "http://mappingtexts.org/" ;
       foaf:name "Mapping Texts" .
 
@@ -7153,7 +7180,7 @@ test:project_Municipals
       dc:contributor test:project_CLARIN_ES , test:organization_UPF-IULA ;
       dc:creator " Carlos Gonzalo"^^xsd:string ;
       dc:description "This is an e-communication and e-politics project that analyses the 2011 municipal election campaign in Spain. The main objective of the project is to analyse new tendencies in e-politics and to demonstrate the impact of internet on the electoral process. CLARIN contributed to the research by providing services and tools to run an experiment that automatically analysed published texts in the Catalan political blogosphere related to this election campaign. The process included: a) automatically and periodically access to 459 representative blogs in the Catalan political blogosphere, b) obtaining and pre-processing of the different texts (over 8000 posts) and (iii) texts processing with different statistical tools to calculate the most significant words for each blog in contrast to the others."^^xsd:string ;
-      dc:subject <http://gilmere.upf.edu/bio.ttl#TextMining> , <http://dbpedia.org/page/Big_data> , <http://gilmere.upf.edu/bio.ttl#StatisticsAnalysis> , <http://dbpedia.org/page/Media_studies> ;
+      dc:subject <http://dbpedia.org/resource/Big_data> , <http://dbpedia.org/resource/Political_parties> , <http://gilmere.upf.edu/bio.ttl#TextMining> , <http://gilmere.upf.edu/bio.ttl#StatisticsAnalysis> , <http://dbpedia.org/resource/Media_studies> ;
       dcterms:isReferencedBy
               test:doc_uc_12 ;
       ms:affiliation "Departament de Comunicació. Universitat Pompeu Fabra"@cat ;
@@ -7240,7 +7267,7 @@ test:resource-CESS_EUv2
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Basque Dependency Treebank (BDT) located at http://ixa.si.ehu.es/Ixa/Produktuak/1306407157" ;
-      ms:resourceCreator test:person_Ainara_Estarrona , test:person_Larraitz_Uria , test:person_Izaskun_Aldezabal , test:person_Mikel_Iruskieta , test:organization_EHU-IXA , test:organization_UPF-IULA , test:person_Aitziber_Atutxa , test:person_Jose_Mari_Arriola , test:person_María_Jesús_Aranzabe , test:person_Kike_Fernández , test:person_Arantza_Díaz_de_Ilarraza ;
+      ms:resourceCreator test:person_Ainara_Estarrona , test:person_Larraitz_Uria , test:person_Izaskun_Aldezabal , test:organization_UPF-IULA , test:person_Mikel_Iruskieta , test:organization_EHU-IXA , test:person_Aitziber_Atutxa , test:person_Jose_Mari_Arriola , test:person_María_Jesús_Aranzabe , test:person_Kike_Fernández , test:person_Arantza_Díaz_de_Ilarraza ;
       ms:resourceName "GrAF version of the Basque Dependency Treebank" ;
       ms:resourceShortName
               "GrAF version of the Basque Dependency Treebank" ;
