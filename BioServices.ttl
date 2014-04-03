@@ -1,10 +1,11 @@
-# baseURI: http://gilmere.upf.edu/bio.ttl#
+# baseURI: http://purl.org/ms-lod/BioServices.ttl
 
-@prefix bio:     <http://gilmere.upf.edu/bio.ttl#> .
+@prefix :        <http://purl.org/ms-lod/BioServices.ttl#> .
+@prefix bio:     <http://purl.org/ms-lod/BioServices.ttl#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/#> .
-@prefix ms:      <http://gilmere.upf.edu/ms.ttl#> .
+@prefix ms:      <http://purl.org/ms-lod/MetaShare.ttl#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,17 +13,28 @@
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+dc:description
+      rdf:type rdf:Property ;
+      rdfs:comment "An account of the resource."@en-US ;
+      rdfs:isDefinedBy dc: ;
+      rdfs:label "Description"@en-US ;
+      dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en-US ;
+      dcterms:hasVersion <http://dublincore.org/usage/terms/history/#description-006> ;
+      dcterms:issued "1999-07-02" ;
+      dcterms:modified "2008-01-14" ;
+      skos:note "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en-US .
+
 bio:  rdf:type owl:Ontology ;
       rdfs:comment "This ontology is based on the Biocatalogue model and it is meant describe SOAP & REST services."@en .
 
 bio:Alignment
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Alignment" ;
       rdfs:seeAlso <http://dbpedia.org/resource/Parallel_text> ;
       dc:description "Text alignment is the task of finding the correct correspondence between locations of fragments in a given text, and its translation"@en .
 
 bio:Chunking-Segmentation
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Chunking-Segmentation" ;
       dc:description "Chunking is the analysis of a sentence which identifies the constituents parts (noun groups, verbs, verb groups, etc.)"@en ;
       owl:sameAs <http://dbpedia.org/resource/Shallow_parsing> .
@@ -63,7 +75,7 @@ bio:MorphosyntacticTagging
       dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphosyntactic information."^^xsd:string .
 
 bio:NamedEntityRecognition
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "NamedEntityRecognition" ;
       dc:description "Named Entity Recognition (NER) classifies elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc."@en ;
       owl:sameAs <http://dbpedia.org/resource/Named-entity_recognition> .
@@ -87,7 +99,7 @@ bio:RESTService
       dc:description "REST services are designed with an architectural style that specifies constraints, such as the uniform interface, that if applied to a web service induce desirable properties, such as performance, scalability, and modifiability. In the Representational State Transfer (REST) architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web [http://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html]"@en .
 
 bio:SOAP
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "SOAP"^^xsd:string ;
       dc:description " Simple Object Access Protocol (SOAP) is a protocol specification for exchanging structured information in the implementation of Web Services"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/SOAP> .
@@ -111,7 +123,7 @@ bio:ServiceTechnology
       dc:description "service technology (REST, SOAP, Soaplab, etc)"@en .
 
 bio:Soaplab
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "Soaplab"^^xsd:string ;
       dc:description "Soaplab is a Web services software framework specialised for bioinformatics programs with command-line interface."^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Soaplab> .
@@ -138,7 +150,8 @@ bio:Stemming-Lemmatization
 bio:SyntacticTagging
       rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "SyntacticTagging" ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-2330" ;
+      <http://gilmere.upf.edu/ms.ttl#dcr>
+              "http://www.isocat.org/datcat/DC-2330" ;
       dc:description "Is the process of annotating syntacitc information in texts."^^xsd:string .
 
 bio:Task
@@ -175,7 +188,7 @@ bio:endpoint
 
 bio:identifier
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain ms:Resource ;
+      rdfs:domain <http://gilmere.upf.edu/ms.ttl#Resource> ;
       rdfs:label "identifier"^^xsd:string .
 
 bio:input
@@ -213,14 +226,3 @@ bio:wsdl
       rdfs:domain bio:Service ;
       rdfs:label "wsdl"^^xsd:string ;
       dc:description "For SOAP services, wsdl points to the wsdl file of the service."^^xsd:string .
-
-dc:description
-      rdf:type rdf:Property ;
-      rdfs:comment "An account of the resource."@en-US ;
-      rdfs:isDefinedBy dc: ;
-      rdfs:label "Description"@en-US ;
-      dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en-US ;
-      dcterms:hasVersion <http://dublincore.org/usage/terms/history/#description-006> ;
-      dcterms:issued "1999-07-02" ;
-      dcterms:modified "2008-01-14" ;
-      skos:note "A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document \"DCMI Metadata Terms\" (http://dublincore.org/documents/dcmi-terms/) for an explanation."@en-US .
