@@ -38,68 +38,68 @@ bio:SoaplabService
 bio:Task
       browser:topNode bio:Task .
 
-ms:ComputationalLexicon
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#ComputationalLexicon>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:CorpusAudio
-      browser:topNode ms:Corpus .
+<http://purl.org/ms-lod/MetaShare.ttl#CorpusAudio>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Corpus> .
 
-ms:CorpusCollection
-      browser:topNode ms:Corpus .
+<http://purl.org/ms-lod/MetaShare.ttl#CorpusCollection>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Corpus> .
 
-ms:CorpusImage
-      browser:topNode ms:Corpus .
+<http://purl.org/ms-lod/MetaShare.ttl#CorpusImage>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Corpus> .
 
-ms:CorpusText
-      browser:topNode ms:Corpus .
+<http://purl.org/ms-lod/MetaShare.ttl#CorpusText>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Corpus> .
 
-ms:CorpusTextNgram
-      browser:topNode ms:Corpus .
+<http://purl.org/ms-lod/MetaShare.ttl#CorpusTextNgram>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Corpus> .
 
-ms:CorpusVideo
-      browser:topNode ms:Corpus .
+<http://purl.org/ms-lod/MetaShare.ttl#CorpusVideo>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Corpus> .
 
-ms:Framenet
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#Framenet>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:Lexicon
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#Lexicon>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:MachineReadableDictionary
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#MachineReadableDictionary>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:Ontology
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#Ontology>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:TerminologicalResource
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#TerminologicalResource>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:Thesaurus
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#Thesaurus>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:WordList
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#WordList>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
-ms:Wordnet
-      browser:topNode ms:LexicalConceptualResource .
+<http://purl.org/ms-lod/MetaShare.ttl#Wordnet>
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#LexicalConceptualResource> .
 
 bibo:Article
-      browser:topNode ms:Document .
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Document> .
 
 bibo:AudioVisualDocument
-      browser:topNode ms:Document .
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Document> .
 
 bibo:Book
-      browser:topNode ms:Document .
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Document> .
 
 bibo:Chapter
-      browser:topNode ms:Document .
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Document> .
 
 bibo:Report
-      browser:topNode ms:Document .
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Document> .
 
 bibo:Webpage
-      browser:topNode ms:Document .
+      browser:topNode <http://purl.org/ms-lod/MetaShare.ttl#Document> .
 
 foaf:Organization
       browser:topNode foaf:Agent .

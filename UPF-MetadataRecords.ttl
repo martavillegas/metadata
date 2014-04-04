@@ -5400,7 +5400,7 @@ test:doc_uc_3
       rdfs:label "Advanced visual analytics methods for literature analysis" ;
       dc:creator <http://viaf.org/viaf/14917130> , <http://dblp.l3s.de/d2r/resource/authors/Dimitrios_Kokkinakis> , <http://dblp.l3s.de/d2r/resource/authors/Daniela_Oelke> ;
       dc:identifier "http://dl.acm.org/citation.cfm?id=2390357.2390364" ;
-      dc:subject <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> ;
+      dc:subject <http://dbpedia.org/resource/Literature> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> ;
       dc:title "Advanced visual analytics methods for literature analysis" ;
       dcterms:bibliographicCitation
               "Oelke D, Kokkinakis D, Malm M. Advanced visual analytics methods for literature analysis. Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics [Internet]; 2012 [cited 2014 Mar 12]. p. 35–44. Available from: http://dl.acm.org/citation.cfm?id=2390357.2390364"^^xsd:string .
@@ -5431,7 +5431,7 @@ test:doc_uc_6
       rdfs:label "Topic modeling on historical newspapers" ;
       dc:creator "Tze-I Yang" , <http://dblp.l3s.de/d2r/resource/authors/Rada_Mihalcea> , <http://viaf.org/viaf/164341474> ;
       dc:identifier "http://dl.acm.org/citation.cfm?id=2107636.2107649" ;
-      dc:subject <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , test:project_MT ;
+      dc:subject <http://dbpedia.org/resource/Topic_model> , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , test:project_MT ;
       dc:title "Topic modeling on historical newspapers" ;
       dcterms:bibliographicCitation
               "Yang T-I, Torget AJ, Mihalcea R. Topic modeling on historical newspapers. Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2011 [cited 2014 Mar 12]. Available from: http://dl.acm.org/citation.cfm?id=2107636.2107649"^^xsd:string .
@@ -5626,7 +5626,6 @@ test:metadata-WordNetLMG-GL
       ms:documentation test:doc_45 , test:doc_19 ;
       ms:domain "general" ;
       ms:encodingLevel ms:semantics ;
-      ms:identifier "" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageId "gl" ;
       ms:languageName "Galician" ;
@@ -5653,7 +5652,6 @@ test:metadata-WordnetLMF-ES
       ms:documentation test:doc_45 , test:doc_19 ;
       ms:domain "general" ;
       ms:encodingLevel ms:semantics ;
-      ms:identifier "" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
