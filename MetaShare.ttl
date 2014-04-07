@@ -21,62 +21,62 @@
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
-<http://gilmere.upf.edu/bio.ttl#Alignment>
+<http://purl.org/ms-lod/BioServices.ttl#Alignment>
       rdf:type ms:UseNLPSpecific ;
       rdfs:seeAlso ms:alignment .
 
-<http://gilmere.upf.edu/bio.ttl#Chunking-Segmentation>
+<http://purl.org/ms-lod/BioServices.ttl#Chunking-Segmentation>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#CorpusProcessing>
+<http://purl.org/ms-lod/BioServices.ttl#CorpusProcessing>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#CorpusWorkbench>
+<http://purl.org/ms-lod/BioServices.ttl#CorpusWorkbench>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#FormatConversion>
+<http://purl.org/ms-lod/BioServices.ttl#FormatConversion>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#Lexicon-TerminologyExtraction>
+<http://purl.org/ms-lod/BioServices.ttl#Lexicon-TerminologyExtraction>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#Management>
+<http://purl.org/ms-lod/BioServices.ttl#Management>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#MorphologicalTagging>
+<http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging>
       rdf:type ms:UseNLPSpecific ;
       owl:sameAs ms:morphologicalAnalysis .
 
-<http://gilmere.upf.edu/bio.ttl#MorphosyntacticTagging>
+<http://purl.org/ms-lod/BioServices.ttl#MorphosyntacticTagging>
       rdf:type ms:UseNLPSpecific ;
       owl:sameAs ms:morphosyntacticTagging .
 
-<http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition>
+<http://purl.org/ms-lod/BioServices.ttl#NamedEntityRecognition>
       rdf:type ms:UseNLPSpecific ;
       owl:sameAs ms:namedEntityRecognition .
 
-<http://gilmere.upf.edu/bio.ttl#Querying>
+<http://purl.org/ms-lod/BioServices.ttl#Querying>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#Service>
+<http://purl.org/ms-lod/BioServices.ttl#Service>
       rdfs:subClassOf ms:ToolService .
 
-<http://gilmere.upf.edu/bio.ttl#StatisticsAnalysis>
+<http://purl.org/ms-lod/BioServices.ttl#StatisticsAnalysis>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#Stemming-Lemmatization>
+<http://purl.org/ms-lod/BioServices.ttl#Stemming-Lemmatization>
       rdf:type ms:UseNLPSpecific ;
       rdfs:seeAlso ms:lemma-Abbreviations , ms:lemma-Variants , ms:lemma-Compounds , ms:lemma-MultiWordUnits , ms:lemma , ms:lemma-CliticForms ;
       owl:sameAs ms:lemmatization .
 
-<http://gilmere.upf.edu/bio.ttl#SyntacticTagging>
+<http://purl.org/ms-lod/BioServices.ttl#SyntacticTagging>
       rdf:type ms:UseNLPSpecific .
 
-<http://gilmere.upf.edu/bio.ttl#TextMining>
+<http://purl.org/ms-lod/BioServices.ttl#TextMining>
       rdf:type ms:UseNLPSpecific ;
       owl:sameAs ms:textMining .
 
-<http://gilmere.upf.edu/bio.ttl#Tokenization>
+<http://purl.org/ms-lod/BioServices.ttl#Tokenization>
       rdf:type ms:UseNLPSpecific .
 
 dc:contributor
@@ -1957,7 +1957,7 @@ ms:identifier
       dc:description "A reference to the resource like a pid or an internal identifier used by the resource provider."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-3894" ;
       owl:equivalentProperty
-              <http://gilmere.upf.edu/bio.ttl#identifier> , dc:identifier .
+              <http://purl.org/ms-lod/BioServices.ttl#identifier> , dc:identifier .
 
 ms:informLicensor
       rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
@@ -2284,7 +2284,7 @@ ms:monolingual
 ms:morpho-Aspect
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "morpho-Aspect"@en ;
-      rdfs:seeAlso ms:morphology , <http://dbpedia.org/page/Grammatical_aspect> , ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> ;
+      rdfs:seeAlso ms:morphology , <http://dbpedia.org/page/Grammatical_aspect> , ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> ;
       dc:description "morpho-Aspect refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1242"@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_aspect> .
@@ -2292,42 +2292,42 @@ ms:morpho-Aspect
 ms:morpho-Auxiliary
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "morpho-Auxiliary"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> ;
       dc:description "morpho-Auxiliary refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Auxiliary_verb> .
 
 ms:morpho-Case
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "morpho-Case"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Grammatical_case> ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Grammatical_case> ;
       dc:description "morpho-Case refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_case> .
 
 ms:morpho-Degree
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Degree"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , ms:morphology ;
       dc:description "morpho-Degree refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1419" .
 
 ms:morpho-Derivation
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Derivation"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Derivation_(linguistics)> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Derivation_(linguistics)> , ms:morphology ;
       dc:description "morpho-Derivation refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Derivation_(linguistics)> .
 
 ms:morpho-Gender
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Gender"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Gender> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Gender> , ms:morphology ;
       dc:description "morpho-Gender refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_gender> .
 
 ms:morpho-Inflection
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Inflection"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , ms:morphology ;
       dc:description "morpho-Inflection refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       ms:dcr  "http://dbpedia.org/page/Inflection"@en ;
       owl:sameAs <http://dbpedia.org/resource/Inflection> .
@@ -2335,48 +2335,48 @@ ms:morpho-Inflection
 ms:morpho-IrregularForms
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-IrregularForms"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , ms:morphology ;
       dc:description "morpho-IrregularForms refers to a kind of 'LinguisticInformation' contained in the resource" , "morpho-IrregularForms refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
 ms:morpho-Mood
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Mood"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Grammatical_mood> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , <http://dbpedia.org/page/Grammatical_mood> , ms:morphology ;
       dc:description "morpho-Mood refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_mood> .
 
 ms:morpho-Number
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "morpho-Number"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> ;
       dc:description "morpho-Number refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_number> .
 
 ms:morpho-Person
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "morpho-Person"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> ;
       dc:description "morpho-Person refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_person> .
 
 ms:morpho-Reflexivity
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Reflexivity"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , ms:morphology ;
       dc:description "morpho-Reflexivity refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Reflexivity_(grammar)> .
 
 ms:morpho-Tense
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Tense"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , ms:morphology ;
       dc:description "morpho-Tense refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_tense> .
 
 ms:morpho-Voice
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "morpho-Voice"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , <http://gilmere.upf.edu/bio.ttl#MorphologicalTagging> , ms:morphology ;
+      rdfs:seeAlso ms:morphologicalAnalisys , <http://purl.org/ms-lod/BioServices.ttl#MorphologicalTagging> , ms:morphology ;
       dc:description "morpho-Voice refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Voice_(grammar)> .
 
@@ -2517,7 +2517,7 @@ ms:paragraph
 ms:parallel
       rdf:type owl:NamedIndividual , ms:MultlingualityType ;
       rdfs:label "parallel"@en ;
-      rdfs:seeAlso ms:alignment , <http://gilmere.upf.edu/bio.ttl#Alignment> , <http://dbpedia.org/page/Parallel_text> ;
+      rdfs:seeAlso ms:alignment , <http://purl.org/ms-lod/BioServices.ttl#Alignment> , <http://dbpedia.org/page/Parallel_text> ;
       dc:description "Parallel is 'MultlingualityType' and refers to a collection of texts, each of which is translated into one or more other languages than the original."@en .
 
 ms:parsing
@@ -2713,7 +2713,7 @@ ms:scene
 ms:segmentation
       rdf:type ms:AnnotationType , owl:NamedIndividual ;
       rdfs:label "segmentatiobn"@en ;
-      rdfs:seeAlso <http://gilmere.upf.edu/bio.ttl#Chunking-Segmentation> ;
+      rdfs:seeAlso <http://purl.org/ms-lod/BioServices.ttl#Chunking-Segmentation> ;
       dc:description "segmentation refers to the the annotation level of the resource or the annotation type a tool/service requires or produces as an output  ('AnnotationType). "@en .
 
 ms:segmentationLevel
@@ -2752,7 +2752,7 @@ ms:semanticAnnotation-events
 ms:semanticAnnotation-namedEntities
       rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "semantic annotation: named entities"@en ;
-      rdfs:seeAlso ms:SemAF_NE , <http://gilmere.upf.edu/bio.ttl#NamedEntityRecognition> , <http://dbpedia.org/page/Named-entity_recognition> , ms:namedEntityRecognition ;
+      rdfs:seeAlso ms:SemAF_NE , <http://purl.org/ms-lod/BioServices.ttl#NamedEntityRecognition> , <http://dbpedia.org/page/Named-entity_recognition> , ms:namedEntityRecognition ;
       dc:description "Annotations about identified named entities (named entity is a phrase that clearly identifies one item from a set of other items that have similar attributes. Examples of named entities are person names, geographic locations, addresses, phone numbers, companies, etc)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2275"@en .
 
@@ -3137,7 +3137,7 @@ ms:syllable
 ms:syntacticAnnotation-shallowParsing
       rdf:type ms:SyntacticAnnotation , owl:NamedIndividual ;
       rdfs:label "syntactic annotation"@en ;
-      rdfs:seeAlso <http://gilmere.upf.edu/bio.ttl#SyntacticTagging> , <http://dbpedia.org/page/Shallow_parsing> ;
+      rdfs:seeAlso <http://purl.org/ms-lod/BioServices.ttl#SyntacticTagging> , <http://dbpedia.org/page/Shallow_parsing> ;
       dc:description "(syntacticAnnotation-)shallowParsing refers to the  kind of 'SyntacticAnnotation' used in the resource."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2331"@en .
 

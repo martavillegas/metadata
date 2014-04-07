@@ -150,7 +150,7 @@ bio:Stemming-Lemmatization
 bio:SyntacticTagging
       rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "SyntacticTagging" ;
-      <http://gilmere.upf.edu/ms.ttl#dcr>
+      <http://purl.org/ms-lod/MetaShare.ttl#dcr>
               "http://www.isocat.org/datcat/DC-2330" ;
       dc:description "Is the process of annotating syntacitc information in texts."^^xsd:string .
 
@@ -190,7 +190,7 @@ bio:endpoint
 
 bio:identifier
       rdf:type owl:DatatypeProperty ;
-      rdfs:domain <http://gilmere.upf.edu/ms.ttl#Resource> ;
+      rdfs:domain <http://purl.org/ms-lod/MetaShare.ttl#Resource> ;
       rdfs:label "Identifier"@en ;
       dc:description "An unambiguous referent to the service."@en .
 
