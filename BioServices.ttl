@@ -5,6 +5,7 @@
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix ms:      <http://purl.org/ms-lod/MetaShare.ttl#> .
+@prefix ns:      <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
@@ -28,65 +29,65 @@ dc:description
       rdfs:comment "This ontology is based on the Biocatalogue model and it is meant describe SOAP & REST services."@en .
 
 bio:Alignment
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Alignment"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Parallel_text> ;
       dc:description "Text alignment is the task of finding the correct correspondence between locations of fragments in a given text, and its translation"@en .
 
 bio:Chunking-Segmentation
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Chunking: Segmentation"@en ;
       dc:description "Chunking is the analysis of a sentence which identifies the constituents parts (noun groups, verbs, verb groups, etc.)"@en ;
       owl:sameAs <http://dbpedia.org/resource/Shallow_parsing> .
 
 bio:CorpusProcessing
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Corpus Processing"@en ;
       dc:description "Any task that deals with analysis and exploitation of textual corpus."@en .
 
 bio:CorpusWorkbench
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Corpus Workbench"@en ;
       dc:description "A suite of tools to manage corpus analysis."@en .
 
 bio:FormatConversion
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Format Conversion"@en ;
       dc:description "Any task performing a change of format."@en .
 
 bio:Lexicon-TerminologyExtraction
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Lexicon-Terminology Extraction"@en ;
       rdfs:seeAlso <http://dbpedia.org/page/Terminology_extraction> ;
       dc:description "Extracting terminology is the process of extracting terminology from a text."@en .
 
 bio:Management
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Management"@en .
 
 bio:MorphologicalTagging
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Morphological Tagging"@en ;
       dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphological information."@en .
 
 bio:MorphosyntacticTagging
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Morphosyntactic Tagging"@en ;
       dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphosyntactic information."@en .
 
 bio:NamedEntityRecognition
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Named Entity Recognition"@en ;
       dc:description "Named Entity Recognition (NER) classifies elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc."@en ;
       owl:sameAs <http://dbpedia.org/resource/Named-entity_recognition> .
 
 bio:Querying
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Querying"@en ;
       dc:description "Refers to the task of searching (possibly via rgulars expressions) a word or patterns in a corpus."@en .
 
 bio:REST
-      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
       rdfs:label "REST"@en ;
       dc:description "Representational State Transfer (REST) is an architectural style based on the existing design of HTTP 1.0."@en ;
       owl:sameAs <http://dbpedia.org/resource/Representational_state_transfer> .
@@ -99,7 +100,7 @@ bio:RESTService
       dc:description "REST services are designed with an architectural style that specifies constraints, such as the uniform interface, that if applied to a web service induce desirable properties, such as performance, scalability, and modifiability. In the Representational State Transfer (REST) architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web [http://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html]"@en .
 
 bio:SOAP
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "SOAP"@en ;
       dc:description "Simple Object Access Protocol (SOAP) is a protocol specification for exchanging structured information in the implementation of Web Services"@en ;
       owl:sameAs <http://dbpedia.org/resource/SOAP> .
@@ -123,7 +124,7 @@ bio:ServiceTechnology
       dc:description "service technology (REST, SOAP, Soaplab, etc)"@en .
 
 bio:Soaplab
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "Soaplab"@en ;
       dc:description "Soaplab is a Web services software framework specialised for bioinformatics programs with command-line interface."@en ;
       owl:sameAs <http://dbpedia.org/resource/Soaplab> .
@@ -136,19 +137,19 @@ bio:SoaplabService
       owl:sameAs <http://dbpedia.org/resource/Soaplab> .
 
 bio:StatisticsAnalysis
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Statistics Analysis"@en ;
       dc:description "Statistical analysis refers to a collection of methods used to process large amounts of data  for the interpretation of quantitative data."@en .
 
 bio:Stemming-Lemmatization
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Stemming Lemmatization"@en ;
       rdfs:seeAlso <http://en.wikipedia.org/wiki/Stemming> ;
       dc:description "Is the process for reducing inflected (or sometimes derived) words to their stem or lemma."@en ;
       owl:sameAs <http://dbpedia.org/resource/Stemming> .
 
 bio:SyntacticTagging
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Syntactic Tagging"@en ;
       dc:description "Is the process of annotating syntacitc information in texts."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2330" .
@@ -159,13 +160,13 @@ bio:Task
       dc:description "The task performed by the service"@en .
 
 bio:TextMining
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Text Mining"@en ;
       dc:description "Refers to the process of deriving high-quality information from text."@en ;
       owl:sameAs <http://dbpedia.org/resource/Text_mining> .
 
 bio:Tokenization
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Tokenization"@en ;
       dc:description "Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens."@en ;
       owl:sameAs <http://dbpedia.org/resource/Tokenization> .
@@ -198,10 +199,24 @@ bio:input
       rdfs:label "Input"@en ;
       dc:description "Used to point to sample input."@en .
 
+bio:laterVersion
+      rdf:type owl:SymmetricProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "later version"^^xsd:string ;
+      rdfs:range bio:Service ;
+      owl:inverseOf bio:previousVersion .
+
 bio:output
       rdf:type owl:DatatypeProperty ;
       rdfs:label "Output"@en ;
       dc:description "Used to point to sample output."@en .
+
+bio:previousVersion
+      rdf:type owl:SymmetricProperty ;
+      rdfs:domain bio:Service ;
+      rdfs:label "previous version"@en ;
+      rdfs:range bio:Service ;
+      owl:inverseOf bio:laterVersion .
 
 bio:serviceProvider
       rdf:type owl:DatatypeProperty ;
