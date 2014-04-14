@@ -2514,8 +2514,8 @@ test:IULA-UPF-term_resource-36v2
 
 test:IULA-corpus92_resource-23v2
       rdf:type ms:CorpusText , owl:NamedIndividual ;
-      rdfs:label "Corpus92 Corpus" ;
-      dc:description "The corpus consists of a number of texts corresponding to Access to University examinations held on June 1992 in several Spanish universities. It contains about 350,000 words in 3 documents." ;
+      rdfs:label "Corpus92 Corpus"@en ;
+      dc:description "The corpus consists of a number of texts corresponding to Access to University examinations held on June 1992 in several Spanish universities. It contains about 350,000 words in 3 documents."@en ;
       ms:annotationMode ms:automatic ;
       ms:annotationStandoff
               "true" ;
@@ -2580,8 +2580,8 @@ test:IULA-genomeVocabulary_resource-31v2
 
 test:IULA-genomicsCorpus-cat_resource-32v2
       rdf:type owl:NamedIndividual , ms:CorpusText ;
-      rdfs:label "Genomics IULA Corpus in Catalan" ;
-      dc:description "The corpus consists of a number of specialized texts of Genome domain. This is LSP corpus has been created with articles from specialized publications, PhD theses, etc. It contains about 950 K words in 134 documents." ;
+      rdfs:label "Genomics IULA Corpus in Catalan"@en ;
+      dc:description "The corpus consists of a number of specialized texts of Genome domain. This is LSP corpus has been created with articles from specialized publications, PhD theses, etc. It contains about 950 K words in 134 documents."@en ;
       ms:annotationMode ms:automatic ;
       ms:annotationStandoff
               "true" ;
@@ -3787,8 +3787,8 @@ test:PAN_metadata_VSubcat_Parole_GS_IT
 
 test:PAN_metadata_annotated_dep_env_EL
       rdf:type owl:NamedIndividual , ms:CorpusText ;
-      rdfs:label "PANACEA Annotated Dependency Greek Environment Corpus Version 2" ;
-      dc:description "PANACEA Annotated Greek Environment Corpus Version 2 consists of Greek texts in the Environment (ENV) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the ENV domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities." ;
+      rdfs:label "PANACEA Annotated Dependency Greek Environment Corpus Version 2"@en ;
+      dc:description "PANACEA Annotated Greek Environment Corpus Version 2 consists of Greek texts in the Environment (ENV) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the ENV domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Prokopis_Prokopidis ;
@@ -3810,8 +3810,8 @@ test:PAN_metadata_annotated_dep_env_EL
 
 test:PAN_metadata_annotated_dep_env_ES
       rdf:type owl:NamedIndividual , ms:CorpusText ;
-      rdfs:label "PANACEA Annotated Dependency Spanish Environment Corpus Version 2" ;
-      dc:description "PANACEA Annotated Spanish Environment Corpus Version 2 consists of Spanish texts in the Environment (ENV) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the ENV domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities" ;
+      rdfs:label "PANACEA Annotated Dependency Spanish Environment Corpus Version 2"@en ;
+      dc:description "PANACEA Annotated Spanish Environment Corpus Version 2 consists of Spanish texts in the Environment (ENV) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the ENV domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Marc_Poch ;
@@ -3833,8 +3833,8 @@ test:PAN_metadata_annotated_dep_env_ES
 
 test:PAN_metadata_annotated_dep_env_IT
       rdf:type ms:CorpusText , owl:NamedIndividual ;
-      rdfs:label "PANACEA Annotated Dependency Italian Environment Corpus Version 2" ;
-      dc:description "PANACEA Annotated Italian Environment Corpus Version 2 consists of Italian texts in the Environment (ENV) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the ENV domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities." ;
+      rdfs:label "PANACEA Annotated Dependency Italian Environment Corpus Version 2"@en ;
+      dc:description "PANACEA Annotated Italian Environment Corpus Version 2 consists of Italian texts in the Environment (ENV) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the ENV domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Valeria_Quochi ;
@@ -3857,8 +3857,8 @@ test:PAN_metadata_annotated_dep_env_IT
 
 test:PAN_metadata_annotated_dep_lab_EL
       rdf:type ms:CorpusText , owl:NamedIndividual ;
-      rdfs:label "PANACEA Annotated Dependency Greek Labour Legislation Corpus Version 2" ;
-      dc:description "PANACEA Annotated Greek Labour Legislation Corpus Version 2 consists of Greek texts in the Labour Legislation (LAB) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the LAB domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities." ;
+      rdfs:label "PANACEA Annotated Dependency Greek Labour Legislation Corpus Version 2"@en ;
+      dc:description "PANACEA Annotated Greek Labour Legislation Corpus Version 2 consists of Greek texts in the Labour Legislation (LAB) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the LAB domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Prokopis_Prokopidis ;
@@ -3880,8 +3880,8 @@ test:PAN_metadata_annotated_dep_lab_EL
 
 test:PAN_metadata_annotated_dep_lab_ES
       rdf:type ms:CorpusText , owl:NamedIndividual ;
-      rdfs:label "PANACEA Annotated Dependency Spanish Labour Legislation Corpus Version 2" ;
-      dc:description "PANACEA Annotated Spanish Labour Legislation Corpus Version 2 consists of Spanish texts in the Labour legislation (LAB) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the LAB domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities." ;
+      rdfs:label "PANACEA Annotated Dependency Spanish Labour Legislation Corpus Version 2"@en ;
+      dc:description "PANACEA Annotated Spanish Labour Legislation Corpus Version 2 consists of Spanish texts in the Labour legislation (LAB) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the LAB domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Marc_Poch ;
@@ -3903,8 +3903,8 @@ test:PAN_metadata_annotated_dep_lab_ES
 
 test:PAN_metadata_annotated_dep_lab_IT
       rdf:type owl:NamedIndividual , ms:CorpusText ;
-      rdfs:label "PANACEA Annotated Dependency Italian Labour Legislation Corpus Version 2" ;
-      dc:description "PANACEA Annotated Italian Labour Legislation Corpus Version 2 consists of Italian texts in the Labour Legislation (LAB) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the LAB domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities." ;
+      rdfs:label "PANACEA Annotated Dependency Italian Labour Legislation Corpus Version 2"@en ;
+      dc:description "PANACEA Annotated Italian Labour Legislation Corpus Version 2 consists of Italian texts in the Labour Legislation (LAB) domain that were collected and automatically annotated in the framework of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The texts were crawled web pages that were automatically detected to be in the Greek language and were automatically classified as relevant to the LAB domain. Data collection took place in the summer of 2011. The automatically assigned annotations deal with sentence and token segmentation, POS and lemma, dependency relations and named entities."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Valeria_Quochi ;
@@ -3927,8 +3927,8 @@ test:PAN_metadata_annotated_dep_lab_IT
 
 test:PAN_metadata_n_gram_env_EN
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Environment Corpus n-grams EN (English)" ;
-      dc:description "This data set contains English word n-grams and English word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the English language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 50.5 million tokens. Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Environment Corpus n-grams EN (English)"@en ;
+      dc:description "This data set contains English word n-grams and English word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the English language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 50.5 million tokens. Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Antonio_Toral ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19981" ;
@@ -3941,8 +3941,8 @@ test:PAN_metadata_n_gram_env_EN
 
 test:PAN_metadata_n_gram_env_ES
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Environment Corpus n-grams ES (Spanish)" ;
-      dc:description "This data set contains Spanish word n-grams and Spanish word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 49.86 million tokens. Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Environment Corpus n-grams ES (Spanish)"@en ;
+      dc:description "This data set contains Spanish word n-grams and Spanish word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 49.86 million tokens. Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Marc_Poch ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19968" ;
@@ -3955,8 +3955,8 @@ test:PAN_metadata_n_gram_env_ES
 
 test:PAN_metadata_n_gram_env_FR
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Environment Corpus n-grams FR (French)" ;
-      dc:description "This data set contains French word n-grams and French word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the French language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 47.3 million tokens. Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Environment Corpus n-grams FR (French)"@en ;
+      dc:description "This data set contains French word n-grams and French word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the French language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 47.3 million tokens. Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Antonio_Toral ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19991" ;
@@ -3969,8 +3969,8 @@ test:PAN_metadata_n_gram_env_FR
 
 test:PAN_metadata_n_gram_env_IT
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Environment Corpus n-grams IT (Italian)" ;
-      dc:description "This data set contains Italian word n-grams and Italian word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Italian language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 36 million tokens. Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Environment Corpus n-grams IT (Italian)"@en ;
+      dc:description "This data set contains Italian word n-grams and Italian word/tag/lemma n-grams in the Environment (ENV) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Italian language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 36 million tokens. Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Valeria_Quochi ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19983" ;
@@ -3983,8 +3983,8 @@ test:PAN_metadata_n_gram_env_IT
 
 test:PAN_metadata_n_gram_lab_EN
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Labour Legislation Corpus n-grams EN (English)" ;
-      dc:description "This data set contains English word n-grams and English word/tag/lemma n-grams in the labour Legislation (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the English language and were automatically classified as relevant to the LAB domain. The LAB domain collection used consisted of approximately 46.4 million tokens.Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Labour Legislation Corpus n-grams EN (English)"@en ;
+      dc:description "This data set contains English word n-grams and English word/tag/lemma n-grams in the labour Legislation (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the English language and were automatically classified as relevant to the LAB domain. The LAB domain collection used consisted of approximately 46.4 million tokens.Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Antonio_Toral ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19974" ;
@@ -3997,8 +3997,8 @@ test:PAN_metadata_n_gram_lab_EN
 
 test:PAN_metadata_n_gram_lab_ES
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Labour Legislation Corpus n-grams ES (Spanish)" ;
-      dc:description "This data set contains Spanish word n-grams and Spanish word/tag/lemma n-grams in the LABOUR Legislation (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the ENV domain. The LAB domain collection used consisted of approximately 58.06 million tokens. Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Labour Legislation Corpus n-grams ES (Spanish)"@en ;
+      dc:description "This data set contains Spanish word n-grams and Spanish word/tag/lemma n-grams in the LABOUR Legislation (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Spanish language and were automatically classified as relevant to the ENV domain. The LAB domain collection used consisted of approximately 58.06 million tokens. Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Marc_Poch ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19976" ;
@@ -4011,8 +4011,8 @@ test:PAN_metadata_n_gram_lab_ES
 
 test:PAN_metadata_n_gram_lab_FR
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Labour Legislation Corpus n-grams FR (French)" ;
-      dc:description "This data set contains French word n-grams and French word/tag/lemma n-grams in the Labour (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the French language and were automatically classified as relevant to the LAB domain. The LAB domain collection used consisted of approximately 56.4 million tokens. Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Labour Legislation Corpus n-grams FR (French)"@en ;
+      dc:description "This data set contains French word n-grams and French word/tag/lemma n-grams in the Labour (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the French language and were automatically classified as relevant to the LAB domain. The LAB domain collection used consisted of approximately 56.4 million tokens. Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Antonio_Toral ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19979" ;
@@ -4025,8 +4025,8 @@ test:PAN_metadata_n_gram_lab_FR
 
 test:PAN_metadata_n_gram_lab_IT
       rdf:type ms:CorpusTextNgram , owl:NamedIndividual ;
-      rdfs:label "PANACEA Labour Legislation Corpus n-grams IT (Italian)" ;
-      dc:description "This data set contains Italian word n-grams and Italian word/tag/lemma n-grams in the Labour (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Italian language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 36 million tokens. Data collection took place in the summer of 2011." ;
+      rdfs:label "PANACEA Labour Legislation Corpus n-grams IT (Italian)"@en ;
+      dc:description "This data set contains Italian word n-grams and Italian word/tag/lemma n-grams in the Labour (LAB) domain. N-grams are accompanied by their observed frequency counts. The length of the n-grams ranges from unigrams (single words) to five-grams. The data were collected in the context of PANACEA (http://www.panacea-lr.eu), an EU-FP7 Funded Project under Grant Agreement 248064. The n-gram counts were generated from crawled Web pages that were automatically detected to be in the Italian language and were automatically classified as relevant to the ENV domain. The ENV domain collection used consisted of approximately 36 million tokens. Data collection took place in the summer of 2011."@en ;
       ms:contactPerson test:person_Valeria_Quochi ;
       ms:fundingProject test:project_PANACEA ;
       ms:identifier "http://hdl.handle.net/10230/19987" ;
@@ -4123,14 +4123,14 @@ test:doc_01
       rdfs:label "Machine Translation for Catalan-Spanish. The Real Case for Productive MT" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Juan_Alberto_Alonso> ;
       dc:identifier "http://mt-archive.info/EAMT-2005-Alonso.pdf" ;
-      dc:subject <http://dbpedia.org/resource/Machine_translation> , <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Machine_translation> , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "Machine Translation for Catalan-Spanish. The Real Case for Productive MT" ;
       dcterms:bibliographicCitation
               "Alonso JA. Machine Translation for Catalan-Spanish. The Real Case for Productive MT. Proceedings of the 10th Conference on European Association of Machine Translation [Internet]. Budapest, Hungary; 2005. Available from: http://mt-archive.info/EAMT-2005-Alonso.pdf" .
 
 test:doc_02
       rdf:type bibo:Chapter , owl:NamedIndividual ;
-      rdfs:label "The Sensem Project: Syntactico-Semantic Annotation of Sentences in Spanish" ;
+      rdfs:label "The Sensem Project: Syntactico-Semantic Annotation of Sentences in Spanish"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Laura_Alonso_Alemany> , <http://dblp.l3s.de/d2r/resource/authors/Joan_Antoni_Capilla> , <http://dblp.l3s.de/d2r/resource/authors/Irene_Castell%C3%B3n> , test:person_Anna_Fernández_Montraveta , <http://dblp.l3s.de/d2r/resource/authors/Gl%C3%B2ria_V%C3%A1zquez> ;
       dc:subject <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Lexical_resource> ;
       dc:title "The Sensem Project: Syntactico-Semantic Annotation of Sentences in Spanish" ;
@@ -4142,7 +4142,7 @@ test:doc_03
       rdfs:label "Tree Revision Learning for Dependency Parsing" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Giuseppe_Attardi> , <http://dblp.l3s.de/d2r/resource/authors/Massimiliano_Ciaramita> ;
       dc:identifier "http://www.aclweb.org/anthology/N07-1049" ;
-      dc:subject <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Treebank> ;
+      dc:subject <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Treebank> ;
       dc:title "Tree Revision Learning for Dependency Parsing" ;
       dcterms:bibliographicCitation
               "Attardi G, Ciaramita M. Tree Revision Learning for Dependency Parsing. In: Sidner CL, Schultz T, Stone M, Zhai C, editors. Human Language Technology Conference of the North American Chapter of the Association of Computational Linguistics, Proceedings [Internet]. Rochester, New York, USA: The Association for Computational Linguistics; 2007. p. 388–95. Available from: http://www.aclweb.org/anthology/N07-1049" ;
@@ -4151,7 +4151,7 @@ test:doc_03
 test:doc_10
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Customizable SCF Acquisition in Italian" ;
-      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Irene_Russo> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dblp.l3s.de/d2r/resource/authors/Francesco_Rubino> , <http://dblp.l3s.de/d2r/resource/authors/Francesca_Frontini> , <http://dblp.l3s.de/d2r/resource/authors/Tommaso_Caselli> ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Irene_Russo> , <http://dblp.l3s.de/d2r/resource/authors/Francesco_Rubino> , <http://dblp.l3s.de/d2r/resource/authors/Francesca_Frontini> , <http://dblp.l3s.de/d2r/resource/authors/Tommaso_Caselli> , <http://dblp.l3s.de/d2r/resource/authors/Valeria_Quochi> ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2012/pdf/390_Paper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Subcategorization> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Automatic_acquisition_of_lexicon> ;
       dc:title "Customizable SCF Acquisition in Italian" ;
@@ -4161,7 +4161,7 @@ test:doc_10
 
 test:doc_11
       rdf:type owl:NamedIndividual , bibo:Chapter ;
-      rdfs:label "Cat3LB and Cast3LB: from Constituents to dependencies" ;
+      rdfs:label "Cat3LB and Cast3LB: from Constituents to dependencies"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/N%C3%BAria_Buf%C3%AD> , <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Civit> , test:person_M_Antònia_Martí_Antonín ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2012/pdf/390_Paper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Treebank> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Semantics> ;
@@ -4175,7 +4175,7 @@ test:doc_12
       rdfs:label "L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Matteo_Abrate> , <http://dblp.l3s.de/d2r/resource/authors/Riccardo_Del_Gratta> , <http://dblp.l3s.de/d2r/resource/authors/Angelica_Lo_Duca> , <http://dblp.l3s.de/d2r/resource/authors/Francesco_Rubino> , test:person_Valeria_Quochi , <http://dblp.l3s.de/d2r/resource/authors/Francesca_Frontini> , test:person_Monica_Monachini ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2012/workshops/06.LREC%202012%20Merging%20Proceedings.pdf#page=37" ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Lexical_Markup_Framework> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:subject <http://dbpedia.org/resource/Lexical_Markup_Framework> , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies" ;
       dcterms:bibliographicCitation
               "Del Gratta R, Frontini F, Rubino F, Russo I, Caselli T, Quochi V. L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies. In: Nicoletta Calzolari (Conference Chair), Choukri K, Declerck T, Dogan MU, Maegaard B, Mariani J, et al., editors. Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12) [Internet]. Istanbul, Turkey: European Language Resources Association (ELRA); 2012. p. 2842–8. Available from: http://goo.gl/NifgVw" .
@@ -4185,7 +4185,7 @@ test:doc_13
       rdfs:label "Apertium: a free/open-source platform for rule-based machine translation" ;
       dc:creator test:person_Mikel_Forcada , <http://dblp.l3s.de/d2r/resource/authors/Juan_Antonio_P%C3%A9rez-Ortiz> , <http://dblp.l3s.de/d2r/resource/authors/Gema_Ram%C3%ADrez-S%C3%A1nchez> , <http://dblp.l3s.de/d2r/resource/authors/Francis_M._Tyers> , <http://dblp.l3s.de/d2r/resource/authors/Felipe_S%C3%A1nchez-Mart%C3%ADnez> , <http://dblp.l3s.de/d2r/resource/authors/Sergio_Ortiz-Rojas> , <http://dblp.l3s.de/d2r/resource/authors/Mireia_Ginest%C3%AD-Rosell> , <http://dblp.l3s.de/d2r/resource/authors/Jim_O%27Regan> , <http://dblp.l3s.de/d2r/resource/authors/Jacob_Nordfalk> ;
       dc:identifier "http://dx.doi.org/10.1007/s10590-011-9090-0" ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Machine_translation> ;
+      dc:subject <http://dbpedia.org/resource/Machine_translation> , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "Apertium: a free/open-source platform for rule-based machine translation" ;
       dcterms:bibliographicCitation
               "Forcada ML, Ginestí-Rosell M, Nordfalk J, O’Regan J, Ortiz-Rojas S, Pérez-Ortiz JA, et al. Apertium: a free/open-source platform for rule-based machine translation. Machine Translation. 2011;25(2):127–44" ;
@@ -4196,14 +4196,14 @@ test:doc_14
       rdfs:label "Automatic Creation of quality Multi-word Lexica from noisy text data" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Francesco_Rubino> , test:person_Valeria_Quochi , <http://dblp.l3s.de/d2r/resource/authors/Francesca_Frontini> ;
       dc:identifier "http://hdl.handle.net/10230/20422" ;
-      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Machine-readable_dictionary> ;
       dc:title "Automatic Creation of quality Multi-word Lexica from noisy text data" ;
       dcterms:bibliographicCitation
               "Frontini F, Quochi V, Rubino F. Automatic Creation of quality Multi-word Lexica from noisy text data. In: Kay, M, Boitet, C, editors. Proceedings of COLING 2012: Sixth Workshop on Analytics for Noisy Unstructured Text Data: 24th International Conference on Computational Linguistics COLING 2012; 2012 December 8-15; Mumbai, India [Internet]. Mumbai: The COLING 2012 Organizing Committee; 2012. Available from: http://hdl.handle.net/10230/20422" .
 
 test:doc_15
       rdf:type bibo:Book , owl:NamedIndividual ;
-      rdfs:label "Dicionario Moderno Inglés-Galego" ;
+      rdfs:label "Dicionario Moderno Inglés-Galego"@pt ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Alberto_%C3%81lvarez_Lugr%C3%ADs> , "Eva Díaz Rodríguez" , test:person_Xavier_Gómez_Guinovart ;
       dc:subject <http://dbpedia.org/resource/Dictionary> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Lexical_resource> ;
       dc:title "Dicionario Moderno Inglés-Galego" ;
@@ -4232,7 +4232,7 @@ test:doc_17
 
 test:doc_18
       rdf:type owl:NamedIndividual , bibo:Chapter ;
-      rdfs:label "A Hybrid Corpus-Based Approach to Bilingual Terminology Extraction" ;
+      rdfs:label "A Hybrid Corpus-Based Approach to Bilingual Terminology Extraction"@en ;
       dc:creator test:person_Xavier_Gómez_Guinovart ;
       dc:identifier "http://webs.uvigo.es/sli/arquivos/bi_term_extraction.pdf" ;
       dc:subject <http://dbpedia.org/resource/Parallel_corpus> , <http://dbpedia.org/resource/Terminology_extraction> , <http://dbpedia.org/resource/Corpus_linguistics> ;
@@ -4257,7 +4257,7 @@ test:doc_20
       dc:creator test:organization_GRIAL ;
       dc:identifier "http://grial.uab.es/fproj.php?id=1" ;
       dc:subject <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Lexical_resource> , <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Corpus_linguistics> ;
-      dc:title "SenSem: Banc de dades sintàctic i semàntic de l’espanyol" ;
+      dc:title "SenSem: Banc de dades sintàctic i semàntic de l’espanyol"@cat ;
       dcterms:bibliographicCitation
               "Grup de Recerca Interuniversitari en Aplicacions Lingüístiques (GRIAL). SenSem: Banc de dades sintàctic i semàntic de l’espanyol [Internet]. [cited 2013 Oct 2]. Available from: http://grial.uab.es/fproj.php?id=1" .
 
@@ -4276,7 +4276,7 @@ test:doc_21
 
 test:doc_22
       rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "SIMPLE Work Package 2. Linguistic Specifications - Deliverable D2.1 " ;
+      rdfs:label "SIMPLE Work Package 2. Linguistic Specifications - Deliverable D2.1"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Nicoletta_Calzolari> , <http://dblp.l3s.de/d2r/resource/authors/Wim_Peters> , "Clare McCauley" , "Lee Humpreys" , <http://dblp.l3s.de/d2r/resource/authors/Ivonne_Peters> , <http://dblp.l3s.de/d2r/resource/authors/Antonio_Zampolli> , "Ole Norling-Christensen" , <http://dblp.l3s.de/d2r/resource/authors/Nilda_Ruimy> , <http://dblp.l3s.de/d2r/resource/authors/Elisabetta_Gola> , <http://dblp.l3s.de/d2r/resource/authors/James_Pustejovsky> , <http://dblp.l3s.de/d2r/resource/authors/Robert_J._Gaizauskas> , <http://dblp.l3s.de/d2r/resource/authors/Alessandro_Lenci> , test:person_Marta_Villegas , test:person_Monica_Monachini , <http://dblp.l3s.de/d2r/resource/authors/Emilie_Guimier_De_Neef> , <http://dblp.l3s.de/d2r/resource/authors/Federica_Busa> , <http://dblp.l3s.de/d2r/resource/authors/Antoine_Ogonowski> , "Ursula Von Rekovsky" , <http://dblp.l3s.de/d2r/resource/authors/Ga%C3%ABlle_Recourc%C3%A9> ;
       dc:identifier "http://www.ub.edu/gilcub/SIMPLE/reports/simple/D31_BARfin.rtf" ;
       dc:subject <http://dbpedia.org/resource/Machine-readable_dictionary> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4286,7 +4286,7 @@ test:doc_22
 
 test:doc_23
       rdf:type bibo:Book , owl:NamedIndividual ;
-      rdfs:label "Vocabulari bàsic de genoma humà = Vocabulario básico de genoma humano" ;
+      rdfs:label "Vocabulari bàsic de genoma humà = Vocabulario básico de genoma humano"@cat ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Merc%C3%A8_Lorente> ;
       dc:identifier "http://www.iula.upf.edu/rec/vbgenoma/esp/index.html" ;
       dc:subject <http://dbpedia.org/resource/Glossary> , <http://dbpedia.org/resource/Genetics> , <http://dbpedia.org/resource/Lexical_resource> ;
@@ -4318,7 +4318,7 @@ test:doc_25
 
 test:doc_26
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "The Tibidabo Treebank" ;
+      rdfs:label "The Tibidabo Treebank"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Marimon> ;
       dc:identifier "http://hdl.handle.net/10045/14710" ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Treebank> , <http://dbpedia.org/resource/LKB> ;
@@ -4329,17 +4329,17 @@ test:doc_26
 
 test:doc_27
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Text handling as a Web Service for the IULA processing pipeline" ;
+      rdfs:label "Text handling as a Web Service for the IULA processing pipeline"@en ;
       dc:creator "Héctor Martínez" , test:person_Marta_Villegas , test:person_Jorge_Vivaldi ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2010/workshops/W3.pdf" ;
-      dc:subject <http://dbpedia.org/resource/Preprocessing> , <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Preprocessing> ;
       dc:title "Text handling as a Web Service for the IULA processing pipeline" ;
       dcterms:bibliographicCitation
               "Martínez H, Vivaldi J, Villegas M. Text handling as a Web Service for the IULA processing pipeline. LREC 2010: Workshop on Web Services and Processing Pipelines in HLT: Tool Evaluation, LR Production and Validation: Proceedings of the Conference; 2010 May 17-18; Valletta, Malta [Internet]. Paris: European Language Resources Association (ELRA); 2010. p. 22–9. Available from: http://www.lrec-conf.org/proceedings/lrec2010/workshops/W3.pdf" .
 
 test:doc_28
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "ELM-IT: EAGLES Specifications for Italian morphosyntax Lexicon Specification and Classification Guidelines" ;
+      rdfs:label "ELM-IT: EAGLES Specifications for Italian morphosyntax Lexicon Specification and Classification Guidelines"@en ;
       dc:creator test:person_Monica_Monachini ;
       dc:subject <http://dbpedia.org/resource/Morphology_(linguistics)> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Machine-readable_dictionary> ;
       dc:title "ELM-IT: EAGLES Specifications for Italian morphosyntax Lexicon Specification and Classification Guidelines" ;
@@ -4348,7 +4348,7 @@ test:doc_28
 
 test:doc_29
       rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "El Corpus de l’IULA: etiquetaris " ;
+      rdfs:label "El Corpus de l’IULA: etiquetaris"@cat ;
       dc:creator test:person_Sergi_Torner , <http://dblp.l3s.de/d2r/resource/authors/M._Teresa_Cabr%C3%A9> , "Jordi Morel Santasusagna" , <http://dblp.l3s.de/d2r/resource/authors/Llu%C3%ADs_de_Yzaguirre> , test:person_Jorge_Vivaldi ;
       dc:identifier "http://hdl.handle.net/10230/1293" ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Text_corpus> ;
@@ -4358,7 +4358,7 @@ test:doc_29
 
 test:doc_30
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Iula2Standoff: a tool for creating standoff documents for the IULACT" ;
+      rdfs:label "Iula2Standoff: a tool for creating standoff documents for the IULACT"@en ;
       dc:creator test:person_Jorge_Vivaldi , test:person_Núria_Bel , <http://dblp.l3s.de/d2r/resource/authors/Carlos_Morell> ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2012/pdf/307_Paper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Preprocessing> , <http://dbpedia.org/resource/Corpus_linguistics> ;
@@ -4369,7 +4369,7 @@ test:doc_30
 
 test:doc_31
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "WikiNet: A Very Large Scale Multi-Lingual Concept Network" ;
+      rdfs:label "WikiNet: A Very Large Scale Multi-Lingual Concept Network"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Anas_Elghafari> , <http://dblp.l3s.de/d2r/resource/authors/Michael_Strube> , <http://dblp.l3s.de/d2r/resource/authors/Vivi_Nastase> , <http://dblp.l3s.de/d2r/resource/authors/Benjamin_Boerschinger> , <http://dblp.l3s.de/d2r/resource/authors/C%C3%A4cilia_Zirn> ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2010/pdf/615_Paper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Wikipedia> ;
@@ -4380,7 +4380,7 @@ test:doc_31
 
 test:doc_32
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Meaningful Clustering of Senses Helps Boost Word Sense Disambiguation Performance" ;
+      rdfs:label "Meaningful Clustering of Senses Helps Boost Word Sense Disambiguation Performance"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Roberto_Navigli> ;
       dc:identifier "http://dx.doi.org/10.3115/1220175.1220189" ;
       dc:subject <http://dbpedia.org/resource/Word-sense_disambiguation> , <http://dbpedia.org/resource/WordNet> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4391,7 +4391,7 @@ test:doc_32
 
 test:doc_33
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Towards the automatic merging of language resources" ;
+      rdfs:label "Towards the automatic merging of language resources"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Silvia_Necsulescu> , test:person_Muntsa_Padró , test:person_Núria_Bel , <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Marimon> , "Eva Revilla" ;
       dc:identifier "http://hdl.handle.net/10230/20384" ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4401,10 +4401,10 @@ test:doc_33
 
 test:doc_34
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "FreeLing 2.1: Five Years of Open-source Language Processing Tools" ;
+      rdfs:label "FreeLing 2.1: Five Years of Open-source Language Processing Tools"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Miquel_Collado> , <http://dblp.l3s.de/d2r/resource/authors/Marina_Lloberes> , test:person_Lluís_Padró , <http://dblp.l3s.de/d2r/resource/authors/Samuel_Reese> , <http://dblp.l3s.de/d2r/resource/authors/Irene_Castell%C3%B3n> ;
       dc:identifier "http://hdl.handle.net/2117/7616" ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "FreeLing 2.1: Five Years of Open-source Language Processing Tools" ;
       dcterms:bibliographicCitation
               "Padró L, Collado M, Reese S, Lloberes M, Castellón I. FreeLing 2.1: Five Years of Open-source Language Processing Tools. In: Calzolari N, Choukri K, Maegaard B, Mariani J, Odijk J, Piperidis S, et al., editors. Proceedings of the International Conference on Language Resources and Evaluation, LREC 2010, 17-23 May 2010, Valletta, Malta [Internet]. European Language Resources Association (ELRA); 2010. Available from: http://hdl.handle.net/2117/7616" ;
@@ -4412,20 +4412,20 @@ test:doc_34
 
 test:doc_36
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Web Services for Bayesian Learning" ;
+      rdfs:label "Web Services for Bayesian Learning"@en ;
       dc:creator test:person_Muntsa_Padró , test:person_Núria_Bel ;
       dc:identifier "http://hdl.handle.net/10230/20329" ;
-      dc:subject <http://dbpedia.org/resource/Machine_learning> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Bayesian_inference> , <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Machine_learning> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Bayesian_inference> ;
       dc:title "Web Services for Bayesian Learning" ;
       dcterms:bibliographicCitation
               "Padró M, Bel N. Web Services for Bayesian Learning. EACL 2012: Workshop on Computational Models of Language Acquisition and Loss: Proceedings of the Conference; 2012 April 24; Avignon, France [Internet]. Stroudsburg (USA): Association for Computational Linguistics (ACL); 2012. Available from: http://hdl.handle.net/10230/20329" .
 
 test:doc_37
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "A MWE Acquisition and Lexicon Builder Web Service" ;
+      rdfs:label "A MWE Acquisition and Lexicon Builder Web Service"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Francesca_Frontini> , <http://dblp.l3s.de/d2r/resource/authors/Francesco_Rubino> , test:person_Valeria_Quochi ;
       dc:identifier "http://aclweb.org/anthology/C/C12/C12-1140.pdf" ;
-      dc:subject <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Automatic_acquisition_of_lexicon> ;
+      dc:subject <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Automatic_acquisition_of_lexicon> ;
       dc:title "A MWE Acquisition and Lexicon Builder Web Service" ;
       dcterms:bibliographicCitation
               "Quochi V, Frontini F, Rubino F. A MWE Acquisition and Lexicon Builder Web Service. COLING 2012, 24th International Conference on Computational Linguistics, Proceedings of the Conference: Technical Papers,8-15 December 2012, Mumbai, India [Internet]. 2012. p. 2291–306. Available from: http://aclweb.org/anthology/C/C12/C12-1140.pdf" ;
@@ -4433,7 +4433,7 @@ test:doc_37
 
 test:doc_38
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "AnCora-CO: Coreferentially annotated corpora for Spanish and Catalan" ;
+      rdfs:label "AnCora-CO: Coreferentially annotated corpora for Spanish and Catalan"@en ;
       dc:creator test:person_M_Antònia_Martí_Antonín , <http://dblp.l3s.de/d2r/resource/authors/Marta_Recasens> ;
       dc:identifier "http://dx.doi.org/10.1007/s10579-009-9108-x" ;
       dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Syntax> , <http://dbpedia.org/resource/Coreference> ;
@@ -4444,7 +4444,7 @@ test:doc_38
 
 test:doc_39
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Wikicorpus: A Word-Sense Disambiguated Multilingual Wikipedia Corpus" ;
+      rdfs:label "Wikicorpus: A Word-Sense Disambiguated Multilingual Wikipedia Corpus"@en ;
       dc:creator test:person_Lluís_Padró , test:person_German_Rigau , test:person_Gemma_Boleda , <http://dblp.l3s.de/d2r/resource/authors/Montse_Cuadros> , <http://dblp.l3s.de/d2r/resource/authors/Samuel_Reese> ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2010/pdf/222_Paper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Word-sense_disambiguation> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Wikipedia> ;
@@ -4455,7 +4455,7 @@ test:doc_39
 
 test:doc_4
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "Parole. Final Spanish Lexicon Documentation" ;
+      rdfs:label "Parole. Final Spanish Lexicon Documentation"@en ;
       dc:creator "Isabel Brosa" , test:person_Marta_Villegas , <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Marimon> , test:person_Núria_Bel ;
       dc:identifier "http://www.ub.edu/gilcub/lascosas/pubYreps/index_par.html" ;
       dc:subject <http://dbpedia.org/resource/Machine-readable_dictionary> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4465,7 +4465,7 @@ test:doc_4
 
 test:doc_40
       rdf:type bibo:Chapter , owl:NamedIndividual ;
-      rdfs:label "The PAROLE model and the Italian Syntactic lexicon" ;
+      rdfs:label "The PAROLE model and the Italian Syntactic lexicon"@en ;
       dc:creator "Antonietta Spanu" , <http://dblp.l3s.de/d2r/resource/authors/Nilda_Ruimy> , "Ornella Corrazzari" , <http://dblp.l3s.de/d2r/resource/authors/Elisabetta_Gola> , <http://dblp.l3s.de/d2r/resource/authors/Nicoletta_Calzolari> , <http://dblp.l3s.de/d2r/resource/authors/Antonio_Zampolli> ;
       dc:subject <http://dbpedia.org/resource/Machine-readable_dictionary> , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "The PAROLE model and the Italian Syntactic lexicon" ;
@@ -4474,7 +4474,7 @@ test:doc_40
 
 test:doc_41
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "From Dependencies to Constituents in the Reference Corpus for the Processing of Basque (EPEC)" ;
+      rdfs:label "From Dependencies to Constituents in the Reference Corpus for the Processing of Basque (EPEC)"@en ;
       dc:creator test:person_María_Jesús_Aranzabe , <http://dblp.l3s.de/d2r/resource/authors/Arantza_D%C3%ADaz_de_Ilarraza_S%C3%A1nchez> , <http://dblp.l3s.de/d2r/resource/authors/Enrique_Fern%C3%A1ndez-Terrones> , <http://dblp.l3s.de/d2r/resource/authors/Izaskun_Aldezabal> ;
       dc:identifier "http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/2560/1099" ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Treebank> ;
@@ -4485,7 +4485,7 @@ test:doc_41
 
 test:doc_42
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Ancora: Multilevel Annotated Corpora for Catalan and Spanish" ;
+      rdfs:label "Ancora: Multilevel Annotated Corpora for Catalan and Spanish"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Marta_Recasens> , <http://dblp.l3s.de/d2r/resource/authors/Mariona_Taul%C3%A9> , test:person_M_Antònia_Martí_Antonín ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2008/pdf/35_paper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Syntax> , <http://dbpedia.org/resource/Coreference> ;
@@ -4496,7 +4496,7 @@ test:doc_42
 
 test:doc_44
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "PANACEA Project. D5.6 Transfer Selection Support" ;
+      rdfs:label "PANACEA Project. D5.6 Transfer Selection Support"@en ;
       dc:creator test:person_Gregor_Thurmair , test:person_Vera_Aleksic ;
       dc:identifier "http://panacea-lr.eu/system/deliverables/PANACEA-D5.6.pdf" ;
       dc:subject <http://dbpedia.org/resource/Transfer-based_machine_translation> , <http://dbpedia.org/resource/Machine_translation> ;
@@ -4506,7 +4506,7 @@ test:doc_44
 
 test:doc_45
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Linking a domain thesaurus to WordNet and conversion to WordNet-LMF" ;
+      rdfs:label "Linking a domain thesaurus to WordNet and conversion to WordNet-LMF"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Piek_Vossen> , test:person_German_Rigau , <http://dblp.l3s.de/d2r/resource/authors/Claudia_Soria> , <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Cuadros> , "Wauter Bosma" , test:person_Antonio_Toral , test:person_Monica_Monachini ;
       dc:identifier "http://hdl.handle.net/2117/10401" ;
       dc:subject <http://dbpedia.org/resource/WordNet> , <http://dbpedia.org/resource/Lexical_Markup_Framework> , <http://dbpedia.org/resource/Lexical_resource> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4515,28 +4515,28 @@ test:doc_45
               "Toral, A, Monachini, M, Soria, C, Cuadros Oller, M, Rigau Claramunt, G, Bosma, W,  Vosen, P. Linking a domain thesaurus to WordNet and conversion to WordNet-LMF. International Conference on Global Interoperability for Language Resources “Second International Conference on Global Interoperability for Language Resources” [Internet]. Hong Kong; Available from: http://hdl.handle.net/2117/10401" .
 
 test:doc_47
-      rdf:type bibo:Webpage , owl:NamedIndividual ;
-      rdfs:label "Corpus Paralelo CLUVI" ;
+      rdf:type owl:NamedIndividual , bibo:Webpage ;
+      rdfs:label "Corpus Paralelo CLUVI"@es ;
       dc:creator test:organization_UVIGO-SLI ;
       dc:identifier "http://sli.uvigo.es/CLUVI/" ;
-      dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Parallel_corpus> ;
+      dc:subject <http://dbpedia.org/resource/Parallel_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> ;
       dc:title "Corpus Paralelo CLUVI" ;
       dcterms:bibliographicCitation
               "Universidade de Vigo. Seminario de Lingüística Informática. Corpus Paralelo CLUVI [Internet]. 2003 [cited 2013 Jul 9]. Available from: http://sli.uvigo.es/CLUVI/" .
 
 test:doc_48
       rdf:type owl:NamedIndividual , bibo:Webpage ;
-      rdfs:label "AnCora | Corpus" ;
+      rdfs:label "AnCora | Corpus"@cat ;
       dc:creator test:organization_UPC-NLP_Research_Group , test:organization_UB-CLiC , "Universitat d'Alacant. Grupo de Investigación en Procesamiento del Lenguaje Natural y Sistemas de Información" , test:organization_EHU-IXA ;
       dc:identifier "http://clic.ub.edu/corpus/" ;
       dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Syntax> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Coreference> , <http://dbpedia.org/resource/Semantics> ;
-      dc:title "AnCora | Corpus" ;
+      dc:title "AnCora | Corpus"^^xsd:string ;
       dcterms:bibliographicCitation
               "Universitat de Barcelona. Centre de Llenguatge i Computació, Universitat Politècnica de Catalunya. Grup de Processament del Llenguatge Natural, Universitat d’Alacant. Grupo de Investigación en Procesamiento del Lenguaje Natural y Sistemas de Información, Euskal Herriko Unibertsitatea. Lengoaia Naturalaren Prozesamendurako Ixa taldea. AnCora | Corpus [Internet]. [cited 2013 Oct 2]. Available from: http://clic.ub.edu/corpus/" .
 
 test:doc_49
       rdf:type owl:NamedIndividual , bibo:Webpage ;
-      rdfs:label "CESS-ECE Corpora etiquetats sintàcticament i semànticament (espanyol, català, euskera)" ;
+      rdfs:label "CESS-ECE Corpora etiquetats sintàcticament i semànticament (espanyol, català, euskera)"@cat ;
       dc:creator "Universitat d'Alacant. Grupo de Investigación en Procesamiento del Lenguaje Natural y Sistemas de Información" , test:organization_UPC-NLP_Research_Group , test:organization_UB-CLiC , test:organization_EHU-IXA ;
       dc:identifier "http://clic.ub.edu/corpus/" ;
       dc:subject <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Syntax> ;
@@ -4546,7 +4546,7 @@ test:doc_49
 
 test:doc_5
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Automatic Detection of Non-deverbal Event Nouns for Quick Lexicon Production" ;
+      rdfs:label "Automatic Detection of Non-deverbal Event Nouns for Quick Lexicon Production"@en ;
       dc:creator test:person_Núria_Bel , <http://dblp.l3s.de/d2r/resource/authors/Gabriela_Resnik> , <http://dblp.l3s.de/d2r/resource/authors/Maria_Coll> ;
       dc:identifier "http://hdl.handle.net/10230/20325" ;
       dc:subject <http://dbpedia.org/resource/Machine_learning> , <http://dbpedia.org/resource/Deverbal_noun> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4557,7 +4557,7 @@ test:doc_5
 
 test:doc_50
       rdf:type bibo:Webpage , owl:NamedIndividual ;
-      rdfs:label "Wikicorpus, v. 1.0: Catalan, Spanish and English portions of the Wikipedia" ;
+      rdfs:label "Wikicorpus, v. 1.0: Catalan, Spanish and English portions of the Wikipedia"@en ;
       dc:creator test:organization_UPC-TALP ;
       dc:identifier "http://www.lsi.upc.edu/~nlp/wikicorpus/" ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Wikipedia> , <http://dbpedia.org/resource/Word-sense_disambiguation> ;
@@ -4567,7 +4567,7 @@ test:doc_50
 
 test:doc_51
       rdf:type owl:NamedIndividual , bibo:Webpage ;
-      rdfs:label "Corpus and Tools. MaltParser for Spanish" ;
+      rdfs:label "Corpus and Tools. MaltParser for Spanish"@en ;
       dc:creator test:organization_UPF-IULA ;
       dc:identifier "http://www.iula.upf.edu/recurs01_mpars_uk.htm" ;
       dc:subject <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4577,7 +4577,7 @@ test:doc_51
 
 test:doc_52
       rdf:type owl:NamedIndividual , bibo:Webpage ;
-      rdfs:label "Pàgina web de l'Observatori de Neologia" ;
+      rdfs:label "Pàgina web de l'Observatori de Neologia"@cat ;
       dc:creator <http://viaf.org/viaf/155366546> ;
       dc:identifier "http://www.iula.upf.edu/obneo/obpreses.htm" ;
       dc:subject <http://dbpedia.org/resource/Neologism> , <http://dbpedia.org/resource/Lexical_resource> ;
@@ -4587,7 +4587,7 @@ test:doc_52
 
 test:doc_54
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "El léxico PAROLE del español" ;
+      rdfs:label "El léxico PAROLE del español"@es ;
       dc:creator "Isabel Brosa" , test:person_Núria_Bel , test:person_Marta_Villegas ;
       dc:identifier "http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/3633" ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Machine-readable_dictionary> ;
@@ -4597,7 +4597,7 @@ test:doc_54
 
 test:doc_55
       rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "Multilingual Linguistic Resources: From Monolingual Lexicons to Bilingual Interrelated Lexicons" ;
+      rdfs:label "Multilingual Linguistic Resources: From Monolingual Lexicons to Bilingual Interrelated Lexicons"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Antonio_Zampolli> , <http://dblp.l3s.de/d2r/resource/authors/Alessandro_Lenci> , test:person_Núria_Bel , <http://dblp.l3s.de/d2r/resource/authors/Nicoletta_Calzolari> , test:person_Marta_Villegas , <http://dblp.l3s.de/d2r/resource/authors/Teresa_Sadurn%C3%AD> , test:person_Joan_Soler , <http://dblp.l3s.de/d2r/resource/authors/Nilda_Ruimy> ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Machine-readable_dictionary> ;
       dc:title "Multilingual Linguistic Resources: From Monolingual Lexicons to Bilingual Interrelated Lexicons" ;
@@ -4607,7 +4607,7 @@ test:doc_55
 
 test:doc_56
       rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "Catalan Simple. Final Lexicon Documentation" ;
+      rdfs:label "Catalan Simple. Final Lexicon Documentation"@en ;
       dc:creator "Xavier Jiménez" , <http://dblp.l3s.de/d2r/resource/authors/Teresa_Sadurn%C3%AD> , test:person_Marta_Villegas , "Irene Comas" ;
       dc:identifier "http://www.ub.edu/gilcub/SIMPLE/reports/simple/D31_BARfin.rtf" ;
       dc:subject <http://dbpedia.org/resource/Machine-readable_dictionary> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4617,7 +4617,7 @@ test:doc_56
 
 test:doc_57
       rdf:type bibo:Webpage , owl:NamedIndividual ;
-      rdfs:label "Parole/Simple (Lexinfo) Ontology and Lexicons" ;
+      rdfs:label "Parole/Simple (Lexinfo) Ontology and Lexicons"@en ;
       dc:creator test:person_Marta_Villegas ;
       dc:identifier "http://www.ub.edu/gilcub/SIMPLE/reports/simple/D31_BARfin.rtf" ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Machine-readable_dictionary> ;
@@ -4627,7 +4627,7 @@ test:doc_57
 
 test:doc_59
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Corpus and exploitation tool: IULACT and bwanaNet" ;
+      rdfs:label "Corpus and exploitation tool: IULACT and bwanaNet"@en ;
       dc:creator test:person_Jorge_Vivaldi ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Text_corpus> ;
       dc:title "Corpus and exploitation tool: IULACT and bwanaNet" ;
@@ -4636,7 +4636,7 @@ test:doc_59
 
 test:doc_6
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Automatic Lexical Semantic Classification of Nouns" ;
+      rdfs:label "Automatic Lexical Semantic Classification of Nouns"@en ;
       dc:creator test:person_Núria_Bel , test:person_Muntsa_Padró , <http://dblp.l3s.de/d2r/resource/authors/Lauren_Romeo> ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2012/pdf/307_Paper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4767,7 +4767,7 @@ test:doc_69
 
 test:doc_7
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "10 anys del Corpus de l’Iula" ;
+      rdfs:label "10 anys del Corpus de l’Iula"@cat ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Carme_Bach> , <http://dblp.l3s.de/d2r/resource/authors/M._Teresa_Cabr%C3%A9> , test:person_Jorge_Vivaldi ;
       dc:identifier "http://hdl.handle.net/10230/1298" ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4801,7 +4801,7 @@ test:doc_71
 
 test:doc_72
       rdf:type bibo:Webpage , owl:NamedIndividual ;
-      rdfs:label "Ricoterm 3: enriquecimiento de ontologías para la extracción de información de discursos de especialidad 2007-2010"^^xsd:string ;
+      rdfs:label "Ricoterm 3: enriquecimiento de ontologías para la extracción de información de discursos de especialidad 2007-2010"@es ;
       dc:creator <http://viaf.org/viaf/137923636> , test:organization_UPF-IULA , <http://viaf.org/viaf/140972936> ;
       dc:identifier "http://www.iula.upf.edu/rec/ricoterm/3/index_eng.htm" ;
       dc:subject <http://dbpedia.org/resource/Lexical_resource> , <http://dbpedia.org/resource/Terminology_extraction> , <http://dbpedia.org/resource/Information_retrieval> ;
@@ -4812,7 +4812,7 @@ test:doc_72
 
 test:doc_73
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Automatic extraction of polar adjectives for the creation of polarity lexicons"^^xsd:string ;
+      rdfs:label "Automatic extraction of polar adjectives for the creation of polarity lexicons"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Julio_Gonzalo> , <http://dblp.l3s.de/d2r/resource/authors/Silvia_V%C3%A1zquez> , test:person_Muntsa_Padró , test:person_Núria_Bel ;
       dc:identifier "http://hdl.handle.net/10230/20422" ;
       dc:subject <http://dbpedia.org/resource/Sentiment_analysis> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4824,7 +4824,7 @@ test:doc_73
 
 test:doc_74
       rdf:type owl:NamedIndividual , bibo:Manuscript ;
-      rdfs:label "P clue/ lexical class from Weka computer Web Service"^^xsd:string ;
+      rdfs:label "P clue/ lexical class from Weka computer Web Service"@en ;
       dc:creator test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_compute_p_cue_class_from_weka.pdf"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Weka_(machine_learning)> , <http://dbpedia.org/resource/Statistical_classification> , <http://dbpedia.org/resource/Text_corpus> ;
@@ -4836,7 +4836,7 @@ test:doc_74
 
 test:doc_75
       rdf:type owl:NamedIndividual , bibo:Manuscript ;
-      rdfs:label "Weka noun signatures creator Web Service"^^xsd:string ;
+      rdfs:label "Weka noun signatures creator Web Service"@en ;
       dc:creator test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_create_weka_nouns_signatures.pdf"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Weka_(machine_learning)> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -4848,7 +4848,7 @@ test:doc_75
 
 test:doc_76
       rdf:type owl:NamedIndividual , bibo:Manuscript ;
-      rdfs:label "Nouns Classifier Web Service"^^xsd:string ;
+      rdfs:label "Nouns Classifier Web Service"@en ;
       dc:creator test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_dt_noun_classifier.pdf"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Statistical_classification> , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Decision_tree_learning> ;
@@ -4860,7 +4860,7 @@ test:doc_76
 
 test:doc_77
       rdf:type owl:NamedIndividual , bibo:Manuscript ;
-      rdfs:label "Bayesian parameter estimation Web Service "^^xsd:string ;
+      rdfs:label "Bayesian parameter estimation Web Service"@en ;
       dc:creator test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_estimate_bayesian_parameters.pdf"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Bayesian_inference> , <http://dbpedia.org/resource/Statistical_classification> , bio:StatisticsAnalysis ;
@@ -4872,7 +4872,7 @@ test:doc_77
 
 test:doc_78
       rdf:type owl:NamedIndividual , bibo:Manuscript ;
-      rdfs:label "LMF file merger Web Servic"^^xsd:string ;
+      rdfs:label "LMF file merger Web Service"@en ;
       dc:creator test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_merge_lmf_files.pdf"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Lexical_Markup_Framework> , <http://dbpedia.org/resource/Web_services> , bio:CorpusProcessing ;
@@ -4884,7 +4884,7 @@ test:doc_78
 
 test:doc_79
       rdf:type owl:NamedIndividual , bibo:Manuscript ;
-      rdfs:label "Naive Bayes classifier Web Service"^^xsd:string ;
+      rdfs:label "Naive Bayes classifier Web Service"@en ;
       dc:creator test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_naive_bayes_classifier.pdf"^^xsd:string ;
       dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Naive_Bayes_classifier> , <http://dbpedia.org/resource/Statistical_classification> ;
@@ -4896,7 +4896,7 @@ test:doc_79
 
 test:doc_8
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "El corpus tècnic del IULA: corpus textual especializado plurilingüe" ;
+      rdfs:label "El corpus tècnic del IULA: corpus textual especializado plurilingüe"@es ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Carme_Bach> , <http://dblp.l3s.de/d2r/resource/authors/M._Teresa_Cabr%C3%A9> ;
       dc:identifier "http://www.medtrad.org/panacea/IndiceGeneral/n16_resenas_Cabre-Bach.pdf" ;
       dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> ;
@@ -4906,7 +4906,7 @@ test:doc_8
 
 test:doc_80
       rdf:type bibo:Manuscript , owl:NamedIndividual ;
-      rdfs:label "Select Nouns from LMF lexicon Web Service "^^xsd:string ;
+      rdfs:label "Select Nouns from LMF lexicon Web Service"@en ;
       dc:creator test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws03/WS_noun_classification_filter.pdf"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Statistical_classification> , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Lexical_Markup_Framework> ;
@@ -4918,7 +4918,7 @@ test:doc_80
 
 test:doc_81
       rdf:type bibo:Manuscript , owl:NamedIndividual ;
-      rdfs:label "MaltParser Web Service "^^xsd:string ;
+      rdfs:label "MaltParser Web Service"@en ;
       dc:creator "Idan Sadan"^^xsd:string , test:person_Muntsa_Padró ;
       dc:identifier "http://ws02.iula.upf.edu/panacea/documentation/ws04/WS_malt_parser.pdf"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Parsing> ;
@@ -4930,10 +4930,10 @@ test:doc_81
 
 test:doc_82
       rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "Travelling Object definition for multilevel lexicon in PANACEA platform"^^xsd:string ;
+      rdfs:label "Travelling Object definition for multilevel lexicon in PANACEA platform"@en ;
       dc:creator test:person_Muntsa_Padró , test:person_Núria_Bel , <http://dblp.l3s.de/d2r/resource/authors/Francesca_Frontini> , test:person_Valeria_Quochi , <http://dblp.l3s.de/d2r/resource/authors/Laura_Rimell> , test:person_Monica_Monachini ;
       dc:identifier "http://myexperiment.elda.org/files/11/download/TO_definition_for_PANACEA_Lexica.pdf"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Machine-readable_dictionary> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:subject <http://dbpedia.org/resource/Machine-readable_dictionary> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Lexical_resource> , <http://dbpedia.org/resource/Lexical_Markup_Framework> ;
       dc:title "Travelling Object definition for multilevel lexicon in PANACEA platform"^^xsd:string ;
       dcterms:bibliographicCitation
               "Rimell L, Bel N, Padró M, Quochi V, Frontini F, Monachini M. Travelling Object definition for multilevel lexicon in PANACEA platform [Internet]. [s.l.]: PANACEA Project; 2012 p. 26. Available from: http://myexperiment.elda.org/files/11/download"^^xsd:string ;
@@ -4942,30 +4942,30 @@ test:doc_82
 
 test:doc_83
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Language Technologies)"^^xsd:string ;
+      rdfs:label "PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Language Technologies)"@en ;
       dc:creator test:person_Marc_Poch , test:person_Antonio_Toral , test:person_Núria_Bel ;
       dc:identifier "http://hdl.handle.net/10230/20382"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Language Technologies)"^^xsd:string ;
       dcterms:bibliographicCitation
               "Bel N, Poch M, Toral A. PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Language Technologies). In: Cettolo M, Federico M, Specia L, Way A, editors. Proceedings of the 16th Annual Conference of the European Association for Machine Translation: EAMT 2012; 2012 May 28-30; Trento, Italy [Internet]. Trento: Fondazione Bruno Kessler; 2012 [cited 2014 Jan 1]. p. 90. Available from: http://hdl.handle.net/10230/20382"^^xsd:string .
 
 test:doc_84
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Towards a User-Friendly Webservice Architecture for Statistical Machine Translation in the PANACEA project"^^xsd:string ;
+      rdfs:label "Towards a User-Friendly Webservice Architecture for Statistical Machine Translation in the PANACEA project"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Andy_Way> , test:person_Marc_Poch , test:person_Antonio_Toral , <http://dblp.l3s.de/d2r/resource/authors/Pavel_Pecina> ;
       dc:identifier "http://hdl.handle.net/10230/16994"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Statistical_machine_translation> , <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Statistical_machine_translation> , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "Towards a User-Friendly Webservice Architecture for Statistical Machine Translation in the PANACEA project"^^xsd:string ;
       dcterms:bibliographicCitation
               "Toral A, Pecina P, Way A, Poch M. Towards a User-Friendly Webservice Architecture for Statistical Machine Translation in the PANACEA project. In: Forcada ML, Depraetere H, Vandeghinste V (eds )., editors. roceedings of the 15th conference of the European Association for Machine Translation (EAMT 2011) Belgium; 2011 [Internet]. Centre for Computational Linguistics, Katholieke Universiteit Leuven; 2011. p. 63–70. Available from: http://hdl.handle.net/10230/16994"^^xsd:string .
 
 test:doc_85
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Platform for Automatic, Normalized Annotation and Cost-Effective  Acquisition of Language Resources for Human Language Technologies: PANACEA"^^xsd:string ;
+      rdfs:label "Platform for Automatic, Normalized Annotation and Cost-Effective  Acquisition of Language Resources for Human Language Technologies: PANACEA"@en ;
       dc:creator test:person_Núria_Bel ;
       dc:identifier "http://hdl.handle.net/10230/20380"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Automatic_acquisition_of_lexicon> , <http://dbpedia.org/resource/Machine_translation> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:subject <http://dbpedia.org/resource/Automatic_acquisition_of_lexicon> , <http://dbpedia.org/resource/Machine_translation> , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "Platform for Automatic, Normalized Annotation and Cost-Effective  Acquisition of Language Resources for Human Language Technologies: PANACEA"^^xsd:string ;
       dcterms:bibliographicCitation
               "Bel N. Platform for Automatic, Normalized Annotation and Cost-Effective  Acquisition of Language Resources for Human Language Technologies: PANACEA. Procesamiento del Lenguaje Natural [Internet]. 2010;45:327–8. Available from: http://hdl.handle.net/10230/20380"^^xsd:string ;
@@ -4973,10 +4973,10 @@ test:doc_85
 
 test:doc_9
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "FreeLing: An Open-Source Suite of Language Analyzers" ;
+      rdfs:label "FreeLing: An Open-Source Suite of Language Analyzers"@en ;
       dc:creator test:person_Muntsa_Padró , test:person_Lluís_Padró , <http://dblp.l3s.de/d2r/resource/authors/Isaac_Chao> , <http://dblp.l3s.de/d2r/resource/authors/Xavier_Carreras> ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2004/pdf/271.pdf" ;
-      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "FreeLing: An Open-Source Suite of Language Analyzers" ;
       dcterms:bibliographicCitation
               "Carreras X, Chao I, Padró L, Padró M. FreeLing: An Open-Source Suite of Language Analyzers. Proceedings of the Fourth International Conference on Language Resources and Evaluation, LREC 2004, May 26-28, 2004, Lisbon, Portugal [Internet]. Lisbon: European Language Resources Association (ELRA); 2004. Available from: http://www.lrec-conf.org/proceedings/lrec2004/pdf/271.pdf" ;
@@ -4984,7 +4984,7 @@ test:doc_9
 
 test:doc_uc_1
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Mapping the English Lake District: a literary GIS" ;
+      rdfs:label "Mapping the English Lake District: a literary GIS"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ian_N._Gregory> , <http://dblp.l3s.de/d2r/resource/authors/David_Cooper> ;
       dc:identifier "http://dx.doi.org/10.1111/j.1475-5661.2010.00405.x"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Toponymy> , <http://dbpedia.org/resource/Geographical_Information_Systems> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Geovisualization> ;
@@ -4994,7 +4994,7 @@ test:doc_uc_1
 
 test:doc_uc_10
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "Resolución de Correferencia de Nombres de Persona para Extracción de Información Biográfica"^^xsd:string ;
+      rdfs:label "Resolución de Correferencia de Nombres de Persona para Extracción de Información Biográfica"@es ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Pablo_Gamallo> , <http://dblp.l3s.de/d2r/resource/authors/Marcos_Garc%C3%ADa> ;
       dc:identifier " http://hdl.handle.net/10045/18512"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Coreference> , <http://dbpedia.org/resource/Information_extraction> , <http://dbpedia.org/resource/Proper_names> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Natural_language_processing> ;
@@ -5005,10 +5005,10 @@ test:doc_uc_10
 
 test:doc_uc_11
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"^^xsd:string ;
+      rdfs:label "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Pranav_Waila> , <http://dblp.l3s.de/d2r/resource/authors/V._K._Singh> , <http://dblp.l3s.de/d2r/resource/authors/M._K._Singh> ;
       dc:identifier "http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Blogs> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Political_sciences> , <http://dbpedia.org/resource/Sentiment_analysis> , <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Media_studies> ;
+      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Political_science> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Sentiment_analysis> , <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Media_studies> ;
       dc:title "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"^^xsd:string ;
       dcterms:bibliographicCitation
               "Waila P, Singh VK, Singh MK. Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine. Advances in Computing, Communications and Informatics (ICACCI), 2013 International Conference on [Internet]. 2013 [cited 2014 Mar 12]. p. 1166–71. Available from: http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
@@ -5016,10 +5016,10 @@ test:doc_uc_11
 
 test:doc_uc_12
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Using Language Resources in Humanities research"^^xsd:string ;
+      rdfs:label "Using Language Resources in Humanities research"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Carlos_Gonzalo> , <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> , <http://dblp.l3s.de/d2r/resource/authors/Nuria_Simelio> , test:person_Núria_Bel , test:person_Marta_Villegas ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2012/pdf/722_Paper.pdf"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Political_parties> , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Media_studies> , test:project_Androcentrismo , <http://dbpedia.org/resource/Gender_studies> , test:project_Municipals , <http://dbpedia.org/resource/Big_data> ;
+      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Media_studies> , test:project_Androcentrismo , <http://dbpedia.org/resource/Gender_studies> , test:project_Municipals , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Big_data> ;
       dc:title "Using Language Resources in Humanities research"^^xsd:string ;
       dcterms:bibliographicCitation
               "Moreno A, Gonzalo C, Villegas M, Bel N, Simelio N. Using Language Resources in Humanities research. In: Calzolari N, Choukri K, Declerck T, Dogan MU, Maegaard B, Mariani J, et al., editors. Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12) [Internet]. Istanbul, Turkey: European Language Resources Association (ELRA); 2012. p. 3284–8. Available from: http://www.lrec-conf.org/proceedings/lrec2012/pdf/722_Paper.pdf"^^xsd:string ;
@@ -5028,7 +5028,7 @@ test:doc_uc_12
 
 test:doc_uc_13
       rdf:type owl:NamedIndividual , bibo:Book ;
-      rdfs:label "De quién hablan las noticias?: guía para humanizar la información"^^xsd:string ;
+      rdfs:label "De quién hablan las noticias?: guía para humanizar la información"@es ;
       dc:creator "Florencia Rovetto Gonem"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> , "Alfonso Buitrago Londoño"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Gender_studies> ;
       dc:title "De quién hablan las noticias?: guía para humanizar la información"^^xsd:string ;
@@ -5037,7 +5037,7 @@ test:doc_uc_13
 
 test:doc_uc_14
       rdf:type owl:NamedIndividual , bibo:Book ;
-      rdfs:label "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"^^xsd:string ;
+      rdfs:label "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"@es ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
       dc:subject <http://dbpedia.org/resource/Gender_studies> ;
       dc:title "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"^^xsd:string ;
@@ -5046,9 +5046,9 @@ test:doc_uc_14
 
 test:doc_uc_15
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "El poder de les paraules: “Municipals’11 online"^^xsd:string ;
+      rdfs:label "El poder de les paraules: “Municipals’11 online"@en ;
       dc:identifier "http://hdl.handle.net/10230/12459"^^xsd:string ;
-      dc:subject test:project_Municipals , <http://dbpedia.org/resource/Political_parties> , <http://dbpedia.org/resource/Media_studies> ;
+      dc:subject test:project_Municipals , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> ;
       dc:title "El poder de les paraules: “Municipals’11 online"^^xsd:string ;
       dcterms:bibliographicCitation
               "El poder de les paraules: “Municipals’11 online.”. UPF.EDU [Internet]. 2011;2:12–3. Available from: http://hdl.handle.net/10230/12459"^^xsd:string ;
@@ -5057,7 +5057,7 @@ test:doc_uc_15
 
 test:doc_uc_2
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Visual GISting: bringing together corpus linguistics and Geographical Information Systems" ;
+      rdfs:label "Visual GISting: bringing together corpus linguistics and Geographical Information Systems"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Andrew_Hardie> , <http://dblp.l3s.de/d2r/resource/authors/Ian_N._Gregory> ;
       dc:identifier "http://dx.doi.org/10.1093/llc/fqr022" ;
       dc:subject <http://dbpedia.org/resource/Geovisualization> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Geographical_Information_Systems> , <http://dbpedia.org/resource/Toponymy> ;
@@ -5068,7 +5068,7 @@ test:doc_uc_2
 
 test:doc_uc_3
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Advanced visual analytics methods for literature analysis" ;
+      rdfs:label "Advanced visual analytics methods for literature analysis"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Dimitrios_Kokkinakis> , <http://viaf.org/viaf/14917130> , <http://dblp.l3s.de/d2r/resource/authors/Daniela_Oelke> ;
       dc:identifier "http://dl.acm.org/citation.cfm?id=2390357.2390364" ;
       dc:subject <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Proper_names> , bio:NamedEntityRecognition ;
@@ -5078,7 +5078,7 @@ test:doc_uc_3
 
 test:doc_uc_4
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Names in novels: An experiment in computational stylistics" ;
+      rdfs:label "Names in novels: An experiment in computational stylistics"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Karina_van_Dalen-Oskam> ;
       dc:identifier "http://dx.doi.org/10.1093/llc/fqs007" ;
       dc:subject <http://dbpedia.org/resource/Proper_names> , <http://dbpedia.org/resource/Literature> , bio:NamedEntityRecognition ;
@@ -5089,7 +5089,7 @@ test:doc_uc_4
 
 test:doc_uc_5
       rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "Data mining with criminal intent. Final white paper" ;
+      rdfs:label "Data mining with criminal intent. Final white paper"@en ;
       dc:creator <http://viaf.org/viaf/170295436> , <http://dblp.l3s.de/d2r/resource/authors/St%C3%A9fan_Sinclair> , <http://dblp.l3s.de/d2r/resource/authors/Milena_Radzikowska> , <http://dblp.l3s.de/d2r/resource/authors/Jamie_McLaughlin> , <http://dblp.l3s.de/d2r/resource/authors/Daniel_J._Cohen> , <http://dblp.l3s.de/d2r/resource/authors/Tim_Hitchcock> , <http://viaf.org/viaf/48754739> , <http://viaf.org/viaf/160238427> , <http://dblp.l3s.de/d2r/resource/authors/J%C3%B6rg_Sander> , <http://viaf.org/viaf/101140832> , <http://viaf.org/viaf/296736977> , <http://dblp.l3s.de/d2r/resource/authors/Cyril_Briquet> , <http://dblp.l3s.de/d2r/resource/authors/Geoffrey_Rockwell> , "John Simpson" ;
       dc:identifier "http://criminalintent.org/wp-content/uploads/2011/09/Data-Mining-with-Criminal-Intent-Final1.pdf" ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Criminal_justice> , <http://dbpedia.org/resource/Social_history> ;
@@ -5099,7 +5099,7 @@ test:doc_uc_5
 
 test:doc_uc_6
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Topic modeling on historical newspapers" ;
+      rdfs:label "Topic modeling on historical newspapers"@en ;
       dc:creator "Tze-I Yang" , <http://viaf.org/viaf/164341474> , <http://dblp.l3s.de/d2r/resource/authors/Rada_Mihalcea> ;
       dc:identifier "http://mappingtexts.org/whitepaper/Topic_Modeling_History.pdf"^^xsd:string ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Topic_model> , test:project_MT ;
@@ -5109,7 +5109,7 @@ test:doc_uc_6
 
 test:doc_uc_7
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities" ;
+      rdfs:label "Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities"@en ;
       dc:creator "Geoff McGhee" , <http://viaf.org/viaf/164341474> , <http://viaf.org/viaf/6734392> , <http://dblp.l3s.de/d2r/resource/authors/Rada_Mihalcea> ;
       dc:identifier "http://mappingtexts.stanford.edu/whitepaper/MappingTexts_WhitePaper.pdf" ;
       dc:subject <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Newspaper> , test:project_MT , bio:NamedEntityRecognition ;
@@ -5119,7 +5119,7 @@ test:doc_uc_7
 
 test:doc_uc_8
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "The Geographic Imagination of Civil War-Era American Fiction"^^xsd:string ;
+      rdfs:label "The Geographic Imagination of Civil War-Era American Fiction"@en ;
       dc:creator <http://viaf.org/viaf/21934190> ;
       dc:identifier "http://dx.doi.org/10.1093/alh/ajt045" ;
       dc:subject <http://dbpedia.org/resource/American_Civil_War> , <http://dbpedia.org/resource/Literature> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Geovisualization> ;
@@ -5129,7 +5129,7 @@ test:doc_uc_8
 
 test:doc_uc_9
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "A comparison of named entity recognition tools applied to biographical texts"^^xsd:string ;
+      rdfs:label "A comparison of named entity recognition tools applied to biographical texts"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Vincent_Labatut> , <http://dblp.l3s.de/d2r/resource/authors/Samet_Atdag> ;
       dc:identifier "http://dx.doi.org/10.1109/IcConSCS.2013.6632052"^^xsd:string ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Biography> ;
@@ -5140,8 +5140,8 @@ test:doc_uc_9
 
 test:metadata-AnCora-Cat
       rdf:type ms:CorpusText , owl:NamedIndividual ;
-      rdfs:label "AnCora-CA" ;
-      dc:description "The AnCora-CA is a Catalan corpus annotated at different levels: Lemma and Part of Speech; Syntactic constituents and functions; Argument structure and thematic roles; Semantic classes of the verb; Denotative type of deverbal nouns; Nouns related to WordNet synsets; Named Entities and Coreference relations; AnCora corpus is mainly based on journalist texts. Detailed information can be found at the corpus web site: http://clic.ub.edu/corpus/en." ;
+      rdfs:label "AnCora-CA"@en ;
+      dc:description "The AnCora-CA is a Catalan corpus annotated at different levels: Lemma and Part of Speech; Syntactic constituents and functions; Argument structure and thematic roles; Semantic classes of the verb; Denotative type of deverbal nouns; Nouns related to WordNet synsets; Named Entities and Coreference relations; AnCora corpus is mainly based on journalist texts. Detailed information can be found at the corpus web site: http://clic.ub.edu/corpus/en."@en ;
       ms:annotationStandoff
               "false" ;
       ms:annotationType ms:morphosyntacticAnnotation-posTagging , ms:semanticAnnotation-semanticRoles , ms:semanticAnnotation-wordSenses , ms:syntacticAnnotation-shallowParsing ;
@@ -6696,7 +6696,8 @@ test:person_Xavier_Gómez_Guinovart
 
 test:project_3LB
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "3LB: Building a syntactic-semantic-trees-based database" ;
+      rdfs:label "3LB: Building a syntactic-semantic-trees-based database"@en ;
+      dc:description "The main objective of 3LB project is to build three treebanks (syntactically annotated corpus) for Spanish, Catalan and Basque. Besides the syntactic annotation, it will be carried out a semantic annotation by means of the synsets of the different wordnets (http://www.cogsci.princeton.edu/~wn/w3wn.html) built for each language, as well as an annotation of anaphoric and elliptic elements just as the co-reference. Corpus extension for Spanish and Catalan will be 100.000 words, and 50.000 for Basque due to more notational complexity and smaller covering of its wordnet (35.000 entries instead of 100.000 for the Spanish and 65.000 for the Catalan)."@en ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Treebank> ;
       foaf:homepage "http://www.dlsi.ua.es/projectes/3lb/index_en.html " ;
       foaf:name "3LB: Building a syntactic-semantic-trees-based database" .
@@ -6707,7 +6708,7 @@ test:project_Androcentrismo
       dc:contributor test:organization_UPF-IULA , test:project_CLARIN_ES ;
       dc:creator test:organization_Feminario ;
       dc:description "This project investigates androcentric practices in Spanish general press since late 80s. CLARIN contributed in the research by providing  services and tools to run an experiment that automatically analised a corpus of Spanish press since 2002. 150,000 newspaper headlines were analysed. The process included: a) automatically parse over 150,000 news headlines, b) identifying subjects of sentences using automatic annotation tools and (iii) semantic classification to calculate the presence of human subjects versus abstract subjects in Spanish newspaper headlines."@en ;
-      dc:subject bio:SyntacticTagging , <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> ;
+      dc:subject bio:SyntacticTagging , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> ;
       dcterms:isReferencedBy
               test:doc_uc_14 , test:doc_uc_13 , test:doc_uc_12 ;
       ms:languageName "Spanish"^^xsd:string ;
@@ -6716,7 +6717,16 @@ test:project_Androcentrismo
 
 test:project_Apertium
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Apertium" ;
+      rdfs:label "Apertium"@en ;
+      dc:description """Since 2004, the Apertium project develops a free/open-source machine translation platform, initially aimed at related-language pairs but expanded to deal with more divergent language pairs.
+
+The mission of the Apertium project is to collaboratively develop free/open-source machine translation for as many languages as possible, and in particular:
+
+- To give everyone free, unlimited access to the best possible machine-translation technologies.
+- To maintain a modular, documented, open platform for machine translation and other human language processing tasks
+- To favour the interchange and reuse of existing linguistic data.
+- To make integration with other free/open-source technologies easier.
+- To radically guarantee the reproducibility of machine translation and natural language processing research."""@en ;
       dc:subject <http://dbpedia.org/resource/Machine_translation> ;
       owl:sameAs <http://dbpedia.org/resource/Apertium> ;
       foaf:homepage "http://www.apertium.org" ;
@@ -6724,44 +6734,49 @@ test:project_Apertium
 
 test:project_Apertium_Trautorom
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Apertium Trautorom" ;
+      rdfs:label "Apertium Trautorom"@en ;
+      dc:description "Apertium Trautorom is a machine translation project linked to the Apertium project. This project develops the Romanian-Spanish language pair."@en ;
       dc:subject <http://dbpedia.org/resource/Machine_translation> ;
       foaf:homepage " http://www.apertium.org" ;
       foaf:name "Apertium Trautorom" .
 
 test:project_CESS-ECE
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "CESS-ECE Syntactically and Semantically Annotated Corpora (Spanish, Catalan, Basque)" ;
+      rdfs:label "CESS-ECE Syntactically and Semantically Annotated Corpora (Spanish, Catalan, Basque)"@en ;
+      dc:description "Syntactically annotated databank composed of constituents and functions of 500.000 words for Catalan, Spanish, and Basque."@en ;
       dc:subject <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Syntax> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Annotation> ;
       foaf:homepage "http://clic.ub.edu/en/projects"^^xsd:string ;
       foaf:name "CESS-ECE Syntactically and Semantically Annotated Corpora (Spanish, Catalan, Basque)" .
 
 test:project_CHALICE
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Connecting Historical Authorities with Linked Data, Contexts and Entities" ;
+      rdfs:label "Connecting Historical Authorities with Linked Data, Contexts and Entities"@en ;
       dc:contributor <http://viaf.org/viaf/137387653> , "University of Edinburgh. School of Informatics. Language Technology Group" , "Queen’s University Belfast. Centre for Data Digitisation and Analysis" , "King's College London. Centre for e-Research" ;
-      dc:description "This project  aimed at providing a historic place-name gazetteer covering a thousand years of history and providing links to attestations in old texts and maps', NER techniques were used to extract new data from digitized English Place -Name Survey."@en ;
+      dc:description "This project aimed at providing a historic place-name gazetteer covering a thousand years of history and providing links to attestations in old texts and maps', NER techniques were used to extract new data from digitized English Place -Name Survey."@en ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Gazeteer> , <http://dbpedia.org/resource/Toponymy> , <http://dbpedia.org/resource/History> ;
       foaf:homepage "http://chalice.blogs.edina.ac.uk/" ;
       foaf:name "Connecting Historical Authorities with Linked Data, Contexts and Entities" .
 
 test:project_CLARIN_ES
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "CLARIN, Common Language Resources and Technologies (Spain)"^^xsd:string ;
+      rdfs:label "CLARIN, Common Language Resources and Technologies (Spain)"@en ;
       dc:description "CLARIN has the goal of facilitate access to collections of linguistic data (texts, multimedia recordings, dictionaries, etc.) and make possible the use in the net of analysis and exploitation tools of these data based on language technologies, specially for the research in Humanities and Social Sciences.This project was funded by European Union (FP7-INFRASTRUCTURES-2007-1-212230) and by the Ministry of Education and Science (CAC-2007-23). Duration of the project: 2007-2008."@en ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       foaf:homepage "http://clarin-es.iula.upf.edu/"^^xsd:string ;
       foaf:name "Common Language Resources and Technologies (Spain)"^^xsd:string .
 
 test:project_CPL-UPC
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Universitat Politècnica de Catalunya. Càtedra de Programari Lliure" ;
+      rdfs:label "Universitat Politècnica de Catalunya. Càtedra de Programari Lliure"@cat ;
+      dc:description """Due to the growing interest shown by society and businesses in free software, and in keeping with UPC’s unfaltering commitment to this technology, UPC’s Board of Management launched the Free Software Chair to serve as a vehicle for all the initiatives undertaken by the University in this area.
+
+The Chair, which was created in September 2004, aims to raise awareness of open-source software at UPC and in society at large. At UPC, the Chair aims to promote the use and development of open-source software, both amongst the teaching and research staff and administrative and service staff as well as amongst the student body. Beyond the university community, the Chair aims to channel the needs and interests of companies, government and society towards UPC’s team of experts, who will be able to offer them solutions crafted around free software."""@en ;
       foaf:homepage "http://cpl.upc.edu/" ;
       foaf:name "Universitat Politècnica de Catalunya. Càtedra de Programari Lliure"^^xsd:string .
 
 test:project_ChartEx
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "ChartEx" ;
+      rdfs:label "ChartEx"@en ;
       dc:contributor <http://viaf.org/viaf/159511000> , <http://viaf.org/viaf/156836332> , <http://viaf.org/viaf/154911632> , <http://viaf.org/viaf/145108120> , <http://viaf.org/viaf/130333233> , <http://viaf.org/viaf/124424463> ;
       dc:description "This project focuses on the extraction of information about places, people and events in their lives from medieval charters by using NLP technologies as NER, among others."@en ;
       dc:subject <http://dbpedia.org/resource/Category:Medieval_charters_and_cartularies> , <http://dbpedia.org/resource/Medieval_studies> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/History> ;
@@ -6770,7 +6785,7 @@ test:project_ChartEx
 
 test:project_DIEMRL
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "Digging Into the Enlightenment: Mapping the Republic of Letters" ;
+      rdfs:label "Digging Into the Enlightenment: Mapping the Republic of Letters"@en ;
       dc:contributor <http://viaf.org/viaf/137316683> , <http://viaf.org/viaf/142129514> , <http://viaf.org/viaf/158761280> ;
       dc:description "This collaborative project analyzed the degree to which the effects of the Enlightenment can be observed in the writing of people of various occupations in a corpus of 53,000 18th-century letters called Electronic Enlightenment (EE). The hypothesis of the project presents a new perspective in the practice of interpretative research in the field of humanities. This view aimed to integrate innovative visualization and annotation techniques into interactive tools for exploring and analyzing information about people, places, times, and relationships in the 'Republic of Letters'."@en ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
@@ -6779,7 +6794,7 @@ test:project_DIEMRL
 
 test:project_DVE
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "Dynamic Variorum Editions" ;
+      rdfs:label "Dynamic Variorum Editions"@en ;
       dc:contributor <http://viaf.org/viaf/139374045> , <http://viaf.org/viaf/158205697> , <http://viaf.org/viaf/151609847> ;
       dc:description "The project's goal was to identify and track topics about the Greco-Roman world as they appear in multilingual public document collections (Internet Archive, JSTOR, HathiTrust, etc.). This project aimed to create an environment and to generate 'dynamic variorum' editions of texts based on a services infrastructure. Project's work included mining primary and secondary digital sources to locate where people and places from the Greco-Roman world are discussed, what Greek and Latin works are cited, and what has been said about the people, places, and texts of the Greco-Roman world over time."@en ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Classical_antiquity> ;
@@ -6788,7 +6803,7 @@ test:project_DVE
 
 test:project_DbyD
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "Digging by Debating: linking massive datasets to specific arguments" ;
+      rdfs:label "Digging by Debating: linking massive datasets to specific arguments"@en ;
       dc:contributor <http://viaf.org/viaf/142461254> , <http://viaf.org/viaf/261901746> , <http://viaf.org/viaf/132683760> , <http://viaf.org/viaf/266045559> ;
       dc:description "Project's goal is to develop ways of searching and visualizing the interactions between humanities and sciences based on models of argumentation by means of tool generation.  The research behind this project looks to establish what volume of collections of text (such as HathiTrust/GoogleBooks collection) can support the kinds of detailed argumentative analysis that is central to scholarly research and public discussion of science and humanities. It suggests: linking contact points between philosophy and the sciences; topic modeling to identify rich content in a chosen topic; identifying and mapping key arguments by novel analysis framework for propositions and arguments, and sentence modeling to get back to HathiTrust materials."@en ;
       dc:subject <http://dbpedia.org/resource/Philosophy_of_science> , <http://dbpedia.org/resource/Arguments> , <http://dbpedia.org/resource/History> , bio:NamedEntityRecognition ;
@@ -6797,21 +6812,24 @@ test:project_DbyD
 
 test:project_EurOpentrad
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "EurOpentrad " ;
+      rdfs:label "EurOpentrad"@en ;
+      dc:description "EurOpenTrad was a machine translation project. The aim of this project was to develop a machine translation system between English and the official languages of the Spanish State by developing hybrid systems developed in OpenTrad for the purpose."@en ;
       dc:subject <http://dbpedia.org/resource/Machine_translation> ;
       foaf:homepage "http://www.eleka.net/proiektuak/index.php?p=1204547287&id=en"^^xsd:string ;
       foaf:name "EurOpentrad" .
 
 test:project_FAUST
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "FAUST - Feedback Analysis for User adaptive Statistical Translation" ;
+      rdfs:label "FAUST - Feedback Analysis for User adaptive Statistical Translation"@en ;
+      dc:description """The objective of this project was to develop interactive machine translation systems which adapt rapidly and intelligently 
+in response to user feedback. The research was based on translation in five bidirectional language pairs in these EU official languages: Czech-English ; French-English ; Romanian-English ; Spanish-English ; Spanish-Catalan."""@en ;
       dc:subject <http://dbpedia.org/resource/Machine_translation> ;
       foaf:homepage "http://www.faust-fp7.eu/faust/" ;
       foaf:name "FAUST - Feedback Analysis for User adaptive Statistical Translation" .
 
 test:project_ISHER
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "Integrated Social History Environment for Research" ;
+      rdfs:label "Integrated Social History Environment for Research"@en ;
       dc:contributor "University of Illinois at Urbana-Champaign. Cline Center for Democracy"^^xsd:string , <http://viaf.org/viaf/141045569> , "University of Manchester. National Centre for Text Mining"^^xsd:string ;
       dc:description "This project is researching the application of tools to detect, link and visualize events, trends, people, organizations, and other entities of interest to social history. Having text-mining-based rich semantic metadata extraction for collections' indexing, clustering and classification as its main focus, the project aims at reducing the manual costs currently involved in such activities."@en ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Social_history> ;
@@ -6820,29 +6838,31 @@ test:project_ISHER
 
 test:project_KNOW
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "KNOW2: Language understanding technologies for multilingual domain-oriented information access" ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      rdfs:label "KNOW2: Language understanding technologies for multilingual domain-oriented information access"@en ;
+      dc:description "The aim of KNOW2 was to obtain better performance of multilingual information access by using two main strategies: (i) moving from general to specific domains and (ii) incorporating text-mining and collaborative interfaces."@en ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       foaf:homepage "http://ixa.si.ehu.es/know2" ;
       foaf:name "KNOW2: Language understanding technologies for multilingual domain-oriented information access" .
 
 test:project_Lang2World
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Lang2World: Discovering the world knowledge codified in the language" ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      rdfs:label "Lang2World: Discovering the world knowledge codified in the language"@en ;
+      dc:description "The objectives of this project were a) Progress and improvement of knowledge-based NLP tools and resources for syntax and semantics with applications to HLT tasks, b) Development of linguistic knowledge-based methods, applied to the identification of relevant entities in the Text Mining framework, namely, extended Named Entity recognition and classification and terminology extraction from restricted domains, c) Identification and formalization of the linguistic knowledge necessary for pattern extraction and paraphrase machine learning tasks and the detection of given and new information, and d) Development of annotated corpora, at several levels of analysis and linguistically-based, for their application in machine learning techniques in supervised systems and for the tasks in the project."@en ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       foaf:homepage "http://intime.dlsi.ua.es/text-mess/doku.php?id=subproyectos#lang2world" ;
       foaf:name "Lang2World: Discovering the world knowledge codified in the language" .
 
 test:project_METANET4U
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "METANET4U – Enhancing the European Linguistic Infrastructure" ;
+      rdfs:label "METANET4U – Enhancing the European Linguistic Infrastructure"@en ;
       dc:description "The central objective of the METANET4U project is to contribute to the establishment of a pan-European digital platform that makes available language resources and services, encompassing both datasets and software tools, for speech and language processing, and supports a new generation of exchange facilities for them."@en ;
-      dc:subject "<http://dbpedia.org/resource/Language_technology>"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       foaf:homepage "http://metanet4u.eu/" ;
       foaf:name "METANET4U – Enhancing the European Linguistic Infrastructure" .
 
 test:project_MRL
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Mapping the Republic of Letters"^^xsd:string ;
+      rdfs:label "Mapping the Republic of Letters"@en ;
       dc:contributor <http://viaf.org/viaf/223857543> , <http://viaf.org/viaf/142129514> , "DensityDesign Research Lab"^^xsd:string , <http://viaf.org/viaf/241932236> , <http://viaf.org/viaf/148186413> ;
       dc:description "The project's goal was to visualize certain correspondence networks from digital scholarly editions of historical letters as a way of exploring a bundle of historical questions about the geographic range, diversity, and interactions among intellectuals during seventeenth, eighteenth, and nineteenth centuries."@en ;
       dc:subject <http://dbpedia.org/resource/History> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
@@ -6851,7 +6871,7 @@ test:project_MRL
 
 test:project_MT
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "Mapping Texts" ;
+      rdfs:label "Mapping Texts"@en ;
       dc:contributor <http://viaf.org/viaf/122573955> ;
       dc:description "The project aimed to develop new ways of discovering and analyzing language patterns embedded in historical newspaper databases. Its approach was to combine text mining and geospatial visualization methods to explore massive collections of electronic texts."@en ;
       dc:subject <http://dbpedia.org/resource/Geovisualization> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Media_studies> ;
@@ -6864,7 +6884,7 @@ test:project_Municipals
       dc:contributor test:organization_UPF-IULA , test:project_CLARIN_ES ;
       dc:creator "Carlos Gonzalo"^^xsd:string ;
       dc:description "This is an e-communication and e-politics project that analyses the 2011 municipal election campaign in Spain. The main objective of the project is to analyse new tendencies in e-politics and to demonstrate the impact of internet on the electoral process. CLARIN contributed to the research by providing services and tools to run an experiment that automatically analysed published texts in the Catalan political blogosphere related to this election campaign. The process included: a) automatically and periodically access to 459 representative blogs in the Catalan political blogosphere, b) obtaining and pre-processing of the different texts (over 8000 posts) and (iii) texts processing with different statistical tools to calculate the most significant words for each blog in contrast to the others."@en ;
-      dc:subject <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Political_parties> , bio:TextMining , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Big_data> ;
+      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Political_science> , bio:TextMining , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Big_data> ;
       dcterms:isReferencedBy
               test:doc_uc_12 ;
       ms:affiliation "Departament de Comunicació. Universitat Pompeu Fabra"@cat ;
@@ -6875,24 +6895,26 @@ test:project_Municipals
 
 test:project_OpenMT-2
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "OPENMT-2: Hibrid Machine Translation and advanced evaluation" ;
+      rdfs:label "OPENMT-2: Hibrid Machine Translation and advanced evaluation"@en ;
+      dc:description "The objective of this project was to develop a system through which Basque Wikipedia contributors collaborate with the University of the Basque Country (UPV/EHU) in order to generate new Wikipedia content and improve a previous machine translation system."@en ;
       dc:subject <http://dbpedia.org/resource/Machine_translation> ;
       foaf:homepage "http://ixa.si.ehu.es/openmt2" ;
       foaf:name "OPENMT-2: Hibrid Machine Translation and advanced evaluation" .
 
 test:project_Opentrad
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Opentrad " ;
+      rdfs:label "Opentrad"@en ;
       rdfs:seeAlso <http://dbpedia.org/page/Apertium> ;
+      dc:description "Opentrad was an automatic translation project based on open-coded syntactic transference and which was valid for Spanish, Galician, Catalan/Valencian and Basque. Opentrad enabled the translation of texts or documents as well as the navigation on webpages while translating at the same time. The language pairs that already have an operating prototype are:  Spanish <-> Catalan/Valencian,  Spanish <-> Galician, and  Spanish <-> Basque (the system only translates from Spanish to Basque, not vice-versa)."@en ;
       dc:subject <http://dbpedia.org/resource/Machine_translation> ;
       foaf:homepage "http://www.apertium.org" ;
       foaf:name "Opentrad" .
 
 test:project_PANACEA
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "PANACEA"^^xsd:string ;
+      rdfs:label "PANACEA"@en ;
       dc:description "PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Languages Technologies). Its main goal is to develop technologies for the automation of all the stages involved in the acquisition, production, updating, validation and maintenance of Linguistic Technologies and Resources. The project coordinated by our group, counts on the participation of Cambridge University, the Istituto di Linguistica Computazionale, Italy, the Institute for Language and Speech Processing, Greece, Dublin City University, Ireland, and two companies, the German Linguatec and the French ELDA, Evaluation and Language Resources Distribution Agency. This project was funded by the Language Technologies Area, Information and Communication Technologies, of the 7th Framework Programme (7FP-ITC-248064), of the EU 7th Framework Programme. Duration of the project: 2010-2012."@en ;
-      dc:subject <http://dbpedia.org/resource/Language_technology> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       dcterms:isReferencedBy
               test:doc_83 , test:doc_85 , test:doc_84 ;
       foaf:homepage "http://www.panacea-lr.eu/" ;
@@ -6900,40 +6922,44 @@ test:project_PANACEA
 
 test:project_PAROLE
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "PAROLE (LE2-4017)" ;
+      rdfs:label "PAROLE (LE2-4017)"@en ;
+      dc:description "The aim of the PAROLE project was the compilation of large, generic and re-usable Written Language Resources for all European Languages, comprising more specifically: i) General language text corpora of the size of 20,000,000 words in 14 languages (Belgian French, Catalan, Danish, Dutch, English, French, Finnish, German, Greek, Irish, Italian, Norwegian, Portuguese and Swedish), and ii) computational lexicons with 20,000 lemmas in 12 languages (Catalan, Danish, Dutch, English, Finnish, French, German, Greek, Italian, Portuguese, Spanish, Swedish). The value of these resources lies not only in the size and number of languages covered by the project, but also in the fact that they are built according to common standards and specifications."@en ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Natural_language_processing> ;
       foaf:homepage "http://www.ub.edu/gilcub/SIMPLE/simple.html" ;
       foaf:name "PAROLE (LE2-4017)" .
 
 test:project_PRAXEM
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Praxem, semantic and pragmatic annotation of the CESS-ECE corpus" ;
-      dc:subject <http://dbpedia.org/resource/Pragmatics> , <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Annotation> ;
+      rdfs:label "Praxem, semantic and pragmatic annotation of the CESS-ECE corpus"@en ;
+      dc:description "This project was as objective CESS-ECE corpus annotation with pragmatics and semantics information."@en ;
+      dc:subject <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Pragmatics> , <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Text_corpus> ;
       foaf:name "Praxem, semantic and pragmatic annotation of the CESS-ECE corpus" .
 
 test:project_SIMPLE
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "SIMPLE" ;
+      rdfs:label "SIMPLE"@en ;
       dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Natural_language_processing> ;
       foaf:homepage "http://www.ub.edu/gilcub/SIMPLE/simple.html" ;
       foaf:name "SIMPLE" .
 
 test:project_SenSem
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "Sentence Semantics: Creación de una Base de Datos de Semántica Oracional" ;
-      dc:subject <http://dbpedia.org/resource/Lexical_resource> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Semantics> ;
+      rdfs:label "Sentence Semantics: Creación de una Base de Datos de Semántica Oracional"@es ;
+      dc:description "This project aimed to build a databank of Spanish verbs based on a lexicon that links each verb sense to a significant number of manually analyzed corpus examples. This databank will reflect the syntactic and semantic behavior of Spanish verbs in naturally occurring text."@en ;
+      dc:subject <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Annotation> , <http://dbpedia.org/resource/Lexical_resource> , <http://dbpedia.org/resource/Corpus_linguistics> ;
       foaf:homepage "http://grial.uab.es/fproj.php?id=1" ;
       foaf:name "Sentence Semantics: Creación de una Base de Datos de Semántica Oracional" .
 
 test:project_ViClone
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "ViClone" ;
+      rdfs:label "ViClone"@en ;
       foaf:homepage "http://www.vi-clone.com/" ;
       foaf:name "ViClone" .
 
 test:project_XLike
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "XLike: Cross-lingual Knowledge Extraction" ;
+      rdfs:label "XLike: Cross-lingual Knowledge Extraction"@en ;
+      dc:description "The goal of the XLike project was to develop technology to monitor and aggregate knowledge spreaded across mainstream and social media, and to enable cross-lingual services for publishers, media monitoring and business intelligence."@en ;
       dc:subject <http://dbpedia.org/resource/Knowledge_extraction> ;
       foaf:homepage "http://www.xlike.org/" ;
       foaf:name "XLike: Cross-lingual Knowledge Extraction" .
