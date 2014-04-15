@@ -1750,7 +1750,7 @@ ms:dcr
 ms:definition-gloss
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Definition Gloss"@en ;
-      dc:description "Definition Gloss refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "Definition Gloss refers to the action or process of stating the meaning of a word or word group in a glossary."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1972"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Definition> .
 
@@ -2056,14 +2056,14 @@ ms:languageName
 ms:lemma
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Lemma"@en ;
-      dc:description "Lemma refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "Lemma refers to an abstract representation subsuming all the formal lexical variations which may apply (David Crystal, Dictionary of Linguistics and Phonetics, 2008)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1324"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Lemma> .
 
 ms:lemma-Abbreviations
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Lemma Abbreviations"@en ;
-      dc:description "Lemma Abbreviations refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "Abbreviation refers to the process or result of representing a word or group of words by a shorter form of the word or phrase (Encyclopaedia Britannica Online Academic Edition, 2014)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1418"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Abbreviation> .
 
@@ -2071,19 +2071,19 @@ ms:lemma-CliticForms
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Lemma Clitic Forms"@en ;
       rdfs:seeAlso <http://dbpedia.org/page/Clitic> ;
-      dc:description "Lemma Clitic Forms refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "A clitic is a morpheme that has syntactic characteristics of a word, but shows evidence of being phonologically bound to another word (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Clitic> .
 
 ms:lemma-Compounds
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Lemma Compounds"@en ;
-      dc:description "Lemma Compounds refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "A compound is a word containing a stem that is made up of more than one root (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Compound_(linguistics)> .
 
 ms:lemma-MultiWordUnits
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Lemma MultiWord Units"@en ;
-      dc:description "Lemma MultiWord Units refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "A multiword unit (MWU) is a lexicalized word combination of two or more words to represent a different concept from the composition of the meaning of its elements."@en ;
       owl:sameAs <http://dbpedia.org/resource/Multiword_expression> .
 
 ms:lemma-Variants
@@ -2291,7 +2291,7 @@ ms:morpho-Aspect
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Morpho Aspect"@en ;
       rdfs:seeAlso ms:morphology , <http://dbpedia.org/page/Grammatical_aspect> , ms:morphologicalAnalisys , bio:MorphologicalTagging ;
-      dc:description "Morpho Aspect refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "Aspect is a grammatical category associated with verbs that expresses a temporal view of the event or state expressed by the verb (SIL Glossary of Linguistic Terms, 2003)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1242"@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_aspect> .
 
@@ -2299,14 +2299,14 @@ ms:morpho-Auxiliary
       rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho Auxiliary"@en ;
       rdfs:seeAlso bio:MorphologicalTagging , ms:morphology , ms:morphologicalAnalisys ;
-      dc:description "Morpho Auxiliary refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "An auxiliary verb is a verb which accompanies the lexical verb of a verb phrase, and expresses grammatical distinctions not carried by the lexical verb, such as person, number, tense, aspect, and voice (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Auxiliary_verb> .
 
 ms:morpho-Case
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Morpho Case"@en ;
-      rdfs:seeAlso <http://dbpedia.org/page/Grammatical_case> , bio:MorphologicalTagging , ms:morphology , ms:morphologicalAnalisys ;
-      dc:description "Morpho Case refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , bio:MorphologicalTagging , <http://dbpedia.org/page/Grammatical_case> ;
+      dc:description "Case is a grammatical category determined by the syntactic or semantic function of a noun or pronoun (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_case> .
 
 ms:morpho-Degree
@@ -2320,7 +2320,7 @@ ms:morpho-Derivation
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Morpho Derivation"@en ;
       rdfs:seeAlso ms:morphology , <http://dbpedia.org/page/Derivation_(linguistics)> , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
-      dc:description "Morpho Derivation refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "Derivation is the formation of a new word or inflectable stem from another word or stem. It typically occurs by the addition of an affix. The derived word is often of a different word class from the original. It may thus take the inflectional affixes of the new word class (SIL Glossary of Linguistic Terms, 2003)"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Derivation_(linguistics)> .
 
 ms:morpho-Gender
@@ -2334,7 +2334,7 @@ ms:morpho-Inflection
       rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Morpho Inflection"@en ;
       rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
-      dc:description "Morpho Inflection refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
+      dc:description "Inflection is variation in the form of a word, typically by means of an affix, that expresses a grammatical contrast which is obligatory for the stem’s word class in some given grammatical context (SIL Glossary of Linguistic Terms, 2003)."@en ;
       ms:dcr  "http://dbpedia.org/page/Inflection"@en ;
       owl:sameAs <http://dbpedia.org/resource/Inflection> .
 
