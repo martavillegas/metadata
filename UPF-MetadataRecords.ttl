@@ -1594,25 +1594,25 @@ test:Apertium-en-es_resource-5v2
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
               ms:LMF ;
-      ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
+      ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
       ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_METANET4U , test:project_Apertium , test:project_EurOpentrad ;
+      ms:fundingProject test:project_METANET4U , test:project_EurOpentrad , test:project_Apertium ;
       ms:identifier "http://hdl.handle.net/10230/17110" ;
-      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
-      ms:languageId "es" , "en" ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
+      ms:languageId "en" , "es" ;
       ms:languageName "Spanish" , "English" ;
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
-              ms:semantics-CrossReferences , ms:lemma , ms:partOfSpeech ;
+              ms:partOfSpeech , ms:semantics-CrossReferences , ms:lemma ;
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
-      ms:resourceCreator test:person_Paul_Breen , test:person_Jimmy_OReagan , test:organization_UPC , test:organization_UA-Grup_Transducens , test:organization_UPF-IULA ;
+      ms:resourceCreator test:person_Jimmy_OReagan , test:organization_UPC , test:person_Paul_Breen , test:organization_UPF-IULA , test:organization_UA-Grup_Transducens ;
       ms:resourceName "English-Spanish LMF Apertium Bilingual dictionary" ;
       ms:resourceShortName
               "LMF Apertium En-Es" ;
@@ -1660,16 +1660,16 @@ test:Apertium-es-ast_resource-13v2
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
               ms:LMF ;
-      ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
+      ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
       ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_METANET4U , test:project_Apertium ;
+      ms:fundingProject test:project_Apertium , test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/17116" ;
-      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
-      ms:languageId "es" , "ast" ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#ast> ;
+      ms:languageId "ast" , "es" ;
       ms:languageName "Asturian" , "Spanish" ;
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
@@ -1678,7 +1678,7 @@ test:Apertium-es-ast_resource-13v2
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
-      ms:resourceCreator test:organization_Prompsit , test:organization_UPC-TALP , test:organization_UNIOVI-ESLEMA , test:organization_UVIGO-SLI , test:organization_UPF-IULA , test:organization_UA-Grup_Transducens ;
+      ms:resourceCreator test:organization_UVIGO-SLI , test:organization_UPF-IULA , test:organization_Prompsit , test:organization_UA-Grup_Transducens , test:organization_UNIOVI-ESLEMA , test:organization_UPC-TALP ;
       ms:resourceName "Spanish-Asturian LMF Apertium Bilingual dictionary" ;
       ms:resourceShortName
               "LMF Apertium Es-Ast" ;
@@ -2200,19 +2200,19 @@ test:Freeling-Ast_resource-25v2
       ms:documentation test:doc_34 , test:doc_9 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_XLike , test:project_Opentrad , test:project_OpenMT-2 , test:project_METANET4U , test:project_KNOW , test:project_FAUST , test:project_CPL-UPC , test:project_ViClone ;
+      ms:fundingProject test:project_KNOW , test:project_XLike , test:project_OpenMT-2 , test:project_Opentrad , test:project_ViClone , test:project_FAUST , test:project_METANET4U , test:project_CPL-UPC ;
       ms:identifier "http://hdl.handle.net/10230/17099" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#ast> ;
       ms:languageId "ast" ;
       ms:languageName "Asturian" ;
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
-              ms:partOfSpeech , ms:lemma ;
+              ms:lemma , ms:partOfSpeech ;
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Asturian Freeling lexicon as described in http://nlp.lsi.upc.edu/freeling/" ;
-      ms:resourceCreator test:person_Daniel_Vicente_Quílez , test:organization_UPC-TALP , test:organization_UPF-IULA ;
+      ms:resourceCreator test:organization_UPF-IULA , test:person_Daniel_Vicente_Quílez , test:organization_UPC-TALP ;
       ms:resourceName "Asturian LMF Freeling Lexicon" ;
       ms:resourceShortName
               "Asturian LMF Freeling Lexicon" ;
@@ -2334,7 +2334,7 @@ test:Freeling_Galician_resource-28v2
       ms:documentation test:doc_9 , test:doc_34 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_OpenMT-2 , test:project_FAUST , test:project_Opentrad , test:project_XLike , test:project_CPL-UPC , test:project_ViClone , test:project_METANET4U , test:project_KNOW ;
+      ms:fundingProject test:project_XLike , test:project_OpenMT-2 , test:project_Opentrad , test:project_CPL-UPC , test:project_ViClone , test:project_KNOW , test:project_FAUST , test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/17118" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageId "gl" ;
@@ -2346,7 +2346,7 @@ test:Freeling_Galician_resource-28v2
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Galician Freeling lexicon as described in http://nlp.lsi.upc.edu/freeling/" ;
-      ms:resourceCreator test:organization_UPF-IULA , test:organization_USC , test:organization_UPC-TALP ;
+      ms:resourceCreator test:organization_UPC-TALP , test:organization_USC , test:organization_UPF-IULA ;
       ms:resourceName "Galician LMF Freeling Lexicon" ;
       ms:resourceShortName
               "Galician LMF Freeling Lexicon" ;
@@ -4409,13 +4409,13 @@ test:doc_42
 
 test:doc_44
       rdf:type bibo:Report , owl:NamedIndividual ;
-      rdfs:label "PANACEA Project. D5.6 Transfer Selection Support"@en ;
+      rdfs:label "Transfer Selection Support"@en ;
       dc:creator test:person_Gregor_Thurmair , test:person_Vera_Aleksic ;
-      dc:identifier "http://panacea-lr.eu/system/deliverables/PANACEA-D5.6.pdf" ;
+      dc:identifier "http://hdl.handle.net/10230/22523"^^xsd:string ;
       dc:subject <http://dbpedia.org/resource/Transfer-based_machine_translation> , <http://dbpedia.org/resource/Machine_translation> ;
-      dc:title "PANACEA Project. D5.6 Transfer Selection Support"@en ;
+      dc:title "Transfer Selection Support"@en ;
       dcterms:bibliographicCitation
-              "Thurmair G, Aleksi? V. PANACEA Project. D5.6 Transfer Selection Support [Internet]. PANACEA Project; 2012. Available from: http://panacea-lr.eu/system/deliverables/PANACEA-D5.6.pdf" .
+              "Thurmair G, Aleksic V. Transfer Selection Support. Final report 12 Jun 2012. 25 p. (Panacea Project. Work Package Reports, no. D5.6) . Available from: http://hdl.handle.net/10230/22523"^^xsd:string .
 
 test:doc_45
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5068,6 +5068,74 @@ test:doc_uc_21
               "Villegas M, Bel N, Moreno A, Simelio N. Analizing androcentric focus & deshumanization in news headlines using advanced exploitation tools. Proceedings of Digital humanities; Supporting Digital Humanities: Answering the unaskable [Internet]. Copenhagen: Centre for Language Technology, University of Copenhagen; 2011. Available from: http://crdo.up.univ-aix.fr/SLDRdata/doc/show/copenhagen/SDH-2011/submissions/sdh2011_submission_20.pdf"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Named_entity_recognition> , <http://dbpedia.org/resource/Gender_studies> ;
       ms:url  "http://crdo.up.univ-aix.fr/SLDRdata/doc/show/copenhagen/SDH-2011/submissions/sdh2011_submission_20.pdf"^^xsd:string .
+
+test:doc_uc_22
+      rdf:type owl:NamedIndividual , bibo:Chapter ;
+      rdfs:label "Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Alison_Babeu> , <http://dblp.l3s.de/d2r/resource/authors/Maria_Moritz> , <http://dblp.l3s.de/d2r/resource/authors/Gregory_Crane> , <http://dblp.l3s.de/d2r/resource/authors/Marco_B%C3%BCchler> ;
+      dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12"^^xsd:string ;
+      dc:subject bio:TextMining , <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Source_criticism> ;
+      dc:title "Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities"@en ;
+      dcterms:bibliographicCitation
+              "Büchler M, Crane G, Moritz M, Babeu A. Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities. In: Zaphiris P, Buchanan G, Rasmussen E, Loizides F, editors. Theory and Practice of Digital Libraries [Internet]. Springer Berlin Heidelberg; 2012. p. 95–100. Available from: http://dx.doi.org/10.1007/978-3-642-33290-6_11"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Source_criticism> , <http://dbpedia.org/resource/History> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12> .
+
+test:doc_uc_23
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Comparing the Similarities and Differences between Two Translations"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Catherine_Blake> , "Ana Lucic"^^xsd:string ;
+      dc:identifier "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.371.67&rep=rep1&type=pdf#page=194"^^xsd:string ;
+      dc:subject bio:TextMining , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Literary_translation> , <http://dbpedia.org/resource/German_literature> ;
+      dc:title "Comparing the Similarities and Differences between Two Translations"@en ;
+      dcterms:bibliographicCitation
+              "Lucic A, Blake C. Comparing the Similarities and Differences between Two Translations. Paper presented at: DH2011: Digital Humanities 2011 Conference; 2011 Jun 19-22; Stanford, United States [Internet]. 2011. p. 174–6. Available from: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.371.67&rep=rep1&type=pdf#page=194"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Literary_translation> , <http://dbpedia.org/resource/German_literature> .
+
+test:doc_uc_24
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ryan_Cordell> , <http://dblp.l3s.de/d2r/resource/authors/David_A._Smith> , <http://dblp.l3s.de/d2r/resource/authors/Elizabeth_Maddock_Dillon> ;
+      dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/American_literature> , bio:StatisticsAnalysis , bio:TextMining ;
+      dc:title "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
+      dcterms:bibliographicCitation
+              "Smith DA, Cordell R, Dillon EM. Infectious texts: modeling text reuse in nineteenth-century newspapers. Paper presented at: 2013 IEEE International Conference on Big Data; 2013 Oct 06-09; Silicon Valley, United States [Internet]. 2013. p. 86–94. Available from: http://dx.doi.org/10.1109/BigData.2013.6691675"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Literature> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13> .
+
+test:doc_uc_25
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Biblical Intertextuality in a Digital World: The Tool GERTRUDE"@en ;
+      dc:creator "Gerhard Lauer"^^xsd:string , "Annette Geßner"^^xsd:string , "Christian Kötteritzsch"^^xsd:string ;
+      dc:identifier "http://doi.acm.org/10.1145/2517978.2517985"^^xsd:string ;
+      dc:subject bio:TextMining , <http://dbpedia.org/resource/Luther_Bible> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/German_literature> , <http://dbpedia.org/resource/Intertextuality> ;
+      dc:title "Biblical Intertextuality in a Digital World: The Tool GERTRUDE"@en ;
+      dcterms:bibliographicCitation
+              "Geßner A, Kötteritzsch C, Lauer G. Biblical Intertextuality in a Digital World: The Tool GERTRUDE. Proceedings of the 1st International Workshop on Collaborative Annotations in Shared Environment: Metadata, Vocabularies and Techniques in the Digital Humanities [Internet]. New York, NY, USA: ACM; 2013. p. 6:1–6:5. Available from: http://doi.acm.org/10.1145/2517978.2517985"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/German_literature> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> .
+
+test:doc_uc_26
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Neil_Coffee> , "Thomas Buck"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Sarah_L._Jacobson> , "Katherine Roache"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Christopher_W._Forstall> ;
+      dc:identifier "http://llc.oxfordjournals.org/content/early/2014/05/15/llc.fqu014"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , bio:TextMining , <http://dbpedia.org/resource/Latin_literature> ;
+      dc:title "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching"@en ;
+      dcterms:bibliographicCitation
+              "Forstall C, Coffee N, Buck T, Roache K, Jacobson S. Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching. Literary and Linguistic Computing [Internet]. 2014; Available from: http://llc.oxfordjournals.org/content/early/2014/05/15/llc.fqu014"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Latin_literature> .
+
+test:doc_uc_27
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/John_Wilkerson> , "Nick Stramp"^^xsd:string , "David Smith"^^xsd:string ;
+      dc:identifier "http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Legislation> , <http://dbpedia.org/resource/Political_science> , bio:TextMining , <http://dbpedia.org/resource/Intertextuality> ;
+      dc:title "Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach"@en ;
+      dcterms:bibliographicCitation
+              "Wilkerson J, Smith D, Stramp N. Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach. Paper presented at: New Directions in Analyzing Text as Data; 2013 Sep 27-28; London, United Kingdom. Available from: http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Intertextuality> .
 
 test:doc_uc_3
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5771,27 +5839,27 @@ test:metadata_SenSemDataBase-catv2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Anna_Fernández_Montraveta ;
       ms:creationMode ms:automatic ;
-      ms:documentation test:doc_20 , test:doc_02 ;
+      ms:documentation test:doc_02 , test:doc_20 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_METANET4U , test:project_SenSem ;
+      ms:fundingProject test:project_SenSem , test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/17119" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> ;
       ms:languageId "ca" ;
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
-              ms:semantics-SemanticRoles , ms:usage-Frequency , ms:lemma , ms:usage-Examples , ms:semantics-CrossReferences , ms:definition-gloss ;
+              ms:semantics-SemanticRoles , ms:semantics-CrossReferences , ms:usage-Examples , ms:lemma , ms:usage-Frequency , ms:definition-gloss ;
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """SenSem data base located at http://grial.uab.es/index.php
                """ ;
-      ms:resourceCreator test:organization_GRIAL , test:person_Irene_Castellón , test:person_Glòria_Vázquez , test:person_Anna_Fernández_Montraveta , test:organization_UPF-IULA ;
+      ms:resourceCreator test:person_Anna_Fernández_Montraveta , test:organization_UPF-IULA , test:person_Glòria_Vázquez , test:person_Irene_Castellón , test:organization_GRIAL ;
       ms:resourceName "LMF version of the SenSem Catalan Data Base" ;
       ms:resourceShortName
               "LMF version of the SenSem Catalan Data Base" ;
-      ms:sizeInfo test:size_N17098 , test:size_N1709D ;
+      ms:sizeInfo test:size_N1709D , test:size_N17098 ;
       ms:url  "http://grial.uab.es/" .
 
 test:metadata_SenSemDataBase-spav2
@@ -5802,25 +5870,25 @@ test:metadata_SenSemDataBase-spav2
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
               ms:LMF ;
-      ms:contactPerson test:person_Anna_Fernández_Montraveta , test:person_Jorge_Vivaldi ;
+      ms:contactPerson test:person_Jorge_Vivaldi , test:person_Anna_Fernández_Montraveta ;
       ms:creationMode ms:automatic ;
       ms:documentation test:doc_02 , test:doc_20 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_SenSem , test:project_METANET4U ;
+      ms:fundingProject test:project_METANET4U , test:project_SenSem ;
       ms:identifier "http://hdl.handle.net/10230/17088" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
-              ms:semantics-SemanticRoles , ms:usage-Examples , ms:lemma , ms:semantics-CrossReferences , ms:usage-Frequency , ms:definition-gloss ;
+              ms:definition-gloss , ms:usage-Examples , ms:lemma , ms:semantics-SemanticRoles , ms:usage-Frequency , ms:semantics-CrossReferences ;
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """SenSem data base located at http://grial.uab.es/index.php
                """ ;
-      ms:resourceCreator test:organization_UPF-IULA , test:person_Anna_Fernández_Montraveta , test:person_Glòria_Vázquez , test:organization_GRIAL , test:person_Irene_Castellón ;
+      ms:resourceCreator test:organization_GRIAL , test:organization_UPF-IULA , test:person_Anna_Fernández_Montraveta , test:person_Irene_Castellón , test:person_Glòria_Vázquez ;
       ms:resourceName "LMF version of the SenSem Spanish Data Base" ;
       ms:resourceShortName
               "LMF version of the SenSem Spanish Data Base" ;
