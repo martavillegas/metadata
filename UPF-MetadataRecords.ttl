@@ -5078,6 +5078,7 @@ test:doc_uc_22
       dc:title "Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities"@en ;
       dcterms:bibliographicCitation
               "Büchler M, Crane G, Moritz M, Babeu A. Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities. In: Zaphiris P, Buchanan G, Rasmussen E, Loizides F, editors. Theory and Practice of Digital Libraries [Internet]. Springer Berlin Heidelberg; 2012. p. 95–100. Available from: http://dx.doi.org/10.1007/978-3-642-33290-6_11"^^xsd:string ;
+      dcterms:references "test:project_ETRACES"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Source_criticism> , <http://dbpedia.org/resource/History> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12> .
 
@@ -5097,10 +5098,11 @@ test:doc_uc_24
       rdfs:label "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ryan_Cordell> , <http://dblp.l3s.de/d2r/resource/authors/David_A._Smith> , <http://dblp.l3s.de/d2r/resource/authors/Elizabeth_Maddock_Dillon> ;
       dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/American_literature> , bio:StatisticsAnalysis , bio:TextMining ;
+      dc:subject <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/American_literature> , bio:TextMining ;
       dc:title "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
       dcterms:bibliographicCitation
               "Smith DA, Cordell R, Dillon EM. Infectious texts: modeling text reuse in nineteenth-century newspapers. Paper presented at: 2013 IEEE International Conference on Big Data; 2013 Oct 06-09; Silicon Valley, United States [Internet]. 2013. p. 86–94. Available from: http://dx.doi.org/10.1109/BigData.2013.6691675"^^xsd:string ;
+      dcterms:references "test:project_VIRTEXT"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Literature> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13> .
 
@@ -5134,8 +5136,32 @@ test:doc_uc_27
       dc:subject <http://dbpedia.org/resource/Legislation> , <http://dbpedia.org/resource/Political_science> , bio:TextMining , <http://dbpedia.org/resource/Intertextuality> ;
       dc:title "Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach"@en ;
       dcterms:bibliographicCitation
-              "Wilkerson J, Smith D, Stramp N. Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach. Paper presented at: New Directions in Analyzing Text as Data; 2013 Sep 27-28; London, United Kingdom. Available from: http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
+              "Wilkerson J, Smith D, Stramp N. Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach. Paper presented at: New Directions in Analyzing Text as Data; 2013 Sep 27-28; London, United Kingdom  [Internet]. Available from: http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Intertextuality> .
+
+test:doc_uc_28
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Computational Historiography: Data Mining in a Century of Classics Journals"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/David_M._Mimno> ;
+      dc:identifier "http://dblp.l3s.de/d2r/resource/publications/journals/jocch/Mimno12"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Archeology> , <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Historiography> , bio:TextMining , <http://dbpedia.org/resource/Academic_journal> , <http://dbpedia.org/resource/Philology> ;
+      dc:title "Computational Historiography: Data Mining in a Century of Classics Journals"@en ;
+      dcterms:bibliographicCitation
+              "Mimno D. Computational Historiography: Data Mining in a Century of Classics Journals. J Comput Cult Herit  [Internet]. 2012 Apr;5(1):3:1–3:19. Avaiilable from: http://doi.acm.org/10.1145/2160165.2160168"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Philology> , <http://dbpedia.org/resource/Archeology> , <http://dbpedia.org/resource/Historiography> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/jocch/Mimno12> .
+
+test:doc_uc_29
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "A computational model of text reuse in ancient literary texts"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/John_Lee> ;
+      dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/acl/Lee07"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/New_testament> , bio:TextMining ;
+      dc:title "A computational model of text reuse in ancient literary texts"@en ;
+      dcterms:bibliographicCitation
+              "Lee J. A computational model of text reuse in ancient literary texts. Proceedings of the 45th Annual Meeting of the Association of Computational Linguistics; 2007 June; Prague, Czech Republic [Internet]. 2007. p. 472–9. Available from: http://aclweb.org/anthology//P/P07/P07-1060.pdf"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Intertextuality> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/acl/Lee07> .
 
 test:doc_uc_3
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5145,8 +5171,31 @@ test:doc_uc_3
       dc:subject <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Proper_names> , bio:NamedEntityRecognition ;
       dc:title "Advanced visual analytics methods for literature analysis"@en ;
       dcterms:bibliographicCitation
-              "Oelke D, Kokkinakis D, Malm M. Advanced visual analytics methods for literature analysis. Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics [Internet]; 2012 [cited 2014 Mar 12]. p. 35–44. Available from: http://dl.acm.org/citation.cfm?id=2390357.2390364"^^xsd:string ;
+              "Oelke D, Kokkinakis D, Malm M. Advanced visual analytics methods for literature analysis. Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistic; 2012 [cited 2014 Mar 12]. p. 35–44. Available from: http://dl.acm.org/citation.cfm?id=2390357.2390364"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Named-entity_recognition> .
+
+test:doc_uc_30
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Refining Causality: Who Copied from Whom?"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Tristan_Mark_Snowsill> , <http://dblp.l3s.de/d2r/resource/authors/Nick_Fyson> , <http://dblp.l3s.de/d2r/resource/authors/Tijl_De_Bie> , <http://dblp.l3s.de/d2r/resource/authors/Nello_Cristianini> ;
+      dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/kdd/SnowsillFBC11"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Media_studies> , bio:TextMining , <http://dbpedia.org/resource/Intertextuality> ;
+      dc:title "Refining Causality: Who Copied from Whom?"@en ;
+      dcterms:bibliographicCitation
+              "Snowsill TM, Fyson N, De Bie T, Cristianini N. Refining Causality: Who Copied from Whom? Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining [Internet]. New York, NY, USA: ACM; 2011. p. 466–74. Available from: http://doi.acm.org/10.1145/2020408.2020483"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Media_studies> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/kdd/SnowsillFBC11> .
+
+test:doc_uc_31
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Russell_Horton> , "<http://dblp.l3s.de/d2r/resource/authors/Glenn_Roe>"^^xsd:string , "<http://dblp.l3s.de/d2r/resource/authors/Mark_Olsen>"^^xsd:string ;
+      dc:identifier "http://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/190/235"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Encyclopédie> , bio:TextMining , <http://dbpedia.org/resource/Lexical_similarity> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Age_of_Enlightenment> , <http://dbpedia.org/resource/Philosophy> ;
+      dc:title "Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections"@en ;
+      dcterms:bibliographicCitation
+              "Olsen M, Horton R, Roe G. Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections. Digital Studies / Le champ numérique [Internet]. 2011;2(1). Available from: ttps://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/190"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Philosophy> , <http://dbpedia.org/resource/Age_of_Enlightenment> .
 
 test:doc_uc_4
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5156,7 +5205,7 @@ test:doc_uc_4
       dc:subject <http://dbpedia.org/resource/Proper_names> , <http://dbpedia.org/resource/Literature> , bio:NamedEntityRecognition ;
       dc:title "Names in novels: An experiment in computational stylistics"@en ;
       dcterms:bibliographicCitation
-              "Van Dalen-Oskam K. Names in novels: An experiment in computational stylistics. Literary and Linguistic Computing [Internet]. 2013 [cited 2014 Mar 12];28(2):359–70. Available from:http://dx.doi.org/10.1093/llc/fqs007"^^xsd:string ;
+              "Van Dalen-Oskam K. Names in novels: An experiment in computational stylistics. Literary and Linguistic Computing [Internet]. 2013;28(2):359–70. Available from:http://dx.doi.org/10.1093/llc/fqs007"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Named-entity_recognition> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/lalc/Dalen-Oskam13> .
 
@@ -5179,7 +5228,7 @@ test:doc_uc_6
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Topic_model> , test:project_MT ;
       dc:title "Topic modeling on historical newspapers"@en ;
       dcterms:bibliographicCitation
-              "Yang T-I, Torget AJ, Mihalcea R. Topic modeling on historical newspapers. Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2011 [cited 2014 Mar 12]. Available from: http://dl.acm.org/citation.cfm?id=2107636.2107649"^^xsd:string ;
+              "Yang T-I, Torget AJ, Mihalcea R. Topic modeling on historical newspapers. Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2011. Available from: http://dl.acm.org/citation.cfm?id=2107636.2107649"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Named-entity_recognition> .
 
 test:doc_uc_7
@@ -5201,7 +5250,7 @@ test:doc_uc_8
       dc:subject <http://dbpedia.org/resource/American_Civil_War> , <http://dbpedia.org/resource/Literature> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Geovisualization> ;
       dc:title "The Geographic Imagination of Civil War-Era American Fiction"@en ;
       dcterms:bibliographicCitation
-              "Wilkens M. The Geographic Imagination of Civil War-Era American Fiction. American Literary History [Internet]. 2013 [cited 2014 Mar 12];25(4):803–40. Available from: http://dx.doi.org/10.1093/alh/ajt045"^^xsd:string ;
+              "Wilkens M. The Geographic Imagination of Civil War-Era American Fiction. American Literary History [Internet]. 2013 25(4):803–40. Available from: http://dx.doi.org/10.1093/alh/ajt045"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/American_Civil_War> , <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Named-entity_recognition> .
 
 test:doc_uc_9
@@ -6895,6 +6944,30 @@ test:project_DbyD
       foaf:homepage "http://diggingbydebating.org/" ;
       foaf:name "Digging by Debating: linking massive datasets to specific arguments" .
 
+test:project_EAQUA
+      rdf:type foaf:Project , owl:NamedIndividual ;
+      rdfs:label "eAQUA"@en ;
+      dc:contributor "University of Leipzig. Natural language processing group (Automatische Sprachverarbeitung, ASV)"^^xsd:string , "University of Leipzig. Old History Historical Seminar"^^xsd:string ;
+      dc:description "The project \"aims at generating specific knowledge from ancient texts and will provide this knowledge via an open web-portal to the scientific  community for future empirical studies. For this purpose researches from the fields of Computer Science and Ancient Science will cooperate to adapt the available text mining technologies to the needs and requirements of the Ancient Studies”."@en ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> , bio:TextMining ;
+      dcterms:isReferencedBy
+              "test:doc_uc_22"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> ;
+      foaf:homepage "http://eaqua.e-humanities.net/"^^xsd:string ;
+      foaf:name "eAQUA"^^xsd:string .
+
+test:project_ETRACES
+      rdf:type owl:NamedIndividual , foaf:Project ;
+      rdfs:label "eTRACES"@en ;
+      dc:contributor <http://viaf.org/viaf/264043054> , "University of Leipzig. Natural language processing group (Automatische Sprachverarbeitung, ASV)"^^xsd:string , "Georg-August-Universität Göttingen. Göttingen Centre for Digital Humanities (GCDH)"^^xsd:string ;
+      dc:description "The project aims to detect “temporal traces and interconnecting relations of txt passages in German language novels form 1500 and 1990, as well as social science texts created since 1909”."@en ;
+      dc:subject bio:TextMining , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/German_literature> ;
+      dcterms:isReferencedBy
+              "test:doc_uc_22"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/German_literature> , <http://dbpedia.org/resource/Literature> ;
+      foaf:homepage "http://etraces.e-humanities.net/"^^xsd:string ;
+      foaf:name "eTRACES"^^xsd:string .
+
 test:project_EurOpentrad
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "EurOpentrad"@en ;
@@ -7037,11 +7110,23 @@ test:project_SenSem
       foaf:homepage "http://grial.uab.es/fproj.php?id=1" ;
       foaf:name "Sentence Semantics: Creación de una Base de Datos de Semántica Oracional" .
 
+test:project_VIRTEXT
+      rdf:type owl:NamedIndividual , foaf:Project ;
+      rdfs:label "Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magaziness"@en ;
+      dc:contributor <http://viaf.org/viaf/147444432> ;
+      dc:description "The project aims to improve the search on a Nineteenth-Century American Newspapers corpus using and developing data mining tools. It is working spaces-efficient n-gram indexing to identify candidate newspapers and then exploits local models of alignment to identify reprinted fragments unknown a priori."@en ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/American_literature> , bio:TextMining , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Magazine> , <http://dbpedia.org/resource/Literature> ;
+      dcterms:isReferencedBy
+              "test:doc_uc_24"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Intertextuality> ;
+      foaf:homepage "http://www.viraltexts.org/"^^xsd:string ;
+      foaf:name "Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magaziness"^^xsd:string .
+
 test:project_ViClone
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "ViClone"@en ;
       foaf:homepage "http://www.vi-clone.com/" ;
-      foaf:name "ViClone" .
+      foaf:name "ViClone"^^xsd:string .
 
 test:project_XLike
       rdf:type foaf:Project , owl:NamedIndividual ;
@@ -7049,7 +7134,7 @@ test:project_XLike
       dc:description "The goal of the XLike project was to develop technology to monitor and aggregate knowledge spreaded across mainstream and social media, and to enable cross-lingual services for publishers, media monitoring and business intelligence."@en ;
       dc:subject <http://dbpedia.org/resource/Knowledge_extraction> ;
       foaf:homepage "http://www.xlike.org/" ;
-      foaf:name "XLike: Cross-lingual Knowledge Extraction" .
+      foaf:name "XLike: Cross-lingual Knowledge Extraction"^^xsd:string .
 
 test:resource-CESS_EUv2
       rdf:type owl:NamedIndividual , ms:CorpusText ;
