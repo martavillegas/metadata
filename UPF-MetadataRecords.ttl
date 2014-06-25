@@ -126,7 +126,7 @@ ms:LMF
               bio:SOAP , bio:Soaplab ;
       bio:task bio:StatisticsAnalysis ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/statistics_analysis.ngrams?wsdl" ;
-      ms:documentation test:doc_71 ;
+      ms:documentation test:doc_71 , test:doc_43 , test:doc_46 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Ted Pedersen's Ngram Statistics Package" .
@@ -500,7 +500,7 @@ ms:LMF
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#184>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "Ngrams counter Web Service"@en ;
+      rdfs:label "Ted Pedersen's Ngrams Counter Web Service"@en ;
       dc:description "This WS performs the Count function from Ted Pedersen's Ngram Statistics Package (used to identify word Ngrams that appear in large corpora using standard tests of association such as Fisher's exact test, the log likelihood ratio, Pearson's chi-squared test, the Dice Coefficient, etc.). Language independent WS."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#statistics_analysis.countngrams_row" ;
@@ -512,9 +512,10 @@ ms:LMF
               bio:Soaplab , bio:SOAP ;
       bio:task bio:StatisticsAnalysis ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/statistics_analysis.countngrams?wsdl" ;
+      ms:documentation test:doc_43 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
-      ms:resourceName "Ngrams counter Web Service" .
+      ms:resourceName "Ted Pedersen's Ngrams Counter Web Service"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#185>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -1439,6 +1440,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       ms:fundingProject test:project_CLARIN_FEDER ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#cat> ;
       ms:languageName "Spanish, Castilian" , "Catalan" , "English" ;
+      ms:relatedResource <http://dbpedia.org/resource/Weka_(machine_learning)> ;
       ms:resourceName "Corpus to vectors Web Service"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#278>
@@ -1462,7 +1464,7 @@ This version of the webservice is not able to follow such links, so it won’t p
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#285>
       rdf:type owl:NamedIndividual , bio:Service ;
-      rdfs:label "Text Similarity Web Service"@en ;
+      rdfs:label "Ted Pedersen's Text Similarity Web Service" ;
       dc:description "This WS is based on Ted Pedersen's Text Similarity module. It measures the similarity of two documents based on the number of shared words scaled by the lengths of the files. Text Similarity WS computes the F-Measure, the Dice Coefficient, the Cosine, and the Lesk measure. Language independent WS."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#statistics_analysis.text_similarity_row"^^xsd:string ;
@@ -1474,9 +1476,10 @@ This version of the webservice is not able to follow such links, so it won’t p
               bio:Soaplab , bio:SOAP ;
       bio:task bio:TextSimilarity ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/statistics_analysis.text_similarity?wsdl"^^xsd:string ;
+      ms:documentation test:doc_43 ;
       ms:fundingProject test:project_CLARIN_FEDER ;
       ms:languageName "Language independent"^^xsd:string ;
-      ms:resourceName "Text Similarity Web Service"^^xsd:string .
+      ms:resourceName "Ted Pedersen's Text Similarity Web Service"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#98>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -4440,6 +4443,16 @@ test:doc_42
               "Taulé M, Martí MA, Recasens M. AnCora: Multilevel Annotated Corpora for Catalan and Spanish. In: Nicoletta Calzolari (Conference Chair), Khalid Choukri, Bente Maegaard, Joseph Mariani, Jan Odijk, Stelios Piperidis DT, editor. Proceedings of the Sixth International Conference on Language Resources and Evaluation (LREC’08) [Internet]. Marrakech, Morocco: European Language Resources Association (ELRA); 2008. Available from: http://www.lrec-conf.org/proceedings/lrec2008/pdf/35_paper.pdf" ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/lrec/TauleMR08> .
 
+test:doc_43
+      rdf:type owl:NamedIndividual , bibo:Webpage ;
+      rdfs:label "Home Page of Ted Pedersen"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ted_Pedersen> ;
+      dc:identifier "http://www.d.umn.edu/~tpederse/"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:title "Home Page of Ted Pedersen"@en ;
+      dcterms:bibliographicCitation
+              "Pedersen T. Home Page of Ted Pedersen [Internet]. Duluth: University of Minnesota. Available from: http://www.d.umn.edu/~tpederse/"^^xsd:string .
+
 test:doc_44
       rdf:type bibo:Report , owl:NamedIndividual ;
       rdfs:label "Transfer Selection Support"@en ;
@@ -4459,6 +4472,16 @@ test:doc_45
       dc:title "Linking a domain thesaurus to WordNet and conversion to WordNet-LMF"@en ;
       dcterms:bibliographicCitation
               "Toral, A, Monachini, M, Soria, C, Cuadros Oller, M, Rigau Claramunt, G, Bosma, W,  Vosen, P. Linking a domain thesaurus to WordNet and conversion to WordNet-LMF. International Conference on Global Interoperability for Language Resources “Second International Conference on Global Interoperability for Language Resources” [Internet]. Hong Kong; Available from: http://hdl.handle.net/2117/10401" .
+
+test:doc_46
+      rdf:type bibo:Chapter , owl:NamedIndividual ;
+      rdfs:label "The Design, Implementation, and Use of the Ngram Statistics Package"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ted_Pedersen> , <http://dblp.l3s.de/d2r/resource/authors/Satanjeev_Banerjee> ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:title "The Design, Implementation, and Use of the Ngram Statistics Package"@en ;
+      dcterms:bibliographicCitation
+              "Banerjee S, Pedersen T. The Design, Implementation, and Use of the Ngram Statistics Package. In: Gelbukh A, editor. Computational Linguistics and Intelligent Text Processing [Internet]. Springer Berlin Heidelberg; 2003. p. 370–81. Available from: http://dx.doi.org/10.1007/3-540-36456-0_38"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/cicling/BanerjeeP03> .
 
 test:doc_47
       rdf:type owl:NamedIndividual , bibo:Webpage ;
@@ -4530,6 +4553,19 @@ test:doc_52
       dc:title "Pàgina web de l'Observatori de Neologia"@cat ;
       dcterms:bibliographicCitation
               "Universitat Pompeu Fabra. Observatori de Neologia. Pàgina web de l'Observatori de Neologia [Internet]. Observatori de Neologia. [cited 2013 Jul 9]. Available from: http://www.iula.upf.edu/obneo/obpreses.htm" .
+
+test:doc_53
+      rdf:type owl:NamedIndividual , bibo:Report ;
+      rdfs:label "Documentation of ContaWords"@en ;
+      dc:creator test:person_Núria_Bel ;
+      dc:identifier "http://hdl.handle.net/10230/22602"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Text_corpus> , bio:CorpusProcessing , bio:StatisticsAnalysis ;
+      dc:title "Documentation of ContaWords"@en ;
+      dcterms:bibliographicCitation
+              "Bel N. Documentation of ContaWords [Internet]. Final report 2014 5 p. Available from: http://hdl.handle.net/10230/22602"^^xsd:string ;
+      dcterms:references test:metadata_ContaWords ;
+      ms:relatedResource <http://dbpedia.org/resource/Word_count> ;
+      ms:url  "http://hdl.handle.net/10230/22602"^^xsd:string .
 
 test:doc_54
       rdf:type bibo:Article , owl:NamedIndividual ;
@@ -5684,6 +5720,19 @@ test:metadata_ApertiumPTv2
               "LMF Apertium Pt" ;
       ms:sizeInfo test:size_N10578 ;
       ms:url  "http://www.apertium.org" .
+
+test:metadata_ContaWords
+      rdf:type owl:NamedIndividual , ms:ToolService ;
+      rdfs:label "ContaWords"@en ;
+      dc:description "ContaWords is a web application that reads the words of a text file and decides what part of speech to assign to each word (credit-Noun-credit but credit-Verb-to_credit). It then begins to count how many times a word appears in the text in every possible way (credits, credit, credited… etc). It can also take into account that a sequence of words can, for example, be the name of an organization, a person or an entity (Named Entity Recognition). Besides all this, ContaWords can find sequences of two words that seem to appear together more often than would be expected, such as \"monetary policy \" or \"fiscal balance \"."@en ;
+      ms:contactPerson test:person_Marc_Poch ;
+      ms:fundingProject test:project_CLARIN_FEDER ;
+      ms:identifier "http://contawords.iula.upf.edu/"^^xsd:string ;
+      ms:resourceCreator test:organization_UPF-IULA ;
+      ms:resourceName "ContaWords"^^xsd:string ;
+      ms:resourceShortName
+              "ContaWords"^^xsd:string ;
+      ms:url  "http://www.iula.upf.edu" .
 
 test:metadata_CorpusCLUVIv2
       rdf:type owl:NamedIndividual , ms:CorpusText ;
