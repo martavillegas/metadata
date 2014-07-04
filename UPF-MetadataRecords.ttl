@@ -1469,8 +1469,8 @@ This version of the webservice is not able to follow such links, so it won’t p
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#statistics_analysis.text_similarity_row"^^xsd:string ;
       bio:endpoint "http://ws04.iula.upf.edu/soaplab2-axis/services/statistics_analysis.text_similarity"^^xsd:string ;
-      bio:input "http://iula02v.upf.edu/corpus_data/WS_inouput/285_ES_input_lascalles_1969_Borges.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_EN_input_theraven_b_Poe.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_ES_input_lascalles_1923_Borges.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_EN_input_theraven_a_Poe.txt"^^xsd:string ;
-      bio:output "http://iula02v.upf.edu/corpus_data/WS_inouput/285_EN_output_theraven_Poe.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_ES_output_lascalles_Borges.txt"^^xsd:string ;
+      bio:input "http://iula02v.upf.edu/corpus_data/WS_inouput/285_CAT_input_Jupiter_Danae_b_Vicent_Garcia.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_CAT_input_Jupiter_Danae_a_Vicent_Garcia.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_ES_input_Polifemo_Galatea_1613_Gongora.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_EN_input_theraven_b_Poe.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_EN_input_theraven_a_Poe.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_ES_input_Polifemo_Galatea_Wikisource_Gongora.txt"^^xsd:string ;
+      bio:output "http://iula02v.upf.edu/corpus_data/WS_inouput/285_CAT_output_Jupiter_Danae_Vicent_Garcia.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_EN_output_theraven_Poe.txt"^^xsd:string , "http://iula02v.upf.edu/corpus_data/WS_inouput/285_ES_output_Polifemo_Galatea_Gongora.txt"^^xsd:string ;
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
@@ -5278,6 +5278,52 @@ test:doc_uc_32
       dcterms:references "test:project_EAQUA"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Source_criticism> , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12> .
+
+test:doc_uc_33
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Studying How the Past is Remembered: Towards Computational History Through Large Scale Text Mining"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ching-man_Au_Yeung> , <http://dblp.l3s.de/d2r/resource/authors/Adam_Jatowt> ;
+      dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/cikm/YeungJ11"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Google_news> , <http://dbpedia.org/resource/Support_vector_machine> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/History> , bio:TextMining ;
+      dc:title "Studying How the Past is Remembered: Towards Computational History Through Large Scale Text Mining"@en ;
+      dcterms:bibliographicCitation
+              "Au Yeung C, Jatowt A. Studying How the Past is Remembered: Towards Computational History Through Large Scale Text Mining. Proceedings of the 20th ACM International Conference on Information and Knowledge Management [Internet]. New York, NY, USA: ACM; 2011. p. 1231–40. Available from: http://doi.acm.org/10.1145/2063576.2063755"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/History> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/cikm/YeungJ11> .
+
+test:doc_uc_34
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Language and Ideology in Congress"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Stefan_Kaufmann> , <http://dblp.l3s.de/d2r/resource/authors/Daniel_Diermeier> , <http://dblp.l3s.de/d2r/resource/authors/Bei_Yu> , "Jean-François Godbout" ;
+      dc:identifier "http://dx.doi.org/10.1017/S0007123411000160"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Ideology> , bio:TextMining , <http://dbpedia.org/resource/Support_vector_machine> , <http://dbpedia.org/resource/Discourse_analysis> , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Us_senate> ;
+      dc:title "Language and Ideology in Congress"@en ;
+      dcterms:bibliographicCitation
+              "Diermeier D, Godbout J-F, Yu B, Kaufmann S. Language and Ideology in Congress. British Journal of Political Science [Internet]. 2012;42(01):31–55. Available from: http://dx.doi.org/10.1017/S0007123411000160"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Political_science> .
+
+test:doc_uc_35
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Quantitative patterns of stylistic influence in the evolution of literature"@en ;
+      dc:creator "James M. Hughes" , <http://dblp.l3s.de/d2r/resource/authors/Nicholas_J._Foti> , <http://dblp.l3s.de/d2r/resource/authors/David_C._Krakauer> , <http://dblp.l3s.de/d2r/resource/authors/Daniel_N._Rockmore> ;
+      dc:identifier "http://dx.doi.org/10.1073/pnas.1115407109 "^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Stylometry> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Support_vector_machine> , bio:TextSimilarity , <http://dbpedia.org/resource/Gutenberg_Project> , bio:TextMining ;
+      dc:title "Quantitative patterns of stylistic influence in the evolution of literature"@en ;
+      dcterms:bibliographicCitation
+              "Hughes JM, Foti NJ, Krakauer DC, Rockmore DN. Quantitative patterns of stylistic influence in the evolution of literature. Proceedings of the National Academy of Sciences [Internet]. 2012;109(20):7682–6. Available from: http://dx.doi.org/10.1073/pnas.1115407109"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Literature> .
+
+test:doc_uc_36
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Determining if two documents are written by the same author"@en ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Yaron_Winter> , <http://dblp.l3s.de/d2r/resource/authors/Moshe_Koppel> ;
+      dc:identifier "http://dx.doi.org/10.1002/asi.22954"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Media_studies> , bio:TextSimilarity , <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Stylometry> , <http://dbpedia.org/resource/Support_vector_machine> , bio:TextMining ;
+      dc:title "Determining if two documents are written by the same author"@en ;
+      dcterms:bibliographicCitation
+              "Koppel M, Winter Y. Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology [Internet]. 2014;65(1):178–87. Available from: http://dx.doi.org/10.1002/asi.22954"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Media_studies> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/jasis/KoppelW14> .
 
 test:doc_uc_4
       rdf:type owl:NamedIndividual , bibo:Article ;
