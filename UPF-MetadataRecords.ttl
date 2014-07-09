@@ -4224,11 +4224,11 @@ test:doc_22
               "Lenci A, Busa F, Ruimy N, Gola E, Monachini M, Calzolari N, et al. SIMPLE Work Package 2. Linguistic Specifications - Deliverable D2.1 [Internet]. Barcelona: Universitat de Barcelona. Grup d’Investigació en Lingüística Computacoinal (GILCUB); 2000. Available from: http://www.ub.edu/gilcub/SIMPLE/reports/simple/D31_BARfin.rtf" .
 
 test:doc_23
-      rdf:type bibo:Book , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bibo:Book ;
       rdfs:label "Vocabulari bàsic de genoma humà = Vocabulario básico de genoma humano"@cat ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Merc%C3%A8_Lorente> ;
       dc:identifier "http://www.iula.upf.edu/rec/vbgenoma/esp/index.html" ;
-      dc:subject <http://dbpedia.org/resource/Glossary> , <http://dbpedia.org/resource/Genetics> ;
+      dc:subject <http://dbpedia.org/resource/Genetics> , <http://dbpedia.org/resource/Glossary> ;
       dc:title "Vocabulari bàsic de genoma humà = Vocabulario básico de genoma humano"@cat ;
       dcterms:bibliographicCitation
               "Llorente M. (coord.). Vocabulari bàsic de genoma humà = Vocabulario básico de genoma humano [Internet]. Barcelona: Universidad Pompeu Fabra. Institut Universitari de Lingüística Aplicada; REALITER; 2006. Available from: http://www.iula.upf.edu/rec/vbgenoma/esp/index.html" .
@@ -4658,7 +4658,7 @@ test:doc_62
       dc:creator test:organization_UPF-IULA ;
       dc:description "This video tutorial shows a Taverna workflow use case. It shows how to use Ted Pedersen’s statistical package to identify the most significant word associations in 2011 electoral programmes from Popular Party, Spanish Socialist Workers’ Party and United Left party."@en ;
       dc:identifier "http://vimeo.com/25394431" ;
-      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Political_science> ;
+      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Text_corpus> ;
       dc:title "Buscando términos en diferentes textos"@es ;
       dcterms:bibliographicCitation
               "Buscando términos en diferentes textos [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/25394431" ;
@@ -4683,7 +4683,7 @@ test:doc_64
       dc:creator test:organization_UPF-IULA ;
       dc:description "In this video tutorial, you will learn to create a temporal corpus from PDF documents, to annotate the corpus with morphosyntactic tags, and to index the corpus for its exploitation. The video shows how to use web services from CLARIN laboratory to develop all of these tasks."@en ;
       dc:identifier "http://vimeo.com/25406733" ;
-      dc:subject <http://dbpedia.org/resource/Text_corpus> , bio:CorpusWorkbench , <http://dbpedia.org/resource/Political_science> , bio:FormatConversion , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , bio:MorphosyntacticTagging ;
+      dc:subject <http://dbpedia.org/resource/Text_corpus> , bio:CorpusWorkbench , bio:FormatConversion , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , bio:MorphosyntacticTagging ;
       dc:title "Creación y explotación de un corpus temporal"@es ;
       dcterms:bibliographicCitation
               "Creación y explotación de un corpus temporal [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/25406733" ;
@@ -4696,7 +4696,7 @@ test:doc_65
       dc:creator test:organization_UPF-IULA ;
       dc:description "This video tutorial shows a Taverna workflow use case. In this experiment we morphosyntactic annotate an input file and we index it to create a temporal corpus for exploiting it. Next, we define a set of Corpus Work Bench queries to analyze this corpus. All of these tasks are developed with web services from CLARIN laboratory. In this example we will study nominal constructions of 2011 United Left electoral programme, a political party from Spain."@en ;
       dc:identifier "http://vimeo.com/25395767" ;
-      dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , bio:CorpusWorkbench , bio:FormatConversion , <http://dbpedia.org/resource/Workflow> , bio:Querying ;
+      dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Natural_language_processing> , bio:CorpusWorkbench , bio:FormatConversion , <http://dbpedia.org/resource/Workflow> , bio:Querying ;
       dc:title "Creando un corpus temporal"@es ;
       dcterms:bibliographicCitation
               "Creando un corpus temporal [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/25395767" ;
@@ -4709,7 +4709,7 @@ test:doc_66
       dc:creator test:organization_UPF-IULA ;
       dc:description "This video tutorial is a Taverna workflow use case. Firstly, it shows how to import SoapLab web services from CLARIN Catalan Laboratory to Taverna. Secondly, it shows how to work a Taverna workflow that chains different web services: format converter, Freeling tokenizer, and statistical package for vocabulary analysis."@en ;
       dc:identifier "http://vimeo.com/18626689" ;
-      dc:subject bio:StatisticsAnalysis , bio:FormatConversion , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Web_services> , bio:Tokenization , <http://dbpedia.org/resource/Workflow> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:subject bio:StatisticsAnalysis , bio:FormatConversion , <http://dbpedia.org/resource/Web_services> , bio:Tokenization , <http://dbpedia.org/resource/Workflow> , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "Eines d’anàlisi del vocabulari a Taverna"@cat ;
       dcterms:bibliographicCitation
               "Eines d’anàlisi del vocabulari a Taverna [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/18626689" ;
@@ -4727,7 +4727,7 @@ test:doc_67
       dcterms:bibliographicCitation
               "El pretèrit perfet al català antic [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/18907753" ;
       dcterms:references <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#204> ;
-      ms:area <http://dbpedia.org/resource/Category:Historical_linguistics> .
+      ms:area <http://dbpedia.org/resource/Philology> .
 
 test:doc_68
       rdf:type bibo:AudioVisualDocument , owl:NamedIndividual ;
@@ -4735,7 +4735,7 @@ test:doc_68
       dc:creator test:organization_UPF-IULA ;
       dc:description "In this video tutorial, you will learn to use different chained web services for vocabulary analysis through CLARIN Soaplab Client (Spinet). These chained web services are two format converters and a statistical service that returns graphs as results."@en ;
       dc:identifier "http://vimeo.com/25401402" ;
-      dc:subject <http://dbpedia.org/resource/Web_services> , bio:FormatConversion , bio:StatisticsAnalysis , bio:Tokenization , <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Political_science> ;
+      dc:subject <http://dbpedia.org/resource/Web_services> , bio:FormatConversion , bio:StatisticsAnalysis , bio:Tokenization , <http://dbpedia.org/resource/Natural_language_processing> ;
       dc:title "Encadenando servicios para analizar el vocabulario de un texto"@es ;
       dcterms:bibliographicCitation
               "Encadenando servicios para analizar el vocabulario de un texto [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/25401402" ;
@@ -4770,7 +4770,7 @@ test:doc_70
       dc:creator test:organization_UPF-IULA ;
       dc:description "A video tutorial that shows how to use Ted Pedersen’s statistical package to identify the most significant word associations in 2011 electoral programmes from Popular Party, Spanish Socialist Workers’ Party and United Left. The Ted Pedersen’s statistical package is a web service used through CLARIN Soaplab Client (Spinet). Also, we use PDF to text format convert web service for document conversion."@en ;
       dc:identifier "http://vimeo.com/25393615" ;
-      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Natural_language_processing> , bio:FormatConversion , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Political_science> ;
+      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Natural_language_processing> , bio:FormatConversion , <http://dbpedia.org/resource/Web_services> ;
       dc:title "Utilizando el cliente de Soaplab de Clarin"@es ;
       dcterms:bibliographicCitation
               "Utilizando el cliente de Soaplab de Clarin [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 20]. Available from: http://vimeo.com/25393615" ;
@@ -4783,7 +4783,7 @@ test:doc_71
       dc:creator test:organization_UPF-IULA ;
       dc:description "This video tutorial is a Spinet use case. It shows how to identify significant word associations in a PDF document. Two different web services are used: a PDF to TXT format converter and Ted Pedersen’s statistical package to detect n-grams."@en ;
       dc:identifier "http://vimeo.com/18424289" ;
-      dc:subject <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Natural_language_processing> , bio:FormatConversion , <http://dbpedia.org/resource/Web_services> , bio:StatisticsAnalysis ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , bio:FormatConversion , <http://dbpedia.org/resource/Web_services> , bio:StatisticsAnalysis ;
       dc:title "Com utilitzar el servei estadístic N-Grams amb l’Spinet"@cat ;
       dcterms:bibliographicCitation
               "Com utilitzar el servei estadístic N-Grams amb l’Spinet [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011 [cited 2013 Nov 22]. Available from: http://vimeo.com/18424289" ;
@@ -4811,7 +4811,6 @@ test:doc_73
       dcterms:bibliographicCitation
               "Vázquez S, Padró M, Bel N, Gonzalo J. Automatic extraction of polar adjectives for the creation of polarity lexicons. In: Kay, M, Boitet, C, editors. Proceedings of COLING 2012: Posters: 24th International Conference on Computational Linguistics COLING 2012; 2012 December 8-15; Mumbai, India [Internet]. Mumbai: The COLING 2012 Organizing Committee; 2012. p. 1271–80. Available from: http://hdl.handle.net/10230/20422"^^xsd:string ;
       dcterms:references <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#203> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#237> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#204> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#236> ;
-      ms:area <http://dbpedia.org/resource/Sentiment_analysis> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/coling/VazquezPBG12> .
 
 test:doc_74
@@ -4979,11 +4978,11 @@ test:doc_uc_1
       rdfs:label "Mapping the English Lake District: a literary GIS"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ian_N._Gregory> , <http://dblp.l3s.de/d2r/resource/authors/David_Cooper> ;
       dc:identifier "http://dx.doi.org/10.1111/j.1475-5661.2010.00405.x"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Toponymy> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Geovisualization> ;
+      dc:subject <http://dbpedia.org/resource/Toponymy> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Geovisualization> ;
       dc:title "Mapping the English Lake District: a literary GIS"@en ;
       dcterms:bibliographicCitation
               "Cooper D, Gregory IN. Mapping the English Lake District: a literary GIS. Transactions of the Institute of British Geographers [Internet]. 2011 [cited 2014 Mar 12];36(1). Available from: http://dx.doi.org/10.1111/j.1475-5661.2010.00405.x"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Toponymy> , <http://dbpedia.org/resource/Named-entity_recognition> .
+      ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Geography> .
 
 test:doc_uc_10
       rdf:type bibo:Report , owl:NamedIndividual ;
@@ -4994,7 +4993,7 @@ test:doc_uc_10
       dc:title "Resolución de Correferencia de Nombres de Persona para Extracción de Información Biográfica"@es ;
       dcterms:bibliographicCitation
               "García M, Gamallo P. Resolución de Correferencia de Nombres de Persona para Extracción de Información Biográfica. Procesamiento del Lenguaje Natural [Internet]. 2011 [cited 2014 Mar 12];47:47–55. Available from: http://hdl.handle.net/10045/18512"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Named-entity_recognition> ;
+      ms:area <http://dbpedia.org/resource/Biography> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/pdln/GarciaG11> .
 
 test:doc_uc_11
@@ -5002,11 +5001,11 @@ test:doc_uc_11
       rdfs:label "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Pranav_Waila> , <http://dblp.l3s.de/d2r/resource/authors/V._K._Singh> , <http://dblp.l3s.de/d2r/resource/authors/M._K._Singh> ;
       dc:identifier "http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Political_science> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Sentiment_analysis> , <http://dbpedia.org/resource/Media_studies> ;
+      dc:subject <http://dbpedia.org/resource/Blogs> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Sentiment_analysis> , <http://dbpedia.org/resource/Media_studies> ;
       dc:title "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"@en ;
       dcterms:bibliographicCitation
               "Waila P, Singh VK, Singh MK. Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine. Advances in Computing, Communications and Informatics (ICACCI), 2013 International Conference on [Internet]. 2013 [cited 2014 Mar 12]. p. 1166–71. Available from: http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Social_media> , <http://dbpedia.org/resource/Sentiment_analysis> , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      ms:area <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Political_science> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/icacci/WailaSS13> .
 
 test:doc_uc_12
@@ -5014,11 +5013,11 @@ test:doc_uc_12
       rdfs:label "Using Language Resources in Humanities research"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Carlos_Gonzalo> , <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> , <http://dblp.l3s.de/d2r/resource/authors/Nuria_Simelio> , test:person_Núria_Bel , test:person_Marta_Villegas ;
       dc:identifier "http://www.lrec-conf.org/proceedings/lrec2012/pdf/722_Paper.pdf"^^xsd:string ;
-      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Media_studies> , test:project_Androcentrismo , <http://dbpedia.org/resource/Gender_studies> , test:project_Municipals , <http://dbpedia.org/resource/Political_science> ;
+      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Media_studies> , test:project_Androcentrismo , <http://dbpedia.org/resource/Gender_studies> , test:project_Municipals ;
       dc:title "Using Language Resources in Humanities research"@en ;
       dcterms:bibliographicCitation
               "Moreno A, Gonzalo C, Villegas M, Bel N, Simelio N. Using Language Resources in Humanities research. In: Calzolari N, Choukri K, Declerck T, Dogan MU, Maegaard B, Mariani J, et al., editors. Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12) [Internet]. Istanbul, Turkey: European Language Resources Association (ELRA); 2012. p. 3284–8. Available from: http://www.lrec-conf.org/proceedings/lrec2012/pdf/722_Paper.pdf"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Media_studies> ;
+      ms:area <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Sociology> ;
       ms:url  "http://www.lrec-conf.org/proceedings/lrec2012/pdf/722_Paper.pdf"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/lrec/VillegasBGMS12> .
 
@@ -5030,28 +5029,28 @@ test:doc_uc_13
       dc:title "De quién hablan las noticias?: guía para humanizar la información"^^xsd:string ;
       dcterms:bibliographicCitation
               "Moreno A, Buitrago A, Rovetto F. De quién hablan las noticias?: guía para humanizar la información. Barcelona: Icaria; 2007"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> .
+      ms:area <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Sociology> .
 
 test:doc_uc_14
-      rdf:type owl:NamedIndividual , bibo:Book ;
+      rdf:type bibo:Book , owl:NamedIndividual ;
       rdfs:label "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"@es ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
-      dc:subject <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Gender_studies> ;
+      dc:subject <http://dbpedia.org/resource/Gender_studies> ;
       dc:title "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"^^xsd:string ;
       dcterms:bibliographicCitation
               "Moreno A. De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico. Barcelona: Icaria; 2007. 375 p."^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Sociology> .
+      ms:area <http://dbpedia.org/resource/Sociology> .
 
 test:doc_uc_15
       rdf:type owl:NamedIndividual , bibo:Article ;
       rdfs:label "El poder de les paraules: “Municipals’11 online"@en ;
       dc:identifier "http://hdl.handle.net/10230/12459"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> , test:project_Municipals ;
+      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> , test:project_Municipals ;
       dc:title "El poder de les paraules: “Municipals’11 online"^^xsd:string ;
       dcterms:bibliographicCitation
               "El poder de les paraules: “Municipals’11 online.”. UPF.EDU [Internet]. 2011;2:12–3. Available from: http://hdl.handle.net/10230/12459"^^xsd:string ;
       dcterms:references test:project_Municipals ;
-      ms:area <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Social_media> ;
+      ms:area <http://dbpedia.org/resource/Political_science> ;
       ms:url  "http://hdl.handle.net/10230/12459"^^xsd:string .
 
 test:doc_uc_16
@@ -5059,11 +5058,11 @@ test:doc_uc_16
       rdfs:label "Structure-based Clustering of Novels"@en ;
       dc:creator "<http://dblp.l3s.de/d2r/resource/authors/Caroline_Sporleder>"^^xsd:string , "Mariona Coll Ardanuy"^^xsd:string ;
       dc:identifier "http://www.aclweb.org/anthology/W/W14/W14-0905.pdf"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Cluster_analysis> , <http://dbpedia.org/resource/British_literature> , <http://dbpedia.org/resource/Russian_literature> , <http://dbpedia.org/resource/Social_network> , <http://dbpedia.org/resource/Literature> , bio:NamedEntityRecognition ;
+      dc:subject <http://dbpedia.org/resource/Cluster_analysis> , <http://dbpedia.org/resource/British_literature> , <http://dbpedia.org/resource/Russian_literature> , <http://dbpedia.org/resource/Social_network> , bio:NamedEntityRecognition ;
       dc:title "Structure-based Clustering of Novels"@en ;
       dcterms:bibliographicCitation
               "Coll Ardanuy M, Sporleder C. Structure-based Clustering of Novels. EACL 2014: Proceedings of the 3rd Workshop on Computational Linguistics for Literature (CLfL): 2014 April 27 Gothenburg, Sweden [Internet]. Gothenburg, Sweden: Association for Computational Linguistics; 2014. p. 31–9. Available from: http://www.aclweb.org/anthology/W/W14/W14-0905.pdf"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Social_network> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Russian_literature> , <http://dbpedia.org/resource/British_literature> , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
       ms:url  "http://www.aclweb.org/anthology/W/W14/W14-0905.pdf"^^xsd:string .
 
 test:doc_uc_17
@@ -5075,7 +5074,7 @@ test:doc_uc_17
       dc:title "The Movie Mashup Application MoMa: Geolocalizing and Finding Movies"@en ;
       dcterms:bibliographicCitation
               "Finsterwald J-M, Grefenstette G, Law-To J, Bouchard H, Mezaour AD. The Movie Mashup Application MoMa: Geolocalizing and Finding Movies. Proceedings of the ACM Multimedia 2012 Workshop on Geotagging and Its Applications in Multimedia (GeoMM ’12) [Internet]. New York, NY, USA: ACM; 2012. p. 15–8. Available from: http://doi.acm.org/10.1145/2390790.2390797"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Geotagging> , <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Geovisualization> ;
+      ms:area <http://dbpedia.org/resource/Geography> ;
       ms:url  "http://doi.acm.org/10.1145/2390790.2390797"^^xsd:string .
 
 test:doc_uc_18
@@ -5083,11 +5082,11 @@ test:doc_uc_18
       rdfs:label "From Speaker Identification to Affective Analysis: A Multi-Step System for Analyzing Children’s Stories"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Elias_Iosif> , <http://dblp.l3s.de/d2r/resource/authors/Taniya_Mishra> ;
       dc:identifier "http://www.aclweb.org/anthology/W/W14/W14-0906.pdf"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Machine_learning> , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Pattern_matching> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Text_to_speech> , bio:NamedEntityRecognition ;
+      dc:subject <http://dbpedia.org/resource/Machine_learning> , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Pattern_matching> , <http://dbpedia.org/resource/Text_to_speech> , bio:NamedEntityRecognition ;
       dc:title "From Speaker Identification to Affective Analysis: A Multi-Step System for Analyzing Children’s Stories"@en ;
       dcterms:bibliographicCitation
               "Iosif E, Mishra T. From Speaker Identification to Affective Analysis: A Multi-Step System for Analyzing Children’s Stories. EACL 2014: Proceedings of the 3rd Workshop on Computational Linguistics for Literature (CLfL): 2014 April 27 Gothenburg, Sweden [Internet]. Gothenburg, Sweden: Association for Computational Linguistics; 2014. p. 40–9. Available from: http://www.aclweb.org/anthology/W/W14/W14-0906.pdf"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Literature> ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
       ms:url  "http://www.aclweb.org/anthology/W/W14/W14-0906.pdf"^^xsd:string .
 
 test:doc_uc_19
@@ -5095,11 +5094,11 @@ test:doc_uc_19
       rdfs:label "Is There a Political Bias? A Computational Analysis of Female Subjects' Coverage in Liberal and Conservative Newspapers"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Steven_Skiena> , <http://dblp.l3s.de/d2r/resource/authors/Eran_Shor> , "Soussan Askar"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Arnout_van_de_Rijt> , <http://dblp.l3s.de/d2r/resource/authors/Charles_Ward> ;
       dc:identifier "http://dx.doi.org/10.1111/ssqu.12091"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Newspaper> ;
+      dc:subject <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Newspaper> ;
       dc:title "Is There a Political Bias? A Computational Analysis of Female Subjects' Coverage in Liberal and Conservative Newspapers"@en ;
       dcterms:bibliographicCitation
               "Shor E, van de Rijt A, Ward C, Askar S, Skiena S. Is There a Political Bias? A Computational Analysis of Female Subjects’ Coverage in Liberal and Conservative Newspapers. Social Science Quarterly [Internet]. 2014;n/a–n/a. Available from: http://dx.doi.org/10.1111/ssqu.12091"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      ms:area <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Political_science> ;
       ms:url  "http://doi.acm.org/10.1145/2390790.2390797"^^xsd:string .
 
 test:doc_uc_2
@@ -5110,8 +5109,8 @@ test:doc_uc_2
       dc:subject <http://dbpedia.org/resource/Geovisualization> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Toponymy> ;
       dc:title "Visual GISting: bringing together corpus linguistics and Geographical Information Systems"@en ;
       dcterms:bibliographicCitation
-              "Gregory IN, Hardie A. Visual GISting: bringing together corpus linguistics and Geographical Information Systems. Literary and Linguistic Computing. 2011;26(3):297–314[cited 2014 Mar 12]. Available from: http://dx.doi.org/10.1093/llc/fqr022"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Toponymy> ;
+              "Gregory IN, Hardie A. Visual GISting: bringing together corpus linguistics and Geographical Information Systems. Literary and Linguistic Computing [Internet]. 2011;26(3):297–314. Available from: http://dx.doi.org/10.1093/llc/fqr022"^^xsd:string ;
+      ms:area <http://dbpedia.org/resource/Geography> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/lalc/GregoryH11> .
 
 test:doc_uc_20
@@ -5123,7 +5122,7 @@ test:doc_uc_20
       dc:title "Mining the Indianapolis Recorder: An Exploratory Study of a Digital Humanities Dataset"@en ;
       dcterms:bibliographicCitation
               "Shor E, van de Rijt A, Ward C, Askar S, Skiena S. Is There a Political Bias? A Computational Analysis of Female Subjects’ Coverage in Liberal and Conservative Newspapers. Social Science Quarterly [Internet]. 2014;n/a–n/a. Available from: http://dx.doi.org/10.1111/ssqu.12091"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/History_of_the_United_States> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       ms:url  "http://hdl.handle.net/1805/4263"^^xsd:string .
 
 test:doc_uc_21
@@ -5135,7 +5134,7 @@ test:doc_uc_21
       dc:title "Analizing androcentric focus & deshumanization in news headlines using advanced exploitation tools"@en ;
       dcterms:bibliographicCitation
               "Villegas M, Bel N, Moreno A, Simelio N. Analizing androcentric focus & deshumanization in news headlines using advanced exploitation tools. Proceedings of Digital humanities; Supporting Digital Humanities: Answering the unaskable [Internet]. Copenhagen: Centre for Language Technology, University of Copenhagen; 2011. Available from: http://crdo.up.univ-aix.fr/SLDRdata/doc/show/copenhagen/SDH-2011/submissions/sdh2011_submission_20.pdf"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Named_entity_recognition> , <http://dbpedia.org/resource/Gender_studies> ;
+      ms:area <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Mass_media> ;
       ms:url  "http://crdo.up.univ-aix.fr/SLDRdata/doc/show/copenhagen/SDH-2011/submissions/sdh2011_submission_20.pdf"^^xsd:string .
 
 test:doc_uc_22
@@ -5143,12 +5142,12 @@ test:doc_uc_22
       rdfs:label "Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Alison_Babeu> , <http://dblp.l3s.de/d2r/resource/authors/Maria_Moritz> , <http://dblp.l3s.de/d2r/resource/authors/Gregory_Crane> , <http://dblp.l3s.de/d2r/resource/authors/Marco_B%C3%BCchler> ;
       dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/History> , bio:TextSimilarity , <http://dbpedia.org/resource/Source_criticism> ;
+      dc:subject <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Intertextuality> , bio:TextSimilarity , <http://dbpedia.org/resource/Source_criticism> ;
       dc:title "Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities"@en ;
       dcterms:bibliographicCitation
               "Büchler M, Crane G, Moritz M, Babeu A. Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities. In: Zaphiris P, Buchanan G, Rasmussen E, Loizides F, editors. Theory and Practice of Digital Libraries [Internet]. Springer Berlin Heidelberg; 2012. p. 95–100. Available from: http://dx.doi.org/10.1007/978-3-642-33290-6_11"^^xsd:string ;
       dcterms:references "test:project_ETRACES"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Source_criticism> , <http://dbpedia.org/resource/History> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12> .
 
 test:doc_uc_23
@@ -5156,23 +5155,23 @@ test:doc_uc_23
       rdfs:label "Comparing the Similarities and Differences between Two Translations"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Catherine_Blake> , "Ana Lucic"^^xsd:string ;
       dc:identifier "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.371.67&rep=rep1&type=pdf#page=194"^^xsd:string ;
-      dc:subject bio:TextSimilarity , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Literary_translation> , <http://dbpedia.org/resource/German_literature> ;
+      dc:subject bio:TextSimilarity , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Literary_translation> , <http://dbpedia.org/resource/German_literature> ;
       dc:title "Comparing the Similarities and Differences between Two Translations"@en ;
       dcterms:bibliographicCitation
               "Lucic A, Blake C. Comparing the Similarities and Differences between Two Translations. Paper presented at: DH2011: Digital Humanities 2011 Conference; 2011 Jun 19-22; Stanford, United States [Internet]. 2011. p. 174–6. Available from: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.371.67&rep=rep1&type=pdf#page=194"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Literary_translation> , <http://dbpedia.org/resource/German_literature> .
+      ms:area <http://dbpedia.org/resource/Literature> .
 
 test:doc_uc_24
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ryan_Cordell> , <http://dblp.l3s.de/d2r/resource/authors/David_A._Smith> , <http://dblp.l3s.de/d2r/resource/authors/Elizabeth_Maddock_Dillon> ;
       dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , bio:TextSimilarity , <http://dbpedia.org/resource/American_literature> ;
+      dc:subject <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Intertextuality> , bio:TextSimilarity , <http://dbpedia.org/resource/American_literature> ;
       dc:title "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
       dcterms:bibliographicCitation
               "Smith DA, Cordell R, Dillon EM. Infectious texts: modeling text reuse in nineteenth-century newspapers. Paper presented at: 2013 IEEE International Conference on Big Data; 2013 Oct 06-09; Silicon Valley, United States [Internet]. 2013. p. 86–94. Available from: http://dx.doi.org/10.1109/BigData.2013.6691675"^^xsd:string ;
       dcterms:references "test:project_VIRTEXT"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Literature> ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13> .
 
 test:doc_uc_25
@@ -5180,44 +5179,44 @@ test:doc_uc_25
       rdfs:label "Biblical Intertextuality in a Digital World: The Tool GERTRUDE"@en ;
       dc:creator "Gerhard Lauer"^^xsd:string , "Annette Geßner"^^xsd:string , "Christian Kötteritzsch"^^xsd:string ;
       dc:identifier "http://doi.acm.org/10.1145/2517978.2517985"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Luther_Bible> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/German_literature> , bio:TextSimilarity , <http://dbpedia.org/resource/Intertextuality> ;
+      dc:subject <http://dbpedia.org/resource/Luther_Bible> , <http://dbpedia.org/resource/German_literature> , bio:TextSimilarity , <http://dbpedia.org/resource/Intertextuality> ;
       dc:title "Biblical Intertextuality in a Digital World: The Tool GERTRUDE"@en ;
       dcterms:bibliographicCitation
               "Geßner A, Kötteritzsch C, Lauer G. Biblical Intertextuality in a Digital World: The Tool GERTRUDE. Proceedings of the 1st International Workshop on Collaborative Annotations in Shared Environment: Metadata, Vocabularies and Techniques in the Digital Humanities [Internet]. New York, NY, USA: ACM; 2013. p. 6:1–6:5. Available from: http://doi.acm.org/10.1145/2517978.2517985"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/German_literature> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> .
+      ms:area <http://dbpedia.org/resource/Literature> .
 
 test:doc_uc_26
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Neil_Coffee> , "Thomas Buck"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Sarah_L._Jacobson> , "Katherine Roache"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Christopher_W._Forstall> ;
       dc:identifier "http://llc.oxfordjournals.org/content/early/2014/05/15/llc.fqu014"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , bio:TextSimilarity , <http://dbpedia.org/resource/Latin_literature> ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , bio:TextSimilarity , <http://dbpedia.org/resource/Latin_literature> ;
       dc:title "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching"@en ;
       dcterms:bibliographicCitation
               "Forstall C, Coffee N, Buck T, Roache K, Jacobson S. Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching. Literary and Linguistic Computing [Internet]. 2014; Available from: http://llc.oxfordjournals.org/content/early/2014/05/15/llc.fqu014"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Latin_literature> .
+      ms:area <http://dbpedia.org/resource/Literature> .
 
 test:doc_uc_27
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/John_Wilkerson> , "Nick Stramp"^^xsd:string , "David Smith"^^xsd:string ;
       dc:identifier "http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Legislation> , <http://dbpedia.org/resource/Political_science> , bio:TextSimilarity , <http://dbpedia.org/resource/Intertextuality> ;
+      dc:subject <http://dbpedia.org/resource/Legislation> , bio:TextSimilarity , <http://dbpedia.org/resource/Intertextuality> ;
       dc:title "Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach"@en ;
       dcterms:bibliographicCitation
               "Wilkerson J, Smith D, Stramp N. Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach. Paper presented at: New Directions in Analyzing Text as Data; 2013 Sep 27-28; London, United Kingdom  [Internet]. Available from: http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Intertextuality> .
+      ms:area <http://dbpedia.org/resource/Political_science> .
 
 test:doc_uc_28
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Computational Historiography: Data Mining in a Century of Classics Journals"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/David_M._Mimno> ;
       dc:identifier "http://dblp.l3s.de/d2r/resource/publications/journals/jocch/Mimno12"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Archeology> , <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Historiography> , bio:TextSimilarity , <http://dbpedia.org/resource/Philology> , <http://dbpedia.org/resource/Academic_journal> ;
+      dc:subject <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Historiography> , bio:TextSimilarity , <http://dbpedia.org/resource/Academic_journal> ;
       dc:title "Computational Historiography: Data Mining in a Century of Classics Journals"@en ;
       dcterms:bibliographicCitation
               "Mimno D. Computational Historiography: Data Mining in a Century of Classics Journals. J Comput Cult Herit  [Internet]. 2012 Apr;5(1):3:1–3:19. Avaiilable from: http://doi.acm.org/10.1145/2160165.2160168"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Philology> , <http://dbpedia.org/resource/Archeology> , <http://dbpedia.org/resource/Historiography> ;
+      ms:area <http://dbpedia.org/resource/Philology> , <http://dbpedia.org/resource/Archeology> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/jocch/Mimno12> .
 
 test:doc_uc_29
@@ -5225,11 +5224,11 @@ test:doc_uc_29
       rdfs:label "A computational model of text reuse in ancient literary texts"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/John_Lee> ;
       dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/acl/Lee07"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Literature> , bio:TextSimilarity , <http://dbpedia.org/resource/New_testament> ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , bio:TextSimilarity , <http://dbpedia.org/resource/New_testament> ;
       dc:title "A computational model of text reuse in ancient literary texts"@en ;
       dcterms:bibliographicCitation
               "Lee J. A computational model of text reuse in ancient literary texts. Proceedings of the 45th Annual Meeting of the Association of Computational Linguistics; 2007 June; Prague, Czech Republic [Internet]. 2007. p. 472–9. Available from: http://aclweb.org/anthology//P/P07/P07-1060.pdf"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Intertextuality> ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/acl/Lee07> .
 
 test:doc_uc_3
@@ -5237,11 +5236,11 @@ test:doc_uc_3
       rdfs:label "Advanced visual analytics methods for literature analysis"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Dimitrios_Kokkinakis> , <http://viaf.org/viaf/14917130> , <http://dblp.l3s.de/d2r/resource/authors/Daniela_Oelke> ;
       dc:identifier "http://dl.acm.org/citation.cfm?id=2390357.2390364" ;
-      dc:subject <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Proper_names> , bio:NamedEntityRecognition ;
+      dc:subject <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Proper_names> , bio:NamedEntityRecognition ;
       dc:title "Advanced visual analytics methods for literature analysis"@en ;
       dcterms:bibliographicCitation
               "Oelke D, Kokkinakis D, Malm M. Advanced visual analytics methods for literature analysis. Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistic; 2012 [cited 2014 Mar 12]. p. 35–44. Available from: http://dl.acm.org/citation.cfm?id=2390357.2390364"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Named-entity_recognition> .
+      ms:area <http://dbpedia.org/resource/Literature> .
 
 test:doc_uc_30
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5252,7 +5251,7 @@ test:doc_uc_30
       dc:title "Refining Causality: Who Copied from Whom?"@en ;
       dcterms:bibliographicCitation
               "Snowsill TM, Fyson N, De Bie T, Cristianini N. Refining Causality: Who Copied from Whom? Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining [Internet]. New York, NY, USA: ACM; 2011. p. 466–74. Available from: http://doi.acm.org/10.1145/2020408.2020483"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Media_studies> ;
+      ms:area <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Sociology> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/kdd/SnowsillFBC11> .
 
 test:doc_uc_31
@@ -5260,23 +5259,23 @@ test:doc_uc_31
       rdfs:label "Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Russell_Horton> , "<http://dblp.l3s.de/d2r/resource/authors/Glenn_Roe>"^^xsd:string , "<http://dblp.l3s.de/d2r/resource/authors/Mark_Olsen>"^^xsd:string ;
       dc:identifier "http://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/190/235"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Encyclopédie> , <http://dbpedia.org/resource/Lexical_similarity> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Age_of_Enlightenment> , bio:TextSimilarity , <http://dbpedia.org/resource/Philosophy> ;
+      dc:subject <http://dbpedia.org/resource/Encyclopédie> , <http://dbpedia.org/resource/Lexical_similarity> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Age_of_Enlightenment> , bio:TextSimilarity ;
       dc:title "Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections"@en ;
       dcterms:bibliographicCitation
               "Olsen M, Horton R, Roe G. Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections. Digital Studies / Le champ numérique [Internet]. 2011;2(1). Available from: ttps://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/190"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Philosophy> , <http://dbpedia.org/resource/Age_of_Enlightenment> .
+      ms:area <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Philosophy> .
 
 test:doc_uc_32
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Detection of Citations and Textual Reuse on Ancient Greek Texts and its Applications in the Classical Studies: eAQUA Project"@en ;
       dc:creator "<http://dblp.l3s.de/d2r/resource/authors/Thomas_Eckart>"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Gerhard_Heyer> , <http://dblp.l3s.de/d2r/resource/authors/Marco_B%C3%BCchler> , "Annette Geßner"^^xsd:string ;
       dc:identifier "https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/events-en/nehdfg/pdf/buechler-reuse"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Source_criticism> , bio:TextSimilarity , <http://dbpedia.org/resource/History> ;
+      dc:subject <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Source_criticism> , bio:TextSimilarity ;
       dc:title "Detection of Citations and Textual Reuse on Ancient Greek Texts and its Applications in the Classical Studies: eAQUA Project"@en ;
       dcterms:bibliographicCitation
               "Büchler M, Geßner A, Heyer G, Eckart T. Detection of Citations and Textual Reuse on Ancient Greek Texts and its Applications in the Classical Studies: eAQUA Project. Presented at: DH2010: Digital Humanities 2010 Conference; 2011 Jul 05-10; London, United Kingdom [Internet]. 2010. 3 p. Available from: https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/events-en/nehdfg/pdf/buechler-reuse"^^xsd:string ;
       dcterms:references "test:project_EAQUA"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Source_criticism> , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12> .
 
 test:doc_uc_33
@@ -5284,7 +5283,7 @@ test:doc_uc_33
       rdfs:label "Studying How the Past is Remembered: Towards Computational History Through Large Scale Text Mining"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Ching-man_Au_Yeung> , <http://dblp.l3s.de/d2r/resource/authors/Adam_Jatowt> ;
       dc:identifier "http://dblp.l3s.de/d2r/resource/publications/conf/cikm/YeungJ11"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Google_news> , <http://dbpedia.org/resource/Support_vector_machine> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/History> , bio:TextMining ;
+      dc:subject <http://dbpedia.org/resource/Google_news> , <http://dbpedia.org/resource/Support_vector_machine> , <http://dbpedia.org/resource/Media_studies> , bio:TextMining ;
       dc:title "Studying How the Past is Remembered: Towards Computational History Through Large Scale Text Mining"@en ;
       dcterms:bibliographicCitation
               "Au Yeung C, Jatowt A. Studying How the Past is Remembered: Towards Computational History Through Large Scale Text Mining. Proceedings of the 20th ACM International Conference on Information and Knowledge Management [Internet]. New York, NY, USA: ACM; 2011. p. 1231–40. Available from: http://doi.acm.org/10.1145/2063576.2063755"^^xsd:string ;
@@ -5296,7 +5295,7 @@ test:doc_uc_34
       rdfs:label "Language and Ideology in Congress"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Stefan_Kaufmann> , <http://dblp.l3s.de/d2r/resource/authors/Daniel_Diermeier> , <http://dblp.l3s.de/d2r/resource/authors/Bei_Yu> , "Jean-François Godbout" ;
       dc:identifier "http://dx.doi.org/10.1017/S0007123411000160"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Ideology> , bio:TextMining , <http://dbpedia.org/resource/Support_vector_machine> , <http://dbpedia.org/resource/Discourse_analysis> , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Us_senate> ;
+      dc:subject <http://dbpedia.org/resource/Ideology> , bio:TextMining , <http://dbpedia.org/resource/Support_vector_machine> , <http://dbpedia.org/resource/Discourse_analysis> , <http://dbpedia.org/resource/Us_senate> ;
       dc:title "Language and Ideology in Congress"@en ;
       dcterms:bibliographicCitation
               "Diermeier D, Godbout J-F, Yu B, Kaufmann S. Language and Ideology in Congress. British Journal of Political Science [Internet]. 2012;42(01):31–55. Available from: http://dx.doi.org/10.1017/S0007123411000160"^^xsd:string ;
@@ -5307,7 +5306,7 @@ test:doc_uc_35
       rdfs:label "Quantitative patterns of stylistic influence in the evolution of literature"@en ;
       dc:creator "James M. Hughes" , <http://dblp.l3s.de/d2r/resource/authors/Nicholas_J._Foti> , <http://dblp.l3s.de/d2r/resource/authors/David_C._Krakauer> , <http://dblp.l3s.de/d2r/resource/authors/Daniel_N._Rockmore> ;
       dc:identifier "http://dx.doi.org/10.1073/pnas.1115407109 "^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Stylometry> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Support_vector_machine> , bio:TextSimilarity , <http://dbpedia.org/resource/Gutenberg_Project> , bio:TextMining ;
+      dc:subject <http://dbpedia.org/resource/Stylometry> , <http://dbpedia.org/resource/Support_vector_machine> , bio:TextSimilarity , <http://dbpedia.org/resource/Gutenberg_Project> , bio:TextMining ;
       dc:title "Quantitative patterns of stylistic influence in the evolution of literature"@en ;
       dcterms:bibliographicCitation
               "Hughes JM, Foti NJ, Krakauer DC, Rockmore DN. Quantitative patterns of stylistic influence in the evolution of literature. Proceedings of the National Academy of Sciences [Internet]. 2012;109(20):7682–6. Available from: http://dx.doi.org/10.1073/pnas.1115407109"^^xsd:string ;
@@ -5318,11 +5317,11 @@ test:doc_uc_36
       rdfs:label "Determining if two documents are written by the same author"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Yaron_Winter> , <http://dblp.l3s.de/d2r/resource/authors/Moshe_Koppel> ;
       dc:identifier "http://dx.doi.org/10.1002/asi.22954"^^xsd:string ;
-      dc:subject <http://dbpedia.org/resource/Media_studies> , bio:TextSimilarity , <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Stylometry> , <http://dbpedia.org/resource/Support_vector_machine> , bio:TextMining ;
+      dc:subject bio:TextSimilarity , <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Stylometry> , <http://dbpedia.org/resource/Support_vector_machine> , bio:TextMining ;
       dc:title "Determining if two documents are written by the same author"@en ;
       dcterms:bibliographicCitation
               "Koppel M, Winter Y. Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology [Internet]. 2014;65(1):178–87. Available from: http://dx.doi.org/10.1002/asi.22954"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Media_studies> ;
+      ms:area <http://dbpedia.org/resource/Mass_media> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/jasis/KoppelW14> .
 
 test:doc_uc_4
@@ -5330,11 +5329,11 @@ test:doc_uc_4
       rdfs:label "Names in novels: An experiment in computational stylistics"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Karina_van_Dalen-Oskam> ;
       dc:identifier "http://dx.doi.org/10.1093/llc/fqs007" ;
-      dc:subject <http://dbpedia.org/resource/Proper_names> , <http://dbpedia.org/resource/Literature> , bio:NamedEntityRecognition ;
+      dc:subject <http://dbpedia.org/resource/Proper_names> , bio:NamedEntityRecognition ;
       dc:title "Names in novels: An experiment in computational stylistics"@en ;
       dcterms:bibliographicCitation
               "Van Dalen-Oskam K. Names in novels: An experiment in computational stylistics. Literary and Linguistic Computing [Internet]. 2013;28(2):359–70. Available from:http://dx.doi.org/10.1093/llc/fqs007"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/lalc/Dalen-Oskam13> .
 
 test:doc_uc_5
@@ -5346,7 +5345,7 @@ test:doc_uc_5
       dc:title "Data mining with criminal intent. Final white paper"@en ;
       dcterms:bibliographicCitation
               "Cohen D, Gibbs F, Hitchcock T, Rockwell G, Sander J, Shoemaker R, et al. Data mining with criminal intent. Final white paper [Internet]. 2011 [cited 2014 Mar 12]. Available from: http://criminalintent.org/wp-content/uploads/2011/09/Data-Mining-with-Criminal-Intent-Final1.pdf"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Criminal_justice> , <http://dbpedia.org/resource/Social_history> .
+      ms:area <http://dbpedia.org/resource/History> .
 
 test:doc_uc_6
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5357,7 +5356,7 @@ test:doc_uc_6
       dc:title "Topic modeling on historical newspapers"@en ;
       dcterms:bibliographicCitation
               "Yang T-I, Torget AJ, Mihalcea R. Topic modeling on historical newspapers. Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2011. Available from: http://dl.acm.org/citation.cfm?id=2107636.2107649"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Named-entity_recognition> .
+      ms:area <http://dbpedia.org/resource/History> .
 
 test:doc_uc_7
       rdf:type bibo:Report , owl:NamedIndividual ;
@@ -5368,29 +5367,29 @@ test:doc_uc_7
       dc:title "Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities"@en ;
       dcterms:bibliographicCitation
               "Torget AJ, Mihalcea R, Christensen J, McGhee G. Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities [Internet]. 2011. Available from: http://mappingtexts.stanford.edu/whitepaper/MappingTexts_WhitePaper.pdf" ;
-      ms:area <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Named-entity_recognition> .
+      ms:area <http://dbpedia.org/resource/History> .
 
 test:doc_uc_8
       rdf:type owl:NamedIndividual , bibo:Article ;
       rdfs:label "The Geographic Imagination of Civil War-Era American Fiction"@en ;
       dc:creator <http://viaf.org/viaf/21934190> ;
       dc:identifier "http://dx.doi.org/10.1093/alh/ajt045" ;
-      dc:subject <http://dbpedia.org/resource/American_Civil_War> , <http://dbpedia.org/resource/Literature> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Geovisualization> ;
+      dc:subject <http://dbpedia.org/resource/American_Civil_War> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Geovisualization> ;
       dc:title "The Geographic Imagination of Civil War-Era American Fiction"@en ;
       dcterms:bibliographicCitation
               "Wilkens M. The Geographic Imagination of Civil War-Era American Fiction. American Literary History [Internet]. 2013 25(4):803–40. Available from: http://dx.doi.org/10.1093/alh/ajt045"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/American_Civil_War> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Named-entity_recognition> .
+      ms:area <http://dbpedia.org/resource/Literature> .
 
 test:doc_uc_9
       rdf:type bibo:Report , owl:NamedIndividual ;
       rdfs:label "A comparison of named entity recognition tools applied to biographical texts"@en ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Vincent_Labatut> , <http://dblp.l3s.de/d2r/resource/authors/Samet_Atdag> ;
       dc:identifier "http://dx.doi.org/10.1109/IcConSCS.2013.6632052"^^xsd:string ;
-      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Biography> ;
+      dc:subject bio:NamedEntityRecognition ;
       dc:title "A comparison of named entity recognition tools applied to biographical texts"@en ;
       dcterms:bibliographicCitation
               "Atdag S, Labatut V. A comparison of named entity recognition tools applied to biographical texts. Systems and Computer Science (ICSCS), 2013 2nd International Conference on [Internet]. 2013 [cited 2014 Mar 12]. p. 228–33. Available from: http://dx.doi.org/10.1109/IcConSCS.2013.6632052"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Biography> ;
+      ms:area <http://dbpedia.org/resource/Biography> ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/corr/AtdagL13> .
 
 test:metadata-AnCora-Cat
@@ -6332,7 +6331,7 @@ test:organization_Feminario
       rdfs:label "Feminario"^^xsd:string ;
       dc:description "Feminario Mujeres y Cultura de Masas de la UAB. Grupo creado en el Departamento de Periodismo de la UAB centrado en la representación de mujeres y hombres en los medios de comunicación."@es ;
       dc:subject <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> ;
-      ms:area <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Media_studies> ;
+      ms:area <http://dbpedia.org/resource/Sociology> ;
       ms:url  "http://amparomorenosarda.es/"^^xsd:string ;
       foaf:member test:person_Amparo_Moreno .
 
@@ -6980,7 +6979,7 @@ test:project_Androcentrismo
       dc:subject bio:SyntacticTagging , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Media_studies> ;
       dcterms:isReferencedBy
               test:doc_uc_14 , test:doc_uc_13 , test:doc_uc_12 ;
-      ms:area <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Sociology> , <http://dbpedia.org/resource/Gender_studies> ;
+      ms:area <http://dbpedia.org/resource/Mass_media> ;
       ms:languageName "Spanish"^^xsd:string ;
       ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#240> ;
       foaf:name "Androcentrismo en la prensa española: ¿de quién hablan las noticias?"@es .
@@ -7023,8 +7022,8 @@ test:project_CHALICE
       rdfs:label "Connecting Historical Authorities with Linked Data, Contexts and Entities"@en ;
       dc:contributor <http://viaf.org/viaf/137387653> , "University of Edinburgh. School of Informatics. Language Technology Group" , "Queen’s University Belfast. Centre for Data Digitisation and Analysis" , "King's College London. Centre for e-Research" ;
       dc:description "This project aimed at providing a historic place-name gazetteer covering a thousand years of history and providing links to attestations in old texts and maps', NER techniques were used to extract new data from digitized English Place -Name Survey."@en ;
-      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Gazeteer> , <http://dbpedia.org/resource/Toponymy> , <http://dbpedia.org/resource/History> ;
-      ms:area <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Toponymy> , <http://dbpedia.org/resource/History> ;
+      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Gazeteer> , <http://dbpedia.org/resource/Toponymy> ;
+      ms:area <http://dbpedia.org/resource/Geography> , <http://dbpedia.org/resource/History> ;
       foaf:homepage "http://chalice.blogs.edina.ac.uk/" ;
       foaf:name "Connecting Historical Authorities with Linked Data, Contexts and Entities" .
 
@@ -7057,8 +7056,8 @@ test:project_ChartEx
       rdfs:label "ChartEx"@en ;
       dc:contributor <http://viaf.org/viaf/159511000> , <http://viaf.org/viaf/156836332> , <http://viaf.org/viaf/154911632> , <http://viaf.org/viaf/145108120> , <http://viaf.org/viaf/130333233> , <http://viaf.org/viaf/124424463> ;
       dc:description "This project focuses on the extraction of information about places, people and events in their lives from medieval charters by using NLP technologies as NER, among others."@en ;
-      dc:subject <http://dbpedia.org/resource/Medieval_studies> , <http://dbpedia.org/resource/Category:Medieval_charters_and_cartularies> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/History> ;
-      ms:area <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Medieval_studies> , <http://dbpedia.org/resource/Category:Medieval_charters_and_cartularies> ;
+      dc:subject <http://dbpedia.org/resource/Medieval_studies> , <http://dbpedia.org/resource/Category:Medieval_charters_and_cartularies> , bio:NamedEntityRecognition ;
+      ms:area <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Geography> ;
       foaf:homepage "http://www.chartex.org/" ;
       foaf:name "ChartEx" .
 
@@ -7067,8 +7066,8 @@ test:project_DIEMRL
       rdfs:label "Digging Into the Enlightenment: Mapping the Republic of Letters"@en ;
       dc:contributor <http://viaf.org/viaf/137316683> , <http://viaf.org/viaf/142129514> , <http://viaf.org/viaf/158761280> ;
       dc:description "This collaborative project analyzed the degree to which the effects of the Enlightenment can be observed in the writing of people of various occupations in a corpus of 53,000 18th-century letters called Electronic Enlightenment (EE). The hypothesis of the project presents a new perspective in the practice of interpretative research in the field of humanities. This view aimed to integrate innovative visualization and annotation techniques into interactive tools for exploring and analyzing information about people, places, times, and relationships in the 'Republic of Letters'."@en ;
-      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
-      ms:area <http://dbpedia.org/resource/Age_of_Enlightenment> , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       foaf:homepage "http://enlightenment.humanitiesnetwork.org/" ;
       foaf:name "Digging Into the Enlightenment: Mapping the Republic of Letters" .
 
@@ -7078,7 +7077,7 @@ test:project_DVE
       dc:contributor <http://viaf.org/viaf/139374045> , <http://viaf.org/viaf/158205697> , <http://viaf.org/viaf/151609847> ;
       dc:description "The project's goal was to identify and track topics about the Greco-Roman world as they appear in multilingual public document collections (Internet Archive, JSTOR, HathiTrust, etc.). This project aimed to create an environment and to generate 'dynamic variorum' editions of texts based on a services infrastructure. Project's work included mining primary and secondary digital sources to locate where people and places from the Greco-Roman world are discussed, what Greek and Latin works are cited, and what has been said about the people, places, and texts of the Greco-Roman world over time."@en ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Classical_antiquity> ;
-      ms:area <http://dbpedia.org/resource/Classical_antiquity> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       foaf:homepage "http://sites.tufts.edu/dynamicvariorum/" ;
       foaf:name "Dynamic Variorum Editions" .
 
@@ -7087,8 +7086,8 @@ test:project_DbyD
       rdfs:label "Digging by Debating: linking massive datasets to specific arguments"@en ;
       dc:contributor <http://viaf.org/viaf/142461254> , <http://viaf.org/viaf/261901746> , <http://viaf.org/viaf/132683760> , <http://viaf.org/viaf/266045559> ;
       dc:description "Project's goal is to develop ways of searching and visualizing the interactions between humanities and sciences based on models of argumentation by means of tool generation.  The research behind this project looks to establish what volume of collections of text (such as HathiTrust/GoogleBooks collection) can support the kinds of detailed argumentative analysis that is central to scholarly research and public discussion of science and humanities. It suggests: linking contact points between philosophy and the sciences; topic modeling to identify rich content in a chosen topic; identifying and mapping key arguments by novel analysis framework for propositions and arguments, and sentence modeling to get back to HathiTrust materials."@en ;
-      dc:subject <http://dbpedia.org/resource/Philosophy_of_science> , <http://dbpedia.org/resource/Arguments> , <http://dbpedia.org/resource/History> , bio:NamedEntityRecognition ;
-      ms:area <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Philosophy_of_science> , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Arguments> , <http://dbpedia.org/resource/Philosophy_of_science> ;
+      ms:area <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Philosophy> ;
       foaf:homepage "http://diggingbydebating.org/" ;
       foaf:name "Digging by Debating: linking massive datasets to specific arguments" .
 
@@ -7100,7 +7099,7 @@ test:project_EAQUA
       dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> , bio:TextSimilarity ;
       dcterms:isReferencedBy
               "test:doc_uc_22"^^xsd:string , "test:doc_uc_32"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       foaf:homepage "http://eaqua.e-humanities.net/"^^xsd:string ;
       foaf:name "eAQUA"^^xsd:string .
 
@@ -7109,10 +7108,10 @@ test:project_ETRACES
       rdfs:label "eTRACES"@en ;
       dc:contributor <http://viaf.org/viaf/264043054> , "University of Leipzig. Natural language processing group (Automatische Sprachverarbeitung, ASV)"^^xsd:string , "Georg-August-Universität Göttingen. Göttingen Centre for Digital Humanities (GCDH)"^^xsd:string ;
       dc:description "The project aims to detect “temporal traces and interconnecting relations of text passages in German language novels from 1500 and 1990, as well as social science texts created since 1909”."@en ;
-      dc:subject <http://dbpedia.org/resource/Literature> , bio:TextSimilarity , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/German_literature> ;
+      dc:subject bio:TextSimilarity , <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/German_literature> ;
       dcterms:isReferencedBy
               "test:doc_uc_22"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/German_literature> , <http://dbpedia.org/resource/Literature> ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
       foaf:homepage "http://etraces.e-humanities.net/"^^xsd:string ;
       foaf:name "eTRACES"^^xsd:string .
 
@@ -7139,7 +7138,7 @@ test:project_ISHER
       dc:contributor "University of Illinois at Urbana-Champaign. Cline Center for Democracy"^^xsd:string , <http://viaf.org/viaf/141045569> , "University of Manchester. National Centre for Text Mining"^^xsd:string ;
       dc:description "This project is researching the application of tools to detect, link and visualize events, trends, people, organizations, and other entities of interest to social history. Having text-mining-based rich semantic metadata extraction for collections' indexing, clustering and classification as its main focus, the project aims at reducing the manual costs currently involved in such activities."@en ;
       dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Social_history> ;
-      ms:area <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Social_history> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       foaf:homepage "http://www.nactem.ac.uk/DID-ISHER/" ;
       foaf:name "Integrated Social History Environment for Research" .
 
@@ -7172,8 +7171,8 @@ test:project_MRL
       rdfs:label "Mapping the Republic of Letters"@en ;
       dc:contributor <http://viaf.org/viaf/223857543> , <http://viaf.org/viaf/142129514> , "DensityDesign Research Lab"^^xsd:string , <http://viaf.org/viaf/241932236> , <http://viaf.org/viaf/148186413> ;
       dc:description "The project's goal was to visualize certain correspondence networks from digital scholarly editions of historical letters as a way of exploring a bundle of historical questions about the geographic range, diversity, and interactions among intellectuals during seventeenth, eighteenth, and nineteenth centuries."@en ;
-      dc:subject <http://dbpedia.org/resource/History> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
-      ms:area <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Named-entity_recognition> , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
+      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Information_visualization> , <http://dbpedia.org/resource/Age_of_Enlightenment> ;
+      ms:area <http://dbpedia.org/resource/History> ;
       foaf:homepage "http://republicofletters.stanford.edu/"^^xsd:string ;
       foaf:name "Mapping the Republic of Letters"^^xsd:string .
 
@@ -7182,8 +7181,8 @@ test:project_MT
       rdfs:label "Mapping Texts"@en ;
       dc:contributor <http://viaf.org/viaf/122573955> ;
       dc:description "The project aimed to develop new ways of discovering and analyzing language patterns embedded in historical newspaper databases. Its approach was to combine text mining and geospatial visualization methods to explore massive collections of electronic texts."@en ;
-      dc:subject <http://dbpedia.org/resource/Geovisualization> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Media_studies> ;
-      ms:area <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      dc:subject <http://dbpedia.org/resource/Geovisualization> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Media_studies> ;
+      ms:area <http://dbpedia.org/resource/History> , <http://dbpedia.org/resource/Geography> ;
       foaf:homepage "http://mappingtexts.org/" ;
       foaf:name "Mapping Texts" .
 
@@ -7193,9 +7192,9 @@ test:project_Municipals
       dc:contributor test:organization_UPF-IULA , test:project_CLARIN_ES ;
       dc:creator "Carlos Gonzalo"^^xsd:string ;
       dc:description "This is an e-communication and e-politics project that analyses the 2011 municipal election campaign in Spain. The main objective of the project is to analyse new tendencies in e-politics and to demonstrate the impact of internet on the electoral process. CLARIN contributed to the research by providing services and tools to run an experiment that automatically analysed published texts in the Catalan political blogosphere related to this election campaign. The process included: a) automatically and periodically access to 459 representative blogs in the Catalan political blogosphere, b) obtaining and pre-processing of the different texts (over 8000 posts) and (iii) texts processing with different statistical tools to calculate the most significant words for each blog in contrast to the others."@en ;
-      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Political_science> , bio:TextMining , bio:StatisticsAnalysis ;
+      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> , bio:TextMining , bio:StatisticsAnalysis ;
       ms:affiliation "Departament de Comunicació. Universitat Pompeu Fabra"@cat ;
-      ms:area <http://dbpedia.org/resource/Social_media> , <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Sociology> ;
+      ms:area <http://dbpedia.org/resource/Political_science> , <http://dbpedia.org/resource/Mass_media> ;
       ms:languageName "Catalan"^^xsd:string ;
       ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#108> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#238> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#119> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#109> ;
       ms:url  "http://iula02v.upf.edu/tfidf_web/executions/"^^xsd:string ;
@@ -7263,10 +7262,10 @@ test:project_VIRTEXT
       rdfs:label "Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magaziness"@en ;
       dc:contributor <http://viaf.org/viaf/147444432> ;
       dc:description "The project aims to improve the search on a Nineteenth-Century American Newspapers corpus using and developing data mining tools. It is working spaces-efficient n-gram indexing to identify candidate newspapers and then exploits local models of alignment to identify reprinted fragments unknown a priori."@en ;
-      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/American_literature> , bio:TextSimilarity , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Magazine> , <http://dbpedia.org/resource/Literature> ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/American_literature> , bio:TextSimilarity , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Magazine> ;
       dcterms:isReferencedBy
               "test:doc_uc_24"^^xsd:string ;
-      ms:area <http://dbpedia.org/resource/American_literature> , <http://dbpedia.org/resource/Literature> , <http://dbpedia.org/resource/Intertextuality> ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
       foaf:homepage "http://www.viraltexts.org/"^^xsd:string ;
       foaf:name "Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magaziness"^^xsd:string .
 
