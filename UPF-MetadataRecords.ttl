@@ -574,7 +574,7 @@ ms:LMF
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#197>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "GrAF from dependency converter Web Service"@en ;
-      dc:description "This WS is a Panacea project converter that creates GrAF elements from dependency parser output." ;
+      dc:description "This WS is a Panacea project converter that creates GrAF elements from dependency parser output."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#format_conversion.grafconverter_dependency_row" ;
       bio:endpoint "http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.grafconverter_dependency" ;
@@ -644,7 +644,7 @@ ms:LMF
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#204>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "CQP query Web Service"@en ;
-      dc:description "This WS allows querying an already indexed corpus (see CQP indexer WS for indexing details). The WS is  based on the IMS Open Corpus Workbench (CWB). Language independent WS." ;
+      dc:description "This WS allows querying an already indexed corpus (see CQP indexer WS for indexing details). The WS is  based on the IMS Open Corpus Workbench (CWB). Language independent WS."@en ;
       dcterms:isReferencedBy
               test:doc_61 , test:doc_73 , test:doc_67 ;
       bio:contact "iulatrl@upf.edu" ;
@@ -685,7 +685,7 @@ ms:LMF
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#206>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Columns selector Web Service"@en ;
-      dc:description "This WS allows extracting a column from a tabular file input text. It is useful to work with CoNLL or FreeLing annotated corpora. Language independent WS." ;
+      dc:description "This WS allows extracting a column from a tabular file input text. It is useful to work with CoNLL or FreeLing annotated corpora. Language independent WS."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#format_conversion.columns_selector_row" ;
       bio:endpoint "http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.columns_selector" ;
@@ -867,7 +867,7 @@ You can choose to have this prediction as:
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#236>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "FreeLing Morphosyntactic analyzer Web Service v.3"@en ;
-      dc:description "This Web Service deploys a FreeLing-based morphological analyzer (v 3.0). The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese." ;
+      dc:description "This Web Service deploys a FreeLing-based morphological analyzer (v 3.0). The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese."@en ;
       dcterms:isReferencedBy
               test:doc_73 ;
       bio:contact "iulatrl@upf.edu" ;
@@ -1526,7 +1526,7 @@ This version of the webservice is not able to follow such links, so it won’t p
 test:Apertium-ca-it_resource-8v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "Italian-Catalan LMF Apertium Bilingual dictionary" ;
-      dc:description "This is the LMF version of the Apertium bilingual dictionary for Italian and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Apertium bilingual dictionary for Italian and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1559,7 +1559,7 @@ test:Apertium-ca-it_resource-8v2
 test:Apertium-ca_resource-18v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "Catalan LMF Apertium Dictionary" ;
-      dc:description "This is the LMF version of the Catalan Apertium ditionary. Monolingual dictionaries for Spanish, Catalan, Gallego and Euskera have been generated from the Apertium expanded lexicons of the es-ca (for both Spanish and Catalan) es-gl (for Galician) and eu-es (for Basque). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Catalan Apertium ditionary. Monolingual dictionaries for Spanish, Catalan, Gallego and Euskera have been generated from the Apertium expanded lexicons of the es-ca (for both Spanish and Catalan) es-gl (for Galician) and eu-es (for Basque). Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1592,7 +1592,7 @@ test:Apertium-ca_resource-18v2
 test:Apertium-en-ca_resource-3v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "English-Catalan LMF Apertium Bilingual dictionary" ;
-      dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1625,7 +1625,7 @@ test:Apertium-en-ca_resource-3v2
 test:Apertium-en-es_resource-5v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "English-Spanish LMF Apertium Bilingual dictionary" ;
-      dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Spanish languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Spanish languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1658,7 +1658,7 @@ test:Apertium-en-es_resource-5v2
 test:Apertium-en-gl_resource-4v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "English-Galician LMF Apertium Bilingual dictionary" ;
-      dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Galician languages. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Apertium bilingual dictionary for English and Galician languages. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1691,7 +1691,7 @@ test:Apertium-en-gl_resource-4v2
 test:Apertium-es-ast_resource-13v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "Spanish-Asturian LMF Apertium Bilingual dictionary" ;
-      dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish and Asturian languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish and Asturian languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1724,7 +1724,7 @@ test:Apertium-es-ast_resource-13v2
 test:Apertium-es-ca_resource-14v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "Spanish-Catalan LMF Apertium Bilingual dictionary" ;
-      dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish and Catalan languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1757,7 +1757,7 @@ test:Apertium-es-ca_resource-14v2
 test:Apertium-es-gl_resource-15v2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "Spanish-Galician LMF Apertium Bilingual dictionary" ;
-      dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish Galician languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs." ;
+      dc:description "This is the LMF version of the Apertium bilingual dictionary for Spanish Galician languages. Bilingual LMF dictionaries were generated from Apertium bilingual dix files. For each Apertium bilingual correspondence, the corresponding source and target monolingual entries (LexicalEntry) were generated in addition to the bilingual correspondence (SenseAxis) element. Apertium is a free/open-source machine translation platform, initially aimed at related-language pairs but recently expanded to deal with more divergent language pairs (such as English-Catalan). The platform provides: a language-independent machine translation engine; tools to manage the linguistic data necessary to build a machine translation system for a given language pair and linguistic data for a growing number of language pairs."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -5862,7 +5862,7 @@ test:metadata_ApertiumPTv2
 test:metadata_ContaWords
       rdf:type owl:NamedIndividual , ms:ToolService ;
       rdfs:label "ContaWords"@en ;
-      dc:description "ContaWords is a web application that reads the words of a text file and decides what part of speech to assign to each word (credit-Noun-credit but credit-Verb-to_credit). It then begins to count how many times a word appears in the text in every possible way (credits, credit, credited… etc). It can also take into account that a sequence of words can, for example, be the name of an organization, a person or an entity (Named Entity Recognition). Besides all this, ContaWords can find sequences of two words that seem to appear together more often than would be expected, such as \"monetary policy \" or \"fiscal balance \"."@en ;
+      dc:description "ContaWords is a web application that reads the words of a text file and decides what part of speech to assign to each word (credit-Noun-credit but credit-Verb-to_credit). It then begins to count how many times a word appears in the text in every possible way (credits, credit, credited… etc). It can also take into account that a sequence of words can, for example, be the name of an organization, a person or an entity (Named Entity Recognition). Besides all this, ContaWords can find sequences of two words that seem to appear together more often than would be expected, such as \"monetary policy \"@en or \"fiscal balance \"."@en ;
       ms:contactPerson test:person_Marc_Poch ;
       ms:fundingProject test:project_CLARIN_FEDER ;
       ms:identifier "http://contawords.iula.upf.edu/"^^xsd:string ;
@@ -7131,7 +7131,7 @@ test:project_CLARIN_ES
 test:project_CLARIN_FEDER
       rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "IULA-UPF CLARIN Centre of Competence"@en ;
-      dc:description "The project aim’s is to create the IULA-UPF CLARIN Centre of Competence for promoting and counseling about utilization of language technologies, analysis and exploitation tools, and access to digitized data, in particular for the researchers in Humanities and Social Sciences. This project is co-funded by the \"Fons europeu de desenvolupament regional (FEDER), Programa operatiu FEDER de Catalunya 2007-2013, Objective 1\" and Universitat Pompeu Fabra."@en ;
+      dc:description "The project aim’s is to create the IULA-UPF CLARIN Centre of Competence for promoting and counseling about utilization of language technologies, analysis and exploitation tools, and access to digitized data, in particular for the researchers in Humanities and Social Sciences. This project is co-funded by the \"Fons europeu de desenvolupament regional (FEDER), Programa operatiu FEDER de Catalunya 2007-2013, Objective 1\"@en and Universitat Pompeu Fabra."@en ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> ;
       foaf:name "IULA-UPF CLARIN Centre of Competence"^^xsd:string .
 

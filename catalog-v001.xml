@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="file:/C:/Documents%20and%20Settings/U39306/TBCFreeWorkspace/Metashare/browser.ttl" uri="browser.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.org/ms-lod/MetaShare.ttl" uri="MetaShare.ttl"/>
     <uri id="User Entered Import Resolution" name="http://purl.org/ms-lod/BioServices.ttl" uri="BioServices.ttl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/ms-lod/BioServices.ttl#" uri="BioServices.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>

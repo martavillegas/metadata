@@ -1219,7 +1219,7 @@ ms:MachineReadableDictionary
       rdf:type owl:Class ;
       rdfs:label "Machine Readable Dictionary "@en ;
       rdfs:subClassOf ms:LexicalConceptualResource ;
-      dc:description "It is a dictionary stored as machine (computer) data instead of being printed on paper. It is an electronic dictionary and lexical database [Wikipedia]" ;
+      dc:description "It is a dictionary stored as machine (computer) data instead of being printed on paper. It is an electronic dictionary and lexical database [Wikipedia]"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-4080"@en ;
       owl:sameAs <http://dbpedia.org/resource/Machine-readable_dictionary> .
 
