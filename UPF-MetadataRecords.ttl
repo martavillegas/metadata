@@ -6579,9 +6579,10 @@ test:person_Aitziber_Atutxa
               "http://ixa.si.ehu.es/Ixa/index_html/" .
 
 test:person_Amparo_Moreno
-      rdf:type foaf:Person , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Amparo Moreno"^^xsd:string ;
       ms:affiliation test:organization_Feminario ;
+      ms:orcID <http://orcid.org/0000-0001-7297-7900> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAmparo_Moreno%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D%0D%0A"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
       foaf:familyName "Moreno"^^xsd:string ;
@@ -6593,6 +6594,7 @@ test:person_Anna_Fernández_Montraveta
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Anna Fernández Montraveta" ;
       ms:affiliation test:organization_GRIAL ;
+      ms:orcID <http://orcid.org/0000-0003-4657-1805> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAna_Fern%25C3%25A1ndez_Montraveta%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Ana_Fern%C3%A1ndez_Montraveta> ;
       foaf:familyName "Fernández Montraveta" ;
@@ -6619,6 +6621,7 @@ test:person_Antonio_Toral
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Antonio Toral" ;
       ms:affiliation test:organization_DCU_School_of_Computing ;
+      ms:orcID <http://orcid.org/0000-0003-2357-2960> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAntonio_Toral%3E%0D%0A+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Antonio_Toral> ;
       foaf:familyName "Toral" ;
@@ -6665,6 +6668,7 @@ test:person_Gemma_Boleda
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Gemma Boleda" ;
       ms:affiliation test:organization_UPC-TALP ;
+      ms:orcID <http://orcid.org/0000-0001-6140-7080> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGemma_Boleda%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Gemma_Boleda> ;
       foaf:familyName "Boleda" ;
@@ -6691,6 +6695,7 @@ test:person_Glòria_Vázquez
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Glòria Vázquez" ;
       ms:affiliation test:organization_GRIAL ;
+      ms:orcID "http://orcid.org/0000-0002-7673-7610"^^xsd:string ;
       foaf:familyName "Vázquez" ;
       foaf:givenName "Glòria" ;
       foaf:mbox "gvazquez@dal.udl.cat" ;
