@@ -3191,7 +3191,7 @@ test:PAN_metadata_TRL-Multilevel_multidomain_ES
 test:PAN_metadata_TRL-VSubcat_ACQ_ENV_ES
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "PANACEA Spanish automatically acquired lexicon for ENV domain: Subcategorization Frames (V-SUBCAT)"@en ;
-      dc:description "This is a domain-specific lexicon for Spanish subcategorization frames for environment (ENV) domain. This lexicon has been automatically created using the PANACEA web service named tpc_subcat_inductive (http://registry.elda.org/services/223) and the crawled data for this domain and language, previously annotated with Spanish Malt Parser web service (http://registry.elda.org/services/249)."@en ;
+      dc:description "This is a domain-specific lexicon for Spanish subcategorization frames for environment (ENV) domain. This lexicon has been automatically created using the PANACEA web service named tpc_subcat_inductive (http://registry.elda.org/services/223) and the crawled data for this domain and language, previously annotated with Spanish Malt Parser web service (http://lod.iula.upf.edu/resources/249)."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Muntsa_Padró ;
@@ -3205,6 +3205,7 @@ test:PAN_metadata_TRL-VSubcat_ACQ_ENV_ES
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
+      ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#249> ;
       ms:resourceCreator test:organization_UPF-IULA ;
       ms:resourceName "PANACEA Spanish automatically acquired lexicon for ENV domain: Subcategorization Frames (V-SUBCAT)" ;
       ms:resourceShortName
@@ -3215,7 +3216,7 @@ test:PAN_metadata_TRL-VSubcat_ACQ_ENV_ES
 test:PAN_metadata_TRL-VSubcat_ACQ_LAB_ES
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "PANACEA Spanish automatically acquired lexicon for LAB domain: Subcategorization Frames (V-SUBCAT)"@en ;
-      dc:description "This is a domain-specific lexicon for Spanish subcategorization frames for labour (LAB) domain. This lexicon has been automatically created using the PANACEA web service named tpc_subcat_inductive (http://registry.elda.org/services/223) and the crawled data for this domain and language, previously annotated with Spanish Malt Parser web service (http://registry.elda.org/services/249)."@en ;
+      dc:description "This is a domain-specific lexicon for Spanish subcategorization frames for labour (LAB) domain. This lexicon has been automatically created using the PANACEA web service named tpc_subcat_inductive (http://registry.elda.org/services/223) and the crawled data for this domain and language, previously annotated with Spanish Malt Parser web service (http://lod.iula.upf.edu/resources/249)."@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:contactPerson test:person_Muntsa_Padró ;
@@ -3229,6 +3230,7 @@ test:PAN_metadata_TRL-VSubcat_ACQ_LAB_ES
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
+      ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#249> ;
       ms:resourceCreator test:organization_UPF-IULA ;
       ms:resourceName "PANACEA Spanish automatically acquired lexicon for LAB domain: Subcategorization Frames (V-SUBCAT)" ;
       ms:resourceShortName
@@ -4610,7 +4612,6 @@ test:doc_53
       dc:title "Documentation of ContaWords"@en ;
       dcterms:bibliographicCitation
               "Bel N. Documentation of ContaWords [Internet]. Final report 2014 5 p. Available from: http://hdl.handle.net/10230/22602"^^xsd:string ;
-      dcterms:references test:metadata_ContaWords ;
       ms:relatedResource <http://dbpedia.org/resource/Word_count> ;
       ms:url  "http://hdl.handle.net/10230/22602"^^xsd:string .
 
@@ -5815,20 +5816,6 @@ test:metadata_ApertiumITv2
       ms:sizeInfo test:size_N12B9A ;
       ms:url  "http://www.apertium.org" .
 
-test:metadata_ApertiumMonolingual2LMF
-      rdf:type owl:NamedIndividual , ms:ToolService ;
-      rdfs:label "Apertium Monolingual Lexicon to LMF converter"@en ;
-      dc:description "This tool generates the LMF version of Apertium monolingual lexicons. The script takes as input an expanded monolingual Apertium lexicon (generated using: lt-expand apertium.dix > apertium.expanded) and generates the corresponding LMF version. In the Apertium expended lexicons, the first tag corresponds to the part of speech. The rest of tags (all enclosed in angle brackets) encode additional information depending on the lemma and PoS tag. Run perl ApertiumMonolingual2LMF.pl --help to get more information."@en ;
-      ms:contactPerson test:person_Jorge_Vivaldi ;
-      ms:fundingProject test:project_METANET4U ;
-      ms:identifier "http://hdl.handle.net/10230/17128" ;
-      ms:metaShareId "NOT_DEFINED_FOR_V2" ;
-      ms:resourceCreator test:organization_UPF-IULA ;
-      ms:resourceName "Apertium Monolingual Lexicon to LMF converter" ;
-      ms:resourceShortName
-              "Apertium Monolingual Lexicon to LMF converter" ;
-      ms:url  "http://www.iula.upf.edu" .
-
 test:metadata_ApertiumPTv2
       rdf:type ms:ComputationalLexicon ;
       rdfs:label "Portuguese LMF Apertium Dictionary"@en ;
@@ -5863,16 +5850,24 @@ test:metadata_ApertiumPTv2
       ms:url  "http://www.apertium.org" .
 
 test:metadata_ContaWords
-      rdf:type owl:NamedIndividual , ms:ToolService ;
+      rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "ContaWords"@en ;
       dc:description "ContaWords is a web application that reads the words of a text file and decides what part of speech to assign to each word (credit-Noun-credit but credit-Verb-to_credit). It then begins to count how many times a word appears in the text in every possible way (credits, credit, credited… etc). It can also take into account that a sequence of words can, for example, be the name of an organization, a person or an entity (Named Entity Recognition). Besides all this, ContaWords can find sequences of two words that seem to appear together more often than would be expected, such as \"monetary policy \"@en or \"fiscal balance \"."@en ;
-      ms:contactPerson test:person_Marc_Poch ;
+      bio:contact "iulatrl@upf.edu"^^xsd:string ;
+      bio:demoInvocation "http://contawords.iula.upf.edu/"^^xsd:string ;
+      bio:input "http://contawords.iula.upf.edu/docs/ca/doc1.txt"^^xsd:string , "http://contawords.iula.upf.edu/docs/es/doc2.txt"^^xsd:string , "http://contawords.iula.upf.edu/docs/en/doc2.txt"^^xsd:string , "http://contawords.iula.upf.edu/docs/ca/doc2.txt"^^xsd:string , "http://contawords.iula.upf.edu/docs/es/doc1.txt"^^xsd:string , "http://contawords.iula.upf.edu/docs/en/doc1.txt"^^xsd:string ;
+      bio:output "http://contawords.iula.upf.edu/docs/en/en_doc1_output.xls"^^xsd:string , "http://contawords.iula.upf.edu/docs/ca/ca_doc1_output.xls"^^xsd:string , "http://contawords.iula.upf.edu/docs/es/es_doc1_output.xls"^^xsd:string , "http://contawords.iula.upf.edu/docs/es/es_doc2_output.xls"^^xsd:string , "http://contawords.iula.upf.edu/docs/ca/ca_doc2_output.xls"^^xsd:string , "http://contawords.iula.upf.edu/docs/en/en_doc2_output.xls"^^xsd:string ;
+      bio:serviceProvider test:organization_UPF-IULA ;
+      bio:serviceTechnology
+              bio:WebApplication ;
+      bio:task bio:StatisticsAnalysis , bio:NamedEntityRecognition ;
+      ms:documentation test:doc_53 ;
       ms:fundingProject test:project_CLARIN_FEDER ;
-      ms:identifier "http://contawords.iula.upf.edu/"^^xsd:string ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#cat> ;
+      ms:languageName "Portuguese"^^xsd:string , "Italian"^^xsd:string , "Spanish, Castilian"^^xsd:string , "Catalan, Valencian"^^xsd:string , "English"^^xsd:string ;
+      ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#236> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#237> , <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#108> ;
       ms:resourceCreator test:organization_UPF-IULA ;
       ms:resourceName "ContaWords"^^xsd:string ;
-      ms:resourceShortName
-              "CW"^^xsd:string ;
       ms:url  "http://contawords.iula.upf.edu/"^^xsd:string .
 
 test:metadata_CorpusCLUVIv2
@@ -5899,20 +5894,6 @@ test:metadata_CorpusCLUVIv2
               ms:phrase ;
       ms:sizeInfo test:size_N15FE6 ;
       ms:url  "http://hdl.handle.net/10230/20051" .
-
-test:metadata_Freeling2LMF
-      rdf:type owl:NamedIndividual , ms:ToolService ;
-      rdfs:label "FreeLing to LMF converter"@en ;
-      dc:description "This tool generates a LMF version of FreeLing lexicons. FreeLing lexicons are tabular files which list word forms together with part of speech information. The tool is a perl script that takes as input a FreeLing lexicon and generates the corresponding LMF version lexicon. The output validates against the LMF DTD v16. Run perl freelingLMF.pl --help to get usage information."@en ;
-      ms:contactPerson test:person_Jorge_Vivaldi ;
-      ms:fundingProject test:project_METANET4U ;
-      ms:identifier "http://hdl.handle.net/10230/17117" ;
-      ms:metaShareId "NOT_DEFINED_FOR_V2" ;
-      ms:resourceCreator test:organization_UPF-IULA ;
-      ms:resourceName "FreeLing to LMF converter" ;
-      ms:resourceShortName
-              "FreeLing2LMF converter" ;
-      ms:url  "http://www.iula.upf.edu" .
 
 test:metadata_IULA-CTparallelCorpus
       rdf:type ms:CorpusText , owl:NamedIndividual ;
@@ -6311,18 +6292,22 @@ test:metadata_TRL_Tibidabo_LSP_treebank_ES
       ms:url  "http://www.iula.upf.edu" .
 
 test:metadata_TRL_maltparser_module_ES
-      rdf:type owl:NamedIndividual , ms:ToolService ;
+      rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "TRL Malt Parser module for Spanish"@en ;
       dc:description "The file espmalt-1.0.mco contains a single malt configuration for parsing Spanish text with MaltParser. The parser presupposes that the input is in CoNLL-X format and tagged with the part-of-speech tags of FreeLing tagger."@en ;
-      ms:contactPerson test:person_Núria_Bel ;
-      ms:documentation test:doc_51 ;
+      bio:contact "iulatrl@upf.edu"^^xsd:string ;
+      bio:identifier "http://hdl.handle.net/10230/20407"^^xsd:string ;
+      bio:serviceProvider test:organization_UPF-IULA ;
+      bio:serviceTechnology
+              bio:Script ;
+      bio:task bio:SyntacticTagging ;
+      ms:documentation test:doc_51 , test:doc_53 ;
       ms:fundingProject test:project_PANACEA ;
-      ms:identifier "http://hdl.handle.net/10230/20407" ;
-      ms:metaShareId "NOT_DEFINED_FOR_V2" ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
+      ms:languageName "Spanish, Castilian"^^xsd:string ;
+      ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#249> ;
       ms:resourceCreator test:organization_UPF-IULA ;
       ms:resourceName "TRL Malt Parser module for Spanish" ;
-      ms:resourceShortName
-              "TRL Malt Parser module ES" ;
       ms:url  "http://www.iula.upf.edu/recurs01_mpars_uk.htm" .
 
 test:metadata_en_glCLUVIdictionaryLMF_v2
@@ -6582,9 +6567,8 @@ test:person_Amparo_Moreno
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Amparo Moreno"^^xsd:string ;
       ms:affiliation test:organization_Feminario ;
-      ms:orcID <http://orcid.org/0000-0001-7297-7900> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAmparo_Moreno%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D%0D%0A"^^xsd:string ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
+      owl:sameAs <http://orcid.org/0000-0001-7297-7900> , <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
       foaf:familyName "Moreno"^^xsd:string ;
       foaf:givenName "Amparo"^^xsd:string ;
       foaf:workplaceHomepage
@@ -6594,9 +6578,8 @@ test:person_Anna_Fernández_Montraveta
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Anna Fernández Montraveta" ;
       ms:affiliation test:organization_GRIAL ;
-      ms:orcID <http://orcid.org/0000-0003-4657-1805> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAna_Fern%25C3%25A1ndez_Montraveta%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Ana_Fern%C3%A1ndez_Montraveta> ;
+      owl:sameAs <http://orcid.org/0000-0003-4657-1805> , <http://dblp.l3s.de/d2r/resource/authors/Ana_Fern%C3%A1ndez_Montraveta> ;
       foaf:familyName "Fernández Montraveta" ;
       foaf:givenName "Anna" ;
       foaf:mbox "Ana.Fernández@uab.es" ;
@@ -6621,9 +6604,8 @@ test:person_Antonio_Toral
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Antonio Toral" ;
       ms:affiliation test:organization_DCU_School_of_Computing ;
-      ms:orcID <http://orcid.org/0000-0003-2357-2960> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAntonio_Toral%3E%0D%0A+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Antonio_Toral> ;
+      owl:sameAs <http://orcid.org/0000-0003-2357-2960> , <http://dblp.l3s.de/d2r/resource/authors/Antonio_Toral> ;
       foaf:familyName "Toral" ;
       foaf:givenName "Antonio" ;
       foaf:mbox "atoral@computing.dcu.ie" ;
@@ -6668,9 +6650,8 @@ test:person_Gemma_Boleda
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Gemma Boleda" ;
       ms:affiliation test:organization_UPC-TALP ;
-      ms:orcID <http://orcid.org/0000-0001-6140-7080> ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGemma_Boleda%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Gemma_Boleda> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Gemma_Boleda> , <http://orcid.org/0000-0001-6140-7080> ;
       foaf:familyName "Boleda" ;
       foaf:givenName "Gemma" ;
       foaf:mbox "gboleda@lsi.upc.edu" ;
@@ -6695,7 +6676,7 @@ test:person_Glòria_Vázquez
       rdf:type foaf:Person , owl:NamedIndividual ;
       rdfs:label "Glòria Vázquez" ;
       ms:affiliation test:organization_GRIAL ;
-      ms:orcID "http://orcid.org/0000-0002-7673-7610"^^xsd:string ;
+      owl:sameAs <http://orcid.org/0000-0002-7673-7610> ;
       foaf:familyName "Vázquez" ;
       foaf:givenName "Glòria" ;
       foaf:mbox "gvazquez@dal.udl.cat" ;
@@ -6720,6 +6701,7 @@ test:person_Irene_Castellón
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Irene Castellón" ;
       ms:affiliation test:organization_GRIAL ;
+      owl:sameAs <http://orcid.org/0000-0003-4184-9652> ;
       foaf:familyName "Castellón" ;
       foaf:givenName "Irene" ;
       foaf:mbox "icastellon@ub.edu" ;
@@ -6741,6 +6723,7 @@ test:person_Izaskun_Aldezabal
 test:person_Jimmy_ORegan
       rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Jimmy O'Regan"^^xsd:string ;
+      owl:sameAs <http://orcid.org/0000-0003-2598-6868> ;
       foaf:familyName "O'Regan"^^xsd:string ;
       foaf:givenName "Jimmy"^^xsd:string ;
       foaf:mbox "joregan@gmail.com" ;
@@ -6821,7 +6804,7 @@ test:person_Lluís_Padró
       rdfs:label "Lluís Padró" ;
       ms:affiliation test:organization_UPC-TALP ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FLlu%25C3%25ADs_Padr%25C3%25B3%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Llu%C3%ADs_Padr%C3%B3> ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Llu%C3%ADs_Padr%C3%B3> , <http://orcid.org/0000-0003-4738-5019> ;
       foaf:familyName "Padró" ;
       foaf:givenName "Lluís" ;
       foaf:mbox "padro@lsi.upc.edu" ;
@@ -6834,7 +6817,7 @@ test:person_M_Antònia_Martí_Antonín
       rdfs:label "M Antònia Martí Antonín" ;
       ms:affiliation test:organization_UB-CLiC ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMaria_Ant%25C3%25B2nia_Mart%25C3%25AD%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Maria_Ant%C3%B2nia_Mart%C3%AD> ;
+      owl:sameAs <http://orcid.org/0000-0002-8849-6826> , <http://dblp.l3s.de/d2r/resource/authors/Maria_Ant%C3%B2nia_Mart%C3%AD> ;
       foaf:familyName "Martí Antonín" ;
       foaf:givenName "M. Antònia" ;
       foaf:mbox "amarti@ub.edu" ;
@@ -6867,9 +6850,10 @@ test:person_Marc_Poch
               "http://www.iula.upf.edu/" .
 
 test:person_Mariona_Taulé
-      rdf:type foaf:Person , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , foaf:Person ;
       rdfs:label "Mariona Taulé" ;
       ms:affiliation test:organization_UB-CLiC ;
+      owl:sameAs <http://orcid.org/0000-0003-0089-940X> ;
       foaf:familyName "Taulé" ;
       foaf:givenName "Mariona" ;
       foaf:mbox "mtaule@ub.edu" ;
@@ -6908,7 +6892,7 @@ test:person_Mikel_Forcada
       rdfs:label "Mikel Forcada" ;
       ms:affiliation test:organization_UA-Grup_Transducens ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMikel_L._Forcada%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
-      owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Mikel_L._Forcada> ;
+      owl:sameAs <http://orcid.org/0000-0002-9411-6973> , <http://dblp.l3s.de/d2r/resource/authors/Mikel_L._Forcada> ;
       foaf:familyName "Forcada" ;
       foaf:givenName "Mikel" ;
       foaf:mbox "mlf@dlsi.ua.es" ;

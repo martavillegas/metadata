@@ -159,7 +159,7 @@ bio:StatisticsAnalysis
 
 bio:Stemming-Lemmatization
       rdf:type ms:UseNLPSpecific ;
-      rdfs:seeAlso ms:lemma-CliticForms , ms:lemma , ms:lemma-MultiWordUnits , ms:lemma-Compounds , ms:lemma-Variants , ms:lemma-Abbreviations ;
+      rdfs:seeAlso ms:lemma-Abbreviations , ms:lemma-Variants , ms:lemma-Compounds , ms:lemma-MultiWordUnits , ms:lemma , ms:lemma-CliticForms ;
       owl:sameAs ms:lemmatization .
 
 bio:SyntacticTagging
@@ -179,7 +179,7 @@ bio:Tokenization
       owl:imports <http://purl.org/ms-lod/BioServices.ttl> .
 
 ms:AGPL
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "AGPL"@en ;
       dc:description "AGPL is a kind of license meant to govern the use or redistribution of a resource"@en ;
       owl:sameAs <http://dbpedia.org/resource/Agpl> .
@@ -192,7 +192,7 @@ ms:Agent
       rdf:type owl:Class ;
       rdfs:label "Agent"@en ;
       rdfs:subClassOf owl:Thing ;
-      owl:equivalentClass swrc:Agent , foaf:Agent .
+      owl:equivalentClass foaf:Agent , swrc:Agent .
 
 ms:AnnotationMode
       rdf:type owl:Class ;
@@ -207,7 +207,7 @@ ms:AnnotationType
       ms:dcr  "http://www.isocat.org/datcat/DC-2462"@en .
 
 <http://purl.org/ms-lod/MetaShare.ttl#ApacheLicence_2.0>
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "ApacheLicence_2.0"@en ;
       rdfs:seeAlso <http://en.wikipedia.org/wiki/Apache_License> ;
       dc:description "ApacheLicence_2.0 is a kind of license meant to govern the use or redistribution of a resource"@en .
@@ -219,92 +219,92 @@ ms:Availability
       ms:dcr  "http://www.isocat.org/datcat/DC-2453"@en .
 
 ms:BLM
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "BLM"@en ;
       dc:description "BLM is a standard used in Natural Language Processing"@en .
 
 ms:BSD
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "BSD"@en ;
       dc:description "BSD is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:BSD-style
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "BSD-style"@en ;
       dc:description "BSD-style is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:Big5
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Big5"@en ;
       dc:description "Big5 is a character encoding"@en .
 
 ms:Big5-HKSCS
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Big5-HKSCS"@en ;
       dc:description "Big5-HKSCS is a character encoding"@en .
 
 ms:Big5_Solaris
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Big5_Solaris"@en ;
       dc:description "Big5_Solaris is a character encoding"@en .
 
 ms:CC-BY
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CC-BY"@en ;
       dc:description "CC-BY is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CC-BY-NC
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CC-BY-NC"@en ;
       dc:description "CC-BY-NC is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CC-BY-NC-ND
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CC-BY-NC-ND"@en ;
       dc:description "CC-BY-NC-ND is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CC-BY-NC-SA
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CC-BY-NC-SA"@en ;
       dc:description "CC-BY-NC-SA is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CC-BY-ND
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CC-BY-ND"@en ;
       dc:description "CC-BY-ND is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CC-BY-SA
-      rdf:type ms:License , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:License ;
       rdfs:label "CC-BY-SA"@en ;
       dc:description "CC-BY-SA is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CC-ZERO
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CC-ZERO"@en ;
       dc:description "CC-ZERO is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CES
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "CES"@en ;
       dc:description "CES (Corpus Encoding Standard) is a standard used in Natural Language Processing for corpus-based work"@en .
 
 ms:CLARIN_ACA
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CLARIN_ACA"@en ;
       dc:description "CLARIN_ACA is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CLARIN_ACA-NC
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CLARIN_ACA-NC"@en ;
       dc:description "CLARIN_ACA-NC is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CLARIN_PUB
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CLARIN_PUB"@en ;
       dc:description "CLARIN_PUB is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:CLARIN_RES
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "CLARIN_RES"@en ;
       dc:description "CLARIN_RES is a kind of license meant to govern the use or redistribution of a resource"@en .
 
@@ -373,382 +373,382 @@ ms:CorpusVideo
       dc:description "A video corpus includes a collection of audiovisual files and their text transcription"@en .
 
 ms:Cp037
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp037"@en ;
       dc:description "Cp037 is a character encoding"@en .
 
 ms:Cp1006
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1006"@en ;
       dc:description "Cp1006 is a character encoding"@en .
 
 ms:Cp1025
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1025"@en ;
       dc:description "Cp1025 is a character encoding"@en .
 
 ms:Cp1026
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1026"@en ;
       dc:description "Cp1026 is a character encoding"@en .
 
 ms:Cp1046
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1046"@en ;
       dc:description "Cp1046 is a character encoding"@en .
 
 ms:Cp1047
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1047"@en ;
       dc:description "Cp1047 is a character encoding"@en .
 
 ms:Cp1097
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1097"@en ;
       dc:description "Cp1097 is a character encoding"@en .
 
 ms:Cp1098
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1098"@en ;
       dc:description "Cp1098 is a character encoding"@en .
 
 ms:Cp1112
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1112"@en ;
       dc:description "Cp1112 is a character encoding"@en .
 
 ms:Cp1122
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1122"@en ;
       dc:description "Cp1122 is a character encoding"@en .
 
 ms:Cp1123
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1123"@en ;
       dc:description "Cp1123 is a character encoding"@en .
 
 ms:Cp1124
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1124"@en ;
       dc:description "Cp1124 is a character encoding"@en .
 
 ms:Cp1140
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1140"@en ;
       dc:description "Cp1140 is a character encoding"@en .
 
 ms:Cp1141
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1141"@en ;
       dc:description "Cp1141 is a character encoding"@en .
 
 ms:Cp1142
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1142"@en ;
       dc:description "Cp1142 is a character encoding"@en .
 
 ms:Cp1143
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1143"@en ;
       dc:description "Cp1143 is a character encoding"@en .
 
 ms:Cp1144
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1144"@en ;
       dc:description "Cp1144 is a character encoding"@en .
 
 ms:Cp1145
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1145"@en ;
       dc:description "Cp1145 is a character encoding"@en .
 
 ms:Cp1146
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1146"@en ;
       dc:description "Cp1146 is a character encoding"@en .
 
 ms:Cp1147
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1147"@en ;
       dc:description "Cp1147 is a character encoding"@en .
 
 ms:Cp1148
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1148"@en ;
       dc:description "Cp1148 is a character encoding"@en .
 
 ms:Cp1149
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp1149"@en ;
       dc:description "Cp1149 is a character encoding"@en .
 
 ms:Cp1381
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1381"@en ;
       dc:description "Cp1381 is a character encoding"@en .
 
 ms:Cp1383
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp1383"@en ;
       dc:description "Cp1383 is a character encoding"@en .
 
 ms:Cp273
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp273"@en ;
       dc:description "Cp273 is a character encoding"@en .
 
 ms:Cp277
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp277"@en ;
       dc:description "Cp277 is a character encoding"@en .
 
 ms:Cp278
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp278"@en ;
       dc:description "Cp278 is a character encoding"@en .
 
 ms:Cp280
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp280"@en ;
       dc:description "Cp280 is a character encoding"@en .
 
 ms:Cp284
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp284"@en ;
       dc:description "Cp284 is a character encoding"@en .
 
 ms:Cp285
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp285"@en ;
       dc:description "Cp285 is a character encoding"@en .
 
 ms:Cp297
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp297"@en ;
       dc:description "Cp297 is a character encoding"@en .
 
 ms:Cp33722
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp33722"@en ;
       dc:description "Cp33722 is a character encoding"@en .
 
 ms:Cp420
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp420"@en ;
       dc:description "Cp420 is a character encoding"@en .
 
 ms:Cp424
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp424"@en ;
       dc:description "Cp424 is a character encoding"@en .
 
 ms:Cp437
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp437"@en ;
       dc:description "Cp437 is a character encoding"@en .
 
 ms:Cp500
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp500"@en ;
       dc:description "Cp500 is a character encoding"@en .
 
 ms:Cp737
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp737"@en ;
       dc:description "Cp737 is a character encoding"@en .
 
 ms:Cp775
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp775"@en ;
       dc:description "Cp775 is a character encoding"@en .
 
 ms:Cp838
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp838"@en ;
       dc:description "Cp838 is a character encoding"@en .
 
 ms:Cp850
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp850"@en ;
       dc:description "Cp850 is a character encoding"@en .
 
 ms:Cp852
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp852"@en ;
       dc:description "Cp852 is a character encoding"@en .
 
 ms:Cp855
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp855"@en ;
       dc:description "Cp855 is a character encoding"@en .
 
 ms:Cp856
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp856"@en ;
       dc:description "Cp856 is a character encoding"@en .
 
 ms:Cp857
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp857"@en ;
       dc:description "Cp857 is a character encoding"@en .
 
 ms:Cp858
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp858"@en ;
       dc:description "Cp858 is a character encoding"@en .
 
 ms:Cp860
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp860"@en ;
       dc:description "Cp860 is a character encoding"@en .
 
 ms:Cp861
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp861"@en ;
       dc:description "Cp861 is a character encoding"@en .
 
 ms:Cp862
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp862"@en ;
       dc:description "Cp862 is a character encoding"@en .
 
 ms:Cp863
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp863"@en ;
       dc:description "Cp863 is a character encoding"@en .
 
 ms:Cp864
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp864"@en ;
       dc:description "Cp864 is a character encoding"@en .
 
 ms:Cp865
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp865"@en ;
       dc:description "Cp865 is a character encoding"@en .
 
 ms:Cp866
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp866"@en ;
       dc:description "Cp866 is a character encoding"@en .
 
 ms:Cp868
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp868"@en ;
       dc:description "Cp868 is a character encoding"@en .
 
 ms:Cp869
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp869"@en ;
       dc:description "Cp869 is a character encoding"@en .
 
 ms:Cp870
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp870"@en ;
       dc:description "Cp870 is a character encoding"@en .
 
 ms:Cp871
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp871"@en ;
       dc:description "Cp871 is a character encoding"@en .
 
 ms:Cp874
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp874"@en ;
       dc:description "Cp874 is a character encoding"@en .
 
 ms:Cp875
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp875"@en ;
       dc:description "Cp875 is a character encoding"@en .
 
 ms:Cp918
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp918"@en ;
       dc:description "Cp918 is a character encoding"@en .
 
 ms:Cp921
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp921"@en ;
       dc:description "Cp921 is a character encoding"@en .
 
 ms:Cp922
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp922"@en ;
       dc:description "Cp922 is a character encoding"@en .
 
 ms:Cp930
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp930"@en ;
       dc:description "Cp930 is a character encoding"@en .
 
 ms:Cp933
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp933"@en ;
       dc:description "Cp933 is a character encoding"@en .
 
 ms:Cp935
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp935"@en ;
       dc:description "Cp935 is a character encoding"@en .
 
 ms:Cp937
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp937"@en ;
       dc:description "Cp937 is a character encoding"@en .
 
 ms:Cp939
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp939"@en ;
       dc:description "Cp939 is a character encoding"@en .
 
 ms:Cp942
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp942"@en ;
       dc:description "Cp942 is a character encoding"@en .
 
 ms:Cp942C
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp942C"@en ;
       dc:description "Cp942C is a character encoding"@en .
 
 ms:Cp943
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp943"@en ;
       dc:description "Cp943 is a character encoding"@en .
 
 ms:Cp943C
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "Cp943C"@en ;
       dc:description "Cp943C is a character encoding"@en .
 
 ms:Cp948
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp948"@en ;
       dc:description "Cp948 is a character encoding"@en .
 
 ms:Cp949
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp949"@en ;
       dc:description "Cp949 is a character encoding"@en .
 
 ms:Cp949C
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp949C"@en ;
       dc:description "Cp949C is a character encoding"@en .
 
 ms:Cp950
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp950"@en ;
       dc:description "Cp950 is a character encoding"@en .
 
 ms:Cp964
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp964"@en ;
       dc:description "Cp964 is a character encoding"@en .
 
 ms:Cp970
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Cp970"@en ;
       dc:description "Cp970 is a character encoding"@en .
 
@@ -767,7 +767,7 @@ ms:Document
       rdf:type owl:Class ;
       rdfs:label "Documentation"@en ;
       rdfs:subClassOf owl:Thing ;
-      owl:equivalentClass foaf:Document , bibo:Document , swrc:Document .
+      owl:equivalentClass swrc:Document , bibo:Document , foaf:Document .
 
 ms:DomainInfo
       rdf:type owl:Class ;
@@ -776,44 +776,44 @@ ms:DomainInfo
       ms:dcr  "http://www.isocat.org/datcat/DC-2467"@en .
 
 ms:EAGLES
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "EAGLES"@en ;
       dc:description "EAGLES (Expert Advisory Group on Language Engineering Standards). The Eagles Guidelines provide guidance for markup to be used with text corpora."@en ;
       owl:sameAs <http://dbpedia.org/resource/Eagles_Guidelines> .
 
 ms:ELRA_END_USER
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "ELRA_END_USER"@en ;
       dc:description "ELRA_END_USER is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:ELRA_EVALUATION
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "ELRA_EVALUATION"@en ;
       dc:description "ELRA_EVALUATION is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:ELRA_VAR
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "ELRA_VAR"@en ;
       dc:description "ELRA_VAR is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:EML
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "EML"@en ;
       dc:description "EML (Election Markup Language)"@en ;
       owl:sameAs <http://dbpedia.org/resource/EML> .
 
 ms:EMMA
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "EMMA"@en ;
       dc:description "EMMA (Extensible MultiModal Annotation) is an XML language for describing the interpretation of user input and supporting Multimodal interaction scenarios on the Web."@en .
 
 ms:EUC-JP
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "EUC-JP"@en ;
       dc:description "EUC-JP is a character encoding"@en .
 
 ms:EUC-KR
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "EUC-KR"@en ;
       dc:description "EUC-KR is a character encoding"@en .
 
@@ -831,183 +831,183 @@ ms:Framenet
       owl:sameAs <http://dbpedia.org/resource/FrameNet> .
 
 ms:GB18030
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "GB18030"@en ;
       dc:description "GB18030 is a character encoding"@en .
 
 ms:GBK
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "GBK"@en ;
       dc:description "GBK is a character encoding"@en .
 
 ms:GFDL
-      rdf:type ms:License , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:License ;
       rdfs:label "GFDL"@en ;
       dc:description "GFDL is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:GMX
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "GMX"@en ;
       dc:description "GMX (Global information management Metrics eXchange) is a collection of standards for the translation industry."@en ;
       owl:sameAs <http://dbpedia.org/resource/Global_information_management_Metrics_eXchange> .
 
 ms:GPL
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "GPL"@en ;
       dc:description "GPL is a kind of license meant to govern the use or redistribution of a resource"@en ;
       owl:sameAs <http://dbpedia.org/resource/GNU_General_Public_License> .
 
 ms:GrAF
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "GrAF"@en ;
       dc:description "GrAF (Graph Annotation Framework) is a data model based on graph theory that can be used to represent linguistic annotations."@en .
 
 ms:HamNoSys
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "HamNoSys"@en ;
       dc:description "HamNoSys ( Hamburg Sign Language Notation System) is a phonetic transcription system for sign languages"@en ;
       owl:sameAs <http://dbpedia.org/resource/Hamburg_Notation_System> .
 
 ms:ISCII91
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISCII91"@en ;
       dc:description "ISCII91 is a character encoding"@en .
 
 ms:ISO-2022-JP
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "ISO-2022-JP"@en ;
       dc:description "ISO-2022-JP is a character encoding"@en .
 
 ms:ISO-2022-KR
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-2022-KR"@en ;
       dc:description "ISO-2022-KR is a character encoding"@en .
 
 ms:ISO-8859-1
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-8859-1"@en ;
       dc:description "ISO-8859-1 is a character encoding"@en ;
       owl:sameAs <http://dbpedia.org/resource/ISO%2FIEC_8859-1> .
 
 ms:ISO-8859-13
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-8859-13"@en ;
       dc:description "ISO-8859-13 is a character encoding"@en .
 
 ms:ISO-8859-15
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-8859-15"@en ;
       dc:description "ISO-8859-15 is a character encoding"@en .
 
 ms:ISO-8859-2
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-8859-2"@en ;
       dc:description "ISO-8859-2 is a character encoding"@en .
 
 ms:ISO-8859-3
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "ISO-8859-3"@en ;
       dc:description "ISO-8859-3 is a character encoding"@en .
 
 ms:ISO-8859-4
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "ISO-8859-4"@en ;
       dc:description "ISO-8859-4 is a character encoding"@en .
 
 ms:ISO-8859-5
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-8859-5"@en ;
       dc:description "ISO-8859-5 is a character encoding"@en .
 
 ms:ISO-8859-6
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "ISO-8859-6"@en ;
       dc:description "ISO-8859-6 is a character encoding"@en .
 
 ms:ISO-8859-7
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-8859-7"@en ;
       dc:description "ISO-8859-7 is a character encoding"@en .
 
 ms:ISO-8859-8
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO-8859-8"@en ;
       dc:description "ISO-8859-8 is a character encoding"@en .
 
 ms:ISO-8859-9
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "ISO-8859-9"@en ;
       dc:description "ISO-8859-9 is a character encoding"@en .
 
 ms:ISO12620
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "ISO12620"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/ISO/TC_37> ;
       dc:description "ISO12620 (Data Categories) is a standard used in Natural Language Processing from ISO/TC 37 which defines a Data Category Registry of linguistic terms"@en ;
       owl:sameAs <http://dbpedia.org/resource/ISO_12620> .
 
 ms:ISO16642
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "ISO16642"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/ISO/TC_37> ;
       dc:description "ISO16642 is a standard used in terminology. Terminological markup framework."@en .
 
 ms:ISO1987
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "ISO1987"@en ;
       dc:description "ISO1987 is a standard"@en .
 
 ms:ISO2022_CN_CNS
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "ISO2022_CN_CNS"@en ;
       dc:description "ISO2022_CN_CNS is a character encoding"@en .
 
 ms:ISO2022_CN_GB
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "ISO2022_CN_GB"@en ;
       dc:description "ISO2022_CN_GB is a character encoding"@en .
 
 ms:ISO26162
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "ISO26162"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/ISO/TC_37> ;
       dc:description "ISO26162 is a standard used in terminology management systems"@en .
 
 ms:ISO30042
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "ISO30042"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/ISO/TC_37> ;
       dc:description "ISO30042 is a standard used in terminology"@en .
 
 ms:ISO704
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "ISO704"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/ISO/TC_37> ;
       dc:description "ISO704 is a standard used in terminology"@en .
 
 ms:InkML
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "InkML"@en ;
       dc:description "InkML (ink Markup Language)"@en ;
       owl:sameAs <http://dbpedia.org/resource/InkML> .
 
 ms:JISAutoDetect
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "JISAutoDetect"@en ;
       dc:description "JISAutoDetect is a character encoding"@en .
 
 ms:KOI8-R
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "KOI8-R"@en ;
       dc:description "KOI8-R is a character encoding"@en .
 
 ms:LGPL
-      rdf:type ms:License , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:License ;
       rdfs:label "LGPL"@en ;
       dc:description "LGPL is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:LMF
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "LMF"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/ISO/TC_37> ;
       dc:description "LMF (Lexical Markup Framework) is a standard used in lexicography aiming to provide a common model for the creation and use of lexical resources."@en ;
@@ -1051,167 +1051,167 @@ ms:LinguisticInformation
       dc:description "A more detailed account of the linguistic information contained in the Lexical Conceptual Resource."@en .
 
 ms:MAF
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "MAF"@en ;
       dc:description "MAF (Morpho-syntactic Annotation Framework) is a standard used in Natural Language Processing used in syntactic annotation."@en .
 
 ms:MLIF
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "MLIF"@en ;
       dc:description "MLIF (Multilingual Information Framework) is a model used in Natural Language Processing  to describe multilingual data."@en .
 
 ms:MS-C-NoReD
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-C-NoReD"@en ;
       dc:description "MS-C-NoReD is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS-C-NoReD-FF
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-C-NoReD-FF"@en ;
       dc:description "MS-C-NoReD-FF is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS-C-NoReD-ND
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-C-NoReD-ND"@en ;
       dc:description "MS-C-NoReD-ND is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS-C-NoReD-ND-FF
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-C-NoReD-ND-FF"@en ;
       dc:description "MS-C-NoReD-ND-FF is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS-NC-NoReD
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-NC-NoReD"@en ;
       dc:description "MS-NC-NoReD is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS-NC-NoReD-FF
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-NC-NoReD-FF"@en ;
       dc:description "MS-NC-NoReD-FF is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS-NC-NoReD-ND
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-NC-NoReD-ND"@en ;
       dc:description "MS-NC-NoReD-ND is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS-NC-NoReD-ND-FF
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MS-NC-NoReD-ND-FF"@en ;
       dc:description "MS-NC-NoReD-ND-FF is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MS874
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "MS874"@en ;
       dc:description "MS874 is a character encoding"@en .
 
 ms:MSCommons-BY
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MSCommons-BY"@en ;
       dc:description "MSCommons-BY is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MSCommons-BY-NC
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MSCommons-BY-NC"@en ;
       dc:description "MSCommons-BY-NC is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MSCommons-BY-NC-ND
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MSCommons-BY-NC-ND"@en ;
       dc:description "MSCommons-BY-NC-ND is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MSCommons-BY-NC-SA
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MSCommons-BY-NC-SA"@en ;
       dc:description "MSCommons-BY-NC-SA is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MSCommons-BY-ND
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MSCommons-BY-ND"@en ;
       dc:description "MSCommons-BY-ND is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MSCommons-BY-SA
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "MSCommons-BY-SA"@en ;
       dc:description "MSCommons-BY-SA is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:MULTEXT
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "MULTEXT"@en ;
       dc:description "MULTEXT ( Multilingual Text Tools and Corpora). Multext included a series of projects whose goals were to develop standards and specifications for the encoding and processing of linguistic corpora."@en .
 
 ms:MUMIN
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "MUMIN"@en ;
       dc:description "MUMIN is a standard used in Natural Language Processing"@en .
 
 ms:MacArabic
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "MacArabic"@en ;
       dc:description "MacArabic is a character encoding"@en .
 
 ms:MacCentralEurope
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacCentralEurope"@en ;
       dc:description "MacCentralEurope is a character encoding"@en .
 
 ms:MacCroatian
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "MacCroatian"@en ;
       dc:description "MacCroatian is a character encoding"@en .
 
 ms:MacCyrillic
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "MacCyrillic"@en ;
       dc:description "MacCyrillic is a character encoding"@en .
 
 ms:MacDingbat
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "MacDingbat"@en ;
       dc:description "MacDingbat is a character encoding"@en .
 
 ms:MacGreek
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacGreek"@en ;
       dc:description "MacGreek is a character encoding"@en .
 
 ms:MacHebrew
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacHebrew"@en ;
       dc:description "MacHebrew is a character encoding"@en .
 
 ms:MacIceland
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "MacIceland"@en ;
       dc:description "MacIceland is a character encoding"@en .
 
 ms:MacRoman
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacRoman"@en ;
       dc:description "MacRoman is a character encoding"@en .
 
 ms:MacRomania
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacRomania"@en ;
       dc:description "MacRomania is a character encoding"@en .
 
 ms:MacSymbol
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacSymbol"@en ;
       dc:description "MacSymbol is a character encoding"@en .
 
 ms:MacThai
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacThai"@en ;
       dc:description "MacThai is a character encoding"@en .
 
 ms:MacTurkish
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacTurkish"@en ;
       dc:description "MacTurkish is a character encoding"@en .
 
 ms:MacUkraine
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "MacUkraine"@en ;
       dc:description "MacUkraine is a character encoding"@en .
 
@@ -1246,13 +1246,13 @@ ms:MultlingualityType
       dc:description "Indicates whether the corpus is parallel, comparable or mixed."@en .
 
 ms:OAXAL
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "OAXAL"@en ;
       dc:description "OAXAL (Open Architecture for XML Authoring and Localization) is a  (OASIS) standards-based initiative to encourage the development of an open Standards approach to XML Authoring and Localization."@en ;
       owl:sameAs <http://dbpedia.org/resource/OAXAL> .
 
 ms:OWL
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "OWL"@en ;
       dc:description "OWL (Web Ontology Language) is a standard for encoding and exchanging ontologies designed to support the Semantic. Web"@en ;
       owl:sameAs <http://dbpedia.org/resource/Web_Ontology_Language> .
@@ -1270,16 +1270,16 @@ ms:Organization
       rdf:type owl:Class ;
       rdfs:label "Organization"@en ;
       rdfs:subClassOf ms:Agent ;
-      owl:equivalentClass foaf:Organization , swrc:Organization .
+      owl:equivalentClass swrc:Organization , foaf:Organization .
 
 ms:Person
       rdf:type owl:Class ;
       rdfs:label "Person"@en ;
       rdfs:subClassOf ms:Agent ;
-      owl:equivalentClass foaf:Person , swrc:Person .
+      owl:equivalentClass swrc:Person , foaf:Person .
 
 ms:Princeton_Wordnet
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "Princeton_Wordnet"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/WordNet> ;
       dc:description "Princeton_Wordnet is a kind of license meant to govern the use or redistribution of a resource"@en .
@@ -1288,10 +1288,10 @@ ms:Project
       rdf:type owl:Class ;
       rdfs:label "Project"@en ;
       rdfs:subClassOf owl:Thing ;
-      owl:equivalentClass swrc:ResearchProject , foaf:Project .
+      owl:equivalentClass foaf:Project , swrc:ResearchProject .
 
 ms:RDF
-      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
+      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
       rdfs:label "RDF"@en ;
       dc:description "RDF (Resource Description Framework) is a standard model for data interchange on the Web."@en ;
       owl:sameAs <http://dbpedia.org/resource/Resource_Description_Framework> .
@@ -1307,13 +1307,13 @@ ms:RestrictionsOfUse
       ms:dcr  "http://www.isocat.org/datcat/DC-2453"@en .
 
 ms:SKOS
-      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
+      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
       rdfs:label "SKOS"@en ;
       dc:description "SKOS (Simple Knowledge Organization System)  is a W3C recommendation designed for representation structured controlled vocabularies such as thesauri, classification schemes, taxonomies, subject-heading systems ..."@en ;
       owl:sameAs <http://dbpedia.org/resource/Simple_Knowledge_Organization_System> .
 
 ms:SRX
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SRX"@en ;
       dc:description "SRX (Segmentation Rules eXchange) provides a common way to describe how to segment text for translation and other language-related processes"@en ;
       owl:sameAs <http://dbpedia.org/resource/Segmentation_Rules_eXchange> .
@@ -1324,27 +1324,27 @@ ms:SegmentationLevel
       dc:description "Specifies the segmentation unit in terms of which the resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
 
 ms:SemAF
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SemAF"@en ;
       dc:description "SemAF (semantic annotation framework) is a standard used in Natural Language Processing for representing the semantic annotation of linguistic data."@en .
 
 ms:SemAF_DA
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SemAF_DA"@en ;
       dc:description "SemAF_DA (semantic annotation framework - discourse analysis) is a standard used in Natural Language Processing"@en .
 
 ms:SemAF_DS
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SemAF_DS"@en ;
       dc:description "SemAF_DS (semantic annotation framework -  discourse structures)is a standard used in Natural Language Processing"@en .
 
 ms:SemAF_NE
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SemAF_NE"@en ;
       dc:description "SemAF_NE (semantic annotation framework - named entities) is a standard used in Natural Language Processing"@en .
 
 ms:SemAF_SRL
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SemAF_SRL"@en ;
       dc:description "SemAF_SRL (semantic annotation framework - semantic roles)is a standard used in Natural Language Processing"@en .
 
@@ -1355,7 +1355,7 @@ ms:SemanticAnnotation
       dc:description "Semantic Annotation is about assigning semantic information to the entities in the text."@en .
 
 ms:Shift_JIS
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "Shift_JIS"@en ;
       dc:description "Shift_JIS is a character encoding"@en .
 
@@ -1375,7 +1375,7 @@ ms:StandardsBestPractices
       dc:description "Specifies the standards or the best practices to which the tagset used for the annotation conforms"@en .
 
 ms:SynAF
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "SynAF"@en ;
       dc:description "SynAF (Syntactic Annotation Format) is a standard used in Natural Language Processing for representing the syntactic annotation of linguistic data."@en .
 
@@ -1387,42 +1387,42 @@ ms:SyntacticAnnotation
       ms:dcr  "http://www.isocat.org/datcat/DC-2319"@en .
 
 ms:TBX
-      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
+      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
       rdfs:label "TBX"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Translation_memory> ;
       dc:description "TBX (TermBase eXchange) is a standard used in terminology."@en .
 
 ms:TEI
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "TEI"@en ;
       dc:description "TEI (Text Encoding Initiative) is a standard used in Natural Language Processing"@en ;
       owl:sameAs <http://dbpedia.org/resource/TEI> .
 
 ms:TEI_P3
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "TEI_P3"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/TEI> ;
       dc:description "TEI_P3 (Text Encoding Initiative)is a standard used in Natural Language Processing"@en .
 
 ms:TEI_P4
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "TEI_P4"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/TEI> ;
       dc:description "TEI_P4 (Text Encoding Initiative)is a standard used in Natural Language Processing"@en .
 
 ms:TEI_P5
-      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
+      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
       rdfs:label "TEI_P5"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/TEI> ;
       dc:description "TEI_P5 (Text Encoding Initiative)is a standard used in Natural Language Processing"@en .
 
 ms:TIS-620
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "TIS-620"@en ;
       dc:description "TIS-620 is a character encoding"@en .
 
 ms:TMX
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "TMX"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Translation_memory> ;
       dc:description "TMX (Translation Memory eXchange) is an open XML standard for the exchange of translation memory data."@en ;
@@ -1442,7 +1442,7 @@ ms:Thesaurus
       dc:description "Thesaurus list words grouped together according to similarity of meaning (containing synonyms and sometimes antonyms), in contrast to a dictionary, which provides definitions for words (wikipedia)"@en .
 
 ms:TimeML
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "TimeML"@en ;
       dc:description "TimeML (Markup Language for Temporal and Event Expressions) is a standard markup language for temporal events in a document."@en ;
       owl:sameAs <http://dbpedia.org/resource/TimeML> .
@@ -1453,29 +1453,29 @@ ms:ToolService
       rdfs:subClassOf ms:Resource .
 
 ms:US-ASCII
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "US-ASCII"@en ;
       dc:description "US-ASCII is a character encoding"@en ;
       owl:sameAs <http://dbpedia.org/resource/ASCII> .
 
 ms:UTF-16
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "UTF-16"@en ;
       dc:description "UTF-16 is a character encoding"@en ;
       owl:sameAs <http://dbpedia.org/resource/UTF-16> .
 
 ms:UTF-16BE
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "UTF-16BE"@en ;
       dc:description "UTF-16BE is a character encoding"@en .
 
 ms:UTF-16LE
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "UTF-16LE"@en ;
       dc:description "UTF-16LE is a character encoding"@en .
 
 ms:UTF-8
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "UTF-8"@en ;
       dc:description "UTF-8 is a character encoding"@en ;
       owl:sameAs <http://dbpedia.org/resource/UTF-8> .
@@ -1504,7 +1504,7 @@ ms:WordList
       dc:description "It is a set of words (vocabulary) selected to represent the most frequent words of a language or a specific subject"@en .
 
 ms:WordNet
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "WordNet"@en ;
       dc:description "WordNet is a lexical database that groups words into sets of synonyms called synsets, provides short, general definitions, and records the various semantic relations between these synonym sets."@en ;
       owl:sameAs <http://dbpedia.org/resource/WordNet> .
@@ -1519,25 +1519,25 @@ ms:Wordnet
       owl:sameAs <http://dbpedia.org/resource/WordNet> .
 
 ms:XCES
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "XCES"@en ;
       rdfs:seeAlso ms:CES ;
       dc:description "XCES is an XML based standard used in Natural Language Processing  to codify text corpus. XCES is highly based on previous Corpus Encoding Standard (CES)."@en ;
       owl:sameAs <http://dbpedia.org/resource/XCES> .
 
 ms:XLIFF
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "XLIFF"@en ;
       dc:description "XLIFF (XML Localisation Interchange File Format) is a format used to exchange localisation data between participants in a translation project."@en ;
       owl:sameAs <http://dbpedia.org/resource/XLIFF> .
 
 ms:academic-nonCommercialUse
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Academic non-Commercial Use"@en ;
       dc:description "Academic non-Commercial Use refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence used to specify the restrictions imposed by the type of the licence."@en .
 
 ms:accentuation
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Accentuation"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Accent_(phonetics)> ;
       dc:description "Accentuation refers to a kind of 'LinguisticInformation' contained in the resource. Accentuation refers to the act of placing prominence on a spoken or sung syllable."@en .
@@ -1561,12 +1561,12 @@ ms:affiliation
       dc:description "Identifies the Affiliation of the person."@en .
 
 ms:alignment
-      rdf:type owl:NamedIndividual , ms:AnnotationType ;
+      rdf:type ms:AnnotationType , owl:NamedIndividual ;
       rdfs:label "Alignment"@en ;
       dc:description "Multilingual texts alignment identifies correspondences between different text units, e.g., words, sentences, paragraphs, etc. in parallel texts."@en .
 
 ms:annotation
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "annotation"@en ;
       dc:description "Annotation is the task of attaching metadata to texts"@en ;
       owl:sameAs <http://dbpedia.org/resource/Annotation> .
@@ -1610,7 +1610,7 @@ ms:area
       dc:description "used to indicate the area or subject field a resource is related to. Areas are taken from Dbpedia"@en .
 
 ms:attribution
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Attribution"@en ;
       dc:description "Attribution refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en .
 
@@ -1653,32 +1653,32 @@ ms:availabilityStartDate
       dc:description "Identifies the Availability Start Date of the resource."@en .
 
 ms:available-restrictedUse
-      rdf:type owl:NamedIndividual , ms:Availability ;
+      rdf:type ms:Availability , owl:NamedIndividual ;
       rdfs:label "Available: Restricted Use"@en ;
       dc:description "For resources available but with restrictions of uses imposed by the type of licence."@en .
 
 ms:available-unrestrictedUse
-      rdf:type owl:NamedIndividual , ms:Availability ;
+      rdf:type ms:Availability , owl:NamedIndividual ;
       rdfs:label "Available: UnrestrictedUse"@en ;
       dc:description "For resources available with no restrictions of use."@en .
 
 ms:avatarSynthesis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "avatarSynthesis"@en ;
       dc:description "Avatar synthesis is one of the possible usages in Natural Language Processing"@en .
 
 ms:bilingual
-      rdf:type owl:NamedIndividual , ms:Linguality ;
+      rdf:type ms:Linguality , owl:NamedIndividual ;
       rdfs:label "Bilingual"@en ;
       dc:description "Bilingual refers to a kind of 'Linguality' (when two languages are involved)."@en .
 
 ms:bilingualLexiconInduction
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "bilingualLexiconInduction"@en ;
       dc:description "Bilingual lexicon induction is the task of identifying translation pairs between source and target languages from monolingual corpora"@en .
 
 ms:bodyGesture
-      rdf:type owl:NamedIndividual , ms:ModalityType ;
+      rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "Body Gesture"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Body_language> ;
       dc:description "Body Gesture refers to a kind of 'ModalityType' (http://www.isocat.org/rest/dc/2490)"@en ;
@@ -1698,25 +1698,25 @@ ms:classificationScheme
       dc:description "Specifies the external Classification Schemes."@en .
 
 ms:clause
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Clause"@en ;
       dc:description "Clause is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2295"@en ;
       owl:sameAs <http://dbpedia.org/resource/Clause> .
 
 ms:combinationOfModalities
-      rdf:type owl:NamedIndividual , ms:ModalityType ;
+      rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "Combination of Modalities"@en ;
       dc:description "Combination of Modalities refers to a kind of 'ModalityType'."@en ;
       ms:dcr  "http://www.isocat.org/rest/dc/2490"^^xsd:string .
 
 ms:commercialUse
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Commercial Use"@en ;
       dc:description "Commercial Use refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en .
 
 ms:comparable
-      rdf:type owl:NamedIndividual , ms:MultlingualityType ;
+      rdf:type ms:MultlingualityType , owl:NamedIndividual ;
       rdfs:label "Comparable"@en ;
       dc:description "Comparable is a 'MultlingualityType' and refers to  corpus which selects similar texts in more than one language."@en .
 
@@ -1735,12 +1735,12 @@ ms:contactPerson
       dc:description "Identifies the Contact Person of the resource."@en .
 
 ms:contradictionDetection
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "contradictionDetection"@en ;
       dc:description "Contradiction Detection is a task of text understanding that detects when two sentences are extremely unlikely to be true simultaneously"@en .
 
 ms:coreferenceResolution
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "coreferenceResolution"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Coreference> ;
       dc:description "Coreference Resolution is the task of finding all expressions that refer to the same entity in a text"@en .
@@ -1774,14 +1774,14 @@ ms:dcr
       dc:description "Link to ISOcat Data Category Registry, a central registry for all concepts relevant in linguistics and the domain of language resources, including metadata categories etc."@en .
 
 ms:definition-gloss
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Definition Gloss"@en ;
       dc:description "Definition Gloss refers to a kind of 'LinguisticInformation' contained in the resource. It is the action or process of stating the meaning of a word or word group in a glossary."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1972"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Definition> .
 
 ms:derivationalMorphologicalAnalysis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "derivationalMorphologicalAnalysis"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Derivation_(linguistics)> ;
       dc:description "Derivational Morphological Analysis studies the formation new words on the basis of existing ones"@en .
@@ -1802,45 +1802,45 @@ ms:description
               dc:description .
 
 ms:diphone
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Diphone"@en ;
       dc:description "Diphone is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       owl:sameAs <http://dbpedia.org/resource/Diphone> .
 
 ms:discourseAnalysis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "discourseAnalysis"@en ;
       dc:description "Discourse Analysis is about studying and analysing the uses of language"@en ;
       owl:sameAs <http://dbpedia.org/resource/Discourse_analysis> .
 
 ms:discourseAnnotation
-      rdf:type owl:NamedIndividual , ms:DiscourseAnnotation ;
+      rdf:type ms:DiscourseAnnotation , owl:NamedIndividual ;
       rdfs:label "Discourse Annotation"@en ;
       rdfs:seeAlso ms:discourseAnalysis ;
       dc:description "Discourse Annotation refers to a kind of 'Annotation'."@en .
 
 ms:discourseAnnotation-audienceReactions
-      rdf:type owl:NamedIndividual , ms:DiscourseAnnotation ;
+      rdf:type ms:DiscourseAnnotation , owl:NamedIndividual ;
       rdfs:label "Discourse Annotation Audience Reactions"@en ;
       rdfs:seeAlso ms:discourseAnalysis ;
       dc:description "Discourse Annotation Audience Reactions refers to a kind of 'DiscourseAnnotation'"@en .
 
 ms:discourseAnnotation-coreference
-      rdf:type owl:NamedIndividual , ms:DiscourseAnnotation ;
+      rdf:type ms:DiscourseAnnotation , owl:NamedIndividual ;
       rdfs:label "Discourse Annotation Coreference"@en ;
-      rdfs:seeAlso ms:coreferenceResolution , ms:discourseAnalysis , <http://dbpedia.org/resource/Coreference> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Coreference> , ms:discourseAnalysis , ms:coreferenceResolution ;
       dc:description "Discourse Annotation Coreference refers to a kind of 'DiscourseAnnotation' and identifies expressions in a sentence or document refering to the same thing"@en .
 
 ms:discourseAnnotation-dialogueActs
-      rdf:type owl:NamedIndividual , ms:DiscourseAnnotation ;
+      rdf:type ms:DiscourseAnnotation , owl:NamedIndividual ;
       rdfs:label "Discourse Annotation Dialogue Acts"@en ;
-      rdfs:seeAlso ms:discourseAnalysis , <http://dbpedia.org/resource/Dialog_act> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Dialog_act> , ms:discourseAnalysis ;
       dc:description "Discourse Annotation Dialogue Acts refers to a kind of 'DiscourseAnnotation'"@en .
 
 ms:discourseAnnotation-discourseRelations
-      rdf:type ms:DiscourseAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:DiscourseAnnotation ;
       rdfs:label "Discourse Annotation Discourse Relations"@en ;
-      rdfs:seeAlso ms:discourseAnalysis , <http://dbpedia.org/resource/Discourse_relation> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Discourse_relation> , ms:discourseAnalysis ;
       dc:description "Discourse Annotation Discourse Relations refers to a kind of 'DiscourseAnnotation' and describes how two segments of discourse are logically connected to one another."@en .
 
 ms:distributionRightsHolder
@@ -1851,7 +1851,7 @@ ms:distributionRightsHolder
       dc:description "Identifies the Distribution Rights Holder of the resource."@en .
 
 ms:documentClassification
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "documentClassification"@en ;
       dc:description "Document Classification is the task of assigning a document to one or more classes or categories"@en ;
       owl:sameAs <http://dbpedia.org/resource/Document_classification> .
@@ -1882,12 +1882,12 @@ ms:downloadLocation
       dc:description "Identifies the Download Location of the resource."@en .
 
 ms:emotionGeneration
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "emotionGeneration"@en ;
       dc:description "Emotion Generation is one of the possible usages in Natural Language Processing"@en .
 
 ms:emotionRecognition
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "emotionRecognition"@en ;
       dc:description "Emotion Recognition is the task of distinguishing subjective from objective language in human interactions"@en .
 
@@ -1899,17 +1899,17 @@ ms:encodingLevel
       dc:description "Information on the contents of the Lexical Conceptual Resource as regards the linguistic level of analysis"@en .
 
 ms:entityMentionRecognition
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "entityMentionRecognition"@en ;
       dc:description "Entity Mention Recognition is the task of identifying regions of text corresponding to entities in natural language sentences"@en .
 
 ms:evaluationUse
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Evaluation Use"@en ;
       dc:description "Evaluation Use refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en .
 
 ms:eventExtraction
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "eventExtraction"@en ;
       dc:description "Event Extraction is the task of automatically identifying events in free text and to deriving detailed information about them"@en .
 
@@ -1921,22 +1921,22 @@ ms:executionLocation
       ms:dcr  "http://www.isocat.org/datcat/DC-2569" .
 
 ms:expressionRecognition
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "expressionRecognition"@en ;
       dc:description "Expression Recognition is the task of interpreting non-verbal facial gestures in human interactions"@en .
 
 ms:faceRecognition
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "faceRecognition"@en ;
       dc:description "Face Recognition is the task of automatically identifying a person face in a digital image by analyzing and comparing patterns"@en .
 
 ms:faceVerification
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "faceVerification"@en ;
       dc:description "Face verification or authentication is concerned with validating a claimed identity based on the image of a face"@en .
 
 ms:facialExpression
-      rdf:type ms:ModalityType , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityType ;
       rdfs:label "Facial Expression"@en ;
       dc:description "Facial Expression is a 'ModalityType' and refers to nonverbal communication with the face."@en ;
       owl:sameAs <http://dbpedia.org/resource/Facial_expression> .
@@ -1956,7 +1956,7 @@ ms:foreseenUse
       dc:description "Identifies the Foreseen Use of the resource."@en .
 
 ms:frame
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Frame"@en ;
       dc:description "Frame is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
 
@@ -1978,7 +1978,7 @@ ms:humanUse
       rdfs:label "humanUse"@en .
 
 ms:humanoidAgentSynthesis
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "humanoidAgentSynthesis"@en ;
       dc:description "Humanoid Agent Synthesis is one of the possible usages in Natural Language Processing"@en .
 
@@ -1989,21 +1989,21 @@ ms:identifier
       dc:description "A reference to the resource like a pid or an internal identifier used by the resource provider."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-3894" ;
       owl:equivalentProperty
-              dc:identifier , bio:identifier .
+              bio:identifier , dc:identifier .
 
 ms:informLicensor
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Inform Licensor"@en ;
       dc:description "Inform Licensor refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en .
 
 ms:informationExtraction
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "informationExtraction"@en ;
       dc:description "Information Extraction is the task of automatically extracting structured information from texts"@en ;
       owl:sameAs <http://dbpedia.org/resource/Information_extraction> .
 
 ms:informationRetrieval
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "informationRetrieval"@en ;
       dc:description "Information Retrieval is the task of obtaining documents relevant to an information need from a collection of documents"@en ;
       owl:sameAs <http://dbpedia.org/resource/Information_retrieval> .
@@ -2018,7 +2018,7 @@ ms:interactive
       dc:description "interactive refers to a kind of 'AnnotationMode  or ms:CreationMode'"@en .
 
 ms:intra-documentCoreferenceResolution
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "intra-documentCoreferenceResolution"@en ;
       dc:description "Intra-document Coreference Resolution is the task of finding all expressions that refer to the same entity in a single text document"@en .
 
@@ -2030,14 +2030,14 @@ ms:iprHolder
       dc:description "Identifies the Intellectual Property Rights Holder of the resource."@en .
 
 ms:knowledgeDiscovery
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "knowledgeDiscovery"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Knowledge_extraction> ;
       dc:description "Knowledge Discovery is the task of extracting useful knowledge from data"@en ;
       owl:sameAs <http://dbpedia.org/resource/Knowledge_extraction> .
 
 ms:knowledgeRepresentation
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "knowledgeRepresentation"@en ;
       dc:description "Knowledge Representation focuses on designing computer representations that capture information about the world that can be used to solve complex problems [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Knowledge_representation_and_reasoning> .
@@ -2056,20 +2056,20 @@ ms:languageId
       ms:dcr  "http://www.isocat.org/datcat/DC-2482" .
 
 ms:languageIdentification
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "languageIdentification"@en ;
       dc:description "Language Identification is the task of automatically identifying the language of a given document"@en ;
       owl:sameAs <http://dbpedia.org/resource/Language_identification> .
 
 ms:languageModelling
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "languageModelling"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Language_model> ;
       dc:description "Language Modelling is a task for applying statistical language models based on a probability distribution of words for using them in speech recognition, part-of-speech tagging, parsing, information retrieval and machine translation"@en ;
       owl:sameAs <http://dbpedia.org/resource/Language_modelling> .
 
 ms:languageModelsTraining
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "languageModelsTraining"@en ;
       dc:description "Language Models Training is the task of training language models with data examples to perform speech recognition, part-of-speech tagging, parsing, information retrieval or machine translation"@en .
 
@@ -2080,40 +2080,40 @@ ms:languageName
       dc:description "A human understandable name of the language that is used in the resource or supported by the tool/service according to the IETF BCP47 standard."@en .
 
 ms:lemma
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Lemma"@en ;
       dc:description "Lemma refers to a kind of 'LinguisticInformation' contained in the resource. It is an abstract representation subsuming all the formal lexical variations which may apply (David Crystal, Dictionary of Linguistics and Phonetics, 2008)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1324"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Lemma> .
 
 ms:lemma-Abbreviations
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Lemma: Abbreviations"@en ;
       dc:description "Abbreviation refers to a kind of 'LinguisticInformation' contained in the resource. It refers to the process of shortening a word or group of words to create a shortened word form that is used in place of the full word form."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1418"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Abbreviation> .
 
 ms:lemma-CliticForms
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Lemma: Clitic Forms"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Clitic> ;
       dc:description "Lemma Clitic Forms refers to a kind of 'LinguisticInformation' contained in the resource. A clitic is a morpheme that has syntactic characteristics of a word, but shows evidence of being phonologically bound to another word (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Clitic> .
 
 ms:lemma-Compounds
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Lemma: Compounds"@en ;
       dc:description "Lemma Compounds  refers to a kind of 'LinguisticInformation' contained in the resource. A compound is a word containing a stem that is made up of more than one root (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Compound_(linguistics)> .
 
 ms:lemma-MultiWordUnits
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Lemma MultiWord Units"@en ;
       dc:description "Lemma MultiWord Units refers to a kind of 'LinguisticInformation' contained in the resource. A multiword unit (MWU) is a lexicalized word combination of two or more words to represent a different concept from the composition of the meaning of its elements."@en ;
       owl:sameAs <http://dbpedia.org/resource/Multiword_expression> .
 
 ms:lemma-Variants
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Lemma Variants"@en ;
       dc:description "Lemma Variants refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Variation_(linguistics)> .
@@ -2127,37 +2127,37 @@ ms:lemmatization
       owl:sameAs <http://dbpedia.org/resource/Lemmatisation> .
 
 ms:lexiconAccess
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "lexiconAccess"@en ;
       dc:description "Lexicon Access is about querying and analysing content lexicon"@en .
 
 ms:lexiconAcquisitionFromCorpora
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "lexiconAcquisitionFromCorpora"@en ;
       dc:description "Lexicon Acquisition from Corpora is about the acquisition of lexical information (semantic or syntactic data) from a collection of naturally occurring samples of language which have been collected for research"@en .
 
 ms:lexiconEnhancement
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "lexiconEnhancement"@en ;
       dc:description "Lexicon Enhancement is one of the possible usages in Natural Language Processing"@en .
 
 ms:lexiconExtractionFromLexica
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "lexiconExtractionFromLexica"@en ;
       dc:description "Lexicon Extraction from Lexica refers to extracting lexical information (semantic or syntactic data) from the whole set of words of any language"@en .
 
 ms:lexiconFormatConversion
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "lexiconFormatConversion"@en ;
       dc:description "Lexicon Format Conversion refers to any task performing a change of lexicon format"@en .
 
 ms:lexiconMerging
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "lexiconMerging"@en ;
       dc:description "Lexicon Merging is about how to merge two existing lexicons in another one"@en .
 
 ms:lexiconVisualization
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "lexiconVisualization"@en ;
       dc:description "Lexicon Visualization is one of the possible usages in Natural Language Processing"@en .
 
@@ -2182,7 +2182,7 @@ ms:linguality
       rdfs:label "Linguality"@en ;
       rdfs:range ms:Linguality ;
       dc:description "Identifies the number of languages of the resource part and of the way they are combined to each other of the resource."@en ;
-      ms:dcr  "http://www.isocat.org/datcat/DC-2491" , "http://www.isocat.org/datcat/DC-2491"@en .
+      ms:dcr  "http://www.isocat.org/datcat/DC-2491"@en , "http://www.isocat.org/datcat/DC-2491" .
 
 ms:linguisticInformation
       rdf:type owl:ObjectProperty ;
@@ -2192,17 +2192,17 @@ ms:linguisticInformation
       dc:description "Provides a more detailed account of the linguistic information contained in the Lexical Conceptual Resource."@en .
 
 ms:linguisticResearch
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "linguisticResearch"@en ;
       dc:description "Linguistic Research is one of the possible usages in Natural Language Processing"@en .
 
 ms:lipTrackingAnalysis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "lipTrackingAnalysis"@en ;
       dc:description "Lip Tracking Analysis refers to tracking the lip movements of the speaker to assist in acoustic speech recognition [Advanced Multimedia Processing Lab]"@en .
 
 ms:machineTranslation
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "machineTranslation"@en ;
       dc:description "Machine Translation is about the use of software to translate text or speech from one natural language into another [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Machine_translation> .
@@ -2266,37 +2266,37 @@ ms:mixed
       dc:description "mixed refers to the  kind of 'AnnotationMode  or CreationMode' used."@en .
 
 ms:modalityAnnotation-bodyMovements
-      rdf:type ms:ModalityAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityAnnotation ;
       rdfs:label "Modality Annotation Body Movements"@en ;
       dc:description "Modality Annotation Body Movements refers to a kind of 'ModalityAnnotation'."@en .
 
 ms:modalityAnnotation-facialExpressions
-      rdf:type ms:ModalityAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityAnnotation ;
       rdfs:label "Modality Annotation Facial Expressions"@en ;
       dc:description "Modality Annotation Facial Expressions refers to a kind of 'ModalityAnnotation'."@en .
 
 ms:modalityAnnotation-gazeEyeMovements
-      rdf:type ms:ModalityAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityAnnotation ;
       rdfs:label "Modality Annotation Eye Movements"@en ;
       dc:description "Modality Annotation Gaze Eye Movements refers to a kind of 'ModalityAnnotation'."@en .
 
 ms:modalityAnnotation-handArmGestures
-      rdf:type ms:ModalityAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityAnnotation ;
       rdfs:label "Modality Annotation Hand Arm Gestures"@en ;
       dc:description "Modality Annotation Hand Arm Gestures refers to a kind of 'ModalityAnnotation'."@en .
 
 ms:modalityAnnotation-handManipulationOfObjects
-      rdf:type ms:ModalityAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityAnnotation ;
       rdfs:label "Modality Annotation Hand Manipulation of Objects"@en ;
       dc:description "Modality Annotation Hand Manipulation of Objects refers to a kind of 'ModalityAnnotation'."@en .
 
 ms:modalityAnnotation-headMovements
-      rdf:type ms:ModalityAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityAnnotation ;
       rdfs:label "Modality Annotation Head Movements"@en ;
       dc:description "Modality Annotation Head Movements refers to a kind of 'ModalityAnnotation'."@en .
 
 ms:modalityAnnotation-lipMovements
-      rdf:type ms:ModalityAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityAnnotation ;
       rdfs:label "Modality Annotation Lip Movements"@en ;
       dc:description "Modality Annotation Lip Movements refers to a kind of 'ModalityAnnotation'."@en .
 
@@ -2309,7 +2309,7 @@ ms:modalityType
       ms:dcr  "http://www.isocat.org/datcat/DC-2490" .
 
 ms:monolingual
-      rdf:type owl:NamedIndividual , ms:Linguality ;
+      rdf:type ms:Linguality , owl:NamedIndividual ;
       rdfs:label "Monolingual"@en ;
       dc:description "Monolingual refers to a kind of 'Linguality'. Only one language involved."@en .
 
@@ -2322,131 +2322,131 @@ ms:morpho-Aspect
       owl:sameAs <http://dbpedia.org/resource/Grammatical_aspect> .
 
 ms:morpho-Auxiliary
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Morpho: Auxiliary"@en ;
-      rdfs:seeAlso bio:MorphologicalTagging , ms:morphology , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , bio:MorphologicalTagging ;
       dc:description "Morpho: Auxiliary refers to a kind of 'LinguisticInformation' contained in the resource. An auxiliary verb is a verb which accompanies the lexical verb of a verb phrase, and expresses grammatical distinctions not carried by the lexical verb, such as person, number, tense, aspect, and voice (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Auxiliary_verb> .
 
 ms:morpho-Case
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Case"@en ;
-      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , bio:MorphologicalTagging , <http://dbpedia.org/resource/Grammatical_case> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Grammatical_case> , bio:MorphologicalTagging , ms:morphology , ms:morphologicalAnalisys ;
       dc:description "Morpho Case refers to a kind of 'LinguisticInformation' contained in the resource. Case is a grammatical category determined by the syntactic or semantic function of a noun or pronoun (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_case> .
 
 ms:morpho-Degree
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Degree"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Degree refers to a kind of 'LinguisticInformation' contained in the resource. Degree is a relational specification which is found with adjectives and adverbs. There are three degrees: 1) positive as in small, 2) comparative as in smaller and 3) superlative as in smallest (Small glossary of linguistics, University of Duisburg-Essen)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1419" .
 
 ms:morpho-Derivation
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Derivation"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys , <http://dbpedia.org/resource/Derivation_(linguistics)> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Derivation_(linguistics)> , ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Derivation refers to a kind of 'LinguisticInformation' contained in the resource. Derivation is the formation of a new word or inflectable stem from another word or stem. It typically occurs by the addition of an affix. The derived word is often of a different word class from the original. It may thus take the inflectional affixes of the new word class (SIL Glossary of Linguistic Terms, 2003)"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Derivation_(linguistics)> .
 
 ms:morpho-Gender
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Gender"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys , <http://dbpedia.org/resource/Grammatical_gender> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Grammatical_gender> , ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Gender refers to a kind of 'LinguisticInformation' contained in the resource. It refers to the categories (masculine, feminine, and neuter) into which nouns, adjectives, and pronouns are classified in many languages."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_gender> .
 
 ms:morpho-Inflection
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Inflection"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Inflection refers to a kind of 'LinguisticInformation' contained in the resource. Inflection is variation in the form of a word, typically by means of an affix, that expresses a grammatical contrast which is obligatory for the stem’s word class in some given grammatical context (SIL Glossary of Linguistic Terms, 2003)."@en ;
       ms:dcr  "http://dbpedia.org/page/Inflection"@en ;
       owl:sameAs <http://dbpedia.org/resource/Inflection> .
 
 ms:morpho-IrregularForms
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Irregular Forms"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Irregular Forms refers to a kind of 'LinguisticInformation' contained in the resource. It is a form which can be regarded as an exception to a given pattern or rule, e.g. the plurals formed with a stem vowel change in Modern English, man : men, tooth : teeth (Small glossary of linguistics, University of Duisburg-Essen)."@en .
 
 ms:morpho-Mood
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Mood"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys , <http://dbpedia.org/resource/Grammatical_mood> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Grammatical_mood> , ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Mood  refers to a kind of 'LinguisticInformation' contained in the resource. Mood is one of a set of distinctive forms that are used to signal modality. Modality is a facet of illocutionary force, signaled by grammatical devices (that is, moods), that expresses: i) the illocutionary point or general intent of a speaker, or ii) a speaker’s degree of commitment to the expressed proposition's believability, obligatoriness, desirability, or reality (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_mood> .
 
 ms:morpho-Number
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Morpho: Number"@en ;
-      rdfs:seeAlso bio:MorphologicalTagging , ms:morphology , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , bio:MorphologicalTagging ;
       dc:description "Morpho Number refers to a kind of 'LinguisticInformation' contained in the resource. Number is a grammatical category of nouns, pronouns, and verb agreement that expresses count distinctions (such as 'one' or 'more than one'). The count distinctions typically, but not always, correspond to the actual count of the referents of the marked noun or pronoun (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_number> .
 
 ms:morpho-Person
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Morpho: Person"@en ;
-      rdfs:seeAlso bio:MorphologicalTagging , ms:morphology , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , ms:morphology , bio:MorphologicalTagging ;
       dc:description "Morpho Person refers to a kind of 'LinguisticInformation' contained in the resource. It is a grammatical distinction which applies to the speaker, addressee or person talked about in verbal systems. Normally there is a distinction between singular and plural as well. There are more distinctions available than just those found in European languages, for instance languages may distinguish between a personal form for 'we' which includes the addressee and one which does not (Small glossary of linguistics, University of Duisburg-Essen)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_person> .
 
 ms:morpho-Reflexivity
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Reflexivity"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Reflexivity refers to a kind of 'LinguisticInformation' contained in the resource. A structure is reflexive when both subject and object have the same referent, e.g. He injured himself (Small glossary of linguistics, University of Duisburg-Essen)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Reflexivity_(grammar)> .
 
 ms:morpho-Tense
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Tense"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Tense  refers to a kind of 'LinguisticInformation' contained in the resource. Tense is a grammatical category, typically marked on the verb, that deictically refers to the time of the event or state denoted by the verb in relation to some other temporal reference point (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Grammatical_tense> .
 
 ms:morpho-Voice
-      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
       rdfs:label "Morpho: Voice"@en ;
-      rdfs:seeAlso ms:morphology , bio:MorphologicalTagging , ms:morphologicalAnalisys ;
+      rdfs:seeAlso ms:morphologicalAnalisys , bio:MorphologicalTagging , ms:morphology ;
       dc:description "Morpho Voice refers to a kind of 'LinguisticInformation' contained in the resource. Voice is a grammatical category that expresses the semantic functions attributed to the referents of a clause. It indicates whether the subject is an actor, patient, or recipient (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Voice_(grammar)> .
 
 ms:morphologicalAnalysis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "morphologicalAnalysis"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Morphology_(linguistics)> ;
       dc:description "Morphological Analysis refers to the study and description of the structure of morphemes and other linguistic units, such as root words, affixes, parts of speech, intonations and stresses, or implied context within a given language [Wikipedia]"@en .
 
 ms:morphology
-      rdf:type ms:EncodingLevel , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:EncodingLevel ;
       rdfs:label "Morphology"@en ;
       dc:description "Morphology refers to the linguistic level of analysis in the resource ('EncodingLevel')."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2638"@en ;
       owl:sameAs <http://dbpedia.org/resource/Morphology> .
 
 ms:morphosyntacticAnnotation-bPosTagging
-      rdf:type owl:NamedIndividual , ms:MorphosyntacticAnnotation ;
+      rdf:type ms:MorphosyntacticAnnotation , owl:NamedIndividual ;
       rdfs:label "Morphosyntactic Annotation b Pos Tagging"@en ;
       dc:description "Morphosyntactic Annotation b Pos Tagging refers to a kind of 'MorphosyntacticAnnotation'."@en .
 
 ms:morphosyntacticAnnotation-posTagging
-      rdf:type ms:MorphosyntacticAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:MorphosyntacticAnnotation ;
       rdfs:label "Morphosyntactic Annotation Pos Tagging"@en ;
       dc:description "Morphosyntactic Annotation Pos Tagging refers to a kind of 'MorphosyntacticAnnotation'."@en .
 
 ms:morphosyntacticTagging
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "morphosyntacticTagging"@en ;
       dc:description "Morphosyntactic Tagging is the process of labeling words in a text with their appropriate detailed morphosyntactic information"@en .
 
 ms:multilingual
-      rdf:type owl:NamedIndividual , ms:Linguality ;
+      rdf:type ms:Linguality , owl:NamedIndividual ;
       rdfs:label "Multilingual"@en ;
       dc:description "Multilingual refers to a kind of 'Linguality'. More than two languages involved."@en .
 
 ms:multilingualSingleText
-      rdf:type owl:NamedIndividual , ms:MultlingualityType ;
+      rdf:type ms:MultlingualityType , owl:NamedIndividual ;
       rdfs:label "Multilingual Single Text"@en ;
       dc:description "Multilingual Single Text refers to a kind of 'MultlingualityType'."@en .
 
@@ -2458,35 +2458,35 @@ ms:multilingualityType
       dc:description "Identifies the Multilinguality Type (parallel, comparable or mixed) of the resource."@en .
 
 ms:multimediaDevelopment
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "multimediaDevelopment"@en ;
       dc:description "Multimedia Development is one of the possible usages in Natural Language Processing"@en .
 
 ms:multimediaDocumentProcessing
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "multimediaDocumentProcessing"@en ;
       dc:description "Multimedia Document Processing is one of the possible usages in Natural Language Processing"@en .
 
 ms:multimodalInteractionFramework
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "Multimodal Interaction Framework"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/W3C_MMI> ;
       dc:description "Multimodal Interaction Framework is a framework aiming to provide means to support Multimodal interaction scenarios on the Web."@en .
 
 ms:namedEntityRecognition
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "namedEntityRecognition"@en ;
       dc:description "Named Entity Recognition (NER) classifies elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc."@en ;
       owl:sameAs <http://dbpedia.org/resource/Named-entity_recognition> .
 
 ms:naturalLanguageGeneration
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "naturalLanguageGeneration"@en ;
       dc:description "Natural Language Generation is the task of generating natural language from a machine representation system such as a knowledge base or a logical form [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Natural_language_generation> .
 
 ms:naturalLanguageUnderstanding
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "naturalLanguageUnderstanding"@en ;
       dc:description "Natural Language Understanding deals with machine reading comprehension of natural language"@en ;
       owl:sameAs <http://dbpedia.org/resource/Natural_language_understanding> .
@@ -2497,34 +2497,30 @@ ms:nlpApplications
       dc:description "NLP Applications are about to develop applications for automated processing of written human language"@en .
 
 ms:noDerivatives
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "No Derivatives"@en ;
       dc:description "No Derivatives refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en .
 
 ms:noRedistribution
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "No Redistribution"@en ;
       dc:description "No Redistribution refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence"@en .
 
 ms:notAvailableThroughMetaShare
-      rdf:type ms:Availability , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:Availability ;
       rdfs:label "Not Available Through MetaShare"@en ;
       dc:description "For resources that are not available through META-SHARE."@en .
 
 ms:onlyMSmembers
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Only Meta Share members"@en ;
       dc:description "Only Meta Share members refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en .
 
 ms:opinionMining
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "opinionMining"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Sentiment_analysis> ;
       dc:description "Opinion Mining refers to the use of natural language processing, text analysis and computational linguistics to identify and extract subjective information in source materials [Wikipedia]"@en .
-
-ms:orcID
-      rdf:type owl:DatatypeProperty ;
-      rdfs:domain foaf:Agent .
 
 ms:originalMetadataLink
       rdf:type owl:DatatypeProperty ;
@@ -2545,104 +2541,104 @@ ms:originalSource
       dc:description "The name, the identifier or the url of the original resources that were at the base of the creation process of the resource."@en .
 
 ms:paragraph
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Paragraph"@en ;
       dc:description "Paragraph is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       owl:sameAs <http://dbpedia.org/resource/Paragraph> .
 
 ms:parallel
-      rdf:type ms:MultlingualityType , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:MultlingualityType ;
       rdfs:label "Parallel"@en ;
-      rdfs:seeAlso bio:Alignment , ms:alignment , <http://dbpedia.org/resource/Parallel_text> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Parallel_text> , ms:alignment , bio:Alignment ;
       dc:description "Parallel is 'MultlingualityType' and refers to a collection of texts, each of which is translated into one or more other languages than the original."@en .
 
 ms:parsing
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "parsing"@en ;
       dc:description "Parsing is about the process of analysing a string of symbols, either in natural language or in computer languages, according to the rules of a formal grammar [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Parsing> .
 
 ms:partOfSpeech
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Part of Speech"@en ;
       dc:description "Part of Speech refers to a kind of 'LinguisticInformation' contained in the resource. It refers to any set of words which form a grammatical group, i.e. which can indicate the same categories or relations, e.g. nouns, verbs, adverbs, prepositions (Small glossary of linguistics, University of Duisburg-Essen)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1345"@en ;
       owl:sameAs <http://dbpedia.org/resource/Part_of_speech> .
 
 ms:pennTreeBank
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "Penn TreeBank"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Treebank> ;
       dc:description "Penn TreeBank"@en .
 
 ms:personIdentification
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "personIdentification"@en ;
       dc:description "Person Identification consists in determining the identity of a person from a data segment, such as a speech, video segment, etc. [Luque et al., 2007]"@en .
 
 ms:personRecognition
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "personRecognition"@en ;
       dc:description "Person Recognition is the task of automatically identifying a person in a digital image by analyzing and comparing patterns"@en .
 
 ms:persuasiveExpressionMining
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "persuasiveExpressionMining"@en ;
       dc:description "Persuasive Expression Mining deals with the extraction of pieces of text that are meant to persuade, regardless of their possible evaluative use [Gelbukh, 2008: 265]"@en .
 
 ms:phoneme
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Phoneme"@en ;
       dc:description "Phoneme is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       owl:sameAs <http://dbpedia.org/resource/Phoneme> .
 
 ms:phonetics-Transcription
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Phonetics Transcription"@en ;
       dc:description "Phonetics Transcription refers to a kind of 'LinguisticInformation' contained in the resource. Transcription is the process of representing oral text in a written format (SIL Glossary of Linguistic Terms, 2003)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Phonetic_transcription> .
 
 ms:phonology
-      rdf:type ms:EncodingLevel , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:EncodingLevel ;
       rdfs:label "Phonology"@en ;
       dc:description "Phonology refers to the linguistic level of analysis in the resource ('EncodingLevel')."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2642"@en ;
       owl:sameAs <http://dbpedia.org/resource/Phonology> .
 
 ms:phrase
-      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
       rdfs:label "Phrase"@en ;
       dc:description "Phrase is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2282"@en ;
       owl:sameAs <http://dbpedia.org/resource/Phrase> .
 
 ms:posTagging
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "posTagging"@en ;
       rdfs:seeAlso ms:partOfSpeech ;
       dc:description "Part of speech tagging is the process of marking up a word in a text as corresponding to a particular part of speech"@en ;
       owl:sameAs <http://dbpedia.org/resource/Part-of-speech_tagging> .
 
 ms:pragmatics
-      rdf:type ms:EncodingLevel , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:EncodingLevel ;
       rdfs:label "Pragmatics"@en ;
       dc:description "Pragmatics refers to the linguistic level of analysis in the resource ('EncodingLevel')."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2643"@en ;
       owl:sameAs <http://dbpedia.org/resource/Pragmatics> .
 
 ms:pragueTreebank
-      rdf:type ms:StandardsBestPractices , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:StandardsBestPractices ;
       rdfs:label "Prague Treebank"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Treebank> ;
       dc:description "Prague Treebank"@en .
 
 ms:proprietary
-      rdf:type owl:NamedIndividual , ms:License ;
+      rdf:type ms:License , owl:NamedIndividual ;
       rdfs:label "proprietary"@en ;
       dc:description "proprietary is a kind of license meant to govern the use or redistribution of a resource"@en .
 
 ms:prosodicBoundaries
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Prosodic Boundaries"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Prosodic_unit> ;
       dc:description "Prosodic Boundaries is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
@@ -2654,19 +2650,19 @@ ms:publications
       dc:description "Takes publications from DBLP."@en .
 
 ms:qualitativeAnalysis
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "qualitativeAnalysis"@en ;
       dc:description "Qualitative Analysis is one of the possible usages in Natural Language Processing"@en ;
       owl:sameAs <http://dbpedia.org/resource/Qualitative_analysis> .
 
 ms:questionAnswering
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "questionAnswering"@en ;
       dc:description "Question Answering concerns to build systems that automatically answer questions posed by humans in a natural language"@en ;
       owl:sameAs <http://dbpedia.org/resource/Question_answering> .
 
 ms:readingAndWritingAidApplications
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "readingAndWritingAidApplications"@en ;
       dc:description "Reading and Writing Aid Applications refers to use of software in order to both complete reading and writing assignments"@en .
 
@@ -2678,7 +2674,7 @@ ms:recorder
       dc:description "Identifies the Recorder (audio or video) of the resource."@en .
 
 ms:redeposit
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Redeposit"@en ;
       dc:description "Redeposit refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en .
 
@@ -2742,12 +2738,12 @@ ms:samplesLocation
       dc:description "A url with samples of the resource or, in the case of tools, of samples of the output."@en .
 
 ms:scene
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Scene"@en ;
       dc:description "Scene is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
 
 ms:segmentation
-      rdf:type owl:NamedIndividual , ms:AnnotationType ;
+      rdf:type ms:AnnotationType , owl:NamedIndividual ;
       rdfs:label "Segmentatiobn"@en ;
       rdfs:seeAlso bio:Chunking-Segmentation ;
       dc:description "Aegmentation refers to the the annotation level of the resource or the annotation type a tool/service requires or produces as an output  ('AnnotationType)."@en .
@@ -2760,97 +2756,97 @@ ms:segmentationLevel
       dc:description "Identifies the Segmentation Level of the resource."@en .
 
 ms:semanticAnnotation
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation"@en ;
-      rdfs:seeAlso ms:SemAF_DA , ms:SemAF_NE , ms:SemAF_DS , ms:SemAF_SRL , ms:SemAF ;
+      rdfs:seeAlso ms:SemAF , ms:SemAF_SRL , ms:SemAF_DS , ms:SemAF_NE , ms:SemAF_DA ;
       dc:description "Semantic annotatios is about adding semantic information."@en .
 
 ms:semanticAnnotation-certaintyLevel
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Certainty Level"@en ;
       dc:description "Semantic Annotation Certainty Level refers to a kind of 'SemanticAnnotation'."@en .
 
 ms:semanticAnnotation-emotions
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Emotions"@en ;
       dc:description "Semantic Annotation about emotions."@en .
 
 ms:semanticAnnotation-entityMentions
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Entity Mentions"@en ;
       dc:description "Semantic Annotation Entity Mentions refers to a kind of 'SemanticAnnotation'."@en .
 
 ms:semanticAnnotation-events
-      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
       rdfs:label "Semantic Annotation: Events"@en ;
       dc:description "Semantic Annotation Events refers to a kind of 'SemanticAnnotation'."@en .
 
 ms:semanticAnnotation-namedEntities
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Named Entities"@en ;
-      rdfs:seeAlso ms:namedEntityRecognition , bio:NamedEntityRecognition , ms:SemAF_NE , <http://dbpedia.org/resource/Named-entity_recognition> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Named-entity_recognition> , ms:SemAF_NE , bio:NamedEntityRecognition , ms:namedEntityRecognition ;
       dc:description "Annotations about identified named entities (named entity is a phrase that clearly identifies one item from a set of other items that have similar attributes. Examples of named entities are person names, geographic locations, addresses, phone numbers, companies, etc)."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2275"@en .
 
 ms:semanticAnnotation-polarity
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Polarity"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Polarity_item> ;
       dc:description "Polarity (or semantic polarity) deals about the sensitiveness of some expression to negative or affirmative contexts."@en .
 
 ms:semanticAnnotation-questionTopicalTarget
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Question Topical Target"@en ;
       dc:description "Semantic Annotation Question Topical Target refers to a kind of 'SemanticAnnotation'."@en .
 
 ms:semanticAnnotation-semanticClasses
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Semantic Classes"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Semantic_class> ;
       dc:description "Information about semantic classes defined as groups of  words that share a semantic property"@en .
 
 ms:semanticAnnotation-semanticRelations
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Semantic Relations"@en ;
       dc:description "Annotations about semantic relations"@en .
 
 ms:semanticAnnotation-semanticRoles
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Semantic Roles"@en ;
-      rdfs:seeAlso ms:semanticRoleLabelling , ms:SemAF_SRL , <http://dbpedia.org/resource/Thematic_relation> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Thematic_relation> , ms:SemAF_SRL , ms:semanticRoleLabelling ;
       dc:description "Information about the role that a noun phrase plays with respect to the action or state described by a sentence's verb."@en .
 
 ms:semanticAnnotation-speechActs
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: speech acts"@en ;
-      rdfs:seeAlso ms:speechAnalysis , <http://dbpedia.org/resource/Speech_act> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Speech_act> , ms:speechAnalysis ;
       dc:description "Annotations about speech acts (an utterance that has performative function such as promising, ordering, greeting, warning, inviting and congratulating.)."@en .
 
 ms:semanticAnnotation-temporalExpressions
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Temporal Expressions"@en ;
-      rdfs:seeAlso ms:temporalExpressionRecognition , <http://dbpedia.org/resource/Temporal_expressions> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Temporal_expressions> , ms:temporalExpressionRecognition ;
       dc:description "Annotations about temporal expressions."@en .
 
 ms:semanticAnnotation-textualEntailment
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Textual Entailment"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Textual_entailment> ;
       dc:description "Semantic Annotation Textual Entailment refers to a kind of 'SemanticAnnotation'."@en .
 
 ms:semanticAnnotation-wordSenses
-      rdf:type owl:NamedIndividual , ms:SemanticAnnotation ;
+      rdf:type ms:SemanticAnnotation , owl:NamedIndividual ;
       rdfs:label "Semantic Annotation: Word Senses"@en ;
-      rdfs:seeAlso ms:wordSenseDisambiguation , <http://dbpedia.org/resource/Word_sense> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Word_sense> , ms:wordSenseDisambiguation ;
       dc:description "Semantic Annotation Word Senses refers to the kind of 'SemanticAnnotation' which identifies the meanings of a word."@en .
 
 ms:semanticRoleLabelling
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "semanticRoleLabelling"@en ;
       dc:description "Semantic Role Labelling, also called shallow semantic parsing, is the task of detecting the semantic arguments associated with the predicate or verb of a sentence and their classification into their specific roles [Wikipedia]"@en .
 
 ms:semanticWeb
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "semanticWeb"@en ;
       dc:description "Semantic Web refers to encourage the inclusion of semantic content in web pages converting the current web dominated by unstructured and semi-structured documents into a web of data [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Semantic_Web> .
@@ -2864,58 +2860,58 @@ ms:semantics
       owl:sameAs <http://dbpedia.org/resource/Semantics> .
 
 ms:semantics-CrossReferences
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Cross References"@en ;
       dc:description "Semantics Cross References refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
 ms:semantics-Domain
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Domain"@en ;
       dc:description "Semantics Domain refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Semantic_domain> .
 
 ms:semantics-EventType
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: EventType"@en ;
       dc:description "Semantics EventType refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
 ms:semantics-QualiaStructure
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Qualia Structure"@en ;
       dc:description "Semantics Qualia Structure refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
 ms:semantics-Relations
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Relations"@en ;
       dc:description "Semantics Relations refers to a kind of 'LinguisticInformation' contained in the resource. It refers to the relations between concepts or meanings."@en .
 
 ms:semantics-Relations-Antonyms
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Relations Antonyms"@en ;
       dc:description "Semantics Relations Antonyms refers to a kind of 'LinguisticInformation' contained in the resource. It is a relation established between opposite concepts or meanings."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-3824"^^xsd:string ;
       owl:sameAs <http://dbpedia.org/resource/Opposite_(semantics)> .
 
 ms:semantics-Relations-Hyperonyms
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Relations Hyperonyms"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Meronymy> ;
       dc:description "Semantics Relations Hyperonyms refers to a kind of 'LinguisticInformation' contained in the resource. It is a relation established between a general and a more specific term or concept."@en .
 
 ms:semantics-Relations-Hyponyms
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Relations Hyponyms"@en ;
       dc:description "Semantics Relations Hyponyms refers to a kind of 'LinguisticInformation' contained in the resource. It is a relation established between a specific and a more general term or concept."@en ;
       owl:sameAs <http://dbpedia.org/resource/Hyponymy> .
 
 ms:semantics-Relations-Meronyms
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Relations Meronyms"@en ;
       dc:description "Semantics Relations Meronyms refers to a kind of 'LinguisticInformation' contained in the resource. It is a relation established between words or concepts where one of them is a part of or a member of the other."@en ;
       owl:sameAs <http://dbpedia.org/resource/Meronymy> .
 
 ms:semantics-Relations-Synonyms
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Relations Synonyms"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Synonym> ;
       dc:description "Semantics Relations Synonyms refers to a kind of 'LinguisticInformation' contained in the resource. It is a relation established between words or concepts that have the same meaning as one or more other words or concepts."@en ;
@@ -2923,71 +2919,71 @@ ms:semantics-Relations-Synonyms
       owl:sameAs <http://dbpedia.org/resource/Synonym> .
 
 ms:semantics-Relations-Troponyms
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Relations Troponyms"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Troponymy> ;
       dc:description "Semantics Relations Troponyms refers to a kind of 'LinguisticInformation' contained in the resource. It is a relation established between words where one of them denotes a manner of doing something that is referred by the other word."@en ;
       owl:sameAs <http://dbpedia.org/resource/Troponymy> .
 
 ms:semantics-SemanticClass
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "semantics-SemanticClass"@en ;
       dc:description "Semantic Class refers to a kind of 'LinguisticInformation' contained in the resource. A semantic class contains words that share a semantic property."@en ;
       owl:sameAs <http://dbpedia.org/resource/Semantic_class> .
 
 ms:semantics-SemanticRoles
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Semantic Roles"@en ;
       dc:description "Semantic roles refers to a kind of 'LinguisticInformation' contained in the resource. Semantic roles are used to express the role that a noun phrase plays with respect to the action or state described by a sentence's verb (Wikipedia)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Thematic_relation> .
 
 ms:semantics-Traits
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Semantics: Traits"@en ;
       dc:description "Semantics: Traits refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
 ms:sentence
-      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
       rdfs:label "Sentence"@en ;
       dc:description "Sentence is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1386"@en ;
       owl:sameAs <http://dbpedia.org/resource/Sentence> .
 
 ms:sentimentAnalysis
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "sentimentAnalysis"@en ;
       dc:description "Sentiment analysis (also known as opinion mining) refers to the use of natural language processing, text analysis and computational linguistics to identify and extract subjective information in source materials [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Sentiment_analysis> .
 
 ms:shareAlike
-      rdf:type owl:NamedIndividual , ms:RestrictionsOfUse ;
+      rdf:type ms:RestrictionsOfUse , owl:NamedIndividual ;
       rdfs:label "Share Alike"@en ;
       dc:description "Share Alike refers to a kind of 'RestrictionsOfUse' used to specify the restrictions imposed by the type of the licence."@en ;
       owl:sameAs <http://dbpedia.org/resource/Share-alike> .
 
 ms:shot
-      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
       rdfs:label "Shot"@en ;
       dc:description "Shot is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
 
 ms:signLanguage
-      rdf:type ms:ModalityType , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityType ;
       rdfs:label "Sign Language"@en ;
       dc:description "Sign Language is a 'ModalityType' and refers to a language which uses manual communication and body language to convey meaning."@en ;
       owl:sameAs <http://dbpedia.org/resource/Sign_language> .
 
 ms:signLanguageGeneration
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "signLanguageGeneration"@en ;
       dc:description "Sign Language Generation concerns to generating sign language sentences from spoken or written language"@en .
 
 ms:signLanguageRecognition
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "signLanguageRecognition"@en ;
       dc:description "Sign Language Recognition automatically recognizes sign language for translating it into a spoken or written language"@en .
 
 ms:signal
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Signal"@en ;
       dc:description "Signal is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
 
@@ -3018,136 +3014,136 @@ ms:source
       dc:description "Refers to the catalogue or repository from which the metadata has been originated."@en .
 
 ms:speakerIdentification
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speakerIdentification"@en ;
       dc:description "Speaker Identification is the task of determining an unknown speaker's identity [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Speaker_recognition> .
 
 ms:speakerVerification
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speakerVerification"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Speaker_recognition> ;
       dc:description "Speaker Verification is the task of determining if one speaker's voice is matched to one template (also called a 'voice print' or 'voice model') [Wikipedia]"@en .
 
 ms:speechAnalysis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speechAnalysis"@en ;
       dc:description "Speech Analysis is one of the possible usages in Natural Language Processing"@en ;
       owl:sameAs <http://dbpedia.org/resource/Speech_analysis> .
 
 ms:speechAnnotation
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation"@en ;
       dc:description "Speech Annotation refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAnnotation-orthographicTranscription
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation: Oortographic Transcription"@en ;
       dc:description "Speech Annotation Orthographic Transcription refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAnnotation-paralanguageAnnotation
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation: Paralanguage Annotation"@en ;
       dc:description "Speech Annotation Paralanguage Annotation refers to a kind of 'SpeechAnnotation'"@en .
 
 ms:speechAnnotation-phoneticTranscription
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation: Phonetic Transcription"@en ;
       dc:description "Speech Annotation Phonetic Transcription refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAnnotation-prosodicAnnotation
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation: Prosodic Annotation"@en ;
       dc:description "Speech Annotation Prosodic Annotation refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAnnotation-soundEvents
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation: Sound Events"@en ;
       dc:description "Speech Annotation Sound Events refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAnnotation-soundToTextAlignment
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation: Sound to Texts Alignment"@en ;
       dc:description "Speech Annotation Sound to Text Alignment refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAnnotation-speakerIdentification
-      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
       rdfs:label "Speech Annotation: Speaker Identification"@en ;
       dc:description "Speech Annotation Speaker Identification refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAnnotation-speakerTurns
-      rdf:type owl:NamedIndividual , ms:SpeechAnnotation ;
+      rdf:type ms:SpeechAnnotation , owl:NamedIndividual ;
       rdfs:label "Speech Annotation: Speaker Turns"@en ;
       dc:description "Speech Annotation Speaker Turns refers to a kind of 'SpeechAnnotation'."@en .
 
 ms:speechAssistedVideoControl
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speechAssistedVideoControl"@en ;
       dc:description "Speech Assisted Video Control is one of the possible usages in Natural Language Processing"@en .
 
 ms:speechLipsCorrelationAnalysis
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "speechLipsCorrelationAnalysis"@en ;
       dc:description "Speech Lips Correlation Analysis is one of the possible usages in Natural Language Processing"@en .
 
 ms:speechRecognition
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "speechRecognition"@en ;
       dc:description "Speech Recognition is the translation of spoken words into text. It is also known as 'automatic speech recognition', 'ASR', 'computer speech recognition', 'speech to text', or just 'STT' [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Speech_Recognition> .
 
 ms:speechSynthesis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speechSynthesis"@en ;
       dc:description "Speech Synthesis is the artificial production of human speech. A computer system used for this purpose is called a speech synthesizer, and can be implemented in software or hardware products. A text-to-speech (TTS) system converts normal language text into speech; other systems render symbolic linguistic representations like phonetic transcriptions into speech [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Speech_Synthesis> .
 
 ms:speechToSpeechTranslation
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speechToSpeechTranslation"@en ;
       dc:description "Speech To Speech Translation is the process by which conversational spoken phrases are instantly translated and spoken aloud in a second language [Wikipedia]"@en .
 
 ms:speechUnderstanding
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speechUnderstanding"@en ;
       dc:description "Speech Understanding is one of the possible usages in Natural Language Processing"@en .
 
 ms:speechVerification
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "speechVerification"@en ;
       dc:description "Speech Verification uses speech recognition to verify the correctness of the pronounced speech. Speech verification doesn't try to decode unknown speech from a huge search space, but instead, knowing the expected speech to be pronounced, it attempts to verify the correctness of the utterance's pronunciation, cadence, pitch, and stress [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Speech_verification> .
 
 ms:spellChecking
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "spellChecking"@en ;
       dc:description "Spell Checking is the task of checking the spelling of words in documents"@en ;
       owl:sameAs <http://dbpedia.org/resource/Spell_checking> .
 
 ms:spokenDialogueSystems
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "spokenDialogueSystems"@en ;
       dc:description "Spoken Dialogue Systems refer to dialogue systems delivered through voice. They have two essential components: a speech recognizer and a text-to-speech module [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Spoken_dialog_system> .
 
 ms:spokenLanguage
-      rdf:type ms:ModalityType , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:ModalityType ;
       rdfs:label "Spoken Language"@en ;
       dc:description "Spoken Language is a 'ModalityType' and refers to oral language as opposed to written language."@en ;
       owl:sameAs <http://dbpedia.org/resource/Spoken_language> .
 
 ms:statisticalProperties
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Statistical Properties"@en ;
       dc:description "Statistical Properties refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
 ms:stemming
-      rdf:type owl:NamedIndividual , ms:AnnotationType ;
+      rdf:type ms:AnnotationType , owl:NamedIndividual ;
       rdfs:label "Stemming"@en ;
       dc:description "Stemming refers to the the annotation level of the resource or the annotation type a tool/service requires or produces as an output  ('AnnotationType)."@en .
 
 ms:structuralAnnotation
-      rdf:type owl:NamedIndividual , ms:AnnotationType ;
+      rdf:type ms:AnnotationType , owl:NamedIndividual ;
       rdfs:label "Structural Annotation"@en ;
       dc:description "Annotations about the structure of a corpus."@en .
 
@@ -3158,57 +3154,57 @@ ms:subjectTopic
       ms:dcr  "http://www.isocat.org/datcat/DC-2503" .
 
 ms:summarisation
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "summarisation"@en ;
       dc:description "Summarisation  is the process of reducing a text document to create a summary that retains the most important points of the original document [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Automatic_summarization> .
 
 ms:syllable
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Syllable"@en ;
       dc:description "Syllable is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-297"@en ;
       owl:sameAs <http://dbpedia.org/resource/Syllable> .
 
 ms:syntacticAnnotation-shallowParsing
-      rdf:type owl:NamedIndividual , ms:SyntacticAnnotation ;
+      rdf:type ms:SyntacticAnnotation , owl:NamedIndividual ;
       rdfs:label "Syntactic Annotation: Shallow Parsing"@en ;
-      rdfs:seeAlso bio:SyntacticTagging , <http://dbpedia.org/resource/Shallow_parsing> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Shallow_parsing> , bio:SyntacticTagging ;
       dc:description "Syntactic Annotation Shallow Parsing refers to the  kind of 'SyntacticAnnotation' used in the resource."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2331"@en .
 
 ms:syntacticAnnotation-subcategorizationFrames
-      rdf:type owl:NamedIndividual , ms:SyntacticAnnotation ;
+      rdf:type ms:SyntacticAnnotation , owl:NamedIndividual ;
       rdfs:label "Syntactic Annotation: Subcategorization Frames"@en ;
-      rdfs:seeAlso ms:syntax-SubcatFrame , <http://dbpedia.org/resource/Subcategorization> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Subcategorization> , ms:syntax-SubcatFrame ;
       dc:description "Syntactic Annotation Subcategorization Frames refers to the  kind of 'SyntacticAnnotation' used in the resource."@en .
 
 ms:syntacticAnnotation-treebanks
-      rdf:type owl:NamedIndividual , ms:SyntacticAnnotation ;
+      rdf:type ms:SyntacticAnnotation , owl:NamedIndividual ;
       rdfs:label "Syntactic Annotation: Treebanks"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Treebank> ;
       dc:description "Syntactic Annotation Treebanks refers to the  kind of 'SyntacticAnnotation' used in the resource. A treebank is text corpus in which each sentence has been annotated with syntactic structure."@en .
 
 ms:syntacticoSemanticLinks
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "syntacticoSemanticLinks"@en ;
       dc:description "Syntacticosemantic Links refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
 ms:syntacticosemanticAnnotation-links
-      rdf:type owl:NamedIndividual , ms:SyntacticAnnotation ;
+      rdf:type ms:SyntacticAnnotation , owl:NamedIndividual ;
       rdfs:label "Syntactic Annotation: Syntacticosemantic Annotation links"@en ;
       dc:description "Syntacticoemantic Annotation links refers to the  kind of 'SyntacticAnnotation' used in the resource."@en .
 
 ms:syntax
-      rdf:type ms:EncodingLevel , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:EncodingLevel ;
       rdfs:label "Syntax"@en ;
-      rdfs:seeAlso ms:syntacticAnnotation-shallowParsing , ms:syntacticAnnotation-treebanks , ms:syntacticAnnotation-subcategorizationFrames ;
+      rdfs:seeAlso ms:syntacticAnnotation-subcategorizationFrames , ms:syntacticAnnotation-treebanks , ms:syntacticAnnotation-shallowParsing ;
       dc:description "Syntax refers to the linguistic level of analysis in the resource ('EncodingLevel')."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2647"@en ;
       owl:sameAs <http://dbpedia.org/resource/Syntax> .
 
 ms:syntax-SubcatFrame
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Syntax: Subcategorization Frame"@en ;
       dc:description "Syntax Subcategorization Frame refers to a kind of 'LinguisticInformation' contained in the resource."@en .
 
@@ -3219,35 +3215,35 @@ ms:tagset
       ms:dcr  "http://www.isocat.org/datcat/DC-2497" .
 
 ms:talkingHeadSynthesis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "talkingHeadSynthesis"@en ;
       dc:description "Talking Head Synthesis is about producing photo-realistic computer animations of a person talking from text [Cosatto, 2002, PhD Thesis]"@en .
 
 ms:temporalExpressionRecognition
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "temporalExpressionRecognition"@en ;
       dc:description "Temporal Expression Recognition refers to the identification of temporal expressions that denote time, express a point in time, duration or frequency in a text [Wikipedia]"@en .
 
 ms:terminologyExtraction
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "terminologyExtraction"@en ;
       dc:description "Terminology Extraction is the task of automatically extracting relevant terms from a given corpus [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Terminology_extraction> .
 
 ms:texToSpeechSynthesis
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "texToSpeechSynthesis"@en ;
       dc:description "Text to Speech Synthesis refers to the automatic production of speech, through a grapheme-to-phoneme transcription of the sentences to utter [Dutoit, 1997, TCTS Lab - Faculté Polytechnique de Mons]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Text-To-Speech> .
 
 ms:textCategorisation
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "textCategorisation"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Document_classification> ;
       dc:description "Text Categorisation (also knows as text classification) is the task of assigning predefined categories to free-text documents [Scholarpedia]"@en .
 
 ms:textGeneration
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "textGeneration"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Natural_language_generation> ;
       dc:description "Text Generation is about the automatic creation of natural language from a computational representation"@en ;
@@ -3261,7 +3257,7 @@ ms:textGenre
       ms:dcr  "http://www.isocat.org/datcat/DC-2470" .
 
 ms:textMining
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "textMining" ;
       dc:description "It refers to the process of deriving high-quality information from text"@en ;
       owl:sameAs <http://dbpedia.org/resource/Text_mining> .
@@ -3273,7 +3269,7 @@ ms:textType
       dc:description "Specifies the type of the text according to a text type classification."@en .
 
 ms:textualEntailment
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "textualEntailment"@en ;
       dc:description "Textual Entailment is a directional relation between text fragments. The relation holds whenever the truth of one text fragment follows from another text. In the TE framework, the entailing and entailed texts are termed text (t) and hypothesis (h), respectively [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Textual_entailment> .
@@ -3291,34 +3287,34 @@ ms:timeCoverage
       ms:dcr  "http://www.isocat.org/datcat/DC-2502" .
 
 ms:topic
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Topic"@en ;
       dc:description "Topic is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
 
 ms:topicDetection_Tracking
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "topicDetection_Tracking"@en ;
       dc:description "Topic Detection_Tracking is about of detecting topics in terms of the (clusters of) stories that discuss them in multiple source streams [Spoken Language Systems Department -Universität des Saarlandes]"@en .
 
 ms:translation
-      rdf:type owl:NamedIndividual , ms:AnnotationType ;
+      rdf:type ms:AnnotationType , owl:NamedIndividual ;
       rdfs:label "Translation"@en ;
       dc:description "Translation refers to the the annotation level of the resource or the annotation type a tool/service requires or produces as an output  ('AnnotationType)."@en .
 
 ms:translationEquivalent
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Translation Equivalent"@en ;
       dc:description "Translation Equivalent refers to a kind of 'LinguisticInformation' contained in the resource. A translation equivalent is a corresponding word or expression in another language (SIL Glossary of Linguistic Terms, 2003)."@en .
 
 ms:transliteration
-      rdf:type owl:NamedIndividual , ms:AnnotationType ;
+      rdf:type ms:AnnotationType , owl:NamedIndividual ;
       rdfs:label "Transliteration"@en ;
       dc:description "Transliteration is the conversion of a texts from one writing system into another."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1848"@en ;
       owl:sameAs <http://dbpedia.org/resource/Transliteration> .
 
 ms:underNegotiation
-      rdf:type owl:NamedIndividual , ms:Availability , ms:License ;
+      rdf:type ms:License , ms:Availability , owl:NamedIndividual ;
       rdfs:label "Under Negotiation"@en ;
       dc:description "For resources that their availability is still pending."@en .
 
@@ -3330,38 +3326,38 @@ ms:url
       ms:dcr  "http://www.isocat.org/datcat/DC-2546" .
 
 ms:usage-Collocations
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Usage: Collocations"@en ;
       dc:description "Usage Collocations refers to a kind of 'LinguisticInformation' contained in the resource. A collocation is a sequence of words or terms that co-occur more often than would be expected by chance"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-340"@en ;
       owl:sameAs <http://dbpedia.org/resource/Collocation> .
 
 ms:usage-Examples
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Usage: Examples"@en ;
       dc:description "Usage Examples refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1958" .
 
 ms:usage-Frequency
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Usage: Frequency"@en ;
       dc:description "Usage Frequency refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1965" .
 
 ms:usage-Notes
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Usage: Notes"@en ;
       dc:description "Usage Notes refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-526" .
 
 ms:usage-Register
-      rdf:type owl:NamedIndividual , ms:LinguisticInformation ;
+      rdf:type ms:LinguisticInformation , owl:NamedIndividual ;
       rdfs:label "Usage: Register"@en ;
       dc:description "Usage Register refers to a kind of 'LinguisticInformation' contained in the resource."@en ;
       owl:sameAs <http://dbpedia.org/resource/Register_(sociolinguistics)> .
 
 ms:userAuthentication
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "userAuthentication"@en ;
       dc:description "User Authentication is the task of identifying the user and verifying that the user is allowed to access some restricted services as online platforms (databases, content management systems, scientific repositories, etc.)"@en .
 
@@ -3381,7 +3377,7 @@ ms:userNature
       dc:description "Identifies the User Nature of the resource."@en .
 
 ms:utterance
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Utterance"@en ;
       dc:description "Utterance is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1409"@en ;
@@ -3395,133 +3391,133 @@ ms:version
       ms:dcr  "http://www.isocat.org/datcat/DC-2547" .
 
 ms:visualSceneUnderstanding
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "visualSceneUnderstanding"@en ;
       dc:description "Visual Scene Understanding is one of the possible usages in Natural Language Processing"@en .
 
 ms:voice
-      rdf:type owl:NamedIndividual , ms:ModalityType ;
+      rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "Voice"@en ;
       dc:description "Voice refers to a kind of 'ModalityType'."@en ;
       ms:dcr  "http://www.isocat.org/rest/dc/2490"^^xsd:string .
 
 ms:voiceControl
-      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
       rdfs:label "voiceControl"@en ;
       dc:description "Voice Control is one of the possible usages in Natural Language Processing"@en ;
       owl:sameAs <http://dbpedia.org/resource/Voice_control> .
 
 ms:webServices
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "webServices"@en ;
       dc:description "Web Services is one of the possible usages in Natural Language Processing"@en ;
       owl:sameAs <http://dbpedia.org/resource/Web_service> .
 
 ms:windows-1250
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "windows-1250"@en ;
       dc:description "windows-1250 is a character encoding"@en .
 
 ms:windows-1251
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "windows-1251"@en ;
       dc:description "windows-1251 is a character encoding"@en .
 
 ms:windows-1252
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "windows-1252"@en ;
       dc:description "windows-1252 is a character encoding"@en .
 
 ms:windows-1253
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "windows-1253"@en ;
       dc:description "windows-1253 is a character encoding"@en .
 
 ms:windows-1254
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "windows-1254"@en ;
       dc:description "windows-1254 is a character encoding"@en .
 
 ms:windows-1255
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "windows-1255"@en ;
       dc:description "windows-1255 is a character encoding"@en .
 
 ms:windows-1256
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "windows-1256"@en ;
       dc:description "windows-1256 is a character encoding"@en .
 
 ms:windows-1257
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "windows-1257"@en ;
       dc:description "windows-1257 is a character encoding"@en .
 
 ms:windows-1258
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "windows-1258"@en ;
       dc:description "windows-1258 is a character encoding"@en .
 
 ms:windows-31j
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "windows-31j"@en ;
       dc:description "windows-31j is a character encoding"@en .
 
 ms:word
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Word"@en ;
       dc:description "Word is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-1415"@en .
 
 ms:wordGroup
-      rdf:type owl:NamedIndividual , ms:SegmentationLevel ;
+      rdf:type ms:SegmentationLevel , owl:NamedIndividual ;
       rdfs:label "Word Group"@en ;
       dc:description "Word Group is the segmentation unit in terms of which resource has been segmented or the level of segmentation a tool/service requires/outputs."@en .
 
 ms:wordSenseDisambiguation
-      rdf:type ms:UseNLPSpecific , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:UseNLPSpecific ;
       rdfs:label "wordSenseDisambiguation"@en ;
       dc:description "Word Sense Disambiguation is the process of determining which sense (meaning) of a word is used in a sentence in a particular context when the word has multiple meanings [Wikipedia]"@en ;
       owl:sameAs <http://dbpedia.org/resource/Word-sense_disambiguation> .
 
 ms:writtenLanguage
-      rdf:type owl:NamedIndividual , ms:ModalityType ;
+      rdf:type ms:ModalityType , owl:NamedIndividual ;
       rdfs:label "Written Language"@en ;
       dc:description "Written Language is a 'ModalityType' and refers to the representation of a language by means of a writing system."@en ;
       owl:sameAs <http://dbpedia.org/resource/Written_language> .
 
 ms:x-EUC-CN
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "x-EUC-CN"@en ;
       dc:description "x-EUC-CN is a character encoding"@en .
 
 ms:x-EUC-JP-LINUX
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "x-EUC-JP-LINUX"@en ;
       dc:description "x-EUC-JP-LINUX is a character encoding"@en .
 
 ms:x-EUC-TW
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "x-EUC-TW"@en ;
       dc:description "x-EUC-TW is a character encoding"@en .
 
 ms:x-MS950-HKSCS
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "x-MS950-HKSCS"@en ;
       dc:description "x-MS950-HKSCS is a character encoding"@en .
 
 ms:x-mswin-936
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "x-mswin-936"@en ;
       dc:description "x-mswin-936 is a character encoding"@en .
 
 ms:x-windows-949
-      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
       rdfs:label "x-windows-949"@en ;
       dc:description "x-windows-949 is a character encoding"@en .
 
 ms:x-windows-950
-      rdf:type owl:NamedIndividual , ms:CharacterEncoding ;
+      rdf:type ms:CharacterEncoding , owl:NamedIndividual ;
       rdfs:label "x-windows-950"@en ;
       dc:description "x-windows-950 is a character encoding"@en .
 
@@ -3606,7 +3602,7 @@ foaf:Document
       rdfs:comment "A document." ;
       rdfs:isDefinedBy foaf: ;
       rdfs:label "Document"@en ;
-      owl:disjointWith foaf:Project , foaf:Person , foaf:Organization ;
+      owl:disjointWith foaf:Organization , foaf:Person , foaf:Project ;
       vs:term_status "testing" .
 
 foaf:Organization
@@ -3616,7 +3612,7 @@ foaf:Organization
       rdfs:label "Organization"@en ;
       rdfs:subClassOf foaf:Agent ;
       browser:topNode foaf:Agent ;
-      owl:disjointWith foaf:Person , foaf:Document ;
+      owl:disjointWith foaf:Document , foaf:Person ;
       vs:term_status "stable" .
 
 foaf:Person
@@ -3634,7 +3630,7 @@ foaf:Project
       rdfs:comment "A project (a collective endeavour of some kind)." ;
       rdfs:isDefinedBy foaf: ;
       rdfs:label "Project"@en ;
-      owl:disjointWith foaf:Person , foaf:Document ;
+      owl:disjointWith foaf:Document , foaf:Person ;
       owl:equivalentClass ms:Project ;
       vs:term_status "unstable" .
 
@@ -3655,16 +3651,16 @@ foaf:givenName
       vs:term_status "testing" .
 
 foaf:homepage
-      rdf:type owl:ObjectProperty , owl:InverseFunctionalProperty ;
+      rdf:type owl:InverseFunctionalProperty , owl:ObjectProperty ;
       rdfs:comment "A homepage for some thing." ;
       rdfs:isDefinedBy foaf: ;
       rdfs:label "homepage"@en ;
       rdfs:range foaf:Document ;
-      rdfs:subPropertyOf foaf:page , foaf:isPrimaryTopicOf ;
+      rdfs:subPropertyOf foaf:isPrimaryTopicOf , foaf:page ;
       vs:term_status "stable" .
 
 foaf:mbox
-      rdf:type owl:ObjectProperty , owl:InverseFunctionalProperty ;
+      rdf:type owl:InverseFunctionalProperty , owl:ObjectProperty ;
       rdfs:comment "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox." ;
       rdfs:domain foaf:Agent ;
       rdfs:isDefinedBy foaf: ;
@@ -3679,7 +3675,7 @@ foaf:member
       vs:term_status "testing" .
 
 foaf:name
-      rdf:type owl:DatatypeProperty , rdf:Property ;
+      rdf:type rdf:Property , owl:DatatypeProperty ;
       rdfs:comment "A name for some thing." ;
       rdfs:isDefinedBy foaf: ;
       rdfs:label "name"@en ;
