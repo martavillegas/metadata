@@ -20,6 +20,9 @@
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
+bio:Management
+      dc:description "Any task that deals with management of Web services."@en .
+
 ms:Document
       dc:description "A document is a bounded physical representation of body of information designed with the capacity (and usually intent) to communicate [bibo]"@en .
 
@@ -1533,7 +1536,6 @@ test:Apertium-ca-it_resource-8v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1566,7 +1568,6 @@ test:Apertium-ca_resource-18v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1599,7 +1600,6 @@ test:Apertium-en-ca_resource-3v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1632,7 +1632,6 @@ test:Apertium-en-es_resource-5v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1665,7 +1664,6 @@ test:Apertium-en-gl_resource-4v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1698,7 +1696,6 @@ test:Apertium-es-ast_resource-13v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1731,7 +1728,6 @@ test:Apertium-es-ca_resource-14v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1764,7 +1760,6 @@ test:Apertium-es-gl_resource-15v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1798,7 +1793,6 @@ test:Apertium-es-pt_resource-16v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1831,7 +1825,6 @@ test:Apertium-es-ro_resource-17v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1864,7 +1857,6 @@ test:Apertium-es_resource-20v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1896,7 +1888,6 @@ test:Apertium-eu-es_resource-2v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1930,7 +1921,6 @@ test:Apertium-eu_resource-1v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1964,7 +1954,6 @@ test:Apertium-fr-ca_resource-6v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -1997,7 +1986,6 @@ test:Apertium-fr-es_resource-7v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2030,7 +2018,6 @@ test:Apertium-gl_resource-19v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2064,7 +2051,6 @@ test:Apertium-it-es_resource-NEWv2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2098,7 +2084,6 @@ test:Apertium-oc-ca_resource-9v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2131,7 +2116,6 @@ test:Apertium-oc-es_resource-10v2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2198,7 +2182,6 @@ test:Apertium-pt-gl_resource-12v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2232,7 +2215,6 @@ test:Freeling-Ast_resource-25v2
               ms:LMF ;
       ms:contactPerson test:person_Lluís_Padró , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_34 , test:doc_9 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2265,24 +2247,23 @@ test:Freeling-Catalan_resource-26v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Lluís_Padró ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
-      ms:documentation test:doc_9 , test:doc_34 ;
+      ms:documentation test:doc_34 , test:doc_9 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_ViClone , test:project_Opentrad , test:project_OpenMT-2 , test:project_FAUST , test:project_METANET4U , test:project_CPL-UPC , test:project_XLike , test:project_KNOW ;
+      ms:fundingProject test:project_OpenMT-2 , test:project_FAUST , test:project_XLike , test:project_ViClone , test:project_METANET4U , test:project_CPL-UPC , test:project_Opentrad , test:project_KNOW ;
       ms:identifier "http://hdl.handle.net/10230/17129" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> ;
       ms:languageId "ca" ;
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
-              ms:partOfSpeech , ms:lemma ;
+              ms:lemma , ms:partOfSpeech ;
       ms:mediaType ms:text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Catalan Freeling lexicon as described in
                   http://nlp.lsi.upc.edu/freeling/""" ;
-      ms:resourceCreator test:organization_UB-CLiC , test:organization_UPF-IULA , test:organization_UA-InterNostrum , test:organization_UPC-TALP ;
+      ms:resourceCreator test:organization_UPC-TALP , test:organization_UPF-IULA , test:organization_UB-CLiC , test:organization_UA-InterNostrum ;
       ms:resourceName "Catalan LMF Freeling Lexicon" ;
       ms:resourceShortName
               "Catalan LMF Freeling Lexicon" ;
@@ -2299,7 +2280,6 @@ test:Freeling-Spanish-Sense_resource-30v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Lluís_Padró ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_9 , test:doc_34 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2333,11 +2313,10 @@ test:Freeling_Catalan-Sense_resource-29v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Lluís_Padró ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_9 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_XLike , test:project_CPL-UPC , test:project_OpenMT-2 , test:project_Opentrad , test:project_KNOW , test:project_ViClone , test:project_FAUST , test:project_METANET4U ;
+      ms:fundingProject test:project_XLike , test:project_CPL-UPC , test:project_OpenMT-2 , test:project_Opentrad , test:project_KNOW , test:project_ViClone , test:project_METANET4U , test:project_FAUST ;
       ms:identifier "http://hdl.handle.net/10230/17106" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> ;
       ms:languageId "ca" ;
@@ -2366,7 +2345,6 @@ test:Freeling_Galician_resource-28v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Lluís_Padró ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_9 , test:doc_34 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -2399,11 +2377,10 @@ test:Freeling_Spanish_resource-27v2
               ms:LMF ;
       ms:contactPerson test:person_Lluís_Padró , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_9 , test:doc_34 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
-      ms:fundingProject test:project_FAUST , test:project_XLike , test:project_Opentrad , test:project_CPL-UPC , test:project_ViClone , test:project_METANET4U , test:project_KNOW , test:project_OpenMT-2 ;
+      ms:fundingProject test:project_Opentrad , test:project_CPL-UPC , test:project_OpenMT-2 , test:project_XLike , test:project_ViClone , test:project_FAUST , test:project_KNOW , test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/17125" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageId "es" ;
@@ -2415,7 +2392,7 @@ test:Freeling_Spanish_resource-27v2
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Spanish Freeling lexicon as described in http://nlp.lsi.upc.edu/freeling/index.php" ;
-      ms:resourceCreator test:organization_UPF-IULA , test:organization_UB-CLiC , test:organization_UA-InterNostrum , test:organization_UPC-TALP ;
+      ms:resourceCreator test:organization_UA-InterNostrum , test:organization_UB-CLiC , test:organization_UPC-TALP , test:organization_UPF-IULA ;
       ms:resourceName "Spanish LMF Freeling Lexicon" ;
       ms:resourceShortName
               "Spanish LMF Freeling Lexicon" ;
@@ -2689,7 +2666,6 @@ test:PAN_metadata_ENV_Glossary_FR-EN
               ms:UTF-8 ;
       ms:contactPerson test:person_Vera_Aleksic , test:person_Gregor_Thurmair ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_44 ;
       ms:domain "environment" ;
       ms:fundingProject test:project_PANACEA ;
@@ -2831,7 +2807,6 @@ test:PAN_metadata_Glossary_DE-EN_con
               ms:UTF-8 ;
       ms:contactPerson test:person_Vera_Aleksic , test:person_Gregor_Thurmair ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_44 ;
       ms:domain "European administrative" ;
       ms:fundingProject test:project_PANACEA ;
@@ -2858,7 +2833,6 @@ test:PAN_metadata_Glossary_DE-EN_prob
               ms:UTF-8 ;
       ms:contactPerson test:person_Vera_Aleksic , test:person_Gregor_Thurmair ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_44 ;
       ms:domain "general" ;
       ms:fundingProject test:project_PANACEA ;
@@ -2885,7 +2859,6 @@ test:PAN_metadata_LAB_Glossary_FR-EN
               ms:UTF-8 ;
       ms:contactPerson test:person_Gregor_Thurmair , test:person_Vera_Aleksic ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_44 ;
       ms:domain "labour legislation" ;
       ms:fundingProject test:project_PANACEA ;
@@ -3990,7 +3963,6 @@ test:ParoleLexicon-es_resource-34v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_54 , test:doc_4 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -4024,7 +3996,6 @@ test:ParoleSimple-es_resource-35v2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_4 , test:doc_54 , test:doc_22 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology , ms:syntax , ms:semantics ;
@@ -4533,7 +4504,7 @@ test:doc_47
       dc:subject <http://dbpedia.org/resource/Parallel_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> ;
       dc:title "Corpus Paralelo CLUVI"@es ;
       dcterms:bibliographicCitation
-              "Universidade de Vigo. Seminario de Lingüística Informática. Corpus Paralelo CLUVI [Internet]. 2003 [cited 2013 Jul 9]. Available from: http://sli.uvigo.es/CLUVI/" ;
+              "Universidade de Vigo. Seminario de Lingüística Informática. Corpus Paralelo CLUVI [Internet]. 2003. Available from: http://sli.uvigo.es/CLUVI/"^^xsd:string ;
       ms:url  "http://sli.uvigo.es/CLUVI/" .
 
 test:doc_48
@@ -5032,6 +5003,19 @@ test:doc_85
       ms:url  "http://hdl.handle.net/10230/20380"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/pdln/Bel10> .
 
+test:doc_86
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Dependency structure annotation in the IULA Spanish LSP Treebank"@en ;
+      dc:creator "test:person_Núria_Bel"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Marimon> ;
+      dc:identifier "http://dx.doi.org/10.1007/s10579-014-9280-5"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Treebank> ;
+      dc:title "Dependency structure annotation in the IULA Spanish LSP Treebank"@en ;
+      dcterms:bibliographicCitation
+              "Marimon M, Bel N. Dependency structure annotation in the IULA Spanish LSP Treebank. Language Resources and Evaluation [Internet]. 2014;1–22.Available from: ttp://dx.doi.org/10.1007/s10579-014-9280-5"^^xsd:string ;
+      ms:documentation test:metadata_IULA-Spanish_treebank ;
+      ms:url  "http://dx.doi.org/10.1007/s10579-014-9280-5"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/lre/Marimon13> .
+
 test:doc_9
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "FreeLing: An Open-Source Suite of Language Analyzers"@en ;
@@ -5077,7 +5061,7 @@ test:doc_uc_11
       dc:subject <http://dbpedia.org/resource/Blogs> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Sentiment_analysis> , <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Media_studies> ;
       dc:title "Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine"@en ;
       dcterms:bibliographicCitation
-              "Waila P, Singh VK, Singh MK. Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine. Advances in Computing, Communications and Informatics (ICACCI), 2013 International Conference on [Internet]. 2013 [cited 2014 Mar 12]. p. 1166–71. Available from: http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
+              "Waila P, Singh VK, Singh MK. Blog text analysis using topic modeling, named entity recognition and sentiment classifier combine. Advances in Computing, Communications and Informatics (ICACCI), 2013 International Conference on [Internet]. 2013. p. 1166–71. Available from: http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Communication> , <http://dbpedia.org/resource/Political_science> ;
       ms:url  "http://dx.doi.org/10.1109/ICACCI.2013.6637342"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/icacci/WailaSS13> .
@@ -5119,7 +5103,7 @@ test:doc_uc_15
       rdf:type owl:NamedIndividual , bibo:Article ;
       rdfs:label "El poder de les paraules: “Municipals’11 online"@en ;
       dc:identifier "http://hdl.handle.net/10230/12459"^^xsd:string ;
-      dc:subject test:project_Municipals , <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> ;
+      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> ;
       dc:title "El poder de les paraules: “Municipals’11 online"^^xsd:string ;
       dcterms:bibliographicCitation
               "El poder de les paraules: “Municipals’11 online.”. UPF.EDU [Internet]. 2011;2:12–3. Available from: http://hdl.handle.net/10230/12459"^^xsd:string ;
@@ -5284,7 +5268,7 @@ test:doc_uc_27
       dc:subject <http://dbpedia.org/resource/Legislation> , bio:TextSimilarity , <http://dbpedia.org/resource/Intertextuality> ;
       dc:title "Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach"@en ;
       dcterms:bibliographicCitation
-              "Wilkerson J, Smith D, Stramp N. Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach. Paper presented at: New Directions in Analyzing Text as Data; 2013 Sep 27-28; London, United Kingdom  [Internet]. Available from: http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
+              "Wilkerson J, Smith D, Stramp N. Tracing the Flow of Policy Ideas in Legislatures: A Text Reuse Approach. Paper presented at: New Directions in Analyzing Text as Data; 2013 Sep 27-28; London, United Kingdom [Internet]. Available from: http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Political_science> ;
       ms:url  "http://www.kenbenoit.net/pdfs/NDATAD2013/PolicyIdeas2013TextasData.pdf"^^xsd:string .
 
@@ -5296,7 +5280,7 @@ test:doc_uc_28
       dc:subject <http://dbpedia.org/resource/Classics> , <http://dbpedia.org/resource/Historiography> , bio:TextSimilarity , <http://dbpedia.org/resource/Academic_journal> ;
       dc:title "Computational Historiography: Data Mining in a Century of Classics Journals"@en ;
       dcterms:bibliographicCitation
-              "Mimno D. Computational Historiography: Data Mining in a Century of Classics Journals. J Comput Cult Herit  [Internet]. 2012 Apr;5(1):3:1–3:19. Avaiilable from: http://doi.acm.org/10.1145/2160165.2160168"^^xsd:string ;
+              "Mimno D. Computational Historiography: Data Mining in a Century of Classics Journals. J Comput Cult Herit  [Internet]. 2012 Apr;5(1):3:1–3:19. Available from: http://doi.acm.org/10.1145/2160165.2160168"^^xsd:string ;
       ms:area <http://dbpedia.org/resource/Philology> , <http://dbpedia.org/resource/Archeology> ;
       ms:url  " http://doi.acm.org/10.1145/2160165.2160168"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/jocch/Mimno12> .
@@ -5725,7 +5709,6 @@ test:metadata_ApertiumENv2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -5759,7 +5742,6 @@ test:metadata_ApertiumFRv2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -5792,7 +5774,6 @@ test:metadata_ApertiumITv2
               ms:LMF ;
       ms:contactPerson test:person_Mikel_Forcada , test:person_Jorge_Vivaldi ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -5826,7 +5807,6 @@ test:metadata_ApertiumPTv2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Mikel_Forcada ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_13 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology ;
@@ -5996,7 +5976,7 @@ test:metadata_IULA-Spanish_treebank
       ms:segmentationLevel
               ms:word ;
       ms:sizeInfo test:size_N15B6E ;
-      ms:tagset "see Marimon, M. (in press)" ;
+      ms:tagset "EAGLES tagset for Spanish"^^xsd:string ;
       ms:url  "http://hdl.handle.net/10230/20048" .
 
 test:metadata_ParoleSimpleLexinfoLexicon
@@ -6201,7 +6181,6 @@ test:metadata_SimpleParole-Catalanv2
               ms:LMF ;
       ms:contactPerson test:person_Jorge_Vivaldi , test:person_Joan_Soler ;
       ms:creationMode ms:automatic ;
-      ms:creationTool "" ;
       ms:documentation test:doc_55 , test:doc_56 ;
       ms:domain "general" ;
       ms:encodingLevel ms:morphology , ms:syntax , ms:semantics ;
@@ -6288,7 +6267,7 @@ test:metadata_TRL_Tibidabo_LSP_treebank_ES
       ms:segmentationLevel
               ms:word ;
       ms:sizeInfo test:size_N18DC9 , test:size_N18DBA , test:size_N18DB0 , test:size_N18DBF , test:size_N18DB5 , test:size_N18DC4 ;
-      ms:tagset "see Marimon, M. (in press)" ;
+      ms:tagset "EAGLES tagset for Spanish"^^xsd:string ;
       ms:url  "http://www.iula.upf.edu" .
 
 test:metadata_TRL_maltparser_module_ES
@@ -7277,7 +7256,7 @@ test:project_Municipals
       dc:contributor test:organization_UPF-IULA , test:project_CLARIN_ES ;
       dc:creator "Carlos Gonzalo"^^xsd:string ;
       dc:description "This is an e-communication and e-politics project that analyses the 2011 municipal election campaign in Spain. The main objective of the project is to analyse new tendencies in e-politics and to demonstrate the impact of internet on the electoral process. CLARIN contributed to the research by providing services and tools to run an experiment that automatically analysed published texts in the Catalan political blogosphere related to this election campaign. The process included: a) automatically and periodically access to 459 representative blogs in the Catalan political blogosphere, b) obtaining and pre-processing of the different texts (over 8000 posts) and (iii) texts processing with different statistical tools to calculate the most significant words for each blog in contrast to the others."@en ;
-      dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> , "<http://dbpedia.org/resource/Mass_media>"^^xsd:string , bio:TextMining , bio:StatisticsAnalysis ;
+      dc:subject <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Media_studies> , bio:TextMining , bio:StatisticsAnalysis ;
       ms:affiliation "Departament de Comunicació. Universitat Pompeu Fabra"@cat ;
       ms:area <http://dbpedia.org/resource/Communication> , <http://dbpedia.org/resource/Political_science> ;
       ms:languageName "Catalan"^^xsd:string ;
