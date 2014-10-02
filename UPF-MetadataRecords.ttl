@@ -37,7 +37,7 @@ ms:LMF
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#101>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "FreeLing  Tokenizer Web Service"@en ;
+      rdfs:label "FreeLing Tokenizer Web Service v.2.1"@en ;
       dc:description "This WS deploys a FreeLing-based text tokenizer. The WS splits a file in plain text format and UTF-8 encoded into units (tokens). The languages supported are Catalan, English, Galician, Italian, Portuguese, Russian, Spanish, Welsh, and Asturian. WARNING: This WS has a new version."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#tokenization.freeling_tokenizer_row" ;
@@ -54,11 +54,11 @@ ms:LMF
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageName "English" , "Portuguese" , "Spanish, Castilian" , "Catalan, Valencian" , "Asturian, Bable" , "Galician" , "Italian" ;
-      ms:resourceName "FreeLing  Tokenizer Web Service" .
+      ms:resourceName "FreeLing Tokenizer Web Service v.2.1"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#105>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "FreeLing Dependency parser Web Service"@en ;
+      rdfs:label "FreeLing Dependency parser Web Service v.2.1"@en ;
       dc:description "Freeling-based dependency parser. The languages supported are English, Catalan, Spanish, Asturian and Galician. WARNING: This WS has a new version."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#syntactic_tagging.freeling_dependency_row" ;
@@ -75,11 +75,11 @@ ms:LMF
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ast> ;
       ms:languageName "Spanish, Castilian" , "Asturian, Bable" , "Galician" , "Catalan, Valencian" , "English" ;
-      ms:resourceName "FreeLing Dependency parser Web Service" .
+      ms:resourceName "FreeLing Dependency parser Web Service v.2.1"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#106>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "FreeLing  Chunker parser Web Service"@en ;
+      rdfs:label "FreeLing Chunker parser Web Service v.2.1"@en ;
       dc:description "Freeling-based chunker parser. The languages supported are English, Catalan, Spanish, Asturian and Galician. WARNING: This WS has a new version."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#syntactic_tagging.freeling_parsed_row" ;
@@ -96,7 +96,7 @@ ms:LMF
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageName "Galician" , "Spanish, Castilian" , "Asturian, Bable" , "English" , "Catalan, Valencian" ;
-      ms:resourceName "FreeLing  Chunker parser Web Service" .
+      ms:resourceName "FreeLing Chunker parser Web Service  v.2.1"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#107>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -666,7 +666,7 @@ ms:LMF
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#205>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "FreeLing  Sentence Splitter Web Service"@en ;
+      rdfs:label "FreeLing Sentence Splitter Web Service v.2.1"@en ;
       dc:description "This WS performs a FreeLing-based sentence splitter. The WS splits a file in plain text format and UTF-8 encoded into units (tokens).  Output sentences are separated by empty lines. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese. WARNING: This WS has a new version."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#segmentation.freeling_sentence_splitter_row" ;
@@ -683,7 +683,7 @@ ms:LMF
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#ast> ;
       ms:languageName "Asturian, Bable" , "Italian" , "Spanish, Castilian" , "English" , "Galician" , "Portuguese" , "Catalan, Valencian" ;
-      ms:resourceName "FreeLing  Sentence Splitter Web Service" .
+      ms:resourceName "FreeLing Sentence Splitter Web Service  v.2.1"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#206>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -888,7 +888,7 @@ You can choose to have this prediction as:
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#rus> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#por> ;
       ms:languageName "Asturian, Bable" , "Italian" , "Russian" , "Galician" , "Portuguese" , "Catalan, Valencian" , "Spanish, Castilian" , "English" ;
-      ms:resourceName "FreeLing Morphosyntactic analyzer Web Service" .
+      ms:resourceName "FreeLing Morphosyntactic analyzer Web Service v.3"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#237>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -911,11 +911,11 @@ You can choose to have this prediction as:
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#rus> , <http://www.fao.org/aims/aos/languagecode.owl#wel> , <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageName "Russian" , "Italian" , "Portuguese" , "English" , "Welsh" , "Galician" , "Catalan, Valencian" , "Spanish, Castilian" , "Asturian, Bable" ;
-      ms:resourceName "FreeLing Morphosyntactic tagger Web Service" .
+      ms:resourceName "FreeLing Morphosyntactic tagger Web Service v.3"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#238>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "FreeLing  Tokenizer Web Service v.3"@en ;
+      rdfs:label "FreeLing Tokenizer Web Service v.3"@en ;
       dc:description "This WS deploys a FreeLing-based text tokenizer (v 3.0). The WS splits a file in plain text format and UTF-8 encoded into units (tokens). The languages supported are Catalan, English, Galician, Italian, Portuguese, Russian, Spanish, Welsh, and Asturian."@en ;
       dcterms:isReferencedBy
               test:doc_66 , test:doc_60 , test:doc_68 ;
@@ -934,11 +934,11 @@ You can choose to have this prediction as:
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#rus> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#wel> , <http://www.fao.org/aims/aos/languagecode.owl#por> ;
       ms:languageName "Galician" , "Asturian, Bable" , "Russian" , "Portuguese" , "Catalan, Valencian" , "Spanish, Castilian" , "Welsh" , "Italian" , "English" ;
-      ms:resourceName "FreeLing  Tokenizer Web Service" .
+      ms:resourceName "FreeLing Tokenizer Web Service v.3"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#239>
       rdf:type owl:NamedIndividual , bio:Service ;
-      rdfs:label "FreeLing  Sentence Splitter Web Service v.3"@en ;
+      rdfs:label "FreeLing Sentence Splitter Web Service v.3"@en ;
       dc:description "This WS performs a FreeLing-based sentence splitter (v 3.0). The WS splits a file in plain text format and UTF-8 encoded into units (tokens).  Output sentences are separated by empty lines. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#segmentation.freeling3_sentence_splitter_row" ;
@@ -955,7 +955,7 @@ You can choose to have this prediction as:
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#wel> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#rus> , <http://www.fao.org/aims/aos/languagecode.owl#ita> ;
       ms:languageName "Russian" , "English" , "Catalan, Valencian" , "Asturian, Bable" , "Galician" , "Portuguese" , "Welsh" , "Italian" , "Spanish, Castilian" ;
-      ms:resourceName "FreeLing  Sentence Splitter Web Service" .
+      ms:resourceName "FreeLing Sentence Splitter Web Service v.3"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#240>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -976,11 +976,11 @@ You can choose to have this prediction as:
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageName "Asturian, Bable" , "Spanish, Castilian" , "English" , "Catalan, Valencian" , "Galician" ;
-      ms:resourceName "FreeLing Dependency parser Web Service" .
+      ms:resourceName "FreeLing Dependency parser Web Service v.3"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#241>
       rdf:type owl:NamedIndividual , bio:Service ;
-      rdfs:label "FreeLing  Chunker parser Web Service v.3"@en ;
+      rdfs:label "FreeLing Chunker parser Web Service v.3"@en ;
       dc:description "This WS performs a FreeLing-based chunker parser (v 3.0).  The WS requires a plain text input. The possible outputs formats are FreeLing , XML, and XML CQP ready. The languages supported are English, Catalan, Spanish, Asturian and Galician."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#syntactic_tagging.freeling3_parsed_row" ;
@@ -991,13 +991,13 @@ You can choose to have this prediction as:
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:CorpusProcessing , bio:SyntacticTagging ;
+      bio:task bio:SyntacticTagging , bio:CorpusProcessing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.freeling3_parsed?wsdl" ;
       ms:documentation test:doc_9 , test:doc_34 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageName "Spanish, Castilian" , "English" , "Catalan, Valencian" , "Asturian, Bable" , "Galician" ;
-      ms:resourceName "FreeLing  Chunker parser Web Service" .
+      ms:resourceName "FreeLing Chunker parser Web Service v.3"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#243>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1486,7 +1486,7 @@ This version of the webservice is not able to follow such links, so it won’t p
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#98>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "FreeLing Morphosyntactic analyzer Web Service"@en ;
+      rdfs:label "FreeLing Morphosyntactic analyzer Web Service v.2.1"@en ;
       dc:description "This Web Service deploys a FreeLing-based morphological analyzer. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese. WARNING: This WS has a new version."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#morphosintactic_tagging.freeling_morpho_row" ;
@@ -1503,11 +1503,11 @@ This version of the webservice is not able to follow such links, so it won’t p
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#por> ;
       ms:languageName "Catalan, Valencian" , "Spanish, Castilian" , "Italian" , "Portuguese" , "English" , "Galician" ;
-      ms:resourceName "FreeLing Morphosyntactic analyzer Web Service" .
+      ms:resourceName "FreeLing Morphosyntactic analyzer Web Service v.2.1"^^xsd:string .
 
 <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#99>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "FreeLing Morphosyntactic tagger Web Service"@en ;
+      rdfs:label "FreeLing Morphosyntactic tagger Web Service v.2.1"@en ;
       dc:description "This WS performs a FreeLing-based part-of-speech tagger.  WS job duration depends on the server load, approximately 1 million words takes one minute. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, and Portuguese. WARNING: This WS has a new version."@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#morphosintactic_tagging.freeling_tagging_row" ;
@@ -1524,7 +1524,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ita> ;
       ms:languageName "Galician" , "Portuguese" , "Asturian, Bable" , "Italian" , "Spanish, Castilian" , "English" , "Catalan, Valencian" ;
-      ms:resourceName "FreeLing Morphosyntactic tagger Web Service" .
+      ms:resourceName "FreeLing Morphosyntactic tagger Web Service v.2.1"^^xsd:string .
 
 test:Apertium-ca-it_resource-8v2
       rdf:type ms:ComputationalLexicon ;
@@ -5012,7 +5012,6 @@ test:doc_86
       dc:title "Dependency structure annotation in the IULA Spanish LSP Treebank"@en ;
       dcterms:bibliographicCitation
               "Marimon M, Bel N. Dependency structure annotation in the IULA Spanish LSP Treebank. Language Resources and Evaluation [Internet]. 2014;1–22.Available from: ttp://dx.doi.org/10.1007/s10579-014-9280-5"^^xsd:string ;
-      ms:documentation test:metadata_IULA-Spanish_treebank ;
       ms:url  "http://dx.doi.org/10.1007/s10579-014-9280-5"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/lre/Marimon13> .
 
@@ -5958,7 +5957,7 @@ test:metadata_IULA-Spanish_treebank
               ms:UTF-8 ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:creationMode ms:manual ;
-      ms:documentation test:doc_24 , test:doc_7 , test:doc_59 , test:doc_25 ;
+      ms:documentation test:doc_24 , test:doc_7 , test:doc_86 , test:doc_59 , test:doc_25 ;
       ms:domain "economy" , "law" , "environment" , "computer science" , "medicine" ;
       ms:fundingProject test:project_METANET4U ;
       ms:identifier "http://hdl.handle.net/10230/20048" ;
