@@ -1547,7 +1547,7 @@ test:Apertium-ca-it_resource-8v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech , ms:semantics-CrossReferences ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1579,7 +1579,7 @@ test:Apertium-ca_resource-18v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Monolingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1611,7 +1611,7 @@ test:Apertium-en-ca_resource-3v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech , ms:semantics-CrossReferences ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1643,7 +1643,7 @@ test:Apertium-en-es_resource-5v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:lemma , ms:semantics-CrossReferences ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1675,7 +1675,7 @@ test:Apertium-en-gl_resource-4v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1707,7 +1707,7 @@ test:Apertium-es-ast_resource-13v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1739,7 +1739,7 @@ test:Apertium-es-ca_resource-14v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1771,7 +1771,7 @@ test:Apertium-es-gl_resource-15v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
@@ -1804,7 +1804,7 @@ test:Apertium-es-pt_resource-16v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:lemma , ms:semantics-CrossReferences , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1836,7 +1836,7 @@ test:Apertium-es-ro_resource-17v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech , ms:semantics-CrossReferences ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1868,7 +1868,7 @@ test:Apertium-es_resource-20v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Monolingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1899,7 +1899,7 @@ test:Apertium-eu-es_resource-2v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
@@ -1932,7 +1932,7 @@ test:Apertium-eu_resource-1v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Monolingual dictionary as described in
@@ -1965,7 +1965,7 @@ test:Apertium-fr-ca_resource-6v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -1997,7 +1997,7 @@ test:Apertium-fr-es_resource-7v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -2029,7 +2029,7 @@ test:Apertium-gl_resource-19v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
@@ -2062,7 +2062,7 @@ test:Apertium-it-es_resource-NEWv2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
@@ -2095,7 +2095,7 @@ test:Apertium-oc-ca_resource-9v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Bilingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -2127,7 +2127,7 @@ test:Apertium-oc-es_resource-10v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
@@ -2160,7 +2160,7 @@ test:Apertium-pt-ca_resource-11v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
@@ -2193,7 +2193,7 @@ test:Apertium-pt-gl_resource-12v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:lemma , ms:semantics-CrossReferences , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Bilingual dictionary as described in
@@ -2226,7 +2226,7 @@ test:Freeling-Ast_resource-25v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Asturian Freeling lexicon as described in http://nlp.lsi.upc.edu/freeling/" ;
@@ -2258,7 +2258,7 @@ test:Freeling-Catalan_resource-26v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Catalan Freeling lexicon as described in
@@ -2291,7 +2291,7 @@ test:Freeling-Spanish-Sense_resource-30v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:semantics-Relations , ms:lemma , ms:semantics-CrossReferences ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Spanish Freeling Sense as described in
@@ -2324,7 +2324,7 @@ test:Freeling_Catalan-Sense_resource-29v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:semantics-Relations , ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Catalan Freeling Sense as described in http://nlp.lsi.upc.edu/freeling/" ;
@@ -2356,7 +2356,7 @@ test:Freeling_Galician_resource-28v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Galician Freeling lexicon as described in http://nlp.lsi.upc.edu/freeling/" ;
@@ -2388,7 +2388,7 @@ test:Freeling_Spanish_resource-27v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Spanish Freeling lexicon as described in http://nlp.lsi.upc.edu/freeling/index.php" ;
@@ -2419,7 +2419,7 @@ test:IULA-UPF-term_resource-36v2
       ms:linguality ms:multilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "UPF Term located at http://www.iula.upf.edu/rec/upfterm/cat/index.htm" ;
@@ -2451,6 +2451,7 @@ test:IULA-corpus92_resource-23v2
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "IULACT CORPUS92 http://www.iula.upf.edu/rec/corpus92/" ;
@@ -2485,7 +2486,7 @@ test:IULA-genomeVocabulary_resource-31v2
       ms:linguality ms:multilingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech , ms:semantics-CrossReferences ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Basic Vocabulary of Human Genome from UPF-IULA located at http://www.iula.upf.edu/rec/vbgenoma/esp/index.html" ;
@@ -2517,6 +2518,7 @@ test:IULA-genomicsCorpus-cat_resource-32v2
       ms:languageId "ca" ;
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "IULACT GENOME" ;
@@ -2551,6 +2553,7 @@ test:IULA-genomicsCorpus-es_resource-33v2
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "IULACT GENOME http://bwananet.iula.upf.edu/" ;
@@ -2584,7 +2587,7 @@ test:IULA-neologisms-ca_resource-21v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Bank of Catalan Neologisms http://obneo.iula.upf.edu/bobneo/index.php" ;
@@ -2615,7 +2618,7 @@ test:IULA-neologisms-es_resource-22v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Bank of Spanish Neologisms http://obneo.iula.upf.edu/bobneo/index.php" ;
@@ -2647,7 +2650,7 @@ test:IULA-vocabEcon_resource-24v2
       ms:linguality ms:multilingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Multilingual Vocabulary of Economics from UPF-IULA located at http://www.iula.upf.edu/rec/ricoterm/docums/vocecon/eng/index.html" ;
@@ -2674,7 +2677,7 @@ test:PAN_metadata_ENV_Glossary_FR-EN
       ms:languageId "en" , "fr" ;
       ms:languageName "French" , "English" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/tsv" ;
       ms:resourceCreator test:organization_Linguatec_GmbH ;
@@ -2698,7 +2701,7 @@ test:PAN_metadata_ENV_MWE_SCF_merged_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -2719,7 +2722,7 @@ test:PAN_metadata_ENV_bilingual_Glossary_EL-EN
       ms:languageId "el" , "en" ;
       ms:languageName "Greek" , "English" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_DCU_School_of_Computing ;
@@ -2740,7 +2743,7 @@ test:PAN_metadata_ENV_bilingual_Glossary_FR-EN
       ms:languageId "fr" , "en" ;
       ms:languageName "French" , "English" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_DCU_School_of_Computing ;
@@ -2765,7 +2768,7 @@ test:PAN_metadata_ENV_parole_merged_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -2789,7 +2792,7 @@ test:PAN_metadata_ENV_rep_merged_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -2815,7 +2818,7 @@ test:PAN_metadata_Glossary_DE-EN_con
       ms:languageId "en" , "de" ;
       ms:languageName "English" , "German" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/tsv" ;
       ms:resourceCreator test:organization_Linguatec_GmbH ;
@@ -2841,7 +2844,7 @@ test:PAN_metadata_Glossary_DE-EN_prob
       ms:languageId "en" , "de" ;
       ms:languageName "German" , "English" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/tsv" ;
       ms:resourceCreator test:organization_Linguatec_GmbH ;
@@ -2867,7 +2870,7 @@ test:PAN_metadata_LAB_Glossary_FR-EN
       ms:languageId "fr" , "en" ;
       ms:languageName "French" , "English" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/tsv" ;
       ms:resourceCreator test:organization_Linguatec_GmbH ;
@@ -2891,7 +2894,7 @@ test:PAN_metadata_LAB_MWE_SCF_merged_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -2912,7 +2915,7 @@ test:PAN_metadata_LAB_bilingual_Glossary_EL-EN
       ms:languageId "en" , "el" ;
       ms:languageName "Greek" , "English" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_DCU_School_of_Computing ;
@@ -2933,7 +2936,7 @@ test:PAN_metadata_LAB_bilingual_Glossary_FR-EN
       ms:languageId "fr" , "en" ;
       ms:languageName "French" , "English" ;
       ms:linguality ms:bilingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_DCU_School_of_Computing ;
@@ -2958,7 +2961,7 @@ test:PAN_metadata_LAB_parole_merged_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -2982,7 +2985,7 @@ test:PAN_metadata_LAB_rep_merged_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3007,7 +3010,7 @@ test:PAN_metadata_MW_ENV_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3031,7 +3034,7 @@ test:PAN_metadata_MW_LAB_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3055,7 +3058,7 @@ test:PAN_metadata_TRL-ACQ_lexical_semantic_classes_ENV_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3079,7 +3082,7 @@ test:PAN_metadata_TRL-ACQ_lexical_semantic_classes_ENV_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3103,7 +3106,7 @@ test:PAN_metadata_TRL-ACQ_lexical_semantic_classes_LAB_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3127,7 +3130,7 @@ test:PAN_metadata_TRL-ACQ_lexical_semantic_classes_LAB_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3151,7 +3154,7 @@ test:PAN_metadata_TRL-Multilevel_multidomain_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3175,7 +3178,7 @@ test:PAN_metadata_TRL-VSubcat_ACQ_ENV_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#249> ;
@@ -3200,7 +3203,7 @@ test:PAN_metadata_TRL-VSubcat_ACQ_LAB_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:relatedResource <http://purl.org/ms-lod/UPF-MetadataRecords.ttl#249> ;
@@ -3225,7 +3228,7 @@ test:PAN_metadata_TRL-VSubcat_ACQ_lexical_semantic_class_ENV_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3249,7 +3252,7 @@ test:PAN_metadata_TRL-VSubcat_ACQ_lexical_semantic_class_LAB_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3273,7 +3276,7 @@ test:PAN_metadata_TRL-VSubcat_GS_ENV_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3297,7 +3300,7 @@ test:PAN_metadata_TRL-VSubcat_GS_LAB_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3322,7 +3325,7 @@ test:PAN_metadata_TRL-lexical_semantic_classes_GS_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3347,7 +3350,7 @@ test:PAN_metadata_TRL-lexical_semantic_classes_GS_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3371,7 +3374,7 @@ test:PAN_metadata_VSubcat_ACQ_ENV_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CAM-DTAL ;
@@ -3396,7 +3399,7 @@ test:PAN_metadata_VSubcat_ACQ_ENV_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3420,7 +3423,7 @@ test:PAN_metadata_VSubcat_ACQ_LAB_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CAM-DTAL ;
@@ -3445,7 +3448,7 @@ test:PAN_metadata_VSubcat_ACQ_LAB_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3469,7 +3472,7 @@ test:PAN_metadata_VSubcat_ACQ_lexical_semantic_class_ENV_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CAM-DTAL , test:organization_UPF-IULA ;
@@ -3493,7 +3496,7 @@ test:PAN_metadata_VSubcat_ACQ_lexical_semantic_class_LAB_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA , test:organization_CAM-DTAL ;
@@ -3518,7 +3521,7 @@ test:PAN_metadata_VSubcat_ACQ_repubblica_lang_dep_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3543,7 +3546,7 @@ test:PAN_metadata_VSubcat_ACQ_repubblica_lang_indep_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3567,7 +3570,7 @@ test:PAN_metadata_VSubcat_GS_ENV_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CAM-DTAL ;
@@ -3592,7 +3595,7 @@ test:PAN_metadata_VSubcat_GS_ENV_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3617,7 +3620,7 @@ test:PAN_metadata_VSubcat_GS_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3641,7 +3644,7 @@ test:PAN_metadata_VSubcat_GS_LAB_EN
       ms:languageId "en" ;
       ms:languageName "English" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CAM-DTAL ;
@@ -3666,7 +3669,7 @@ test:PAN_metadata_VSubcat_GS_LAB_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3691,7 +3694,7 @@ test:PAN_metadata_VSubcat_Parole_GS_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3715,6 +3718,7 @@ test:PAN_metadata_annotated_dep_env_EL
       ms:languageId "el" ;
       ms:languageName "Greek" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_ILSP-Athena_RC ;
@@ -3738,6 +3742,7 @@ test:PAN_metadata_annotated_dep_env_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3762,6 +3767,7 @@ test:PAN_metadata_annotated_dep_env_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3785,6 +3791,7 @@ test:PAN_metadata_annotated_dep_lab_EL
       ms:languageId "el" ;
       ms:languageName "Greek" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_ILSP-Athena_RC ;
@@ -3808,6 +3815,7 @@ test:PAN_metadata_annotated_dep_lab_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -3832,6 +3840,7 @@ test:PAN_metadata_annotated_dep_lab_IT
       ms:languageId "it" ;
       ms:languageName "Italian" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/plain" ;
       ms:resourceCreator test:organization_CNR-ILC ;
@@ -3974,7 +3983,7 @@ test:ParoleLexicon-es_resource-34v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:morpho-Inflection , ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Spanish PAROLE lexicon as described in http://www.ub.edu/gilcub/lascosas/pubYreps/index_par.html. The original source was updated and corrected so that it validates against the parole DTD and eventually against the LMF DTD." ;
@@ -4007,7 +4016,7 @@ test:ParoleSimple-es_resource-35v2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:syntax-SubcatFrame , ms:lemma , ms:syntacticoSemanticLinks , ms:morpho-Inflection ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Spanish PAROLE lexicon as described in
@@ -5490,6 +5499,7 @@ test:metadata-AnCora-Cat
       ms:languageId "ca" ;
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UB-CLiC , test:organization_UPC-TALP ;
@@ -5520,6 +5530,7 @@ test:metadata-AnCora-DEP-Cat-2
       ms:languageId "ca" ;
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:person_M_Antònia_Martí_Antonín , test:person_Lluís_Márquez , test:person_Mariona_Taulé , test:person_Manuel_Bertran ;
@@ -5550,6 +5561,7 @@ test:metadata-AnCora-DEP-Es
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:person_Manuel_Bertran , test:person_M_Antònia_Martí_Antonín , test:person_Lluís_Márquez , test:person_Mariona_Taulé ;
@@ -5580,6 +5592,7 @@ test:metadata-AnCora-Es
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UB-CLiC , test:organization_UPC-TALP ;
@@ -5609,7 +5622,7 @@ test:metadata-WordNetLMF-CA
       ms:languageId "ca" ;
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "xml" ;
       ms:originalSource "The Catalan WordNet-LMF was generated from the Catalan Wordnet as included in the Multilingual Central Repository (http://adimen.si.ehu.es/web/MCR)" ;
@@ -5635,7 +5648,7 @@ test:metadata-WordNetLMG-GL
       ms:languageId "gl" ;
       ms:languageName "Galician" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "xml" ;
       ms:originalSource "The Galician WordNet-LMF was generated from the Galician Wordnet as included in the Multilingual Central Repository (http://adimen.si.ehu.es/web/MCR)" ;
@@ -5661,7 +5674,7 @@ test:metadata-WordnetLMF-ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "xml" ;
       ms:originalSource "The Spanish WordNet-LMF was generated from the Spanish Wordnet as included in the Multilingual Central Repository (http://adimen.si.ehu.es/web/MCR)" ;
@@ -5688,7 +5701,7 @@ test:metadata-WordnetLMF-EU
       ms:languageId "eu" ;
       ms:languageName "Basque" ;
       ms:linguality ms:monolingual ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "xml" ;
       ms:originalSource "The Basque WordNet-LMF was generated from the Basque Wordnet as included in the Multilingual Central Repository (http://adimen.si.ehu.es/web/MCR)" ;
@@ -5719,7 +5732,7 @@ test:metadata_ApertiumENv2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Monolingual dictionary as described in
@@ -5752,7 +5765,7 @@ test:metadata_ApertiumFRv2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:partOfSpeech , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Monolingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -5784,7 +5797,7 @@ test:metadata_ApertiumITv2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:semantics-CrossReferences , ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Apertium Monolingual dictionary as described in
@@ -5817,7 +5830,7 @@ test:metadata_ApertiumPTv2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:partOfSpeech ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Apertium Monolingual dictionary as described in http://xixona.dlsi.ua.es/~fran/apertium2-documentation.pdf" ;
@@ -5864,6 +5877,7 @@ test:metadata_CorpusCLUVIv2
       ms:languageId "gl" , "es" ;
       ms:languageName "Spanish" , "Galician" ;
       ms:linguality ms:bilingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:resourceCreator test:organization_UVIGO-TALG ;
       ms:resourceName "CLUVI Parallel Corpus" ;
@@ -5894,6 +5908,7 @@ test:metadata_IULA-CTparallelCorpus
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageId "es" , "en" ;
       ms:languageName "Spanish" , "English" ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:multilingualityType
@@ -5929,6 +5944,7 @@ test:metadata_IULA-PennTreeBank
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageId "en" , "es" ;
       ms:languageName "Spanish" , "English" ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:multilingualityType
@@ -5965,6 +5981,7 @@ test:metadata_IULA-Spanish_treebank
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text" ;
       ms:originalSource "IULACT http://bwananet.iula.upf.edu" ;
@@ -5999,7 +6016,7 @@ test:metadata_ParoleSimpleLexinfoLexicon
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:syntax-SubcatFrame , ms:lemma , ms:semantics-Relations , ms:semantics-SemanticClass , ms:partOfSpeech , ms:usage-Examples , ms:semantics-Traits ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/turtle" , "rdf+xml" ;
       ms:originalSource "The Spanish PAROLE/SIMPLE lexicon defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html"^^xsd:string ;
@@ -6031,7 +6048,7 @@ test:metadata_ParoleSimpleLexinfoLexicon-CA
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:usage-Examples , ms:semantics-Traits , ms:semantics-SemanticClass , ms:semantics-Relations , ms:partOfSpeech , ms:syntax-SubcatFrame , ms:lemma ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "rdf+xml" , "text/turtle" ;
       ms:originalSource "The Catalan PAROLE/SIMPLE lexicon defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html"^^xsd:string ;
@@ -6063,7 +6080,7 @@ test:metadata_ParoleSimpleLexinfoOntology
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:usage-Examples , ms:syntax-SubcatFrame , ms:semantics-SemanticClass , ms:partOfSpeech , ms:semantics-Traits , ms:semantics-Relations ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "rdf+xml" , "text/turtle" ;
       ms:originalSource "PAROLE/SIMPLE lexicon model defined during the PAROLE LE2-4017 and SIMPLE LE4-8346 projects. http://www.ub.edu/gilcub/SIMPLE/simple.html"^^xsd:string ;
@@ -6095,7 +6112,7 @@ test:metadata_SenSemDataBase-catv2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:semantics-SemanticRoles , ms:semantics-CrossReferences , ms:usage-Examples , ms:lemma , ms:usage-Frequency , ms:definition-gloss ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """SenSem data base located at http://grial.uab.es/index.php
@@ -6128,7 +6145,7 @@ test:metadata_SenSemDataBase-spav2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:definition-gloss , ms:usage-Examples , ms:lemma , ms:semantics-SemanticRoles , ms:usage-Frequency , ms:semantics-CrossReferences ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """SenSem data base located at http://grial.uab.es/index.php
@@ -6158,6 +6175,7 @@ test:metadata_SenSemv2
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA , test:person_Anna_Fernández_Montraveta , test:person_Irene_Castellón , test:organization_GRIAL , test:person_Glòria_Vázquez ;
@@ -6191,7 +6209,7 @@ test:metadata_SimpleParole-Catalanv2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:morpho-Inflection , ms:syntacticoSemanticLinks , ms:partOfSpeech , ms:lemma , ms:syntax-SubcatFrame ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Catalan PAROLE lexicon as described in
@@ -6226,7 +6244,7 @@ test:metadata_TRL-VSubcatv2
       ms:linguality ms:monolingual ;
       ms:linguisticInformation
               ms:lemma , ms:syntax-SubcatFrame ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPF-IULA ;
@@ -6257,6 +6275,7 @@ test:metadata_TRL_Tibidabo_LSP_treebank_ES
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:originalSource "http://www.iula.upf.edu/recurs01_tbk_uk.htm" , "http://clic.ub.edu/corpus/" ;
       ms:resourceCreator test:organization_UPF-IULA , test:person_Montserrat_Marimón , test:organization_UB-DLG ;
@@ -6309,7 +6328,7 @@ test:metadata_en_glCLUVIdictionaryLMF_v2
       ms:linguality ms:bilingual ;
       ms:linguisticInformation
               ms:lemma-MultiWordUnits , ms:partOfSpeech , ms:lemma , ms:translationEquivalent , ms:usage-Examples ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """English-Galician CLUVI Dictionary located at
@@ -6342,7 +6361,7 @@ test:metadata_termotecav2
       ms:linguality ms:multilingual ;
       ms:linguisticInformation
               ms:semantics-SemanticRoles , ms:semantics-Domain , ms:lemma , ms:usage-Examples , ms:semantics-CrossReferences , ms:definition-gloss , ms:usage-Frequency ;
-      ms:mediaType ms:text ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource """Termoteca located at
@@ -7347,7 +7366,7 @@ test:project_XLike
       foaf:name "XLike: Cross-lingual Knowledge Extraction"^^xsd:string .
 
 test:resource-CESS_EUv2
-      rdf:type owl:NamedIndividual , ms:CorpusText ;
+      rdf:type ms:CorpusText , owl:NamedIndividual ;
       rdfs:label "GrAF version of the Basque Dependency Treebank"@en ;
       dc:description "This is the stand-off GrAF version of the Basque Dependency Treebank (BDT). It is the Reference Corpus for the Processing of Basque (EPEC) annotated at syntactic level. EPEC is a 300,000 word corpus of standard written journal texts which aims to be a training corpus for the development and inprovement of several Natural Language Procesing tools. It has been manually tagged at different levels: morphology, partial syntax and semantic This is the stand-off GrAF version of the Constituent Basque Treebank."@en ;
       ms:annotationStandoff
@@ -7355,19 +7374,20 @@ test:resource-CESS_EUv2
       ms:annotationType ms:syntacticAnnotation-treebanks ;
       ms:characterEncoding
               ms:UTF-8 ;
-      ms:contactPerson test:person_María_Jesús_Aranzabe , test:person_Jorge_Vivaldi ;
+      ms:contactPerson test:person_Jorge_Vivaldi , test:person_María_Jesús_Aranzabe ;
       ms:creationMode ms:automatic ;
-      ms:documentation test:doc_41 , test:doc_49 ;
-      ms:fundingProject test:project_CESS-ECE , test:project_METANET4U ;
+      ms:documentation test:doc_49 , test:doc_41 ;
+      ms:fundingProject test:project_METANET4U , test:project_CESS-ECE ;
       ms:identifier "http://hdl.handle.net/10230/17098" ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eus> ;
       ms:languageId "eu" ;
       ms:languageName "Basque" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:originalSource "Basque Dependency Treebank (BDT) located at http://ixa.si.ehu.es/Ixa/Produktuak/1306407157" ;
-      ms:resourceCreator test:person_Kike_Fernández , test:organization_EHU-IXA , test:person_Ainara_Estarrona , test:person_Izaskun_Aldezabal , test:person_Aitziber_Atutxa , test:person_Mikel_Iruskieta , test:person_Arantza_Díaz_de_Ilarraza , test:person_María_Jesús_Aranzabe , test:person_Larraitz_Uria , test:organization_UPF-IULA , test:person_Jose_Mari_Arriola ;
+      ms:resourceCreator test:person_Izaskun_Aldezabal , test:person_Arantza_Díaz_de_Ilarraza , test:person_Jose_Mari_Arriola , test:person_Ainara_Estarrona , test:organization_UPF-IULA , test:person_Mikel_Iruskieta , test:organization_EHU-IXA , test:person_Kike_Fernández , test:person_Aitziber_Atutxa , test:person_Larraitz_Uria , test:person_María_Jesús_Aranzabe ;
       ms:resourceName "GrAF version of the Basque Dependency Treebank" ;
       ms:resourceShortName
               "GrAF version of the Basque Dependency Treebank" ;
@@ -7395,6 +7415,7 @@ test:resource-WikiCorpusCAv2
       ms:languageId "ca" ;
       ms:languageName "Catalan" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:organization_UPC-NLP_Research_Group , test:person_Gemma_Boleda , test:organization_UPF-IULA ;
@@ -7425,6 +7446,7 @@ test:resource-WikiCorpusESv2
       ms:languageId "es" ;
       ms:languageName "Spanish" ;
       ms:linguality ms:monolingual ;
+      ms:mediaType ms:Text ;
       ms:metaShareId "NOT_DEFINED_FOR_V2" ;
       ms:mimeType "text/xml" ;
       ms:resourceCreator test:person_Gemma_Boleda , test:organization_UPC-NLP_Research_Group , test:organization_UPF-IULA ;
