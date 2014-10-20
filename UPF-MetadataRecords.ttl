@@ -5758,7 +5758,7 @@ test:doc_uc_31
       ms:url  "http://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/190/235" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Russell_Horton> , <http://dblp.l3s.de/d2r/resource/authors/Mark_Olsen> , <http://dblp.l3s.de/d2r/resource/authors/Glenn_Roe> ;
       dc:identifier "http://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/190/235" ;
-      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Lexical_similarity> , <http://dbpedia.org/resource/Age_of_Enlightenment> , bio:TextSimilarity , <http://dbpedia.org/resource/Encyclopédie> ;
+      dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Lexical_similarity> , <http://dbpedia.org/resource/Age_of_Enlightenment> , bio:TextSimilarity ;
       dc:title "Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections"@en ;
       dcterms:bibliographicCitation
               "Olsen M, Horton R, Roe G. Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections. Digital Studies / Le champ numérique [Internet]. 2011;2(1). Available from: http://www.digitalstudies.org/ojs/index.php/digital_studies/article/view/190/235"^^xsd:string .
