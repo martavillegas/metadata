@@ -4784,8 +4784,8 @@ test:doc_48
       rdf:type owl:NamedIndividual , bibo:Webpage ;
       rdfs:label "AnCora | Corpus"@cat ;
       ms:url  "http://clic.ub.edu/corpus/" ;
-      dc:creator test:organization_EHU-IXA , test:organization_UB-CLiC , test:organization_UPC-NLP_Research_Group , "Universitat d'Alacant. Grupo de Investigación en Procesamiento del Lenguaje Natural y Sistemas de Información"^^xsd:string  ;
-      dc:identifier "http://clic.ub.edu/corpus/";
+      dc:creator test:organization_EHU-IXA , test:organization_UB-CLiC , test:organization_UPC-NLP_Research_Group , "Universitat d'Alacant. Grupo de Investigación en Procesamiento del Lenguaje Natural y Sistemas de Información"^^xsd:string ;
+      dc:identifier "http://clic.ub.edu/corpus/" ;
       dc:subject <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Syntax> , <http://dbpedia.org/resource/Coreference> ;
       dc:title "AnCora | Corpus"@cat ;
       dcterms:bibliographicCitation
@@ -5234,7 +5234,7 @@ test:doc_81
       rdfs:label "Documentation of MaltParser Web Service"@en ;
       ms:url  "http://hdl.handle.net/10230/22548" ;
       dc:creator test:person_Muntsa_Padró , "Idan Sadan"^^xsd:string ;
-      dc:identifier "http://hdl.handle.net/10230/22548";
+      dc:identifier "http://hdl.handle.net/10230/22548" ;
       dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Web_services> ;
       dc:title "Documentation of MaltParser Web Service"@en ;
       dcterms:bibliographicCitation
@@ -5661,7 +5661,7 @@ test:doc_uc_24
       dc:title "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
       dcterms:bibliographicCitation
               "Smith DA, Cordell R, Dillon EM. Infectious texts: modeling text reuse in nineteenth-century newspapers. Paper presented at: 2013 IEEE International Conference on Big Data; 2013 Oct 06-09; Silicon Valley, United States [Internet]. 2013. p. 86–94. Available from: http://dx.doi.org/10.1109/BigData.2013.6691675"^^xsd:string ;
-      dcterms:references "test:project_VIRTEXT"^^xsd:string  ;
+      dcterms:references "test:project_VIRTEXT"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13> .
 
 test:doc_uc_25
@@ -7758,14 +7758,14 @@ test:project_3LB
       foaf:name "3LB: Building a syntactic-semantic-trees-based database" .
 
 test:project_ARCLIGHT
-      rdf:type owl:NamedIndividual , foaf:Project ;
+      rdf:type foaf:Project , owl:NamedIndividual ;
       rdfs:label "Project Arclight: Analytics for the Study of 20th Century Media"@en ;
       ms:area <http://dbpedia.org/resource/Communication> , <http://dbpedia.org/resource/History> ;
       dc:contributor <http://viaf.org/viaf/123099912> , <http://viaf.org/viaf/141504623> , <http://viaf.org/viaf/152094426> ;
       dc:description """A collaboration among interdisciplinary researchers at Concordia University and the University of Wisconsin-Madison, Project Arclight is developing a web-based tool that enables the study of 20th century American media through comparisons across time and space.
 
 The Arclight tool uses topic modeling, named entity recognition, and ranking algorithms to analyze roughly two million pages of public domain publications digitized by the Media History Digital Library and the Chronicling America Library of Congress National Digital Newspaper Program. The results are presented as data visualizations that users may click through to access the underlying sources."""@en ;
-      dc:subject <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Mass_media> , bio:NamedEntityRecognition , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Newspaper> ;
+      dc:subject <http://dbpedia.org/resource/Mass_media> , bio:NamedEntityRecognition , bio:StatisticsAnalysis , <http://dbpedia.org/resource/Newspaper> , <http://dbpedia.org/resource/Media_studies> ;
       foaf:homepage "http://projectarclight.org/"^^xsd:string ;
       foaf:name "Project Arclight: Analytics for the Study of 20th Century Media"^^xsd:string .
 
@@ -7898,7 +7898,7 @@ test:project_EAQUA
       dc:description "The project \"aims at generating specific knowledge from ancient texts and will provide this knowledge via an open web-portal to the scientific  community for future empirical studies. For this purpose researches from the fields of Computer Science and Ancient Science will cooperate to adapt the available text mining technologies to the needs and requirements of the Ancient Studies”."@en ;
       dc:subject <http://dbpedia.org/resource/Intertextuality> , <http://dbpedia.org/resource/Classics> , bio:TextSimilarity ;
       dcterms:isReferencedBy
-              "test:doc_uc_22"^^xsd:string , "test:doc_uc_32"^^xsd:string ;
+              test:doc_32 , test:doc_22 ;
       foaf:homepage "http://eaqua.e-humanities.net/"^^xsd:string ;
       foaf:name "eAQUA"^^xsd:string .
 
@@ -7910,8 +7910,8 @@ test:project_ETRACES
       dc:description "The project aims to detect “temporal traces and interconnecting relations of text passages in German language novels from 1500 and 1990, as well as social science texts created since 1909”."@en ;
       dc:subject bio:TextSimilarity , <http://dbpedia.org/resource/German_literature> , <http://dbpedia.org/resource/Intertextuality> ;
       dcterms:isReferencedBy
-              "test:doc_uc_22"^^xsd:string ;
-      foaf:homepage "http://etraces.e-humanities.net/"^^xsd:string ;
+              test:doc_22 ;
+      foaf:homepage "http://etraces.e-humanities.net/" ;
       foaf:name "eTRACES"^^xsd:string .
 
 test:project_EurOpentrad
