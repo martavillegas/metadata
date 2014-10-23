@@ -5827,7 +5827,7 @@ test:doc_uc_36
               "Koppel M, Winter Y. Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology [Internet]. 2014;65(1):178–87. Available from: http://dx.doi.org/10.1002/asi.22954"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/jasis/KoppelW14> .
 
-test:doc_uc_37
+test:doc_uc_037
       rdf:type owl:NamedIndividual , bibo:Report ;
       rdfs:label "Trading Consequences. Digging into Data White Paper"@en ;
       ms:area <http://dbpedia.org/resource/History> ;
@@ -5839,7 +5839,7 @@ test:doc_uc_37
       dcterms:bibliographicCitation
               "Klein E, Alex B, Grover C, Tobin R, Coates C, Clifford J, et al. Trading Consequences. Digging into Data White Paper [Internet]. 2014. Available from: http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf"^^xsd:string .
 
-test:doc_uc_38
+test:doc_uc_038
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Geographic visualization of place names in Swedish literary texts"@en ;
       ms:area <http://dbpedia.org/resource/Literature> ;
