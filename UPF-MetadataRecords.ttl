@@ -611,7 +611,7 @@
               bio:SOAP , bio:Soaplab ;
       bio:task bio:FormatConversion ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/format_conversion.iconv?wsdl" ;
-      dc:description "Convert encoding of given files from one encoding to another. Based on the Linux command that converts text from one encoding to another encoding."^^xsd:string .
+      dc:description "Convert encoding of given files from one encoding to another. Based on the Linux command that converts text from one encoding to another encoding."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/203>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -749,7 +749,9 @@ The output is a comma separated file with the frequencies each cue has been obse
 
 #cue;data size class;data p class;data size no class;data p no class; cue_1;1301732;0.000883438372876;1516522;0.00137419701132; cue_2;1301732;0.000520076329075;1516522;0.000600716639785; 
 ...
-cue_n;1301732;0.0243222107162;1516522;0.0177992801951;"""@en .
+cue_n;1301732;0.0243222107162;1516522;0.0177992801951;"""@en ;
+      dcterms:isReferencedBy
+              test:doc_74 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/226>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -782,7 +784,9 @@ Optional parameters:
 2.2	Outputs
  - weka: weka file with noun vectors found in the given corpus.
  - notFoundLemmas: list of lemmas that did not appear in the corpus more than the minOccurrences threshold.
- - concordances: sentences in the corpus in which the selected nouns appear and informationa bout which Regular Expressions matched in each sentence. Useful for developing and testing the Res."""@en .
+ - concordances: sentences in the corpus in which the selected nouns appear and informationa bout which Regular Expressions matched in each sentence. Useful for developing and testing the Res."""@en ;
+      dcterms:isReferencedBy
+              test:doc_75 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/227>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -804,7 +808,9 @@ Optional parameters:
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en ;
+      dcterms:isReferencedBy
+              test:doc_76 , test:doc_82 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/228>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -821,7 +827,9 @@ You can choose to have this prediction as:
               bio:Soaplab , bio:SOAP ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.estimate_bayesian_parameters?wsdl" ;
-      dc:description "Given a training set encoded as vectors of cue (or feature) occurrences, this web service estimates the parameters P(cuei|class): the probability of seeing each cue as a member or non-member of the class. This estimation is performed using Bayesian inference, which combines prior knowledge with observed data. The parameters estimated with this web service can be used, for example,  to classify new instances using a Naive Bayes classifier. The output format is the one needed as input for the naive_bayes_classifier webservice."@en .
+      dc:description "Given a training set encoded as vectors of cue (or feature) occurrences, this web service estimates the parameters P(cuei|class): the probability of seeing each cue as a member or non-member of the class. This estimation is performed using Bayesian inference, which combines prior knowledge with observed data. The parameters estimated with this web service can be used, for example,  to classify new instances using a Naive Bayes classifier. The output format is the one needed as input for the naive_bayes_classifier webservice."@en ;
+      dcterms:isReferencedBy
+              test:doc_77 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/229>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -838,7 +846,9 @@ You can choose to have this prediction as:
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.naive_bayes_classifier?wsdl" ;
-      dc:description "This webservice performs traditional Naive Bayes classification of instances given in a weka file. It outputs the predicted classification for each instance and some statistics about the performance of the classification. The parameters needed as input can be learnt using estimate_bayesian_parameters webservice."@en .
+      dc:description "This webservice performs traditional Naive Bayes classification of instances given in a weka file. It outputs the predicted classification for each instance and some statistics about the performance of the classification. The parameters needed as input can be learnt using estimate_bayesian_parameters webservice."@en ;
+      dcterms:isReferencedBy
+              test:doc_79 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/230>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -1008,7 +1018,9 @@ You can choose to have this prediction as:
 
  The ouptut is a LMF file with the classifier prediction for each noun. ou can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en ;
+      dcterms:isReferencedBy
+              test:doc_76 , test:doc_82 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/244>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1030,7 +1042,9 @@ You can choose to have this prediction as:
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en ;
+      dcterms:isReferencedBy
+              test:doc_76 , test:doc_82 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/245>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -1049,7 +1063,9 @@ You can choose to have this prediction as:
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.merge_lmf_files?wsdl" ;
       dc:description """Given two LMF files, this webservice merges them into a single LMF file. It works for LMF files encoding the information in the same way, i.e. same labels, values and structure. This will work, for example, for merging different lexica learnt under PANACEA platform. If the LMF files contain equivalent information encoded in different ways, a mapping into a common format should be previously performed. 
 
-WARNING: this version of the  webservice only works for LMF  files without references. This is, LMF files containing only “<LexicalEntry>” elements. I.e. it works for morphological dictionaries, noun classification, etc but not for  SCF lexica, for example. SCF lexica define first the frames associated to each verb and then the frames itself. The link between the two is made using the IDs. This version of the webservice is not able to follow such links, so it won’t perform the merging of elements outside “<LexicalEntry>” correctly. This will be developed in the future."""@en .
+WARNING: this version of the  webservice only works for LMF  files without references. This is, LMF files containing only “<LexicalEntry>” elements. I.e. it works for morphological dictionaries, noun classification, etc but not for  SCF lexica, for example. SCF lexica define first the frames associated to each verb and then the frames itself. The link between the two is made using the IDs. This version of the webservice is not able to follow such links, so it won’t perform the merging of elements outside “<LexicalEntry>” correctly. This will be developed in the future."""@en ;
+      dcterms:isReferencedBy
+              test:doc_78 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/246>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -1066,7 +1082,9 @@ WARNING: this version of the  webservice only works for LMF  files without refer
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.noun_classification_filter?wsdl" ;
-      dc:description "Given a LMF file with nouns classified with a score (see Nouns classifier Web Services), this WS filters the nouns with confidence over a desired threshold. Language independent WS."@en .
+      dc:description "Given a LMF file with nouns classified with a score (see Nouns classifier Web Services), this WS filters the nouns with confidence over a desired threshold. Language independent WS."@en ;
+      dcterms:isReferencedBy
+              test:doc_80 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/249>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1086,7 +1104,9 @@ WARNING: this version of the  webservice only works for LMF  files without refer
               bio:Soaplab , bio:SOAP ;
       bio:task bio:SyntacticTagging , bio:CorpusProcessing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.malt_parser?wsdl" ;
-      dc:description "This WS calls an instance of MaltParser for Spanish trained with the IULA treebank developed in the Metanet4you project. The input of this WS is plain text. The service performs PoS tagging with FreeLing and then performs the dependency parsing using Malt parser. The output follows CoNLL format."@en .
+      dc:description "This WS calls an instance of MaltParser for Spanish trained with the IULA treebank developed in the Metanet4you project. The input of this WS is plain text. The service performs PoS tagging with FreeLing and then performs the dependency parsing using Malt parser. The output follows CoNLL format."@en ;
+      dcterms:isReferencedBy
+              test:doc_81 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/252>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1135,7 +1155,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:Alignment ;
+      bio:task bio:DataAnonymization ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/others.linescrambler?wsdl" ;
       dc:description "This WS scrambles the lines in a file. The goal is to make it difficult to reproduce the original text. The input size limit is 100 MB. Language independent WS."@en .
 
@@ -1153,7 +1173,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:Alignment ;
+      bio:task bio:DataAnonymization ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/others.linescrambler_parallel?wsdl" ;
       dc:description "This WS will scramble the lines in a parallel text corpus keeping the alignment.  The goal is to make it difficult to reproduce the original text. The input size limit is 100 MB. Language independent WS."@en .
 
@@ -1169,7 +1189,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:Alignment ;
+      bio:task bio:DataAnonymization ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/others.tmx_shuffling?wsdl" ;
       dc:description "This WS randomizes the order of the translation units in TMX files. The goal is to make it difficult to reproduce the original text. The input size limit is 100 MB. Language independent WS."@en .
 
@@ -1245,7 +1265,9 @@ WARNING: this version of the  webservice only works for LMF  files without refer
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en ;
+      dcterms:isReferencedBy
+              test:doc_76 , test:doc_82 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/265>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1267,7 +1289,9 @@ You can choose to have this prediction as:
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en ;
+      dcterms:isReferencedBy
+              test:doc_82 , test:doc_76 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/266>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -1289,7 +1313,9 @@ You can choose to have this prediction as:
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The languages supported are Spanish and English."""@en ;
+      dcterms:isReferencedBy
+              test:doc_76 , test:doc_82 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/267>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1311,7 +1337,9 @@ You can choose to have this prediction as:
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The language supported is Spanish."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The language supported is Spanish."""@en ;
+      dcterms:isReferencedBy
+              test:doc_82 , test:doc_76 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/268>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1333,7 +1361,9 @@ You can choose to have this prediction as:
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The language supported is Spanish ."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds. The language supported is Spanish ."""@en ;
+      dcterms:isReferencedBy
+              test:doc_82 , test:doc_76 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/269>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1355,7 +1385,9 @@ You can choose to have this prediction as:
 
 You can choose to have this prediction as: 
 - scored: each noun gets a score of being or not being a member of the class (bigger than 0 means class member, smaller, non member of the class) 
-- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds.The languages supported are Spanish and English."""@en .
+- filtered: the nouns are filtered according to their score. If the score is positive and over a determined threshold the noun is considered to be a member of the class. If it is negative and under another threshold, it is considered to be a non-member of the class. The other cases are tagged as unknown, since the classifier did not give enough confidence to their classification. The used thresholds are pre-set according to some experiments, if you want to use your own thresholds, you should get the scored output and use the filter webservice to filter it with your thresholds.The languages supported are Spanish and English."""@en ;
+      dcterms:isReferencedBy
+              test:doc_76 , test:doc_82 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/270>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -1456,7 +1488,7 @@ This version of the webservice is not able to follow such links, so it won’t p
 
 <http://lodserver.iula.upf.edu/Metashare/resource/429>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "Ted Pedersen's Text Similarity Web Service" ;
+      rdfs:label "Ted Pedersen's Text Similarity Web Service"@en ;
       ms:documentation test:doc_43 ;
       ms:fundingProject test:project_CLARIN_FEDER ;
       ms:languageName "Language independent"^^xsd:string ;
@@ -1517,7 +1549,7 @@ This version of the webservice is not able to follow such links, so it won’t p
 
 test:Apertium-ca-it_resource-8v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "Italian-Catalan LMF Apertium Bilingual dictionary" ;
+      rdfs:label "Italian-Catalan LMF Apertium Bilingual dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1550,7 +1582,7 @@ test:Apertium-ca-it_resource-8v2
 
 test:Apertium-ca_resource-18v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "Catalan LMF Apertium Dictionary" ;
+      rdfs:label "Catalan LMF Apertium Dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1583,7 +1615,7 @@ test:Apertium-ca_resource-18v2
 
 test:Apertium-en-ca_resource-3v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "English-Catalan LMF Apertium Bilingual dictionary" ;
+      rdfs:label "English-Catalan LMF Apertium Bilingual dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1616,7 +1648,7 @@ test:Apertium-en-ca_resource-3v2
 
 test:Apertium-en-es_resource-5v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "English-Spanish LMF Apertium Bilingual dictionary" ;
+      rdfs:label "English-Spanish LMF Apertium Bilingual dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1649,7 +1681,7 @@ test:Apertium-en-es_resource-5v2
 
 test:Apertium-en-gl_resource-4v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "English-Galician LMF Apertium Bilingual dictionary" ;
+      rdfs:label "English-Galician LMF Apertium Bilingual dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1682,7 +1714,7 @@ test:Apertium-en-gl_resource-4v2
 
 test:Apertium-es-ast_resource-13v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "Spanish-Asturian LMF Apertium Bilingual dictionary" ;
+      rdfs:label "Spanish-Asturian LMF Apertium Bilingual dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1715,7 +1747,7 @@ test:Apertium-es-ast_resource-13v2
 
 test:Apertium-es-ca_resource-14v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "Spanish-Catalan LMF Apertium Bilingual dictionary" ;
+      rdfs:label "Spanish-Catalan LMF Apertium Bilingual dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -1748,7 +1780,7 @@ test:Apertium-es-ca_resource-14v2
 
 test:Apertium-es-gl_resource-15v2
       rdf:type ms:ComputationalLexicon ;
-      rdfs:label "Spanish-Galician LMF Apertium Bilingual dictionary" ;
+      rdfs:label "Spanish-Galician LMF Apertium Bilingual dictionary"@en ;
       ms:characterEncoding
               ms:UTF-8 ;
       ms:conformanceToStandardsBestPractices
@@ -4364,6 +4396,51 @@ test:doc_115
               "Agerri R, Bermudez J, Rigau G. IXA pipeline: Efficient and Ready to Use Multilingual NLP tools. Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC-2014), Reykjavik, Iceland, May 26-31, 2014 [Internet]. 2014. p. 3823–8. Available from: http://www.lrec-conf.org/proceedings/lrec2014/pdf/775_Paper.pdf"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/lrec/AgerriBR14> .
 
+test:doc_116
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Named Entity Recognition and Classification for texts in Basque"@en ;
+      ms:url  "https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1061807449/publikoak/JotriII"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/I%C3%B1aki_Alegria> , <http://dblp.l3s.de/d2r/resource/authors/Nerea_Ezeiza> , <http://dblp.l3s.de/d2r/resource/authors/Ruben_Urizar> , <http://dblp.l3s.de/d2r/resource/authors/Izaskun_Fern%C3%A1ndez> , "Irene Balza"^^xsd:string ;
+      dc:identifier "https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1061807449/publikoak/JotriII"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Basque_language> ;
+      dc:title "Named Entity Recognition and Classification for texts in Basque"@en ;
+      dcterms:bibliographicCitation
+              "Alegria I, Balza I, Ezeiza N, Fernández I, Urizar R. Named Entity Recognition and Classification for texts in Basque. II Jornadas de Tratamiento y Recuperación de Información: Universidad Carlos III de Madrid, Madrid, 8 y 9 de septiembre de 2003: JOTRI 2003 [Internet]. 2003. Available from: https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1061807449/publikoak/JotriII"^^xsd:string .
+
+test:doc_117
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Design and development of a named entity recognizer for an agglutinative language"@en ;
+      ms:url  "https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1076696580/publikoak/IJCNLP04"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/I%C3%B1aki_Alegria> , <http://dblp.l3s.de/d2r/resource/authors/Olatz_Arregi> , <http://dblp.l3s.de/d2r/resource/authors/Ruben_Urizar> , <http://dblp.l3s.de/d2r/resource/authors/Nerea_Ezeiza> , <http://dblp.l3s.de/d2r/resource/authors/Izaskun_Fern%C3%A1ndez> ;
+      dc:identifier "https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1076696580/publikoak/IJCNLP04"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Basque_language> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:title "Design and development of a named entity recognizer for an agglutinative language"@en ;
+      dcterms:bibliographicCitation
+              "Alegria I, Arregi O, Balza I, Ezeiza N, Fernandez I, Urizar R. Design and development of a named entity recognizer for an agglutinative language. First International Joint Conference on Natural Language Processing (IJCNLP-04) Workshop on Named Entity Recognition for NLP Applications, 26 March 2004, Hong Kong [Internet]. 2004. Available from: https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1076696580/publikoak/IJCNLP04"^^xsd:string .
+
+test:doc_118
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Named entities translation based on comparable corpora"@en ;
+      ms:url  "http://www.aclweb.org/anthology/W06-2401"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Nerea_Ezeiza> , <http://dblp.l3s.de/d2r/resource/authors/I%C3%B1aki_Alegria> , <http://dblp.l3s.de/d2r/resource/authors/Izaskun_Fern%C3%A1ndez> ;
+      dc:identifier "http://www.aclweb.org/anthology/W06-2401"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Basque_language> ;
+      dc:title "Named entities translation based on comparable corpora"@en ;
+      dcterms:bibliographicCitation
+              "Alegria I, Ezeiza N, Fernandez I. Named entities translation based on comparable corpora. EACL06: Multi-Word-Expressions in a Multilingual Context Workshop: Proceedings of the 11th Conference of the European Chapter of the Association for Computational Linguistics; 2006 April 3rd; Trento, Italy [Internet]. 2006. p. 1–8. Available from: http://www.aclweb.org/anthology/W06-2401"^^xsd:string .
+
+test:doc_119
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Lessons from the Development of a Named Entity Recognizer for Basque"@en ;
+      ms:url  "http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/2817/1316"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Olatz_Arregi> , <http://dblp.l3s.de/d2r/resource/authors/I%C3%B1aki_Alegria> , <http://dblp.l3s.de/d2r/resource/authors/Nerea_Ezeiza> , <http://dblp.l3s.de/d2r/resource/authors/Izaskun_Fern%C3%A1ndez> ;
+      dc:identifier "http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/2817/1316"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Basque_language> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:title "Lessons from the Development of a Named Entity Recognizer for Basque"@en ;
+      dcterms:bibliographicCitation
+              "Alegria I, Arregi O, Ezeiza N, Fernández I. Lessons from the Development of a Named Entity Recognizer for Basque. Procesamiento del Lenguaje Natural [Internet]. 2006;36. Available from: http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/2817/1316"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/pdln/AlegriaAEF06> .
+
 test:doc_12
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies"@en ;
@@ -4374,6 +4451,28 @@ test:doc_12
       dc:title "L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies"@en ;
       dcterms:bibliographicCitation
               "Del Gratta R, Frontini F, Rubino F, Russo I, Caselli T, Quochi V. L-LEME: an Automatic Lexical Merger Based on LMF Standard Technologies. In: Nicoletta Calzolari (Conference Chair), Choukri K, Declerck T, Dogan MU, Maegaard B, Mariani J, et al., editors. Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12) [Internet]. Istanbul, Turkey: European Language Resources Association (ELRA); 2012. p. 2842–8. Available from: http://www.lrec-conf.org/proceedings/lrec2012/workshops/06.LREC%202012%20Merging%20Proceedings.pdf#page=37"^^xsd:string .
+
+test:doc_120
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Translating Named Entities using Comparable Corpora"@en ;
+      ms:url  " https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1210675812/publikoak/pdf"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Nerea_Ezeiza> , <http://dblp.l3s.de/d2r/resource/authors/Izaskun_Fern%C3%A1ndez> , <http://dblp.l3s.de/d2r/resource/authors/I%C3%B1aki_Alegria> ;
+      dc:identifier " https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1210675812/publikoak/pdf"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Corpus_linguistics> , <http://dbpedia.org/resource/Basque_language> , <http://dbpedia.org/resource/Natural_language_processing> ;
+      dc:title "Translating Named Entities using Comparable Corpora"@en ;
+      dcterms:bibliographicCitation
+              "Alegria I, Ezeiza N, Fernandez I. Translating Named Entities using Comparable Corpora. Proceedings of LREC’08 Workshop on Comparable Corpora, 31 May 2008, Marrakech, Morocco [Internet]. 2008. p. 11–7. Available from: https://ixa.si.ehu.es/Ixa/Argitalpenak/Artikuluak/1210675812/publikoak/pdf"^^xsd:string .
+
+test:doc_121
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Using Wikipedia for Named-Entity Translation"@en ;
+      ms:url  "http://www.mt-archive.info/SALTMIL-2009-Fernandez.pdf"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Nerea_Ezeiza> , <http://dblp.l3s.de/d2r/resource/authors/I%C3%B1aki_Alegria> , <http://dblp.l3s.de/d2r/resource/authors/Izaskun_Fern%C3%A1ndez> ;
+      dc:identifier "http://www.mt-archive.info/SALTMIL-2009-Fernandez.pdf"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Natural_language_processing> , <http://dbpedia.org/resource/Wikipedia> ;
+      dc:title "Using Wikipedia for Named-Entity Translation"@en ;
+      dcterms:bibliographicCitation
+              "Fernández I, Alegria I, Ezeiza N. Using Wikipedia for Named-Entity Translation. SEPLN09 SALTMIL Workshop on Information Retrieval and Information Extraction for Less Resourced Languages (IE-IR-LRL), 7th Sept 2009, Donostia-San Sebastián, Spain [Internet]. p. 27–35. Available from: http://www.mt-archive.info/SALTMIL-2009-Fernandez.pdf"^^xsd:string .
 
 test:doc_13
       rdf:type bibo:Article , owl:NamedIndividual ;
@@ -5262,7 +5361,8 @@ test:doc_83
       dc:subject <http://dbpedia.org/resource/Automatic_acquisition_of_lexicon> ;
       dc:title "PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Language Technologies)"@en ;
       dcterms:bibliographicCitation
-              "Bel N, Poch M, Toral A. PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Language Technologies). In: Cettolo M, Federico M, Specia L, Way A, editors. Proceedings of the 16th Annual Conference of the European Association for Machine Translation: EAMT 2012; 2012 May 28-30; Trento, Italy [Internet]. Trento: Fondazione Bruno Kessler; 2012. p. 90. Available from: http://hdl.handle.net/10230/20382"^^xsd:string .
+              "Bel N, Poch M, Toral A. PANACEA (Platform for Automatic, Normalised Annotation and Cost-Effective Acquisition of Language Resources for Human Language Technologies). In: Cettolo M, Federico M, Specia L, Way A, editors. Proceedings of the 16th Annual Conference of the European Association for Machine Translation: EAMT 2012; 2012 May 28-30; Trento, Italy [Internet]. Trento: Fondazione Bruno Kessler; 2012. p. 90. Available from: http://hdl.handle.net/10230/20382"^^xsd:string ;
+      dcterms:references test:project_PANACEA .
 
 test:doc_84
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5273,7 +5373,8 @@ test:doc_84
       dc:subject <http://dbpedia.org/resource/Statistical_machine_translation> , <http://dbpedia.org/resource/Machine_translation> ;
       dc:title "Towards a User-Friendly Webservice Architecture for Statistical Machine Translation in the PANACEA project"@en ;
       dcterms:bibliographicCitation
-              "Toral A, Pecina P, Way A, Poch M. Towards a User-Friendly Webservice Architecture for Statistical Machine Translation in the PANACEA project. In: Forcada ML, Depraetere H, Vandeghinste V (eds )., editors. roceedings of the 15th conference of the European Association for Machine Translation (EAMT 2011) Belgium; 2011 [Internet]. Centre for Computational Linguistics, Katholieke Universiteit Leuven; 2011. p. 63–70. Available from: http://hdl.handle.net/10230/16994"^^xsd:string .
+              "Toral A, Pecina P, Way A, Poch M. Towards a User-Friendly Webservice Architecture for Statistical Machine Translation in the PANACEA project. In: Forcada ML, Depraetere H, Vandeghinste V (eds )., editors. roceedings of the 15th conference of the European Association for Machine Translation (EAMT 2011) Belgium; 2011 [Internet]. Centre for Computational Linguistics, Katholieke Universiteit Leuven; 2011. p. 63–70. Available from: http://hdl.handle.net/10230/16994"^^xsd:string ;
+      dcterms:references test:project_PANACEA .
 
 test:doc_85
       rdf:type owl:NamedIndividual , bibo:Article ;
@@ -5285,6 +5386,7 @@ test:doc_85
       dc:title "Platform for Automatic, Normalized Annotation and Cost-Effective  Acquisition of Language Resources for Human Language Technologies: PANACEA"@en ;
       dcterms:bibliographicCitation
               "Bel N. Platform for Automatic, Normalized Annotation and Cost-Effective  Acquisition of Language Resources for Human Language Technologies: PANACEA. Procesamiento del Lenguaje Natural [Internet]. 2010;45:327–8. Available from: http://hdl.handle.net/10230/20380"^^xsd:string ;
+      dcterms:references test:project_PANACEA ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/pdln/Bel10> .
 
 test:doc_86
@@ -5456,6 +5558,81 @@ test:doc_99
       dcterms:bibliographicCitation
               "Bengoetxea K, Gojenola K, Casillas A. Testing the Effect of Morphological Disambiguation in Dependency Parsing of Basque. Proceedings of the Second Workshop on Statistical Parsing of Morphologically Rich Languages [Internet]. Stroudsburg, PA, USA: Association for Computational Linguistics; 2011. p. 28–33. Available from: http://dl.acm.org/citation.cfm?id=2206359.2206363"^^xsd:string .
 
+test:doc_uc_037
+      rdf:type owl:NamedIndividual , bibo:Report ;
+      rdfs:label "Trading Consequences. Digging into Data White Paper"@en ;
+      ms:area <http://dbpedia.org/resource/History> ;
+      ms:url  "http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf" ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Richard_Tobin> , <http://dblp.l3s.de/d2r/resource/authors/Beatrice_Alex> , "Nicola Osborne"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Aaron_Quigley> , <http://viaf.org/viaf/54372954> , <http://dblp.l3s.de/d2r/resource/authors/Claire_Grover> , <http://dblp.l3s.de/d2r/resource/authors/Ewan_Klein> , "Jim Clifford"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/James_Reid> , "Ian Fieldhouse"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Uta_Hinrichs> ;
+      dc:identifier "http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf" ;
+      dc:subject <http://dbpedia.org/resource/British_Empire> , <http://dbpedia.org/resource/Canada> , <http://dbpedia.org/resource/Commodity_market> , test:project_Tradingcon , <http://dbpedia.org/resource/19th_century> , bio:NamedEntityRecognition ;
+      dc:title "Trading Consequences. Digging into Data White Paper"@en ;
+      dcterms:bibliographicCitation
+              "Klein E, Alex B, Grover C, Tobin R, Coates C, Clifford J, et al. Trading Consequences. Digging into Data White Paper [Internet]. 2014. Available from: http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf"^^xsd:string .
+
+test:doc_uc_038
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Geographic visualization of place names in Swedish literary texts"@en ;
+      ms:area <http://dbpedia.org/resource/Literature> ;
+      ms:url  "http://llc.oxfordjournals.org/content/29/3/400" ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Leif-J%C3%B6ran_Olsson> , <http://dblp.l3s.de/d2r/resource/authors/Dana_Dann%C3%A9lls> , <http://dblp.l3s.de/d2r/resource/authors/Lars_Borin> ;
+      dc:identifier "http://llc.oxfordjournals.org/content/29/3/400" ;
+      dc:subject <http://dbpedia.org/resource/Toponymy> , <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/Swedish_literature> , bio:NamedEntityRecognition ;
+      dc:title "Geographic visualization of place names in Swedish literary texts"@en ;
+      dcterms:bibliographicCitation
+              "Borin L, Dannélls D, Olsson L-J. Geographic visualization of place names in Swedish literary texts. Literary and Linguistic Computing [Internet]. 2014;29(3):400–4. Available from: http://llc.oxfordjournals.org/content/29/3/400"^^xsd:string .
+
+test:doc_uc_039
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Primera aproximación para la extracción automática de Entidades Nombradas en corpus de documentos medievales castellanos"@es ;
+      ms:area <http://dbpedia.org/resource/Corpus_linguistics> ;
+      ms:url  "http://hdl.handle.net/2183/13551"^^xsd:string ;
+      dc:creator <http://viaf.org/viaf/285439560> , <http://dblp.l3s.de/d2r/resource/authors/Sonia_S%C3%A1nchez-Cuadrado> , "María Eugenia Iglesias Moreno"^^xsd:string ;
+      dc:identifier "http://hdl.handle.net/2183/13551"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Proper_names> , <http://dbpedia.org/resource/Medieval_studies> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Toponymy> ;
+      dc:title "Primera aproximación para la extracción automática de Entidades Nombradas en corpus de documentos medievales castellanos"@es ;
+      dcterms:bibliographicCitation
+              "Iglesias Moreno ME, Azcárate Aguilar-Amat P, Sánchez Cuadrado S. Primera aproximación para la extracción automática de Entidades Nombradas en corpus de documentos medievales castellanos. Humanidades digitales: desafíos, logros y perspectivas de futuro Janus Estudios sobre el Siglo de Oro Anexo 1 [Internet]. 2014;229–38. Available from: http://hdl.handle.net/2183/13551"^^xsd:string .
+
+test:doc_uc_040
+      rdf:type bibo:Article , owl:NamedIndividual ;
+      rdfs:label "Oh Oh Oh, Woah! Towards Automatic Topic Detection in Song Lyrics"@en ;
+      ms:area <http://dbpedia.org/resource/Music> ;
+      ms:url  "http://ismir2008.ismir.net/papers/ISMIR2008_211.pdf"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Tim_Pohle> , <http://dblp.l3s.de/d2r/resource/authors/Florian_Kleedorfer> , <http://dblp.l3s.de/d2r/resource/authors/Peter_Knees> ;
+      dc:identifier "http://ismir2008.ismir.net/papers/ISMIR2008_211.pdf"^^xsd:string ;
+      dc:subject <http://dbpedia.org/resource/Topic_model> , <http://dbpedia.org/resource/Lyrics> , bio:TextMining , <http://dbpedia.org/resource/Bag-of-words_model> , bio:StatisticsAnalysis ;
+      dc:title "Oh Oh Oh, Woah! Towards Automatic Topic Detection in Song Lyrics"@en ;
+      dcterms:bibliographicCitation
+              "Kleedorfer F, Knees P, Pohle T. Oh Oh Oh, Woah! Towards Automatic Topic Detection in Song Lyrics. Proceedings of the 9th International Society for Music Information Retrieval Conference (ISMIR 2008), 2008 Sept 14-18, Philadelphia, Pennsylvania, USA [Internet]. 2008. p. 287–92. Available from: http://ismir2008.ismir.net/papers/ISMIR2008_211.pdf"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ismir/KleedorferKP08> .
+
+test:doc_uc_041
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Lyrics-based Analysis and Classification of Music"@en ;
+      ms:area <http://dbpedia.org/resource/Music> ;
+      ms:url  " http://www.aclweb.org/anthology/C14-1059"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Michael_Fell> , <http://dblp.l3s.de/d2r/resource/authors/Caroline_Sporleder> ;
+      dc:identifier " http://www.aclweb.org/anthology/C14-1059"^^xsd:string ;
+      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Lyrics> , bio:MorphologicalTagging , bio:Chunking-Segmentation , <http://dbpedia.org/resource/Semantics> , <http://dbpedia.org/resource/Statistical_classification> , bio:TextMining ;
+      dc:title "Lyrics-based Analysis and Classification of Music"@en ;
+      dcterms:bibliographicCitation
+              "Fell M, Sporleder C. Lyrics-based Analysis and Classification of Music. Proceedings of COLING 2014, the 25th International Conference on Computational Linguistics: Technical Papers [Internet]. Dublin, Ireland: Dublin City University and Association for Computational Linguistics; 2014. p. 620–31. Available from: http://www.aclweb.org/anthology/C14-1059"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/coling/FellS14> .
+
+test:doc_uc_042
+      rdf:type owl:NamedIndividual , bibo:Article ;
+      rdfs:label "Semantic analysis of song lyrics"@en ;
+      ms:area <http://dbpedia.org/resource/Music> ;
+      ms:url  "http://www.hpl.hp.com/techreports/2004/HPL-2004-66.pdf"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Pedro_J._Moreno> , <http://dblp.l3s.de/d2r/resource/authors/Beth_Logan> , <http://dblp.l3s.de/d2r/resource/authors/A._Kositsky> ;
+      dc:identifier "http://www.hpl.hp.com/techreports/2004/HPL-2004-66.pdf"^^xsd:string ;
+      dc:subject bio:StatisticsAnalysis , <http://dbpedia.org/resource/Semanticsl> , <http://dbpedia.org/resource/Topic_model> , <http://dbpedia.org/resource/Lyrics> , bio:TextMining ;
+      dc:title "Semantic analysis of song lyrics"@en ;
+      dcterms:bibliographicCitation
+              "Logan B, Kositsky A, Moreno PJ. Semantic analysis of song lyrics. Proceedings of the 2004 IEEE International Conference on Multimedia and Expo, ICME 2004, 27-30 June 2004, Taipei, Taiwan [Internet]. 2004. p. 827–30. Available from: http://www.hpl.hp.com/techreports/2004/HPL-2004-66.pdf"^^xsd:string ;
+      owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/icmcs/LoganKM04> .
+
 test:doc_uc_1
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Mapping the English Lake District: a literary GIS"@en ;
@@ -5505,6 +5682,7 @@ test:doc_uc_12
       dc:title "Using Language Resources in Humanities research"@en ;
       dcterms:bibliographicCitation
               "Moreno A, Gonzalo C, Villegas M, Bel N, Simelio N. Using Language Resources in Humanities research. In: Calzolari N, Choukri K, Declerck T, Dogan MU, Maegaard B, Mariani J, et al., editors. Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC’12) [Internet]. Istanbul, Turkey: European Language Resources Association (ELRA); 2012. p. 3284–8. Available from: http://www.lrec-conf.org/proceedings/lrec2012/pdf/722_Paper.pdf"^^xsd:string ;
+      dcterms:references test:project_Androcentrismo ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/lrec/VillegasBGMS12> .
 
 test:doc_uc_13
@@ -5515,7 +5693,8 @@ test:doc_uc_13
       dc:subject <http://dbpedia.org/resource/Gender_studies> , <http://dbpedia.org/resource/Mass_media> , <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Newspaper> ;
       dc:title "De quién hablan las noticias?: guía para humanizar la información"@es ;
       dcterms:bibliographicCitation
-              "Moreno A, Buitrago A, Rovetto F. De quién hablan las noticias?: guía para humanizar la información. Barcelona: Icaria; 2007"^^xsd:string .
+              "Moreno A, Buitrago A, Rovetto F. De quién hablan las noticias?: guía para humanizar la información. Barcelona: Icaria; 2007"^^xsd:string ;
+      dcterms:references test:project_Androcentrismo .
 
 test:doc_uc_14
       rdf:type bibo:Book , owl:NamedIndividual ;
@@ -5523,18 +5702,19 @@ test:doc_uc_14
       ms:area <http://dbpedia.org/resource/Sociology> ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> ;
       dc:subject <http://dbpedia.org/resource/Gender_studies> ;
-      dc:title "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"^^xsd:string ;
+      dc:title "De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico"@es ;
       dcterms:bibliographicCitation
-              "Moreno A. De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico. Barcelona: Icaria; 2007. 375 p."^^xsd:string .
+              "Moreno A. De qué hablamos y no hablamos cuando hablamos del hombre: treinta años de crítica y alternativas al pensamiento androcéntrico. Barcelona: Icaria; 2007. 375 p."^^xsd:string ;
+      dcterms:references test:project_Androcentrismo .
 
 test:doc_uc_15
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "El poder de les paraules: “Municipals’11 online"@en ;
+      rdfs:label "El poder de les paraules: “Municipals’11 online"@es ;
       ms:area <http://dbpedia.org/resource/Political_science> ;
       ms:url  "http://hdl.handle.net/10230/12459" ;
       dc:identifier "http://hdl.handle.net/10230/12459" ;
       dc:subject <http://dbpedia.org/resource/Media_studies> , <http://dbpedia.org/resource/Blogs> ;
-      dc:title "El poder de les paraules: “Municipals’11 online"^^xsd:string ;
+      dc:title "El poder de les paraules: “Municipals’11 online"@es ;
       dcterms:bibliographicCitation
               "El poder de les paraules: “Municipals’11 online.”. UPF.EDU [Internet]. 2011;2:12–3. Available from: http://hdl.handle.net/10230/12459"^^xsd:string ;
       dcterms:references test:project_Municipals .
@@ -5553,7 +5733,7 @@ test:doc_uc_16
 
 test:doc_uc_17
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "The Movie Mashup Application MoMa: Geolocalizing and Finding Movies"@en ;
+      rdfs:label "The Movie Mashup Application Moma: Geolocalizing and Finding Movies"@en ;
       ms:area <http://dbpedia.org/resource/Geography> ;
       ms:url  "http://doi.acm.org/10.1145/2390790.2390797" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Julien_Law-To> , <http://dblp.l3s.de/d2r/resource/authors/Hugues_Bouchard> , <http://dblp.l3s.de/d2r/resource/authors/Gregory_Grefenstette> , <http://dblp.l3s.de/d2r/resource/authors/Amar-Djalil_Mezaour> , "Jean-Marc Finsterwald"^^xsd:string ;
@@ -5589,7 +5769,7 @@ test:doc_uc_19
 
 test:doc_uc_2
       rdf:type owl:NamedIndividual , bibo:Article ;
-      rdfs:label "Visual GISting: bringing together corpus linguistics and Geographical Information Systems"@en ;
+      rdfs:label "Visual gisting: bringing together corpus linguistics and Geographical Information Systems"@en ;
       ms:area <http://dbpedia.org/resource/Geography> ;
       ms:url  "http://dx.doi.org/10.1093/llc/fqr022" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Andrew_Hardie> , <http://dblp.l3s.de/d2r/resource/authors/Ian_N._Gregory> ;
@@ -5635,7 +5815,7 @@ test:doc_uc_22
       dc:title "Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities"@en ;
       dcterms:bibliographicCitation
               "Büchler M, Crane G, Moritz M, Babeu A. Increasing Recall for Text Re-use in Historical Documents to Support Research in the Humanities. In: Zaphiris P, Buchanan G, Rasmussen E, Loizides F, editors. Theory and Practice of Digital Libraries [Internet]. Springer Berlin Heidelberg; 2012. p. 95–100. Available from: http://dx.doi.org/10.1007/978-3-642-33290-6_11"^^xsd:string ;
-      dcterms:references "test:project_ETRACES"^^xsd:string ;
+      dcterms:references test:project_EAQUA , test:project_ETRACES ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12> .
 
 test:doc_uc_23
@@ -5661,7 +5841,7 @@ test:doc_uc_24
       dc:title "Infectious texts: modeling text reuse in nineteenth-century newspapers"@en ;
       dcterms:bibliographicCitation
               "Smith DA, Cordell R, Dillon EM. Infectious texts: modeling text reuse in nineteenth-century newspapers. Paper presented at: 2013 IEEE International Conference on Big Data; 2013 Oct 06-09; Silicon Valley, United States [Internet]. 2013. p. 86–94. Available from: http://dx.doi.org/10.1109/BigData.2013.6691675"^^xsd:string ;
-      dcterms:references "test:project_VIRTEXT"^^xsd:string ;
+      dcterms:references test:project_VIRTEXT ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/bigdataconf/SmithCD13> .
 
 test:doc_uc_25
@@ -5678,7 +5858,7 @@ test:doc_uc_25
 
 test:doc_uc_26
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching"@en ;
+      rdfs:label "Modeling the scholars: Detecting intertextuality through enhanced word level ngram matching"@en ;
       ms:area <http://dbpedia.org/resource/Literature> ;
       ms:url  "http://llc.oxfordjournals.org/content/early/2014/05/15/llc.fqu014" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Neil_Coffee> , "Thomas Buck"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Sarah_L._Jacobson> , <http://dblp.l3s.de/d2r/resource/authors/Christopher_W._Forstall> , "Katherine Roache"^^xsd:string ;
@@ -5765,7 +5945,7 @@ test:doc_uc_31
 
 test:doc_uc_32
       rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Detection of Citations and Textual Reuse on Ancient Greek Texts and its Applications in the Classical Studies: eAQUA Project"@en ;
+      rdfs:label "Detection of Citations and Textual Reuse on Ancient Greek Texts and its Applications in the Classical Studies: Eaqua Project"@en ;
       ms:area <http://dbpedia.org/resource/History> ;
       ms:url  "https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/events-en/nehdfg/pdf/buechler-reuse" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Marco_B%C3%BCchler> , "Annette Geßner"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/Gerhard_Heyer> , <http://dblp.l3s.de/d2r/resource/authors/Thomas_Eckart> ;
@@ -5774,7 +5954,7 @@ test:doc_uc_32
       dc:title "Detection of Citations and Textual Reuse on Ancient Greek Texts and its Applications in the Classical Studies: eAQUA Project"@en ;
       dcterms:bibliographicCitation
               "Büchler M, Geßner A, Heyer G, Eckart T. Detection of Citations and Textual Reuse on Ancient Greek Texts and its Applications in the Classical Studies: eAQUA Project. Presented at: DH2010: Digital Humanities 2010 Conference; 2011 Jul 05-10; London, United Kingdom [Internet]. 2010. 3 p. Available from: https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/events-en/nehdfg/pdf/buechler-reuse"^^xsd:string ;
-      dcterms:references "test:project_EAQUA"^^xsd:string ;
+      dcterms:references test:project_EAQUA ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/conf/ercimdl/BuchlerCMB12> .
 
 test:doc_uc_33
@@ -5827,30 +6007,6 @@ test:doc_uc_36
               "Koppel M, Winter Y. Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology [Internet]. 2014;65(1):178–87. Available from: http://dx.doi.org/10.1002/asi.22954"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/publications/journals/jasis/KoppelW14> .
 
-test:doc_uc_037
-      rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "Trading Consequences. Digging into Data White Paper"@en ;
-      ms:area <http://dbpedia.org/resource/History> ;
-      ms:url  "http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf" ;
-      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Richard_Tobin> , <http://dblp.l3s.de/d2r/resource/authors/Uta_Hinrichs> , <http://dblp.l3s.de/d2r/resource/authors/Aaron_Quigley> , <http://dblp.l3s.de/d2r/resource/authors/Ewan_Klein> , <http://dblp.l3s.de/d2r/resource/authors/Beatrice_Alex> , <http://viaf.org/viaf/54372954> , <http://dblp.l3s.de/d2r/resource/authors/Claire_Grover> , "Jim Clifford"^^xsd:string , <http://dblp.l3s.de/d2r/resource/authors/James_Reid> , "Nicola Osborne"^^xsd:string , "Ian Fieldhouse"^^xsd:string ;
-      dc:identifier "http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf" ;
-      dc:subject test:project_Tradingcon , <http://dbpedia.org/resource/Commodity_market> , <http://dbpedia.org/resource/British_Empire> , <http://dbpedia.org/resource/Canada> , <http://dbpedia.org/resource/19th_century> , bio:NamedEntityRecognition ;
-      dc:title "Trading Consequences. Digging into Data White Paper"@en ;
-      dcterms:bibliographicCitation
-              "Klein E, Alex B, Grover C, Tobin R, Coates C, Clifford J, et al. Trading Consequences. Digging into Data White Paper [Internet]. 2014. Available from: http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf"^^xsd:string .
-
-test:doc_uc_038
-      rdf:type bibo:Article , owl:NamedIndividual ;
-      rdfs:label "Geographic visualization of place names in Swedish literary texts"@en ;
-      ms:area <http://dbpedia.org/resource/Literature> ;
-      ms:url  "http://llc.oxfordjournals.org/content/29/3/400" ;
-      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Lars_Borin> , <http://dblp.l3s.de/d2r/resource/authors/Dana_Dann%C3%A9lls> , <http://dblp.l3s.de/d2r/resource/authors/Leif-J%C3%B6ran_Olsson> ;
-      dc:identifier "http://llc.oxfordjournals.org/content/29/3/400" ;
-      dc:subject bio:NamedEntityRecognition , <http://dbpedia.org/resource/Geovisualization> , <http://dbpedia.org/resource/Swedish_literature> , <http://dbpedia.org/resource/Toponymy> ;
-      dc:title "Geographic visualization of place names in Swedish literary texts"@en ;
-      dcterms:bibliographicCitation
-              "Borin L, Dannélls D, Olsson L-J. Geographic visualization of place names in Swedish literary texts. Literary and Linguistic Computing [Internet]. 2014;29(3):400–4. Available from: http://llc.oxfordjournals.org/content/29/3/400"^^xsd:string .
-
 test:doc_uc_4
       rdf:type bibo:Article , owl:NamedIndividual ;
       rdfs:label "Names in novels: An experiment in computational stylistics"@en ;
@@ -5890,15 +6046,15 @@ test:doc_uc_6
 
 test:doc_uc_7
       rdf:type owl:NamedIndividual , bibo:Report ;
-      rdfs:label "Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities"@en ;
+      rdfs:label "Mapping Texts: Combining Text-Mining and Geovisualization to Unlock the Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities"@en ;
       ms:area <http://dbpedia.org/resource/Big_data> , <http://dbpedia.org/resource/History> ;
       ms:url  "http://mappingtexts.stanford.edu/whitepaper/MappingTexts_WhitePaper.pdf" ;
       dc:creator <http://dblp.l3s.de/d2r/resource/authors/Rada_Mihalcea> , <http://viaf.org/viaf/6734392> , "Geoff McGhee"^^xsd:string , <http://viaf.org/viaf/164341474> ;
       dc:identifier "http://mappingtexts.stanford.edu/whitepaper/MappingTexts_WhitePaper.pdf" ;
       dc:subject <http://dbpedia.org/resource/Geovisualization> , test:project_MT , <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Media_studies> , bio:NamedEntityRecognition , <http://dbpedia.org/resource/Newspaper> ;
-      dc:title "Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities"@en ;
+      dc:title "Mapping Texts: Combining Text-Mining and Geo-Visualization to Unlock the Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities"@en ;
       dcterms:bibliographicCitation
-              "Torget AJ, Mihalcea R, Christensen J, McGhee G. Mapping Texts: Combining Text-Mining and Geo-Visualization To Unlock The Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities [Internet]. 2011. Available from: http://mappingtexts.stanford.edu/whitepaper/MappingTexts_WhitePaper.pdf" .
+              "Torget AJ, Mihalcea R, Christensen J, McGhee G. Mapping Texts: Combining Text-Mining and Geo-Visualization to Unlock the Research Potential of Historical Newspapers. A White Paper for the National Endowment for the Humanities [Internet]. 2011. Available from: http://mappingtexts.stanford.edu/whitepaper/MappingTexts_WhitePaper.pdf"^^xsd:string .
 
 test:doc_uc_8
       rdf:type bibo:Article , owl:NamedIndividual ;
@@ -6416,6 +6572,23 @@ test:metadata_EUSMT
               bio:WebApplication ;
       bio:task bio:Management ;
       dc:description "Statistical Machine Translation from Spanish to Basque. Use of segmentation and reordering in Statistical Machine Translation from Spanish to Basque. It allows our system to achieve a relative improvement of 10% in the HTER metric."@en .
+
+test:metadata_Eihera
+      rdf:type bio:Service , owl:NamedIndividual ;
+      rdfs:label "Eihera"@eu ;
+      ms:documentation test:doc_117 , test:doc_120 , test:doc_119 , test:doc_121 , test:doc_118 , test:doc_116 ;
+      ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eus> ;
+      ms:languageName "Basque"^^xsd:string ;
+      ms:resourceCreator <http://dblp.l3s.de/d2r/resource/authors/Idoia_Fern%C3%A1ndez> , <http://dblp.l3s.de/d2r/resource/authors/I%C3%B1aki_Alegria> , test:organization_EHU-IXA , <http://dblp.l3s.de/d2r/resource/authors/Nerea_Ezeiza> ;
+      ms:resourceName "Eihera"^^xsd:string ;
+      ms:url  "http://ixa2.si.ehu.es/demo/entitateak.jsp"^^xsd:string ;
+      bio:contact "i.alegria@ehu.es"^^xsd:string ;
+      bio:demoInvocation "http://www.xuxen.com/" ;
+      bio:serviceProvider test:organization_EHU-IXA ;
+      bio:serviceTechnology
+              bio:WebApplication ;
+      bio:task bio:NamedEntityRecognition ;
+      dc:description "Eihera is a system for Named Entity recognition and classification in written Basque. The system is designed in four steps: first, the development of a recognizer based on linguistic information represented on finite-state-transducers; second, the generation of semi-automatically annotated corpora from the result of these transducers; third, the achievement of the best possible recognizer by training different ML techniques on these corpora; and finally, the combination of the different recognizers obtained. Eihera classifies the named entities into three classes: person, organization and location."@en .
 
 test:metadata_Eustagger
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -6959,6 +7132,7 @@ test:metadata_TRL_maltparser_module_ES
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "TRL Malt Parser module for Spanish"@en ;
       ms:documentation test:doc_53 , test:doc_51 ;
+      ms:downloadLocation "http://hdl.handle.net/10230/20407"^^xsd:string ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "Spanish"^^xsd:string ;
@@ -7082,170 +7256,170 @@ test:metadata_termotecav2
 
 test:organization_CAM-DTAL
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "University of Cambridge. Department of Theoretical and Applied Linguistics" ;
+      rdfs:label "University of Cambridge. Department of Theoretical and Applied Linguistics"@en ;
       foaf:homepage "http://www.mml.cam.ac.uk/dtal/" ;
       foaf:name "University of Cambridge. Department of Theoretical and Applied Linguistics" .
 
 test:organization_CNR-ILC
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Consiglio Nazionale delle Ricerche. Istituto di Linguistica Computazionale 'Antonio Zampolli' " ;
+      rdfs:label "Consiglio Nazionale delle Ricerche. Istituto di Linguistica Computazionale 'Antonio Zampolli'"@it ;
       owl:sameAs <http://id.loc.gov/authorities/names/n85001153> , <http://viaf.org/viaf/262330221> ;
       foaf:homepage "http://www.ilc.cnr.it/indexnoflash.html" ;
       foaf:name "Consiglio Nazionale delle Ricerche. Istituto di Linguistica Computazionale 'Antonio Zampolli' " .
 
 test:organization_DCU_School_of_Computing
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Dublin City University. School of Computing" ;
+      rdfs:label "Dublin City University. School of Computing"@en ;
       foaf:homepage "http://www.computing.dcu.ie/" ;
       foaf:name "Dublin City University. School of Computing" .
 
 test:organization_EHU-IXA
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Euskal Herriko Unibertsitatea. IXA Taldea" ;
+      rdfs:label "Euskal Herriko Unibertsitatea. IXA Taldea"@eu ;
       foaf:homepage "http://ixa.si.ehu.es/Ixa/index_html/" ;
       foaf:name "Euskal Herriko Unibertsitatea. IXA Taldea" .
 
 test:organization_Eleka
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Eleka Ingenieritza Linguistikoa S.L" ;
+      rdfs:label "Eleka Ingenieritza Linguistikoa S.L"@eu ;
       foaf:homepage "http://www.eleka.net/index.php?id=en" ;
       foaf:name "Eleka Ingenieritza Linguistikoa S.L" .
 
 test:organization_Feminario
       rdf:type foaf:Organization ;
-      rdfs:label "Feminario"^^xsd:string ;
+      rdfs:label "Feminario"@es ;
       ms:url  "http://amparomorenosarda.es/" ;
       dc:description "Feminario Mujeres y Cultura de Masas de la UAB. Grupo creado en el Departamento de Periodismo de la UAB centrado en la representación de mujeres y hombres en los medios de comunicación."@es ;
       foaf:member test:person_Amparo_Moreno .
 
 test:organization_GRIAL
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Grup de Recerca Interuniversitari en Aplicacions Lingüístiques (GRIAL)" ;
+      rdfs:label "Grup de Recerca Interuniversitari en Aplicacions Lingüístiques (GRIAL)"@ca ;
       foaf:homepage "http://grial.uab.es/" ;
       foaf:name "Grup de Recerca Interuniversitari en Aplicacions Lingüístiques (GRIAL)" .
 
 test:organization_IEC
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Institut d'Estudis Catalans" ;
+      rdfs:label "Institut d'Estudis Catalans"@ca ;
       owl:sameAs <http://id.loc.gov/authorities/names/n79145875> , <http://viaf.org/viaf/159353881> ;
       foaf:homepage "http://dlc.iec.cat/" ;
       foaf:name "Institut d'Estudis Catalans" .
 
 test:organization_ILSP-Athena_RC
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Institute for Language and Speech Processing / Athena Research Center" ;
+      rdfs:label "Institute for Language and Speech Processing / Athena Research Center"@en ;
       foaf:homepage "http://www.ilsp.gr/en" ;
       foaf:name "Institute for Language and Speech Processing / Athena Research Center" .
 
 test:organization_Linguatec_GmbH
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Linguatec GmbH" ;
+      rdfs:label "Linguatec GmbH"@de ;
       owl:sameAs <http://viaf.org/viaf/145301446> ;
       foaf:homepage "http://www.linguatec.de/" ;
       foaf:name "Linguatec GmbH" .
 
 test:organization_PLG
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "PlayGen" ;
+      rdfs:label "PlayGen"@en ;
       foaf:homepage "http://playgen.com/" ;
       foaf:name "PlayGen" .
 
 test:organization_Prompsit
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Prompsit Language Engineering, S.L" ;
+      rdfs:label "Prompsit Language Engineering, S.L"@en ;
       foaf:homepage "http://www.prompsit.com/" ;
       foaf:name "Prompsit Language Engineering, S.L" .
 
 test:organization_UA-Grup_Transducens
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat d'Alacant. Grup Transducens" ;
+      rdfs:label "Universitat d'Alacant. Grup Transducens"@ca ;
       foaf:homepage "http://transducens.dlsi.ua.es/" ;
       foaf:name "Universitat d'Alacant. Grup Transducens" .
 
 test:organization_UA-InterNostrum
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat d'Alacant. InterNostrum" ;
+      rdfs:label "Universitat d'Alacant. InterNostrum"@ca ;
       foaf:homepage "http://www.internostrum.com/enllacans.php" ;
       foaf:name "Universitat d'Alacant. InterNostrum" .
 
 test:organization_UB-CLiC
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat de Barcelona. Centre de Llenguatge i Computació" ;
+      rdfs:label "Universitat de Barcelona. Centre de Llenguatge i Computació"@ca ;
       foaf:homepage "http://clic.ub.edu/" ;
       foaf:name "Universitat de Barcelona. Centre de Llenguatge i Computació" .
 
 test:organization_UB-DLG
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat de Barcelona. Departament de Lingüística General" ;
+      rdfs:label "Universitat de Barcelona. Departament de Lingüística General"@ca ;
       foaf:homepage "http://www.ub.edu/ling/LingGen.htm" ;
       foaf:name "Universitat de Barcelona. Departament de Lingüística General" .
 
 test:organization_UB-GILCUB
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat de Barcelona. Grup de recerca GILCUB" ;
+      rdfs:label "Universitat de Barcelona. Grup de recerca GILCUB"@ca ;
       foaf:homepage "http://www.ub.edu/gilcub/catmennf.html" ;
       foaf:name "Universitat de Barcelona. Grup de recerca GILCUB" .
 
 test:organization_UNIOVI-ESLEMA
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universidá d'Uviéu. Equipu d'Investigación Eslema" ;
+      rdfs:label "Universidá d'Uviéu. Equipu d'Investigación Eslema"@gl ;
       foaf:homepage "http://di098.edv.uniovi.es/apertium/comun/nos.php" ;
       foaf:name "Universidá d'Uviéu. Equipu d'Investigación Eslema" .
 
 test:organization_UPC
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat Politècnica de Catalunya" ;
+      rdfs:label "Universitat Politècnica de Catalunya"@ca ;
       owl:sameAs <http://id.loc.gov/authorities/names/n86106152> , <http://viaf.org/viaf/169401069> ;
       foaf:homepage "http://www.upc.edu/?set_language=ca" ;
       foaf:name "Universitat Politècnica de Catalunya" .
 
 test:organization_UPC-NLP_Research_Group
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat Politècnica de Catalunya. Research Group on Natural Language Processing" ;
+      rdfs:label "Universitat Politècnica de Catalunya. Research Group on Natural Language Processing"@ca ;
       foaf:homepage "http://www.talp.upc.edu/" ;
       foaf:name "Universitat Politècnica de Catalunya. Research Group on Natural Language Processing" .
 
 test:organization_UPC-TALP
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat Politècnica de Catalunya. TALP Research Center" ;
+      rdfs:label "Universitat Politècnica de Catalunya. TALP Research Center"@ca ;
       foaf:homepage "http://www.talp.upc.edu/" ;
       foaf:name "Universitat Politècnica de Catalunya. TALP Research Center" .
 
 test:organization_UPF-IULA
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA)" ;
+      rdfs:label "Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA)"@ca ;
       owl:sameAs <http://id.loc.gov/authorities/names/no99034437> , <http://viaf.org/viaf/142178265> ;
       foaf:homepage "http://www.iula.upf.edu/" ;
       foaf:name "Universitat Pompeu Fabra. Institut Universitari de Lingüística Aplicada (IULA)" .
 
 test:organization_USC
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universidade de Santiago de Compostela" ;
+      rdfs:label "Universidade de Santiago de Compostela"@gl ;
       owl:sameAs <http://id.loc.gov/authorities/names/n79046622> , <http://id.worldcat.org/fast/532139> , <http://viaf.org/viaf/142693525> ;
       foaf:homepage "https://www.usc.es/" ;
       foaf:name "Universidade de Santiago de Compostela" .
 
 test:organization_UVIGO-SLI
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universidade de Vigo. Seminario de Lingüística Informática" ;
+      rdfs:label "Universidade de Vigo. Seminario de Lingüística Informática"@gl ;
       foaf:homepage "http://sli.uvigo.es/" ;
       foaf:name "Universidade de Vigo. Seminario de Lingüística Informática" .
 
 test:organization_UVIGO-TALG
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "Universidade de Vigo. Grupo de investigación TALG" ;
+      rdfs:label "Universidade de Vigo. Grupo de investigación TALG"@gl ;
       foaf:homepage "http://webs.uvigo.es/talga/" ;
       foaf:name "Universidade de Vigo. Grupo de investigación TALG" .
 
 test:organization_imaxin-software
       rdf:type owl:NamedIndividual , foaf:Organization ;
-      rdfs:label "imaxin|software" ;
+      rdfs:label "imaxin|software"@en ;
       foaf:homepage "http://www.imaxin.com/" ;
       foaf:name "imaxin|software" .
 
 test:person_Ainara_Estarrona
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Ainara Estarrona" ;
+      rdfs:label "Ainara Estarrona"@eu ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Estarrona" ;
       foaf:givenName "Ainara" ;
@@ -7256,7 +7430,7 @@ test:person_Ainara_Estarrona
 
 test:person_Aitziber_Atutxa
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Aitziber Atutxa" ;
+      rdfs:label "Aitziber Atutxa"@eu ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Atutxa" ;
       foaf:givenName "Aitziber" ;
@@ -7267,7 +7441,7 @@ test:person_Aitziber_Atutxa
 
 test:person_Amparo_Moreno
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Amparo Moreno"^^xsd:string ;
+      rdfs:label "Amparo Moreno"@es ;
       ms:affiliation test:organization_Feminario ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAmparo_Moreno%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D%0D%0A"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Amparo_Moreno> , <http://orcid.org/0000-0001-7297-7900> ;
@@ -7278,7 +7452,7 @@ test:person_Amparo_Moreno
 
 test:person_Anna_Fernández_Montraveta
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Anna Fernández Montraveta" ;
+      rdfs:label "Anna Fernández Montraveta"@es ;
       ms:affiliation test:organization_GRIAL ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAna_Fern%25C3%25A1ndez_Montraveta%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Ana_Fern%C3%A1ndez_Montraveta> , <http://orcid.org/0000-0003-4657-1805> ;
@@ -7291,7 +7465,7 @@ test:person_Anna_Fernández_Montraveta
 
 test:person_Anna_Korhonen
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Anna Korhonen" ;
+      rdfs:label "Anna Korhonen"@en ;
       ms:affiliation test:organization_CAM-DTAL ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAnna_Korhonen%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Anna_Korhonen> ;
@@ -7304,7 +7478,7 @@ test:person_Anna_Korhonen
 
 test:person_Antonio_Toral
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Antonio Toral" ;
+      rdfs:label "Antonio Toral"@es ;
       ms:affiliation test:organization_DCU_School_of_Computing ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FAntonio_Toral%3E%0D%0A+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Antonio_Toral> , <http://orcid.org/0000-0003-2357-2960> ;
@@ -7317,7 +7491,7 @@ test:person_Antonio_Toral
 
 test:person_Arantza_Díaz_de_Ilarraza
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Arantza Díaz de Ilarraza" ;
+      rdfs:label "Arantza Díaz de Ilarraza"@es ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Díaz de Ilarraza" ;
       foaf:givenName "Arantza" ;
@@ -7328,7 +7502,7 @@ test:person_Arantza_Díaz_de_Ilarraza
 
 test:person_Carmen_Armentano_Oller
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Carmen Armentano Oller" ;
+      rdfs:label "Carmen Armentano Oller"@es ;
       ms:affiliation test:organization_UA-Grup_Transducens ;
       foaf:familyName "Armentano Oller" ;
       foaf:givenName "Carmen" ;
@@ -7339,7 +7513,7 @@ test:person_Carmen_Armentano_Oller
 
 test:person_Daniel_Vicente_Quílez
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Daniel Vicente Quílez" ;
+      rdfs:label "Daniel Vicente Quílez"@es ;
       ms:affiliation test:organization_UNIOVI-ESLEMA ;
       foaf:familyName "Vicente Quílez" ;
       foaf:givenName "Daniel" ;
@@ -7350,7 +7524,7 @@ test:person_Daniel_Vicente_Quílez
 
 test:person_Gemma_Boleda
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Gemma Boleda" ;
+      rdfs:label "Gemma Boleda"@ca ;
       ms:affiliation test:organization_UPC-TALP ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGemma_Boleda%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Gemma_Boleda> , <http://orcid.org/0000-0001-6140-7080> ;
@@ -7363,7 +7537,7 @@ test:person_Gemma_Boleda
 
 test:person_German_Rigau
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "German Rigau" ;
+      rdfs:label "German Rigau"@ca ;
       ms:affiliation test:organization_EHU-IXA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGerman_Rigau%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/German_Rigau> ;
@@ -7376,7 +7550,7 @@ test:person_German_Rigau
 
 test:person_Glòria_Vázquez
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Glòria Vázquez" ;
+      rdfs:label "Glòria Vázquez"@ca ;
       ms:affiliation test:organization_GRIAL ;
       owl:sameAs <http://orcid.org/0000-0002-7673-7610> ;
       foaf:familyName "Vázquez" ;
@@ -7388,7 +7562,7 @@ test:person_Glòria_Vázquez
 
 test:person_Gregor_Thurmair
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Gregor Thurmair" ;
+      rdfs:label "Gregor Thurmair"@de ;
       ms:affiliation test:organization_Linguatec_GmbH ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FGregor_Thurmair%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Gregor_Thurmair> ;
@@ -7401,7 +7575,7 @@ test:person_Gregor_Thurmair
 
 test:person_Irene_Castellón
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Irene Castellón" ;
+      rdfs:label "Irene Castellón"@es ;
       ms:affiliation test:organization_GRIAL ;
       owl:sameAs <http://orcid.org/0000-0003-4184-9652> ;
       foaf:familyName "Castellón" ;
@@ -7413,7 +7587,7 @@ test:person_Irene_Castellón
 
 test:person_Izaskun_Aldezabal
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Izaskun Aldezabal" ;
+      rdfs:label "Izaskun Aldezabal"@eu ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Aldezabal" ;
       foaf:givenName "Izaskun" ;
@@ -7424,7 +7598,7 @@ test:person_Izaskun_Aldezabal
 
 test:person_Jimmy_ORegan
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Jimmy O'Regan"^^xsd:string ;
+      rdfs:label "Jimmy O'Regan"@en ;
       owl:sameAs <http://orcid.org/0000-0003-2598-6868> ;
       foaf:familyName "O'Regan"^^xsd:string ;
       foaf:givenName "Jimmy"^^xsd:string ;
@@ -7433,7 +7607,7 @@ test:person_Jimmy_ORegan
 
 test:person_Joan_Soler
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Joan Soler" ;
+      rdfs:label "Joan Soler"@ca ;
       ms:affiliation test:organization_IEC ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FJoan_Soler%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Joan_Soler> ;
@@ -7446,7 +7620,7 @@ test:person_Joan_Soler
 
 test:person_Jorge_Vivaldi
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Jorge Vivaldi"^^xsd:string ;
+      rdfs:label "Jorge Vivaldi"@es ;
       ms:affiliation test:organization_UPF-IULA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FJorge_Vivaldi%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0003-1491-8691> , <http://dblp.l3s.de/d2r/resource/authors/Jorge_Vivaldi> ;
@@ -7459,7 +7633,7 @@ test:person_Jorge_Vivaldi
 
 test:person_Jose_Mari_Arriola
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "José María Arriola" ;
+      rdfs:label "José María Arriola"@es ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Arriola" ;
       foaf:givenName "José María" ;
@@ -7470,7 +7644,7 @@ test:person_Jose_Mari_Arriola
 
 test:person_Kike_Fernández
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Kike Fernández" ;
+      rdfs:label "Kike Fernández"@es ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Fernández" ;
       foaf:givenName "Kike" ;
@@ -7481,7 +7655,7 @@ test:person_Kike_Fernández
 
 test:person_Larraitz_Uria
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Larraitz Uria" ;
+      rdfs:label "Larraitz Uria"@eu ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Uria" ;
       foaf:givenName "Larraitz" ;
@@ -7492,7 +7666,7 @@ test:person_Larraitz_Uria
 
 test:person_Lluís_Márquez
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Lluís Márquez" ;
+      rdfs:label "Lluís Márquez"@ca ;
       ms:affiliation test:organization_UPC-TALP ;
       foaf:familyName "Márquez" ;
       foaf:givenName "Lluís" ;
@@ -7503,7 +7677,7 @@ test:person_Lluís_Márquez
 
 test:person_Lluís_Padró
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Lluís Padró" ;
+      rdfs:label "Lluís Padró"@ca ;
       ms:affiliation test:organization_UPC-TALP ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FLlu%25C3%25ADs_Padr%25C3%25B3%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0003-4738-5019> , <http://dblp.l3s.de/d2r/resource/authors/Llu%C3%ADs_Padr%C3%B3> ;
@@ -7516,7 +7690,7 @@ test:person_Lluís_Padró
 
 test:person_M_Antònia_Martí_Antonín
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "M Antònia Martí Antonín" ;
+      rdfs:label "M Antònia Martí Antonín"@ca ;
       ms:affiliation test:organization_UB-CLiC ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMaria_Ant%25C3%25B2nia_Mart%25C3%25AD%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Maria_Ant%C3%B2nia_Mart%C3%AD> , <http://orcid.org/0000-0002-8849-6826> ;
@@ -7529,7 +7703,7 @@ test:person_M_Antònia_Martí_Antonín
 
 test:person_Manuel_Bertran
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Manuel Bertran" ;
+      rdfs:label "Manuel Bertran"@es ;
       ms:affiliation test:organization_UPC-TALP ;
       foaf:familyName "Bertran" ;
       foaf:givenName "Manuel" ;
@@ -7540,7 +7714,7 @@ test:person_Manuel_Bertran
 
 test:person_Marc_Poch
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Marc Poch" ;
+      rdfs:label "Marc Poch"@ca ;
       ms:affiliation test:organization_UPF-IULA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMarc_Poch%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0002-2563-059X> , <http://dblp.l3s.de/d2r/resource/authors/Marc_Poch> ;
@@ -7553,7 +7727,7 @@ test:person_Marc_Poch
 
 test:person_Mariona_Taulé
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Mariona Taulé" ;
+      rdfs:label "Mariona Taulé"@ca ;
       ms:affiliation test:organization_UB-CLiC ;
       owl:sameAs <http://orcid.org/0000-0003-0089-940X> ;
       foaf:familyName "Taulé" ;
@@ -7565,7 +7739,7 @@ test:person_Mariona_Taulé
 
 test:person_Marta_Villegas
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Marta Villegas" ;
+      rdfs:label "Marta Villegas"@ca ;
       ms:affiliation test:organization_UPF-IULA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMarta_Villegas%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0003-0711-0029> , <http://dblp.l3s.de/d2r/resource/authors/Marta_Villegas> ;
@@ -7578,7 +7752,7 @@ test:person_Marta_Villegas
 
 test:person_María_Jesús_Aranzabe
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "María Jesús Aranzabe" ;
+      rdfs:label "María Jesús Aranzabe"@es ;
       ms:affiliation test:organization_EHU-IXA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMar%25C3%25ADa_Jes%25C3%25BAs_Aranzabe%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Mar%C3%ADa_Jes%C3%BAs_Aranzabe> ;
@@ -7591,7 +7765,7 @@ test:person_María_Jesús_Aranzabe
 
 test:person_Mikel_Forcada
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Mikel Forcada" ;
+      rdfs:label "Mikel Forcada"@es ;
       ms:affiliation test:organization_UA-Grup_Transducens ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMikel_L._Forcada%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0002-9411-6973> , <http://dblp.l3s.de/d2r/resource/authors/Mikel_L._Forcada> ;
@@ -7604,7 +7778,7 @@ test:person_Mikel_Forcada
 
 test:person_Mikel_Iruskieta
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Mikel Iruskieta" ;
+      rdfs:label "Mikel Iruskieta"@eu ;
       ms:affiliation test:organization_EHU-IXA ;
       foaf:familyName "Iruskieta" ;
       foaf:givenName "Mikel" ;
@@ -7615,7 +7789,7 @@ test:person_Mikel_Iruskieta
 
 test:person_Mireia_Ginestí_Rosell
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Mireia Ginestí Rosell" ;
+      rdfs:label "Mireia Ginestí Rosell"@ca ;
       ms:affiliation test:organization_UA-Grup_Transducens ;
       foaf:familyName "Ginestí Rosell" ;
       foaf:givenName "Mireia" ;
@@ -7626,7 +7800,7 @@ test:person_Mireia_Ginestí_Rosell
 
 test:person_Monica_Monachini
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Monica Monachini" ;
+      rdfs:label "Monica Monachini"@it ;
       ms:affiliation test:organization_CNR-ILC ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMonica_Monachini%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Monica_Monachini> ;
@@ -7639,7 +7813,7 @@ test:person_Monica_Monachini
 
 test:person_Montserrat_Marimón
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Montserrat Marimón" ;
+      rdfs:label "Montserrat Marimón"@ca ;
       ms:affiliation test:organization_GRIAL ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMontserrat_Marimon%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Montserrat_Marimon> ;
@@ -7652,7 +7826,7 @@ test:person_Montserrat_Marimón
 
 test:person_Muntsa_Padró
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Muntsa Padró" ;
+      rdfs:label "Muntsa Padró"@ca ;
       ms:affiliation test:organization_UPF-IULA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FMuntsa_Padr%25C3%25B3%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Muntsa_Padr%C3%B3> ;
@@ -7665,7 +7839,7 @@ test:person_Muntsa_Padró
 
 test:person_Núria_Bel
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Núria Bel" ;
+      rdfs:label "Núria Bel"@ca ;
       ms:affiliation test:organization_UPF-IULA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FN%25C3%25BAria_Bel%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://orcid.org/0000-0001-9346-7803> , <http://dblp.l3s.de/d2r/resource/authors/N%C3%BAria_Bel> ;
@@ -7678,7 +7852,7 @@ test:person_Núria_Bel
 
 test:person_Paul_Breen
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Paul Breen" ;
+      rdfs:label "Paul Breen"@en ;
       foaf:familyName "Breen" ;
       foaf:givenName "Paul" ;
       foaf:mbox "greenbreen@yahoo.com" ;
@@ -7686,7 +7860,7 @@ test:person_Paul_Breen
 
 test:person_Prokopis_Prokopidis
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Prokopis Prokopidis" ;
+      rdfs:label "Prokopis Prokopidis"@el ;
       ms:affiliation test:organization_ILSP-Athena_RC ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FProkopis_Prokopidis%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Prokopis_Prokopidis> ;
@@ -7699,7 +7873,7 @@ test:person_Prokopis_Prokopidis
 
 test:person_Sergi_Torner
       rdf:type foaf:Person , owl:NamedIndividual ;
-      rdfs:label "Sergi Torner" ;
+      rdfs:label "Sergi Torner"@ca ;
       ms:affiliation test:organization_UPF-IULA ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FSergi_Torner%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Sergi_Torner> , <http://orcid.org/0000-0002-9825-8354> ;
@@ -7712,7 +7886,7 @@ test:person_Sergi_Torner
 
 test:person_Valeria_Quochi
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Valeria Quochi" ;
+      rdfs:label "Valeria Quochi"@it ;
       ms:affiliation test:organization_CNR-ILC ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FValeria_Quochi%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Valeria_Quochi> ;
@@ -7725,7 +7899,7 @@ test:person_Valeria_Quochi
 
 test:person_Vera_Aleksic
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Vera Aleksic" ;
+      rdfs:label "Vera Aleksic"@de ;
       ms:affiliation test:organization_Linguatec_GmbH ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FVera_Aleksic%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Vera_Aleksic> ;
@@ -7738,7 +7912,7 @@ test:person_Vera_Aleksic
 
 test:person_Xavier_Gómez_Guinovart
       rdf:type owl:NamedIndividual , foaf:Person ;
-      rdfs:label "Xavier Gómez Guinovart" ;
+      rdfs:label "Xavier Gómez Guinovart"@ca ;
       ms:affiliation test:organization_UVIGO-TALG ;
       ms:publications "http://dblp.l3s.de/d2r/snorql/?query=SELECT+%3FpaperTitle+WHERE+%7B+%3Fpaper+dc%3Acreator+%3Chttp%3A%2F%2Fdblp.l3s.de%2Fd2r%2Fresource%2Fauthors%2FXavier_G%25C3%25B3mez_Guinovart%3E+%3B+dc%3Atitle+%3FpaperTitle+.+%7D"^^xsd:string ;
       owl:sameAs <http://dblp.l3s.de/d2r/resource/authors/Xavier_G%C3%B3mez_Guinovart> ;
@@ -7852,7 +8026,7 @@ The Chair, which was created in September 2004, aims to raise awareness of open-
 
 test:project_ChartEx
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "ChartEx"@en ;
+      rdfs:label "Chartex"@en ;
       ms:area <http://dbpedia.org/resource/Geography> , <http://dbpedia.org/resource/History> ;
       dc:contributor <http://viaf.org/viaf/130333233> , <http://viaf.org/viaf/145108120> , <http://viaf.org/viaf/124424463> , <http://viaf.org/viaf/159511000> , <http://viaf.org/viaf/154911632> , <http://viaf.org/viaf/156836332> ;
       dc:description "This project focuses on the extraction of information about places, people and events in their lives from medieval charters by using NLP technologies as NER, among others."@en ;
@@ -7892,7 +8066,7 @@ test:project_DbyD
 
 test:project_EAQUA
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "eAQUA"@en ;
+      rdfs:label "Eaqua"@en ;
       ms:area <http://dbpedia.org/resource/History> ;
       dc:contributor "University of Leipzig. Natural language processing group (Automatische Sprachverarbeitung, ASV)"^^xsd:string , "University of Leipzig. Old History Historical Seminar"^^xsd:string ;
       dc:description "The project \"aims at generating specific knowledge from ancient texts and will provide this knowledge via an open web-portal to the scientific  community for future empirical studies. For this purpose researches from the fields of Computer Science and Ancient Science will cooperate to adapt the available text mining technologies to the needs and requirements of the Ancient Studies”."@en ;
@@ -7904,7 +8078,7 @@ test:project_EAQUA
 
 test:project_ETRACES
       rdf:type foaf:Project , owl:NamedIndividual ;
-      rdfs:label "eTRACES"@en ;
+      rdfs:label "Etraces"@en ;
       ms:area <http://dbpedia.org/resource/Literature> ;
       dc:contributor <http://viaf.org/viaf/264043054> , "University of Leipzig. Natural language processing group (Automatische Sprachverarbeitung, ASV)"^^xsd:string , "Georg-August-Universität Göttingen. Göttingen Centre for Digital Humanities (GCDH)"^^xsd:string ;
       dc:description "The project aims to detect “temporal traces and interconnecting relations of text passages in German language novels from 1500 and 1990, as well as social science texts created since 1909”."@en ;
@@ -7997,6 +8171,8 @@ test:project_Municipals
       dc:creator "Carlos Gonzalo"^^xsd:string ;
       dc:description "This is an e-communication and e-politics project that analyses the 2011 municipal election campaign in Spain. The main objective of the project is to analyse new tendencies in e-politics and to demonstrate the impact of internet on the electoral process. CLARIN contributed to the research by providing services and tools to run an experiment that automatically analysed published texts in the Catalan political blogosphere related to this election campaign. The process included: a) automatically and periodically access to 459 representative blogs in the Catalan political blogosphere, b) obtaining and pre-processing of the different texts (over 8000 posts) and (iii) texts processing with different statistical tools to calculate the most significant words for each blog in contrast to the others."@en ;
       dc:subject <http://dbpedia.org/resource/Blogs> , <http://dbpedia.org/resource/Mass_media> , bio:StatisticsAnalysis , bio:TextMining , <http://dbpedia.org/resource/Media_studies> ;
+      dcterms:isReferencedBy
+              test:doc_uc_15 ;
       foaf:name "Municipals’11 online"@cat .
 
 test:project_OpenMT-2
@@ -8068,7 +8244,7 @@ test:project_Tradingcon
 
 test:project_VIRTEXT
       rdf:type owl:NamedIndividual , foaf:Project ;
-      rdfs:label "Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magaziness"@en ;
+      rdfs:label "Viral Texts: Mapping Networks of Reprinting in 19th Century Newspapers and Magazines"@en ;
       ms:area <http://dbpedia.org/resource/Literature> ;
       dc:contributor <http://viaf.org/viaf/147444432> ;
       dc:description "The project aims to improve the search on a Nineteenth-Century American Newspapers corpus using and developing data mining tools. It is working spaces-efficient n-gram indexing to identify candidate newspapers and then exploits local models of alignment to identify reprinted fragments unknown a priori."@en ;
@@ -8076,7 +8252,7 @@ test:project_VIRTEXT
       dcterms:isReferencedBy
               test:doc_uc_24 ;
       foaf:homepage "http://www.viraltexts.org/"^^xsd:string ;
-      foaf:name "Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magaziness"^^xsd:string .
+      foaf:name "Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magazines"^^xsd:string .
 
 test:project_ViClone
       rdf:type owl:NamedIndividual , foaf:Project ;

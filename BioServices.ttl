@@ -37,6 +37,12 @@ bio:CorpusWorkbench
       rdfs:label "Corpus Workbench"@en ;
       dc:description "A suite of tools to manage corpus analysis."@en .
 
+bio:DataAnonymization
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Data Anonymization"@en ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Data_anonymization> ;
+      dc:description "Data anonymization is the process of removing personally identifiable information from data sets and/or to scramble the lines in a file in order to make it difficult to reproduce the original texts."@en .
+
 bio:FormatConversion
       rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Format Conversion"@en ;
@@ -101,8 +107,8 @@ bio:SOAPService
 
 bio:Script
       rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
-      rdfs:label "Script"^^xsd:string ;
-      dc:description "Piece of software"^^xsd:string .
+      rdfs:label "Script"@en ;
+      dc:description "Piece of software."@en .
 
 bio:Service
       rdf:type owl:Class ;
@@ -112,7 +118,7 @@ bio:Service
 
 bio:ServiceTechnology
       rdf:type owl:Class ;
-      rdfs:label "ServiceTechnology"^^xsd:string ;
+      rdfs:label "ServiceTechnology"@en ;
       dc:description "service technology (REST, SOAP, Soaplab, etc)"@en .
 
 bio:Soaplab
@@ -171,8 +177,9 @@ bio:Tokenization
 
 bio:WebApplication
       rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
-      rdfs:label "Web application"^^xsd:string ;
-      dc:description "A web application or web app is any application software that runs in a web browser and is created in a browser-supported programming language (Wikipedia)."^^xsd:string .
+      rdfs:label "Web application"@en ;
+      dc:description "A web application or web app is any application software that runs in a web browser and is created in a browser-supported programming language (Wikipedia)."@en ;
+      owl:sameAs <http://dbpedia.org/resource/Web_application> .
 
 bio:contact
       rdf:type owl:DatatypeProperty ;
