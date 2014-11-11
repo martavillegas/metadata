@@ -134,7 +134,7 @@
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#statistics_analysis.tfidf_row" ;
       bio:endpoint "http://ws04.iula.upf.edu/soaplab2-axis/services/statistics_analysis.tfidf" ;
       bio:input "http://iula02v.upf.edu/corpus_data/WS_inouput/109_EN_input.txt" , "http://iula02v.upf.edu/corpus_data/WS_inouput/109_ES_input.txt" ;
-      bio:output "http://iula02v.upf.edu/corpus_data/WS_inouput/109_ES_ouput.htm" , "109_EN_ouput.htm" ;
+      bio:output "http://iula02v.upf.edu/corpus_data/WS_inouput/109_ES_ouput.htm" , "http://iula02v.upf.edu/corpus_data/WS_inouput/109_EN_ouput.htm"^^xsd:string ;
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
@@ -613,7 +613,7 @@
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:fundingProject test:project_METANET4U ;
       ms:languageName "Language Independent" ;
-      ms:resourceName "IULA text converter Web Service" ;
+      ms:resourceName "IULA character encoding converter Web Service"^^xsd:string ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#format_conversion.iconv_row" ;
       bio:endpoint "http://ws03.iula.upf.edu/soaplab2-axis/services/format_conversion.iconv" ;
@@ -5845,7 +5845,7 @@ test:doc_uc_20
       rdfs:label "Mining the Indianapolis Recorder: An Exploratory Study of a Digital Humanities Dataset"@en ;
       ms:area <http://dbpedia.org/resource/History> ;
       ms:url  "http://hdl.handle.net/1805/4263" ;
-      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Arnout_van_de_Rijt> , <http://dblp.l3s.de/d2r/resource/authors/Steven_Skiena> , <http://dblp.l3s.de/d2r/resource/authors/Charles_Ward> , <http://dblp.l3s.de/d2r/resource/authors/Eran_Shor> , "Soussan Askar"^^xsd:string ;
+      dc:creator <http://dblp.l3s.de/d2r/resource/authors/Jere_D._Odell> , "Ted Polley"^^xsd:string , "Kristi L. Palmer"^^xsd:string , "Heather L. Coates"^^xsd:string , "Jennifer Johnson"^^xsd:string ;
       dc:identifier "http://hdl.handle.net/1805/4263" ;
       dc:subject <http://dbpedia.org/resource/Media_studies> , bio:TextMining , <http://dbpedia.org/resource/Indianapolis_Recorder> , <http://dbpedia.org/resource/History_of_the_United_States> , <http://dbpedia.org/resource/Newspaper> ;
       dc:title "Mining the Indianapolis Recorder: An Exploratory Study of a Digital Humanities Dataset"@en ;
@@ -6630,7 +6630,7 @@ test:metadata_EUSMT
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:MachineTranlation ;
+      bio:task bio:MachineTranslation ;
       dc:description "Statistical Machine Translation from Spanish to Basque. Use of segmentation and reordering in Statistical Machine Translation from Spanish to Basque. It allows our system to achieve a relative improvement of 10% in the HTER metric."@en .
 
 test:metadata_Eihera
@@ -6867,7 +6867,7 @@ test:metadata_Matxin
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:MachineTranlation ;
+      bio:task bio:MachineTranslation ;
       dc:description "Machine translation from Spanish to Basque. Matxin is a Transfer-based MT system from Spanish into Basque. It is an open, reusable and interoperable framework which can be improved in the next future combining it with the statistical model. The MT architecture reuses several open tools and it is based on an unique XML format for the flow between the different modules, which makes easier the interaction among different developers of tools and resources. Being Basque a resource-poor language this is a key feature in our aim for future improvements and extensions of the engine. The result is an open source software which can be downloaded from matxin.sourceforge.net. We think it could be adapted to translating between other languages with few resources."@en .
 
 test:metadata_Morfeus
