@@ -27,6 +27,11 @@ bio:Chunking-Segmentation
       dc:description "Chunking is the analysis of a sentence which identifies the constituents parts (noun groups, verbs, verb groups, etc.)"@en ;
       owl:sameAs <http://dbpedia.org/resource/Shallow_parsing> .
 
+bio:Concordancing
+      rdf:type bio:Task , owl:NamedIndividual ;
+      rdfs:label "Querying"@en ;
+      dc:description "Refers to the task of searching (possibly via rgulars expressions) occurrences of a word or patterns in a corpus (the concordances)."@en .
+
 bio:CorpusProcessing
       rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Corpus Processing"@en ;
@@ -43,6 +48,12 @@ bio:DataAnonymization
       rdfs:seeAlso <http://dbpedia.org/resource/Data_anonymization> ;
       dc:description "Data anonymization is the process of removing personally identifiable information from data sets and/or to scramble the lines in a file in order to make it difficult to reproduce the original texts."@en .
 
+bio:DependencyParsing
+      rdf:type bio:Task ;
+      rdfs:label "Dependency parsing@en}"^^xsd:string ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Dependency_grammar> , <http://dbpedia.org/resource/Parsing> ;
+      dc:description "Dependency parsing is the task of parsing or analysing texts in order to identify dependency relations"@en .
+
 bio:FormatConversion
       rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Format Conversion"@en ;
@@ -53,6 +64,17 @@ bio:Lexicon-TerminologyExtraction
       rdfs:label "Lexicon-Terminology Extraction"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Terminology_extraction> ;
       dc:description "Extracting terminology is the process of extracting terminology from a text."@en .
+
+bio:LexiconLookUp
+      rdf:type bio:Task ;
+      rdfs:label "Lexicon look up"@en ;
+      dc:description "Lexicon look up is the task to automatically perform searches in a lexicon." .
+
+bio:MachineTranlation
+      rdf:type bio:Task ;
+      rdfs:label "Machine translation"@en ;
+      dc:description "Machine translation (MT) is a sub-field of computational linguistics that investigates the use of software to translate text or speech from one natural language to another (Wikipedia)."@en ;
+      owl:sameAs <http://dbpedia.org/resource/Machine_translation> .
 
 bio:Management
       rdf:type owl:NamedIndividual , bio:Task ;
@@ -74,10 +96,11 @@ bio:NamedEntityRecognition
       dc:description "Named Entity Recognition (NER) classifies elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc."@en ;
       owl:sameAs <http://dbpedia.org/resource/Named-entity_recognition> .
 
-bio:Querying
-      rdf:type owl:NamedIndividual , bio:Task ;
-      rdfs:label "Querying"@en ;
-      dc:description "Refers to the task of searching (possibly via rgulars expressions) a word or patterns in a corpus."@en .
+bio:QuestionAnswering
+      rdf:type bio:Task ;
+      rdfs:label "Question answering"@en ;
+      dc:description "Question Answering (QA) is a computer science discipline which is concerned with building systems that automatically answer questions posed by humans in a natural language."@en ;
+      owl:sameAs <http://dbpedia.org/resource/Question_answering> .
 
 bio:REST
       rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
@@ -134,6 +157,12 @@ bio:SoaplabService
       dc:description "Soaplab is a Web services software framework specialised for bioinformatics programs with command-line interface. (wikipedia)"@en ;
       owl:sameAs <http://dbpedia.org/resource/Soaplab> .
 
+bio:SpellChecking
+      rdf:type bio:Task ;
+      rdfs:label "Spelling CHecker"@en ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Spell_checker> ;
+      dc:description "Spell checking is the task of automatically correct spelling errors i texts."@en .
+
 bio:StatisticsAnalysis
       rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Statistics Analysis"@en ;
@@ -156,6 +185,11 @@ bio:Task
       rdf:type owl:Class ;
       rdfs:label "Task"@en ;
       dc:description "The task performed by the service"@en .
+
+bio:TextHandling
+      rdf:type bio:Task ;
+      rdfs:label "Text Handling@en}"^^xsd:string ;
+      dc:description "Text handling is the task to perform (basic) text transformations in input data."@en .
 
 bio:TextMining
       rdf:type owl:NamedIndividual , bio:Task ;

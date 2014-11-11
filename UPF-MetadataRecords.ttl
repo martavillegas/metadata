@@ -62,7 +62,7 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:SyntacticTagging , bio:CorpusProcessing ;
+      bio:task bio:SyntacticTagging , bio:DependencyParsing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.freeling_dependency?wsdl" ;
       dc:description "Freeling-based dependency parser. The languages supported are English, Catalan, Spanish, Asturian and Galician. WARNING: This WS has a new version."@en .
 
@@ -83,7 +83,7 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:CorpusProcessing , bio:SyntacticTagging ;
+      bio:task bio:SyntacticTagging , bio:Chunking-Segmentation ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.freeling_parsed?wsdl" ;
       dc:description "Freeling-based chunker parser. The languages supported are English, Catalan, Spanish, Asturian and Galician. WARNING: This WS has a new version."@en .
 
@@ -120,6 +120,7 @@
       bio:task bio:StatisticsAnalysis ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/statistics_analysis.ngrams?wsdl" ;
       dc:description "Ted Pedersen's Ngram Statistics Package (used to identify word Ngrams that appear in large corpora using standard tests of association such as Fisher's exact test, the log likelihood ratio, Pearson's chi-squared test, the Dice Coefficient, etc.)."@en ;
+      dc:subject <http://dbpedia.org/resource/N-gram> ;
       dcterms:isReferencedBy
               test:doc_71 , test:doc_63 , test:doc_70 , test:doc_62 .
 
@@ -137,9 +138,10 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:CorpusProcessing , bio:StatisticsAnalysis ;
+      bio:task bio:StatisticsAnalysis ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/statistics_analysis.tfidf?wsdl" ;
-      dc:description "This WS calculates the Term Frequency (TF) and the Inverse Document Frequency (IDF) of a word in a given corpus. The two values, labeled TF-IDF, are a statistical measure used to evaluate how important a word is to a document in a collection or corpus."@en .
+      dc:description "This WS calculates the Term Frequency (TF) and the Inverse Document Frequency (IDF) of a word in a given corpus. The two values, labeled TF-IDF, are a statistical measure used to evaluate how important a word is to a document in a collection or corpus."@en ;
+      dc:subject <http://dbpedia.org/resource/Tf-idf> .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/110>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -200,11 +202,12 @@
 
 <http://lodserver.iula.upf.edu/Metashare/resource/114>
       rdf:type owl:NamedIndividual , bio:Service ;
-      rdfs:label "IULA text converter Web Service"@en ;
+      rdfs:label "IULA character encoding converter Web Service"@en ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Iconv> , <http://dbpedia.org/resource/Character_encoding> ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:fundingProject test:project_METANET4U ;
       ms:languageName "Language Independent" ;
-      ms:resourceName "IULA text converter Web Service" ;
+      ms:resourceName "IULA character encoding converter Web Service"@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#format_conversion.iconv_row" ;
       bio:endpoint "http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.iconv" ;
@@ -215,7 +218,8 @@
               bio:Soaplab , bio:SOAP ;
       bio:task bio:FormatConversion ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.iconv?wsdl" ;
-      dc:description "Convert encoding of given files from one encoding to another. Based on the Linux command that converts text from one encoding to another encoding."@en ;
+      dc:description "This WS converts the character encoding of given files from one encoding to another. Based on the Linux 'iconv' command used to convert between different character encodings."@en ;
+      dc:subject ms:CharacterEncoding ;
       dcterms:isReferencedBy
               test:doc_61 , test:doc_64 , test:doc_65 .
 
@@ -258,6 +262,7 @@
 <http://lodserver.iula.upf.edu/Metashare/resource/117>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "XSLT applicator Web Service"@en ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Libxslt> ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "XSLT applicator Web Service" ;
@@ -267,18 +272,18 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:FormatConversion ;
+      bio:task bio:FormatConversion , bio:TextHandling ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.xsltproc?wsdl" ;
       dc:description "A command line tool for applying XSLT stylesheets to XML documents."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/118>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "IULA tagger Web Service"@en ;
+      rdfs:label "IULA TreeTagger Web Service"@en ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:fundingProject test:project_METANET4U ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageName "Spanish" , "English" , "Catalan" ;
-      ms:resourceName "IULA tagger Web Service" ;
+      ms:resourceName "IULA TreeTagger Web Service"@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://kurwenal.upf.edu/soaplab2-axis/#morphosintactic_tagging.iula_tagger_row" ;
       bio:endpoint "http://kurwenal.upf.edu/soaplab2-axis/services/morphosintactic_tagging.iula_tagger" ;
@@ -287,9 +292,12 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:MorphosyntacticTagging , bio:Stemming-Lemmatization , bio:CorpusProcessing ;
+      bio:task bio:MorphosyntacticTagging , bio:Stemming-Lemmatization ;
       bio:wsdl "http://kurwenal.upf.edu/soaplab2-axis/services/morphosintactic_tagging.iula_tagger?wsdl" ;
-      dc:description "This WS is a morphosyntatic tagger. The disambiguation process is done by a TreeTagger instance trained by the IULA. The input is plain text in Catalan or Spanish. The output allows optional formats and optional encoding."@en .
+      dc:description "This WS is a morphosyntatic tagger. The disambiguation process is done by a TreeTagger instance trained by the IULA. The input is plain text in Catalan or Spanish. The output allows optional formats and optional encoding. (http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)"@en ;
+      dc:subject "http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/"^^xsd:string ;
+      dcterms:isReferencedBy
+              test:doc_59 .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/119>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -328,29 +336,14 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:Lexicon-TerminologyExtraction ;
+      bio:task bio:LexiconLookUp ;
       bio:wsdl "http://kurwenal.upf.edu/soaplab2-axis/services/stemming_lemmatization.iula_lexicon_lookup?wsdl" ;
       dc:description "Given a word form, this WS returns the lexical information by looking it up in the IULA's lexicon. The languages supported are Catalan, Spanish or English."@en .
-
-<http://lodserver.iula.upf.edu/Metashare/resource/121>
-      rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "Regular expressions applicator Web Service"@en ;
-      ms:fundingProject test:project_PANACEA ;
-      ms:languageName "Language Independent" ;
-      ms:resourceName "Regular expressions applicator Web Service" ;
-      bio:contact "iulatrl@upf.edu" ;
-      bio:demoInvocation "http://kurwenal.upf.edu/soaplab2-axis/#text_mining.apply_re_row" ;
-      bio:endpoint "http://kurwenal.upf.edu/soaplab2-axis/services/text_mining.apply_re" ;
-      bio:serviceProvider test:organization_UPF-IULA ;
-      bio:serviceTechnology
-              bio:Soaplab , bio:SOAP ;
-      bio:task bio:Querying ;
-      bio:wsdl "http://kurwenal.upf.edu/soaplab2-axis/services/text_mining.apply_re?wsdl" ;
-      dc:description "Given a file with sentences where the studied word occurs, this WS applies the regular expressions in order to obtain the signatures."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/122>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Search signatures Web Service"@en ;
+      rdfs:seeAlso test:doc_8 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "English" , "Spanish" ;
@@ -361,13 +354,14 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:CorpusProcessing , bio:Querying ;
+      bio:task bio:CorpusProcessing , bio:Concordancing ;
       bio:wsdl "http://kurwenal.upf.edu/soaplab2-axis/services/text_mining.busca_signatura_in_corpus?wsdl" ;
       dc:description "Given a list of lemmas, the WS looks for the occurrences of them in IULA corpus, applies the given regular expressions and returns all the signatures."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/123>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "IULA concordancer Web Service"@en ;
+      rdfs:seeAlso test:doc_8 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "English" , "Spanish" ;
@@ -379,7 +373,7 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:CorpusProcessing , bio:Querying ;
+      bio:task bio:Concordancing ;
       bio:wsdl "http://kurwenal.upf.edu/soaplab2-axis/services/text_mining.get_concordances?wsdl" ;
       dc:description "Given a lemma and a category, this WS returns the sentences of the IULA corpus where this lemma occurs. The user can perform a domain search. The languages supported are Spanish and English."@en .
 
@@ -419,7 +413,7 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:MorphologicalTagging ;
+      bio:task bio:LexiconLookUp ;
       bio:wsdl "http://kurwenal.upf.edu/soaplab2-axis/services/verbal_conjugation.iula_paradigma?wsdl" ;
       dc:description "Given a verb (infinitive or a verbal form) this WS outputs its verbal paradigm grouped according tense and mode. The languages supported are Catalan and Spanish."@en .
 
@@ -441,7 +435,8 @@
 
 <http://lodserver.iula.upf.edu/Metashare/resource/137>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "Stream editor Web Service"@en ;
+      rdfs:label "Stream editor Web Service (sed)"@en ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Sed> ;
       ms:documentation "http://www.gnu.org/software/sed" ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
@@ -449,16 +444,20 @@
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#corpus_processing.sed_row" ;
       bio:endpoint "http://ws04.iula.upf.edu/soaplab2-axis/services/corpus_processing.sed" ;
+      bio:input "This is just a sample text for testing purposes. We are going to change vowels to uppercase."^^xsd:string , "y/aeiou/AEIOU/"^^xsd:string ;
+      bio:output "ThIs Is jUst A sAmplE tExt fOr tEstIng pUrpOsEs. WE ArE gOIng tO chAngE vOwEls tO UppErcAsE."^^xsd:string ;
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:CorpusProcessing ;
+      bio:task bio:CorpusProcessing , bio:TextHandling ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/corpus_processing.sed?wsdl" ;
-      dc:description "This WS is used to filter text. It extracts part of a file using pattern matching or substituting multiple occurrences of a string within a file."@en .
+      dc:description "This WS performs basic text transformations on an input text. The serveice is  based on the 'sed' progam,  a Unix utility that parses and transforms text, using a simple, compact programming language."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/142>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Post tagging to GrAF converter Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:GrAF ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Post tagging to GrAF converter Web Service" ;
@@ -477,6 +476,8 @@
 <http://lodserver.iula.upf.edu/Metashare/resource/143>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "GrAF skeleton from basic XCES converter"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:XCES , ms:GrAF ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "GrAF skeleton from basic XCES converter" ;
@@ -512,6 +513,8 @@
 <http://lodserver.iula.upf.edu/Metashare/resource/185>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Basic XCES to TXT converter Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:XCES ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Basic XCES to TXT converter Web Service" ;
@@ -521,15 +524,18 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:CorpusProcessing , bio:FormatConversion ;
+      bio:task bio:FormatConversion ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.basicxces_to_txt_converter?wsdl" ;
       dc:description "A WS that converts BasicXCES  text corpus in plain text (.TXT)."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/186>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "PoS tagger to Xces converter Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:XCES ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/237> ;
       ms:resourceName "PoS tagger to Xces converter Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#format_conversion.postagger_to_xces_converter_row" ;
@@ -546,10 +552,13 @@
 <http://lodserver.iula.upf.edu/Metashare/resource/187>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "IULA GrAF tagger Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:GrAF ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:fundingProject test:project_METANET4U ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#cat> ;
       ms:languageName "Spanish" , "Catalan" , "English" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/237> ;
       ms:resourceName "IULA GrAF tagger Web Service " ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://kurwenal.upf.edu/soaplab2-axis/#morphosintactic_tagging.iula_tagger_graf_row" ;
@@ -566,6 +575,8 @@
 <http://lodserver.iula.upf.edu/Metashare/resource/197>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "GrAF from dependency converter Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:GrAF ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "GrAF from dependency converter Web Service" ;
@@ -592,11 +603,13 @@
               bio:SOAP , bio:Soaplab ;
       bio:task bio:Lexicon-TerminologyExtraction ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.classify?wsdl" ;
-      dc:description "Given a set of signatures in a weka file (test_file.arff), classify them using the parameters estimated for each cue (theta_file.csv)."@en .
+      dc:description "Given a set of signatures in a weka file (test_file.arff), classify them using the parameters estimated for each cue (theta_file.csv)."@en ;
+      dc:subject <http://dbpedia.org/resource/Weka_(machine_learning)> .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/202>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "IULA text converter Web Service"@en ;
+      rdfs:label "IULA character encoding converter Web Service"@en ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Iconv> ;
       ms:contactPerson test:person_Jorge_Vivaldi ;
       ms:fundingProject test:project_METANET4U ;
       ms:languageName "Language Independent" ;
@@ -609,16 +622,19 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:FormatConversion ;
+      bio:task bio:FormatConversion , bio:TextHandling ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/format_conversion.iconv?wsdl" ;
-      dc:description "Convert encoding of given files from one encoding to another. Based on the Linux command that converts text from one encoding to another encoding."@en .
+      dc:description "Convert character encoding of given files from one encoding to another. Based on the Linux  'iconv' command that converts text from one encoding to another encoding."@en ;
+      dc:subject ms:CharacterEncoding .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/203>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "CQP indexer Web Service"@en ;
+      rdfs:seeAlso <http://cwb.sourceforge.net/> ;
       ms:documentation test:doc_65 , test:doc_64 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/261> , <http://lodserver.iula.upf.edu/Metashare/resource/237> , <http://lodserver.iula.upf.edu/Metashare/resource/241> , <http://lodserver.iula.upf.edu/Metashare/resource/249> , <http://lodserver.iula.upf.edu/Metashare/resource/118> , <http://lodserver.iula.upf.edu/Metashare/resource/278> ;
       ms:resourceName "CQP indexer Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#corpus_workbench.cqp_index_row" ;
@@ -636,6 +652,7 @@
 <http://lodserver.iula.upf.edu/Metashare/resource/204>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "CQP query Web Service"@en ;
+      rdfs:seeAlso <http://cwb.sourceforge.net/> ;
       ms:documentation "http://cwb.sourceforge.net/documentation.php" , test:doc_65 , test:doc_64 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
@@ -679,6 +696,7 @@
       rdfs:label "Columns selector Web Service"@en ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/278> , <http://lodserver.iula.upf.edu/Metashare/resource/261> , <http://lodserver.iula.upf.edu/Metashare/resource/237> , <http://lodserver.iula.upf.edu/Metashare/resource/108> , <http://lodserver.iula.upf.edu/Metashare/resource/249> ;
       ms:resourceName "Columns selector Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#format_conversion.columns_selector_row" ;
@@ -688,7 +706,7 @@
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:FormatConversion ;
+      bio:task bio:TextHandling ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/format_conversion.columns_selector?wsdl" ;
       dc:description "This WS allows extracting a column from a tabular file input text. It is useful to work with CoNLL or FreeLing annotated corpora. Language independent WS."@en .
 
@@ -706,7 +724,8 @@
               bio:Soaplab , bio:SOAP ;
       bio:task bio:StatisticsAnalysis ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/statistics_analysis.compute_p_cue_class?wsdl" ;
-      dc:description "This WS calculates the probability of seeing a linguistic cue given a lexical class (P(cue|class) value). This probability is computed given the occurrences of cues in a corpus (codified in the signatures file) and the information of belonging or not belonging of these words to different classes (codified in indicators file). The probability is computed for each studied cue in the signatures file and for each class in the indicators file."@en .
+      dc:description "This WS calculates the probability of seeing a linguistic cue given a lexical class (P(cue|class) value). This probability is computed given the occurrences of cues in a corpus (codified in the signatures file) and the information of belonging or not belonging of these words to different classes (codified in indicators file). The probability is computed for each studied cue in the signatures file and for each class in the indicators file."@en ;
+      dcterms:references <http://dbpedia.org/resource/Weka_(machine_learning)> .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/225>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -714,6 +733,7 @@
       ms:documentation test:doc_74 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
+      ms:relatedResource <http://dbpedia.org/resource/Weka_(machine_learning)> ;
       ms:resourceName "P clue/ lexical class from Weka computer Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#statistics_analysis.compute_p_cue_class_from_weka_row" ;
@@ -759,6 +779,7 @@ cue_n;1301732;0.0243222107162;1516522;0.0177992801951;"""@en ;
       ms:documentation test:doc_75 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
+      ms:relatedResource <http://dbpedia.org/resource/Weka_(machine_learning)> ;
       ms:resourceName "Weka noun signatures creator Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#lexicon_terminology_extraction.create_weka_noun_signatures_row" ;
@@ -791,6 +812,8 @@ Optional parameters:
 <http://lodserver.iula.upf.edu/Metashare/resource/227>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Eventive nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_6 , test:doc_82 , test:doc_76 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
@@ -855,6 +878,7 @@ You can choose to have this prediction as:
       rdfs:label "XML/TXT to Weka converter Web Service"@en ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
+      ms:relatedResource <http://dbpedia.org/resource/Weka_(machine_learning)> ;
       ms:resourceName "XML/TXT to Weka converter Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#lexicon_terminology_extraction.xml_signatures2weka_row" ;
@@ -883,7 +907,7 @@ You can choose to have this prediction as:
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:MorphosyntacticTagging , bio:CorpusProcessing ;
+      bio:task bio:MorphosyntacticTagging ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/morphosintactic_tagging.freeling3_morpho?wsdl" ;
       dc:description "This Web Service deploys a FreeLing-based morphological analyzer (v 3.0). The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese."@en ;
       dcterms:isReferencedBy
@@ -908,7 +932,7 @@ You can choose to have this prediction as:
               bio:Soaplab , bio:SOAP ;
       bio:task bio:MorphosyntacticTagging , bio:CorpusProcessing , bio:NamedEntityRecognition ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/morphosintactic_tagging.freeling3_tagging?wsdl" ;
-      dc:description "This WS performs a FreeLing-based part-of-speech tagger (v 3.0).  WS job duration depends on the server load, approximately 1 million words takes one minute. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, and Portuguese."@en ;
+      dc:description "This WS performs a FreeLing-based part-of-speech tagger (v 3.0).  WS job duration depends on the server load, approximately 1 million words takes one minute. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, and Portuguese. The output is a tabular file with: word form, lemma, part of speech, confidence rate, initial position and final position."@en ;
       dcterms:isReferencedBy
               test:doc_65 , test:doc_64 , test:doc_73 , test:doc_61 , test:doc_63 .
 
@@ -929,9 +953,9 @@ You can choose to have this prediction as:
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:CorpusProcessing , bio:Tokenization ;
+      bio:task bio:TextHandling , bio:CorpusProcessing , bio:Tokenization ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/tokenization.freeling3_tokenizer?wsdl" ;
-      dc:description "This WS deploys a FreeLing-based text tokenizer (v 3.0). The WS splits a file in plain text format and UTF-8 encoded into units (tokens). The languages supported are Catalan, English, Galician, Italian, Portuguese, Russian, Spanish, Welsh, and Asturian."@en ;
+      dc:description "This WS deploys a FreeLing-based text tokenizer (v 3.0). The WS splits a file in plain text format and UTF-8 encoded into units (tokens) where  tokens are separated by new lines. The languages supported are Catalan, English, Galician, Italian, Portuguese, Russian, Spanish, Welsh, and Asturian."@en ;
       dcterms:isReferencedBy
               test:doc_66 , test:doc_60 , test:doc_68 .
 
@@ -952,9 +976,9 @@ You can choose to have this prediction as:
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:Chunking-Segmentation , bio:CorpusProcessing ;
+      bio:task bio:TextHandling , bio:CorpusProcessing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/segmentation.freeling3_sentence_splitter?wsdl" ;
-      dc:description "This WS performs a FreeLing-based sentence splitter (v 3.0). The WS splits a file in plain text format and UTF-8 encoded into units (tokens).  Output sentences are separated by empty lines. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese."@en .
+      dc:description "This WS performs a FreeLing-based sentence splitter (v 3.0). The WS splits a file in plain text format and UTF-8 encoded into units (tokens) separated by new lines.  Output sentences are separated by empty lines. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/240>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -973,7 +997,7 @@ You can choose to have this prediction as:
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:CorpusProcessing , bio:SyntacticTagging ;
+      bio:task bio:DependencyParsing , bio:SyntacticTagging ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.freeling3_dependency?wsdl" ;
       dc:description "This WS deploys a FreeLing-based dependency parser (v 3.0).  The WS requires a plain text input. The possible outputs formats are FreeLing, XML, and XML CQP ready. The languages supported are English, Catalan, Spanish, Asturian and Galician."@en .
 
@@ -984,6 +1008,7 @@ You can choose to have this prediction as:
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageName "Spanish" , "Asturian" , "Catalan" , "English" , "Galician" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/203> ;
       ms:resourceName "FreeLing Chunker parser Web Service v.3"^^xsd:string ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#syntactic_tagging.freeling3_parsed_row" ;
@@ -994,13 +1019,15 @@ You can choose to have this prediction as:
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:SyntacticTagging , bio:CorpusProcessing ;
+      bio:task bio:SyntacticTagging ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.freeling3_parsed?wsdl" ;
       dc:description "This WS performs a FreeLing-based chunker parser (v 3.0).  The WS requires a plain text input. The possible outputs formats are FreeLing , XML, and XML CQP ready. The languages supported are English, Catalan, Spanish, Asturian and Galician."@en .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/243>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Human nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_76 , test:doc_6 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
@@ -1025,6 +1052,8 @@ You can choose to have this prediction as:
 <http://lodserver.iula.upf.edu/Metashare/resource/244>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Location nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_76 , test:doc_82 , test:doc_6 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
@@ -1049,6 +1078,8 @@ You can choose to have this prediction as:
 <http://lodserver.iula.upf.edu/Metashare/resource/245>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "LMF file merger Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_78 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
@@ -1065,11 +1096,14 @@ You can choose to have this prediction as:
 
 WARNING: this version of the  webservice only works for LMF  files without references. This is, LMF files containing only “<LexicalEntry>” elements. I.e. it works for morphological dictionaries, noun classification, etc but not for  SCF lexica, for example. SCF lexica define first the frames associated to each verb and then the frames itself. The link between the two is made using the IDs. This version of the webservice is not able to follow such links, so it won’t perform the merging of elements outside “<LexicalEntry>” correctly. This will be developed in the future."""@en ;
       dcterms:isReferencedBy
-              test:doc_78 .
+              test:doc_78 ;
+      dcterms:references ms:LMF .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/246>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Select Nouns from LMF lexicon Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_80 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
@@ -1093,6 +1127,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
       ms:languageName "Spanish" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/237> ;
       ms:resourceName "MaltParser Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#syntactic_tagging.malt_parser_row" ;
@@ -1102,9 +1137,10 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:SyntacticTagging , bio:CorpusProcessing ;
+      bio:task bio:DependencyParsing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.malt_parser?wsdl" ;
       dc:description "This WS calls an instance of MaltParser for Spanish trained with the IULA treebank developed in the Metanet4you project. The input of this WS is plain text. The service performs PoS tagging with FreeLing and then performs the dependency parsing using Malt parser. The output follows CoNLL format."@en ;
+      dc:subject "http://www.maltparser.org/"^^xsd:string ;
       dcterms:isReferencedBy
               test:doc_81 .
 
@@ -1114,6 +1150,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#ast> , <http://www.fao.org/aims/aos/languagecode.owl#ita> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#wel> , <http://www.fao.org/aims/aos/languagecode.owl#rus> , <http://www.fao.org/aims/aos/languagecode.owl#glg> ;
       ms:languageName "Spanish" , "Galician" , "Welsh" , "Portuguese" , "Catalan" , "Asturian" , "English" , "Russian" , "Italian" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/237> ;
       ms:resourceName "Anonymizer Web Service" ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#named_entity_recognition.anonymizer_row" ;
@@ -1123,7 +1160,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:NamedEntityRecognition , bio:CorpusProcessing ;
+      bio:task bio:NamedEntityRecognition , bio:DataAnonymization , bio:TextHandling ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/named_entity_recognition.anonymizer?wsdl" ;
       dc:description "This WS substitutes proper nouns with tags. This process anonymizes an input text by eliminating any person, place, corporation, etc. name. The service automatically calls the FreeLing WS and makes use of its Named Entity Recognition tool to detect proper nouns. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese."@en .
 
@@ -1155,7 +1192,7 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:DataAnonymization ;
+      bio:task bio:TextHandling , bio:DataAnonymization ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/others.linescrambler?wsdl" ;
       dc:description "This WS scrambles the lines in a file. The goal is to make it difficult to reproduce the original text. The input size limit is 100 MB. Language independent WS."@en .
 
@@ -1180,6 +1217,8 @@ WARNING: this version of the  webservice only works for LMF  files without refer
 <http://lodserver.iula.upf.edu/Metashare/resource/259>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "TMX shuffling Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:TMX ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "TMX shuffling Web Service" ;
@@ -1209,9 +1248,10 @@ WARNING: this version of the  webservice only works for LMF  files without refer
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:MorphosyntacticTagging , bio:CorpusProcessing ;
+      bio:task bio:MorphosyntacticTagging ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/morphosintactic_tagging.twitter_nlp?wsdl" ;
-      dc:description "This WS is based on the Twitter NLP tool developed by Noah's ARK group (Noah Smith's research group at the Language Technologies Institute, School of Computer Science, Carnegie Mellon University).  A fast and robust Java-based tokenizer and part-of-speech tagger for Twitter, its training data of manually labeled POS annotated tweets, a web-based annotation tool, and hierarchical word clusters from unlabeled tweets. The language supported is English."@en .
+      dc:description "This WS is based on the Twitter NLP tool developed by Noah's ARK group (Noah Smith's research group at the Language Technologies Institute, School of Computer Science, Carnegie Mellon University).  A fast and robust Java-based tokenizer and part-of-speech tagger for Twitter, its training data of manually labeled POS annotated tweets, a web-based annotation tool, and hierarchical word clusters from unlabeled tweets. The language supported is English."@en ;
+      dc:subject <http://dbpedia.org/page/Twitter> .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/262>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1232,6 +1272,8 @@ WARNING: this version of the  webservice only works for LMF  files without refer
 <http://lodserver.iula.upf.edu/Metashare/resource/263>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Hungalign to GrAF converter Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:GrAF ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
       ms:resourceName "Hungalign to GrAF converter Web Service" ;
@@ -1248,6 +1290,8 @@ WARNING: this version of the  webservice only works for LMF  files without refer
 <http://lodserver.iula.upf.edu/Metashare/resource/264>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Abstract nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_82 , test:doc_76 , test:doc_6 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
@@ -1272,6 +1316,8 @@ You can choose to have this prediction as:
 <http://lodserver.iula.upf.edu/Metashare/resource/265>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Artifact nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_82 , test:doc_76 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
@@ -1296,6 +1342,8 @@ You can choose to have this prediction as:
 <http://lodserver.iula.upf.edu/Metashare/resource/266>
       rdf:type bio:Service , owl:NamedIndividual ;
       rdfs:label "Matter nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_76 , test:doc_82 , test:doc_6 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
@@ -1320,6 +1368,8 @@ You can choose to have this prediction as:
 <http://lodserver.iula.upf.edu/Metashare/resource/267>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Process nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_82 , test:doc_76 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
@@ -1344,6 +1394,8 @@ You can choose to have this prediction as:
 <http://lodserver.iula.upf.edu/Metashare/resource/268>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Semiotic  nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_82 , test:doc_6 , test:doc_76 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
@@ -1368,6 +1420,8 @@ You can choose to have this prediction as:
 <http://lodserver.iula.upf.edu/Metashare/resource/269>
       rdf:type owl:NamedIndividual , bio:Service ;
       rdfs:label "Social nouns classifier Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:documentation test:doc_76 , test:doc_82 ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#spa> ;
@@ -1391,17 +1445,19 @@ You can choose to have this prediction as:
 
 <http://lodserver.iula.upf.edu/Metashare/resource/270>
       rdf:type bio:Service , owl:NamedIndividual ;
-      rdfs:label "File merger Web Service"@en ;
+      rdfs:label "LMF merger Web Service"@en ;
+      ms:conformanceToStandardsBestPractices
+              ms:LMF ;
       ms:fundingProject test:project_PANACEA ;
       ms:languageName "Language Independent" ;
-      ms:resourceName "File merger Web Service" ;
+      ms:resourceName "LMF merger Web Service"^^xsd:string ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#lexicon_terminology_extraction.merge_list_of_lmf_files_row" ;
       bio:endpoint "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.merge_list_of_lmf_files" ;
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:Lexicon-TerminologyExtraction ;
+      bio:task ms:lexiconMerging ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/lexicon_terminology_extraction.merge_list_of_lmf_files?wsdl" ;
       dc:description """Given a list of URLs pointing to LMF files, this webservice merges them into a single LMF file. It works for LMF files encoding the information in the same way, i.e. same labels, values and structure. This will work, for example, for merging different lexica learnt under PANACEA platform. If the LMF files contain equivalent information encoded in different ways, a mapping into a common format should be previously performed.
 
@@ -1425,7 +1481,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:FormatConversion , bio:CorpusProcessing ;
+      bio:task bio:TextHandling ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/format_conversion.split_file?wsdl" ;
       dc:description "This WS splits an input file into smaller files containing the number of lines indicated as input parameter.  Splitted files are stored in the results public directory, and the output is a file with the list of URLs pointing to each splitted file. Language independent WS."@en .
 
@@ -1435,6 +1491,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#eng> ;
       ms:languageName "Spanish" , "English" ;
+      ms:relatedResource <http://lodserver.iula.upf.edu/Metashare/resource/203> ;
       ms:resourceName "CQP Analyzer Web Service" ;
       bio:contact "Iulatrl a-t  upf.edu" ;
       bio:demoInvocation "http://ws03.iula.upf.edu/soaplab2-axis/#corpus_workbench.corpus_analysis_row" ;
@@ -1443,9 +1500,10 @@ This version of the webservice is not able to follow such links, so it won’t p
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP ;
-      bio:task bio:StatisticsAnalysis , bio:CorpusWorkbench ;
+      bio:task bio:StatisticsAnalysis ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/corpus_workbench.corpus_analysis?wsdl" ;
-      dc:description "This WS allows analyzing an already indexed corpus (see CQP indexer WS for indexing details). The WS returns an Excel file with some statistical metrics such as number of nouns, verbs, ngrams, etc. The languages supported are Spanish and English."@en .
+      dc:description "This WS allows analyzing an already indexed corpus (see CQP indexer WS for indexing details). The WS returns an Excel file with some statistical metrics such as number of nouns, verbs, ngrams, etc. The languages supported are Spanish and English."@en ;
+      dc:subject "http://cwb.sourceforge.net/"^^xsd:string .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/273>
       rdf:type owl:NamedIndividual , bio:Service ;
@@ -1463,9 +1521,10 @@ This version of the webservice is not able to follow such links, so it won’t p
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:FormatConversion , bio:CorpusProcessing ;
+      bio:task bio:FormatConversion , bio:StatisticsAnalysis , bio:CorpusProcessing ;
       bio:wsdl "http://ws03.iula.upf.edu/soaplab2-axis/services/corpus_workbench.corpus_to_vectors?wsdl"^^xsd:string ;
-      dc:description "This WS converts a corpus to Weka vector arff file. The language supported are Asturian, Catalan, English, Galician, Italian, Portuguese, Russian, Spanish, and Welsh."@en .
+      dc:description "This WS converts a corpus to Weka vector arff file. The language supported are Asturian, Catalan, English, Galician, Italian, Portuguese, Russian, Spanish, and Welsh."@en ;
+      dc:subject <http://dbpedia.org/resource/Weka_(machine_learning)> .
 
 <http://lodserver.iula.upf.edu/Metashare/resource/278>
       rdf:type bio:Service , owl:NamedIndividual ;
@@ -1482,7 +1541,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:CorpusProcessing ;
+      bio:task bio:DependencyParsing ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/syntactic_tagging.bohnet_parser?wsdl" ;
       dc:description "This WS performs dependency parsing using Bohnet's graph-based Parser. The input is text in plain text or CoNLL format. The languages supported are English and Spanish."@en .
 
@@ -1512,7 +1571,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       ms:fundingProject test:project_PANACEA ;
       ms:languageCode <http://www.fao.org/aims/aos/languagecode.owl#eng> , <http://www.fao.org/aims/aos/languagecode.owl#cat> , <http://www.fao.org/aims/aos/languagecode.owl#por> , <http://www.fao.org/aims/aos/languagecode.owl#glg> , <http://www.fao.org/aims/aos/languagecode.owl#spa> , <http://www.fao.org/aims/aos/languagecode.owl#ita> ;
       ms:languageName "Catalan" , "English" , "Portuguese" , "Spanish" , "Italian" , "Galician" ;
-      ms:resourceName "FreeLing Morphosyntactic analyzer Web Service v.2.1"^^xsd:string ;
+      ms:resourceName "FreeLing Morphosyntactic analyzer Web Service v.2.1"@en ;
       bio:contact "iulatrl@upf.edu" ;
       bio:demoInvocation "http://ws04.iula.upf.edu/soaplab2-axis/#morphosintactic_tagging.freeling_morpho_row" ;
       bio:endpoint "http://ws04.iula.upf.edu/soaplab2-axis/services/morphosintactic_tagging.freeling_morpho" ;
@@ -1522,7 +1581,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:Soaplab , bio:SOAP ;
-      bio:task bio:MorphosyntacticTagging , bio:CorpusProcessing ;
+      bio:task bio:MorphosyntacticTagging ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/morphosintactic_tagging.freeling_morpho?wsdl" ;
       dc:description "This Web Service deploys a FreeLing-based morphological analyzer. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, Russian and Portuguese. WARNING: This WS has a new version."@en .
 
@@ -1543,7 +1602,7 @@ This version of the webservice is not able to follow such links, so it won’t p
       bio:serviceProvider test:organization_UPF-IULA ;
       bio:serviceTechnology
               bio:SOAP , bio:Soaplab ;
-      bio:task bio:MorphosyntacticTagging , bio:CorpusProcessing , bio:NamedEntityRecognition ;
+      bio:task bio:MorphosyntacticTagging , bio:NamedEntityRecognition ;
       bio:wsdl "http://ws04.iula.upf.edu/soaplab2-axis/services/morphosintactic_tagging.freeling_tagging?wsdl" ;
       dc:description "This WS performs a FreeLing-based part-of-speech tagger.  WS job duration depends on the server load, approximately 1 million words takes one minute. The languages supported are English, Catalan, Spanish, Asturian, Welsh, Galician, Italian, and Portuguese. WARNING: This WS has a new version."@en .
 
@@ -5019,7 +5078,8 @@ test:doc_59
       dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Corpus_linguistics> ;
       dc:title "Corpus and exploitation tool: IULACT and bwanaNet"@en ;
       dcterms:bibliographicCitation
-              "Vivaldi J. Corpus and exploitation tool: IULACT and bwanaNet. A survey on corpus-based research= Panorama de investigaciones basadas en corpus [Actas del I Congreso Internacional de Lingüística de Corpus (CICL-09), 7-9 Mayo 2009, Universidad de Murcia] Murcia: Asociación Española de Lingüística del Corpus. Murcia: Asociación Española de Lingüística del Corpus; 2009. p. 224–39" .
+              "Vivaldi J. Corpus and exploitation tool: IULACT and bwanaNet. A survey on corpus-based research= Panorama de investigaciones basadas en corpus [Actas del I Congreso Internacional de Lingüística de Corpus (CICL-09), 7-9 Mayo 2009, Universidad de Murcia] Murcia: Asociación Española de Lingüística del Corpus. Murcia: Asociación Española de Lingüística del Corpus; 2009. p. 224–39" ;
+      dcterms:references <http://lodserver.iula.upf.edu/Metashare/resource/118> .
 
 test:doc_6
       rdf:type bibo:Article , owl:NamedIndividual ;
@@ -5109,7 +5169,7 @@ test:doc_65
       dc:creator test:organization_UPF-IULA ;
       dc:description "This video tutorial shows a Taverna workflow use case. In this experiment we morphosyntactic annotate an input file and we index it to create a temporal corpus for exploiting it. Next, we define a set of Corpus Work Bench queries to analyze this corpus. All of these tasks are developed with web services from CLARIN laboratory. In this example we will study nominal constructions of 2011 United Left electoral programme, a political party from Spain."@en ;
       dc:identifier "http://vimeo.com/25395767" ;
-      dc:subject <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Text_corpus> , bio:Querying , <http://dbpedia.org/resource/Workflow> , <http://dbpedia.org/resource/Natural_language_processing> , bio:CorpusWorkbench , bio:FormatConversion ;
+      dc:subject <http://dbpedia.org/resource/Web_services> , bio:Concordancing , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Workflow> , <http://dbpedia.org/resource/Natural_language_processing> , bio:CorpusWorkbench , bio:FormatConversion ;
       dc:title "Creando un corpus temporal"@es ;
       dcterms:bibliographicCitation
               "Creando un corpus temporal [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011. Available from: http://vimeo.com/25395767"^^xsd:string ;
@@ -5137,7 +5197,7 @@ test:doc_67
       dc:creator test:organization_UPF-IULA ;
       dc:description "This video tutorial shows a CLARIN Catalan laboratory use case. The use case shows how to create a temporal corpus of antique texts, how to morphosyntactic annotate them, and how to search them with Corpus Work Bench queries. All of these tasks are developed through web services deployment."@en ;
       dc:identifier "http://vimeo.com/18907753" ;
-      dc:subject <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Web_services> , bio:Querying , <http://dbpedia.org/resource/Category:Historical_linguistics> , bio:CorpusWorkbench ;
+      dc:subject bio:Concordancing , <http://dbpedia.org/resource/Text_corpus> , <http://dbpedia.org/resource/Web_services> , <http://dbpedia.org/resource/Category:Historical_linguistics> , bio:CorpusWorkbench ;
       dc:title "El pretèrit perfet al català antic"@cat ;
       dcterms:bibliographicCitation
               "El pretèrit perfet al català antic [Internet]. Barcelona: Institut Universitaria de Lingüística Aplicada; 2011. Available from: http://vimeo.com/18907753"^^xsd:string ;
@@ -6467,7 +6527,7 @@ test:metadata_Basyque
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:Management , bio:Querying ;
+      bio:task ms:nlpApplications ;
       dc:description """BASYQUE (Base de Données Syntaxique Basque) is the web application we have developed to store, organize, manage and search for all the information concerning dialectal variation in Basque speaking areas, and specifically, in the North-Eastern Basque dialects. In order to collect and analyze data, we define some specific questionnaires. 
 
 Each questionnaire tackles a linguistic phenomenon that undergoes syntactic variation. Those questionnaires are conducted to some informants of different age range who are selected from several locations of the Northern Basque Country. We record their answers and collect the recorded examples as well as their corresponding information in a database. All these data, which can be consulted in BASYQUE, constitute the main source of information of this project."""@en .
@@ -6486,7 +6546,7 @@ test:metadata_BertsolariXa
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:Management , bio:FormatConversion , bio:CorpusProcessing ;
+      bio:task ms:nlpApplications ;
       dc:description "Application that finds words ended by the character sequence given by the user. BertsolarIXA is able to find not only lemmas but also inflected forms. Results can be filtered by the domain and phonetic rules can also be applied. It is a tool aimed to help verse-makers."@en .
 
 test:metadata_ContaWords
@@ -6551,7 +6611,7 @@ test:metadata_DBE
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:Querying ;
+      bio:task bio:LexiconLookUp ;
       dc:description """Students basic dictionary (Cuba). The GUI of the Diccionario Básico Escolar allows, besides common dictionary lookup, detecting the most common misspellings, consulting verb conjugation, syllabification of the headwords and, in some cases, watching illustrations attached to the entries. 
 
 This electronic dictionary has been developed with the Centro de Lingüística Aplicada institute in Santiago de Cuba. There are two versions, one in CD (which has been distributed in cuban schools) and the web version. This project has been funded by the Basque Government (in the FOCAD call)."""@en .
@@ -6570,7 +6630,7 @@ test:metadata_EUSMT
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:Management ;
+      bio:task bio:MachineTranlation ;
       dc:description "Statistical Machine Translation from Spanish to Basque. Use of segmentation and reordering in Statistical Machine Translation from Spanish to Basque. It allows our system to achieve a relative improvement of 10% in the HTER metric."@en .
 
 test:metadata_Eihera
@@ -6598,13 +6658,13 @@ test:metadata_Eustagger
       ms:languageName "Basque"^^xsd:string ;
       ms:resourceCreator test:organization_EHU-IXA ;
       ms:resourceName "Eustagger"^^xsd:string ;
-      ms:url  "http://ixa2.si.ehu.es/demo/entitateak.jsp" ;
+      ms:url  "http://ixa2.si.ehu.es/demo/analisimorf.jsp"^^xsd:string ;
       bio:contact "n.ezeiza@ehu.es"^^xsd:string ;
-      bio:demoInvocation "http://ixa2.si.ehu.es/demo/entitateak.jsp" ;
+      bio:demoInvocation "http://ixa2.si.ehu.es/demo/analisimorf.jsp"^^xsd:string ;
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:MorphologicalTagging , bio:CorpusProcessing , bio:SyntacticTagging ;
+      bio:task bio:MorphologicalTagging ;
       dc:description "Lemmatizer. Eustagger is a robust and wide-coverage morphological analyser and a Part-of-Speech tagger for Basque. The analyser is based on the two-level formalism and has been designed in an incremental way with three main modules: the standard analyser, the analyser of linguistic variants, and the analyser without lexicon which can recognize word-forms without having their lemmas in the lexicon. Using lexical transducers for our analyser we have improved both the performance of the different components of the system and the description itself. Provides possible lemmas, PoS and other morphological information for a token. It also recognizes date/time expressions, numbers. In the tagger combination of stochastic and rule-based disambiguation methods are applied to Basque language. The methods we have used in disambiguation are Constraint Grammar formalism and an HMM based tagger. CG rules are applied using all the morphological features and this process decreases morphological ambiguity of texts. Finally, we use the stochastic tool to select just one from the possible remaining tags. Using only the stochastic method the error rate is about 14%, but the accuracy may be increased by about 2% enriching the lexicon with the unknown words. When both methods are combined, the error rate of the whole process is 3.5%. Tokenization, morphological analysis, lemmatization and tagging for Basque. There is a web service."@en .
 
 test:metadata_IULA-CTparallelCorpus
@@ -6731,7 +6791,7 @@ test:metadata_Ihardetsi
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:Querying ;
+      bio:task bio:QuestionAnswering ;
       dc:description "A Question-Answering system for the area of Science and Technology. Ihardetsi is a question answering system for Basque. It is a general platform which architecture pays special attention to: 1) the integration of the development and evaluation environments, and 2) the systematic use of XML declarative files to control the execution of the modules and the communication between them."@en .
 
 test:metadata_IxaPipes
@@ -6773,7 +6833,7 @@ test:metadata_Ixati
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:CorpusProcessing , bio:SyntacticTagging ;
+      bio:task bio:SyntacticTagging ;
       dc:description "Chunking for Basque. There is a web service. Zatiak performs shallow syntactic analysis of a sentence. This program reads an input text and, after morphological processing, identifies pieces of text (chunks). Each chunk is marked with its type: nominal phrase (NP or PP) or verb chain, together with its associated information: grammatical case, number, definiteness and syntactic functions, among others."@en .
 
 test:metadata_Maltixa
@@ -6790,7 +6850,7 @@ test:metadata_Maltixa
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:SyntacticTagging , bio:CorpusProcessing ;
+      bio:task bio:DependencyParsing ;
       dc:description "Statistic-based dependency parser. Given a set of sentences in Basque, each sentence in a line, obtains a dependency-analysis of the sentences in a format equivalent (although not totally equal, as the columns appear in a different order) conll format."@en .
 
 test:metadata_Matxin
@@ -6807,7 +6867,7 @@ test:metadata_Matxin
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:Management ;
+      bio:task bio:MachineTranlation ;
       dc:description "Machine translation from Spanish to Basque. Matxin is a Transfer-based MT system from Spanish into Basque. It is an open, reusable and interoperable framework which can be improved in the next future combining it with the statistical model. The MT architecture reuses several open tools and it is based on an unique XML format for the flow between the different modules, which makes easier the interaction among different developers of tools and resources. Being Basque a resource-poor language this is a key feature in our aim for future improvements and extensions of the engine. The result is an open source software which can be downloaded from matxin.sourceforge.net. We think it could be adapted to translating between other languages with few resources."@en .
 
 test:metadata_Morfeus
@@ -6823,7 +6883,7 @@ test:metadata_Morfeus
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:MorphologicalTagging , bio:CorpusProcessing ;
+      bio:task bio:MorphologicalTagging ;
       dc:description "Morphological analyzer."@en .
 
 test:metadata_ParoleSimpleLexinfoLexicon
@@ -7163,7 +7223,7 @@ test:metadata_WSD-IXA
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:CorpusProcessing , bio:MorphologicalTagging ;
+      bio:task ms:wordSenseDisambiguation , bio:MorphologicalTagging ;
       dc:description "Word-Sense Disambiguation. The WSD system is based on the well known Support Vectors Machine (SVM) Algorithm. This system has been trained on EuSemCor corpus (the unique basque corpus semantically tagged). Due to corpus's reduced size, the WSD system has been trained for 402 polysemous nouns. Perl CGI script runs the input raw text over Eustagger basque lemmatizer in order to extract features. Then, the feature-vector is classified by the WSD (SVM) system. Finally, the CGI manage classifier and lemmatizer output in order to show in a proper format."@en .
 
 test:metadata_Xuxen
@@ -7179,7 +7239,7 @@ test:metadata_Xuxen
       bio:serviceProvider test:organization_EHU-IXA ;
       bio:serviceTechnology
               bio:WebApplication ;
-      bio:task bio:Querying ;
+      bio:task bio:SpellChecking ;
       dc:description """Spelling corrector on-line. Xuxen is a spelling corrector for Basque integrated in MS-Office, OpenOffice, Firefox, OCR programs and others. It can be downloaded from the Basque Govern's website (> 25.000 downloads) Eleka is the company which manages it now.
 
 The fact that Basque is a highly inflected language makes the correction of spelling errors extremely difficult because collecting all possible word-forms in a lexicon is an endless task. The simplicity of English inflections made of reduced interest in the research on morphological analysis by computer. In English, the most common practice is to use a lexicon of all of the inflected forms or a minimum set of morphological rules. Within this context we have implemented XUXEN, our spelling checker-corrector (Aduriz et al., 1997). It completely covers the standard language defined by the Academy of the Basque Language. 
