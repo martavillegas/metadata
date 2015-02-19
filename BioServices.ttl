@@ -16,94 +16,100 @@ bio:  rdf:type owl:Ontology ;
       rdfs:comment "This ontology is based on the Biocatalogue model and it is meant describe SOAP & REST services."@en .
 
 bio:Alignment
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Alignment"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Parallel_text> ;
       dc:description "Text alignment is the task of finding the correct correspondence between locations of fragments in a given text, and its translation"@en .
 
 bio:Chunking-Segmentation
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Chunking: Segmentation"@en ;
       dc:description "Chunking is the analysis of a sentence which identifies the constituents parts (noun groups, verbs, verb groups, etc.)"@en ;
       owl:sameAs <http://dbpedia.org/resource/Shallow_parsing> .
 
-bio:Concordancing
-      rdf:type owl:NamedIndividual , bio:Task ;
-      rdfs:label "Querying"@en ;
-      dc:description "Refers to the task of searching (possibly via rgulars expressions) occurrences of a word or patterns in a corpus (the concordances)."@en .
-
 bio:CorpusProcessing
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Corpus Processing"@en ;
       dc:description "Any task that deals with analysis and exploitation of textual corpus."@en .
 
 bio:CorpusWorkbench
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Corpus Workbench"@en ;
       dc:description "A suite of tools to manage corpus analysis."@en .
 
 bio:DataAnonymization
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Data Anonymization"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Data_anonymization> ;
       dc:description "Data anonymization is the process of removing personally identifiable information from data sets and/or to scramble the lines in a file in order to make it difficult to reproduce the original texts."@en .
 
 bio:DependencyParsing
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Dependency parsing"@en ;
-      rdfs:seeAlso <http://dbpedia.org/resource/Parsing> , <http://dbpedia.org/resource/Dependency_grammar> ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Dependency_grammar> , <http://dbpedia.org/resource/Parsing> ;
       dc:description "Dependency parsing is the task of parsing or analysing texts in order to identify dependency relations"@en .
 
 bio:FormatConversion
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Format Conversion"@en ;
       dc:description "Any task performing a change of format."@en .
 
+bio:Geovisualization
+      rdf:type owl:NamedIndividual , bio:Task ;
+      rdfs:label "Geovisualization"@en ;
+      rdfs:seeAlso <http://dbpedia.org/resource/Geovisualization> ;
+      dc:description "Geovisualization, short for Geographic Visualization, refers to a set of tools and techniques supporting geospatial data analysis through the use of interactive visualization. It emphasizes knowledge construction over knowledge storage or information transmission. To do this, geovisualization communicates geospatial information in ways that, when combined with human understanding, allow for data exploration and decision-making processes [Wikipedia]"@en .
+
 bio:Lexicon-TerminologyExtraction
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Lexicon-Terminology Extraction"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Terminology_extraction> ;
       dc:description "Extracting terminology is the process of extracting terminology from a text."@en .
 
 bio:LexiconLookUp
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Lexicon look up"@en ;
       dc:description "Lexicon look up is the task to automatically perform searches in a lexicon." .
 
 bio:MachineTranslation
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Machine translation"@en ;
       dc:description "Machine translation (MT) is a sub-field of computational linguistics that investigates the use of software to translate text or speech from one natural language to another (Wikipedia)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Machine_translation> .
 
 bio:Management
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Management"@en .
 
 bio:MorphologicalTagging
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Morphological Tagging"@en ;
       dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphological information."@en .
 
 bio:MorphosyntacticTagging
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Morphosyntactic Tagging"@en ;
       dc:description "Morphological tagging is a process of labeling words in a text with their appropriate detailed morphosyntactic information."@en .
 
 bio:NamedEntityRecognition
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Named Entity Recognition"@en ;
       dc:description "Named Entity Recognition (NER) classifies elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc."@en ;
       owl:sameAs <http://dbpedia.org/resource/Named-entity_recognition> .
 
+bio:Querying
+      rdf:type ms:UseNLPSpecific , owl:NamedIndividual , bio:Task ;
+      rdfs:label "Querying"@en ;
+      dc:description "Refers to the task of searching (possibly via rgulars expressions) occurrences of a word or patterns in a corpus (the concordances)."@en .
+
 bio:QuestionAnswering
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Question answering"@en ;
       dc:description "Question Answering (QA) is a computer science discipline which is concerned with building systems that automatically answer questions posed by humans in a natural language."@en ;
       owl:sameAs <http://dbpedia.org/resource/Question_answering> .
 
 bio:REST
-      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
       rdfs:label "REST"@en ;
       dc:description "Representational State Transfer (REST) is an architectural style based on the existing design of HTTP 1.0."@en ;
       owl:sameAs <http://dbpedia.org/resource/Representational_state_transfer> .
@@ -116,7 +122,7 @@ bio:RESTService
       dc:description "REST services are designed with an architectural style that specifies constraints, such as the uniform interface, that if applied to a web service induce desirable properties, such as performance, scalability, and modifiability. In the Representational State Transfer (REST) architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web [http://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html]"@en .
 
 bio:SOAP
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "SOAP"@en ;
       dc:description "Simple Object Access Protocol (SOAP) is a protocol specification for exchanging structured information in the implementation of Web Services"@en ;
       owl:sameAs <http://dbpedia.org/resource/SOAP> .
@@ -129,7 +135,7 @@ bio:SOAPService
       dc:description "SOAP services are designed with a common XML-based protocol. These services are used to conduct transactions, pass documents, and to make remote function calls on systems that are heterogeneous [Suda, 2003]"@en .
 
 bio:Script
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "Script"@en ;
       dc:description "Piece of software."@en .
 
@@ -145,7 +151,7 @@ bio:ServiceTechnology
       dc:description "service technology (REST, SOAP, Soaplab, etc)"@en .
 
 bio:Soaplab
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "Soaplab"@en ;
       dc:description "Soaplab is a Web services software framework specialised for bioinformatics programs with command-line interface."@en ;
       owl:sameAs <http://dbpedia.org/resource/Soaplab> .
@@ -158,25 +164,25 @@ bio:SoaplabService
       owl:sameAs <http://dbpedia.org/resource/Soaplab> .
 
 bio:SpellChecking
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Spelling CHecker"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Spell_checker> ;
       dc:description "Spell checking is the task of automatically correct spelling errors i texts."@en .
 
 bio:StatisticsAnalysis
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Statistics Analysis"@en ;
       dc:description "Statistical analysis refers to a collection of methods used to process large amounts of data  for the interpretation of quantitative data."@en .
 
 bio:Stemming-Lemmatization
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Stemming Lemmatization"@en ;
       rdfs:seeAlso <http://en.wikipedia.org/wiki/Stemming> ;
       dc:description "Is the process for reducing inflected (or sometimes derived) words to their stem or lemma."@en ;
       owl:sameAs <http://dbpedia.org/resource/Stemming> .
 
 bio:SyntacticTagging
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Syntactic Tagging"@en ;
       ms:dcr  "http://www.isocat.org/datcat/DC-2330" ;
       dc:description "Is the process of annotating syntacitc information in texts."@en .
@@ -187,30 +193,30 @@ bio:Task
       dc:description "The task performed by the service"@en .
 
 bio:TextHandling
-      rdf:type owl:NamedIndividual , bio:Task ;
+      rdf:type bio:Task , owl:NamedIndividual ;
       rdfs:label "Text Handling"@en ;
       dc:description "Text handling is the task to perform (basic) text transformations in input data."@en .
 
 bio:TextMining
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Text Mining"@en ;
       dc:description "Refers to the process of deriving high-quality information from text."@en ;
       owl:sameAs <http://dbpedia.org/resource/Text_mining> .
 
 bio:TextSimilarity
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Text Similarity"@en ;
       rdfs:seeAlso <http://dbpedia.org/resource/Semantic_similarity> ;
       dc:description "Text similarity is the task of comparing text segments based on the number of common words or shared information in paragraphs or sentences."@en .
 
 bio:Tokenization
-      rdf:type bio:Task , owl:NamedIndividual ;
+      rdf:type owl:NamedIndividual , bio:Task ;
       rdfs:label "Tokenization"@en ;
       dc:description "Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens."@en ;
       owl:sameAs <http://dbpedia.org/resource/Tokenization> .
 
 bio:WebApplication
-      rdf:type owl:NamedIndividual , bio:ServiceTechnology ;
+      rdf:type bio:ServiceTechnology , owl:NamedIndividual ;
       rdfs:label "Web application"@en ;
       dc:description "A web application or web app is any application software that runs in a web browser and is created in a browser-supported programming language (Wikipedia)."@en ;
       owl:sameAs <http://dbpedia.org/resource/Web_application> .
